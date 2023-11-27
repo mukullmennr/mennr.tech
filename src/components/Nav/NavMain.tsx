@@ -29,9 +29,6 @@ export default function NavMain() {
 		setSubOpen(val);
 	};
 
-	const handleHover = () => {
-		setSubOpen(0);
-	};
 	return (
 		<nav className="nav">
 			<div className="container">
@@ -69,7 +66,6 @@ export default function NavMain() {
 								<div
 									className="nav-hover"
 									onClick={() => handleSubOpen(1)}
-									onMouseEnter={handleHover}
 								>
 									<span>
 										What We Do
@@ -100,7 +96,6 @@ export default function NavMain() {
 								<div
 									className="nav-hover"
 									onClick={() => handleSubOpen(2)}
-									onMouseEnter={handleHover}
 								>
 									<span>
 										Who We Help
@@ -143,7 +138,6 @@ export default function NavMain() {
 								<div
 									className="nav-hover"
 									onClick={() => handleSubOpen(3)}
-									onMouseEnter={handleHover}
 								>
 									<span>
 										Solutions
@@ -206,7 +200,6 @@ export default function NavMain() {
 								<div
 									className="nav-hover"
 									onClick={() => handleSubOpen(4)}
-									onMouseEnter={handleHover}
 								>
 									<span>
 										Free Tools

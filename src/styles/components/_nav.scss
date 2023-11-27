@@ -206,13 +206,19 @@
 						}
 					}
 
-					input:checked + .nav-hover > ul {
+					input:checked + .nav-hover > .nav-links__sub {
 						display: grid;
+
+						@include ab.screen-54 {
+							display: none;
+						}
 					}
 
-					.nav-hover {
-						&:hover .nav-links__sub {
-							display: grid;
+					@include ab.screen-54 {
+						.nav-hover {
+							&:hover .nav-links__sub {
+								display: grid;
+							}
 						}
 					}
 
