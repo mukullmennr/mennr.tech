@@ -1,17 +1,8 @@
-@mixin screen-50 {
-	@media (min-width: 50em) {
-		@content;
-	}
-}
+$white: #fff4e9;
 
-@mixin screen-70 {
-	@media (min-width: 70em) {
-		@content;
-	}
-}
+$background1: #ff9a00;
+$background2: #333;
 
-@mixin screen-40 {
-	@media (min-width: 40em) {
-		@content;
-	}
-}
+$text1: #333;
+
+$accent1: #694468;

@@ -1,0 +1,13 @@
+@use "./abstracts" as ab;
+@use "./pages";
+@use "./components";
+
+body {
+	background-color: ab.$background1;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.container {
+	width: min(95%, 110rem);
+	margin-inline: auto;
+}

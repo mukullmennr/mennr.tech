@@ -1,0 +1,31 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { number } from "@/data/contact";
+import Link from "next/link";
+
+export default function NavUpper() {
+	return (
+		<div className="container nav-upper">
+			<div className="nav-upper__item">
+				<a href={`tel:${number}`}>
+					<span>
+						<FontAwesomeIcon icon={faPhoneVolume} />
+					</span>
+
+					{number}
+				</a>
+			</div>
+
+			<Link href="/" className="nav-upper__item nav-button">
+				<span className="nav-button__circle"></span>
+				Client Support
+			</Link>
+
+			<Link href="/" className="nav-upper__item nav-button">
+				<span className="nav-button__circle"></span>
+				Client Login
+			</Link>
+		</div>
+	);
+}
