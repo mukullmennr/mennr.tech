@@ -1,7 +1,6 @@
 @use "../../abstracts" as ab;
 
 .main {
-	outline: 2px solid coral;
 	padding-block: 5em 4em;
 	color: ab.$text1;
 	background-color: ab.$background1;
@@ -12,9 +11,10 @@
 		content: "";
 		background-color: ab.$background1;
 		position: absolute;
+		// border-radius: 0 0 1em 1em;
 
 		top: 0;
-		bottom: 90%;
+		height: 10em;
 		right: 0;
 		left: 0;
 
@@ -26,7 +26,7 @@
 
 		&__head {
 			font-size: clamp(1.7rem, 6vw, 2.9rem);
-			letter-spacing: 0.03rem;
+			letter-spacing: -0.03rem;
 			margin-block-end: 0.2em;
 		}
 
