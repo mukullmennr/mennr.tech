@@ -16,7 +16,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 0.4em;
+		gap: 0.6em;
 		color: ab.$text1;
 
 		font-weight: 700;
@@ -27,6 +27,12 @@
 
 		&:hover {
 			text-decoration-color: var(--text);
+		}
+
+		&:nth-child(3) {
+			span {
+				background-color: ab.$white;
+			}
 		}
 
 		span {
@@ -42,8 +48,14 @@
 
 			svg {
 				color: ab.$white;
-				font-size: 0.85rem;
+				font-size: clamp(0.7rem, 1vw, 0.8rem);
 			}
+		}
+	}
+
+	> a {
+		span {
+			width: 1em;
 		}
 	}
 
@@ -60,8 +72,17 @@
 }
 
 .nav {
+	position: sticky;
+	top: 0em;
 	color: ab.$text1;
 	padding-block: 1em;
+	background-color: ab.$background1;
+
+	transition: translate 300ms;
+
+	&.hide {
+		translate: 0 -100%;
+	}
 
 	@include ab.screen-40 {
 		padding-block: 0 1em;
@@ -82,8 +103,12 @@
 
 		position: relative;
 
+		@include ab.screen-48 {
+			// align-items: flex-start;
+		}
+
 		.hidden-large {
-			@include ab.screen-54 {
+			@include ab.screen-40 {
 				display: none;
 			}
 		}
@@ -119,7 +144,7 @@
 			gap: 0.3em;
 			position: relative;
 
-			@include ab.screen-54 {
+			@include ab.screen-48 {
 				display: none;
 			}
 
@@ -135,10 +160,10 @@
 		}
 
 		&__logo {
-			min-width: 7em;
+			min-width: 8em;
 
 			img {
-				width: clamp(7em, 13vw + 0.5em, 12em);
+				width: clamp(8em, 13vw + 0.5em, 12em);
 			}
 		}
 
@@ -146,7 +171,7 @@
 			margin-inline-start: auto;
 
 			display: flex;
-			gap: clamp(1.1em, 2vw, 1.3em);
+			gap: clamp(1.5em, 3vw, 2.2em);
 
 			.nav-links {
 				background-color: ab.$white;
@@ -175,7 +200,7 @@
 					padding: 6em 4em;
 				}
 
-				@include ab.screen-54 {
+				@include ab.screen-48 {
 					position: static;
 					clip-path: none;
 					background-color: transparent;
@@ -185,7 +210,7 @@
 
 					padding: 0;
 
-					gap: clamp(1.1em, 2vw, 1.3em);
+					gap: clamp(1.5em, 3vw, 2.2em);
 				}
 
 				li {
@@ -209,12 +234,12 @@
 					input:checked + .nav-hover > .nav-links__sub {
 						display: grid;
 
-						@include ab.screen-54 {
+						@include ab.screen-48 {
 							display: none;
 						}
 					}
 
-					@include ab.screen-54 {
+					@include ab.screen-48 {
 						.nav-hover {
 							&:hover .nav-links__sub {
 								display: grid;
@@ -223,7 +248,6 @@
 					}
 
 					.nav-links__sub {
-						// outline: 2px solid lightblue;
 						list-style-type: none;
 						font-size: 1rem;
 						margin-block: 0.3em 0;
@@ -235,7 +259,7 @@
 
 						gap: 0.5em;
 
-						@include ab.screen-54 {
+						@include ab.screen-48 {
 							margin-block: 0;
 							padding: 1em 1.6em;
 
@@ -262,21 +286,6 @@
 								color: ab.$white;
 								text-decoration: none;
 							}
-							// color: ab.$white;
-
-							// display: flex;
-							// align-items: center;
-							// gap: 0.5em;
-
-							// span {
-							// 	display: inline-block;
-
-							// 	width: 1em;
-							// 	aspect-ratio: 1/1;
-							// 	border-radius: 50%;
-
-							// 	background-color: red;
-							// }
 						}
 					}
 				}

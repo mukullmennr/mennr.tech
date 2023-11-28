@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,11 +10,40 @@ import { number } from "@/data/contact";
 export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
 	const [subOpen, setSubOpen] = useState(0);
+	const [show, setShow] = useState(true);
+	const [lastScrollY, setLastScrollY] = useState(0);
+
+	const controlNavbar = () => {
+		if (typeof window !== "undefined") {
+			let scrollY = window.scrollY;
+			if (scrollY > lastScrollY && scrollY > 90) {
+				// if scroll down hide the navbar
+				setShow(false);
+			} else {
+				// if scroll up show the navbar
+				setShow(true);
+			}
+
+			// remember current page location to use in the next move
+			setLastScrollY(scrollY);
+		}
+	};
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			window.addEventListener("scroll", controlNavbar);
+
+			// cleanup function
+			return () => {
+				window.removeEventListener("scroll", controlNavbar);
+			};
+		}
+	}, [lastScrollY]);
 
 	let one = subOpen === 1;
 	let two = subOpen === 2;
-	let three = subOpen === 3;
-	let four = subOpen === 4;
+	// let three = subOpen === 3;
+	// let four = subOpen === 4;
 
 	const handleChange = () => {
 		setOpen((prev) => !prev);
@@ -30,7 +59,7 @@ export default function NavMain() {
 	};
 
 	return (
-		<nav className="nav">
+		<nav className={`nav ${!show && !open && "hide"}`}>
 			<div className="container">
 				<div className="nav-bottom">
 					<>
@@ -48,7 +77,9 @@ export default function NavMain() {
 					</>
 
 					<div className="nav-bottom__logo">
-						<img src="/logo.svg" alt="logo" />
+						<Link href="/">
+							<img src="/logo.svg" alt="logo" />
+						</Link>
 					</div>
 
 					<div className="nav-bottom__links">
@@ -130,68 +161,75 @@ export default function NavMain() {
 							</li>
 
 							<li>
-								<input
-									type="checkbox"
-									checked={three}
-									onChange={() => {}}
-								/>
-								<div
-									className="nav-hover"
-									onClick={() => handleSubOpen(3)}
-								>
-									<span>
-										Solutions
-										<FontAwesomeIcon icon={faAngleDown} />
-									</span>
+								{/* <>
+									<input
+										type="checkbox"
+										checked={three}
+										onChange={() => {}}
+									/>
+									<div
+										className="nav-hover"
+										onClick={() => handleSubOpen(3)}
+									>
+										<span>
+											Solutions
+											<FontAwesomeIcon
+												icon={faAngleDown}
+											/>
+										</span>
 
-									<ul className="nav-links__sub">
-										<li>
-											<Link href="/">SEO</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Social Media Management
-											</Link>
-										</li>
-										<li>
-											<Link href="/">Facebook Ads</Link>
-										</li>
-										<li>
-											<Link href="/">Google Ads</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Review Management
-											</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Reputation Management
-											</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Website Design & Development
-											</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Google My Business
-											</Link>
-										</li>
-										<li>
-											<Link href="/">
-												Business Listings
-											</Link>
-										</li>
-										<li>
-											<Link href="/">Print Ads</Link>
-										</li>
-									</ul>
-								</div>
+										<ul className="nav-links__sub">
+											<li>
+												<Link href="/">SEO</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Social Media Management
+												</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Facebook Ads
+												</Link>
+											</li>
+											<li>
+												<Link href="/">Google Ads</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Review Management
+												</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Reputation Management
+												</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Website Design & Development
+												</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Google My Business
+												</Link>
+											</li>
+											<li>
+												<Link href="/">
+													Business Listings
+												</Link>
+											</li>
+											<li>
+												<Link href="/">Print Ads</Link>
+											</li>
+										</ul>
+									</div>
+								</> */}
+								<Link href="/">Solutions</Link>
 							</li>
 
-							<li>
+							{/* <li>
 								<input
 									type="checkbox"
 									checked={four}
@@ -237,7 +275,7 @@ export default function NavMain() {
 										</li>
 									</ul>
 								</div>
-							</li>
+							</li> */}
 
 							<li>
 								<Link href="/">Blog</Link>

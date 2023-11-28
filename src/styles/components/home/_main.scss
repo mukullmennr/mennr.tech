@@ -1,0 +1,98 @@
+@use "../../abstracts" as ab;
+
+.main {
+	outline: 2px solid coral;
+	padding-block: 5em 4em;
+	color: ab.$text1;
+	background-color: ab.$background1;
+	border-radius: 0 0 1em 1em;
+
+	// background color
+	&::before {
+		content: "";
+		background-color: ab.$background1;
+		position: absolute;
+
+		top: 0;
+		bottom: 90%;
+		right: 0;
+		left: 0;
+
+		z-index: -1;
+	}
+
+	&-phrase {
+		text-align: center;
+
+		&__head {
+			font-size: clamp(1.7rem, 6vw, 2.9rem);
+			letter-spacing: 0.03rem;
+			margin-block-end: 0.2em;
+		}
+
+		&__text {
+			letter-spacing: -0.02rem;
+			font-size: clamp(1rem, 2.5vw, 1.8rem);
+		}
+	}
+
+	&-buttons {
+		margin-block-start: clamp(4em, 10vw, 6em);
+		display: grid;
+		gap: 1em;
+
+		@include ab.screen-40 {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__item {
+			display: flex;
+			justify-content: center;
+
+			@include ab.screen-40 {
+				justify-content: flex-end;
+
+				&:nth-child(2) {
+					justify-content: flex-start;
+				}
+			}
+
+			a {
+				background-color: ab.$white;
+				border: 0.1em solid ab.$accent1;
+				font-size: clamp(0.9rem, 4vw, 1.3rem);
+				width: 14em;
+				padding-block: 0.3em;
+
+				border-radius: 5em;
+
+				color: ab.$text1;
+				text-decoration: none;
+				font-weight: 700;
+
+				text-align: center;
+
+				transition: color 200ms, background-color 200ms;
+
+				&:hover {
+					color: ab.$white;
+					background-color: ab.$accent1;
+				}
+			}
+
+			&:nth-child(2) {
+				a {
+					background-color: ab.$accent1;
+					border-radius: 0.4em;
+
+					color: ab.$white;
+
+					&:hover {
+						color: ab.$text1;
+						background-color: ab.$white;
+					}
+				}
+			}
+		}
+	}
+}
