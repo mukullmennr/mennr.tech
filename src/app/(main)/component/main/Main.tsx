@@ -7,7 +7,7 @@ export default function Main() {
 			<div className="container">
 				<div className="main-phrase">
 					<h1 className="main-phrase__head">
-						We&apos;e passionate about helping businesses succeed
+						We&apos;re passionate about helping businesses succeed
 						online
 					</h1>
 
