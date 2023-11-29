@@ -11,7 +11,5 @@ export default function CarouselDots({
 	onClick,
 	className,
 }: CarouselDotsProps) {
-	return (
-		<button onClick={onClick} className={className} type="button"></button>
-	);
+	return <span onClick={onClick} className={className}></span>;
 }

@@ -12,7 +12,9 @@ interface OurCertificationsProps {
 export default function OurCertifications({
 	children,
 }: OurCertificationsProps) {
-	const [emblaRef, emblaApi] = useEmblaCarousel();
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+		Autoplay({ delay: 2000 }),
+	]);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
