@@ -1,0 +1,25 @@
+@use "../abstracts" as ab;
+
+.ourcertifications {
+	.embla {
+		overflow: hidden;
+
+		&__container {
+			display: flex;
+			gap: 1em;
+		}
+
+		img {
+			object-fit: contain;
+		}
+
+		&__slide {
+			flex: 0 0 100%;
+			min-width: 0;
+
+			@include ab.container-45 {
+				flex: 0 0 11rem;
+			}
+		}
+	}
+}

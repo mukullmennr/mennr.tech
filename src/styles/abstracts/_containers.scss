@@ -1,5 +1,5 @@
-@mixin container-10 {
-	@container (min-width: 1px) {
+@mixin container-45 {
+	@container (min-width: 45em) {
 		@content;
 	}
 }
