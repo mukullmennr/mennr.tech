@@ -35,6 +35,44 @@
 			}
 		}
 
+		@include ab.screen-74 {
+			.ourcertifications-parent {
+				width: 70%;
+
+				.ourcertifications {
+					margin-inline: auto;
+				}
+			}
+
+			&__image {
+				width: 30%;
+			}
+		}
+
+		@include ab.screen-80 {
+			.ourcertifications-parent {
+				width: 55%;
+			}
+
+			&__image {
+				width: 45%;
+			}
+		}
+
+		@include ab.screen-96 {
+			.ourcertifications-parent {
+				width: 50%;
+
+				.ourcertifications {
+					margin-inline: 0;
+				}
+			}
+
+			&__image {
+				width: 50%;
+			}
+		}
+
 		&__image {
 			text-align: center;
 			position: relative;

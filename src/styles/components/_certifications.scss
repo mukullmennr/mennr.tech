@@ -1,16 +1,25 @@
 @use "../abstracts" as ab;
 
 .ourcertifications {
-	padding: 2em 2.5em;
+	padding: 2em 1.5em;
 	border-radius: 1.25em;
 	max-width: 45rem;
+
+	@include ab.screen-74 {
+		max-width: 41rem;
+	}
+
+	@include ab.screen-96 {
+		max-width: 45rem;
+		padding: 2em;
+	}
 
 	h3 {
 		text-align: center;
 		font-size: clamp(1.1rem, 4vw, 1.3rem);
 		font-weight: 700;
 
-		@include ab.container-45 {
+		@include ab.container-40 {
 			text-align: left;
 			font-size: 1.5rem;
 		}
@@ -19,16 +28,23 @@
 	&-content {
 		margin-block: 2.5em 0;
 
-		@include ab.container-45 {
+		@include ab.container-40 {
 			display: flex;
 		}
 
 		&__image {
 			display: none;
 
-			@include ab.container-45 {
+			@include ab.container-40 {
 				display: inline;
 				translate: 0 -3em;
+				width: 4rem;
+			}
+
+			@include ab.screen-96 {
+				@include ab.container-40 {
+					width: auto;
+				}
 			}
 		}
 
@@ -42,17 +58,41 @@
 
 				img {
 					width: 11rem;
+
+					@include ab.container-40 {
+						width: 10rem;
+					}
+
+					@include ab.container-45 {
+						width: 11rem;
+					}
 				}
 
 				&:nth-child(2) {
 					img {
 						width: 9rem;
+
+						@include ab.container-40 {
+							width: 8rem;
+						}
+
+						@include ab.container-45 {
+							width: 9rem;
+						}
 					}
 				}
 
 				&:nth-child(3) {
 					img {
 						width: 9rem;
+
+						@include ab.container-40 {
+							width: 8rem;
+						}
+
+						@include ab.container-45 {
+							width: 9rem;
+						}
 					}
 				}
 			}
@@ -65,7 +105,7 @@
 		gap: 0.5em;
 		margin-block: 1.5em 0;
 
-		@include ab.container-45 {
+		@include ab.container-40 {
 			display: none;
 		}
 

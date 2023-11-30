@@ -1,3 +1,9 @@
+@mixin container-40 {
+	@container (min-width: 40em) {
+		@content;
+	}
+}
+
 @mixin container-45 {
 	@container (min-width: 45em) {
 		@content;

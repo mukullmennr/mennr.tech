@@ -17,8 +17,14 @@
 			flex: 0 0 100%;
 			min-width: 0;
 
-			@include ab.container-45 {
-				flex: 0 0 11rem;
+			@include ab.container-40 {
+				flex: 0 0 10rem;
+			}
+
+			@include ab.screen-96 {
+				@include ab.container-40 {
+					flex: 0 0 11rem;
+				}
 			}
 		}
 	}
