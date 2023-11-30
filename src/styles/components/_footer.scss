@@ -1,0 +1,180 @@
+@use "../abstracts" as ab;
+
+.footer {
+	padding-block: 5em;
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+
+		&__item {
+			.list-head {
+				color: black;
+				font-weight: 700;
+				font-size: clamp(0.9rem, 2.8vw, 1.25rem);
+				text-transform: uppercase;
+				margin-block-end: 0.5em;
+			}
+
+			li,
+			p,
+			input,
+			button {
+				font-size: clamp(0.75rem, 2vw, 0.9rem);
+			}
+
+			&.link-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1em;
+
+				input {
+					width: 100%;
+				}
+
+				@include ab.screen-48 {
+					grid-template-columns: repeat(4, 1fr);
+					padding-inline-start: 2em;
+				}
+
+				@include ab.screen-64 {
+					padding-inline-start: 3em;
+				}
+
+				.link-grid__item {
+					ul {
+						margin: 0;
+						list-style-type: none;
+						padding: 0;
+						display: flex;
+						gap: 0.5em;
+						flex-direction: column;
+
+						li {
+							a {
+								color: black;
+								text-decoration-color: transparent;
+
+								transition: text-decoration-color 300ms;
+
+								&:hover {
+									text-decoration-color: black;
+								}
+							}
+						}
+					}
+				}
+
+				.socials {
+					display: grid;
+					gap: 1em;
+
+					&-container {
+						.social-mail {
+							display: flex;
+							margin-block-start: 1em;
+
+							input {
+								border: none;
+								outline: none;
+								background-color: ab.$background4;
+								width: 75%;
+								font-weight: 500;
+								padding: 0.6em 0.4em;
+
+								border-radius: 0.6em 0 0 0.6em;
+
+								&::placeholder {
+									color: ab.$text-placeholder;
+								}
+							}
+
+							button {
+								background-color: black;
+								color: white;
+								font-weight: 700;
+								border: none;
+								padding-inline: 1.6em;
+
+								border-radius: 0 0.6em 0.6em 0;
+								cursor: pointer;
+								text-decoration: underline transparent;
+
+								transition: background-color 300ms,
+									text-decoration-color 300ms;
+
+								&:hover {
+									background-color: lighten(black, 10%);
+									text-decoration-color: white;
+								}
+							}
+						}
+
+						.social-links {
+							display: flex;
+							gap: 1em;
+
+							a {
+								width: 1.6em;
+								aspect-ratio: 1 / 1;
+								border-radius: 50%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								background-color: black;
+
+								transition: background-color 300ms;
+
+								// facebook
+								&:nth-child(1) {
+									&:hover {
+										background-color: ab.$facebook;
+									}
+								}
+
+								// twitter
+								&:nth-child(2) {
+									&:hover {
+										background-color: ab.$twitter;
+									}
+								}
+
+								// linkedin
+								&:nth-child(3) {
+									&:hover {
+										background-color: ab.$linkedin;
+									}
+								}
+
+								// instagram
+								&:nth-child(4) {
+									&:hover {
+										background-color: ab.$instagram;
+									}
+								}
+
+								@include ab.screen-40 {
+									width: 1.8rem;
+								}
+
+								svg {
+									color: ab.$white;
+
+									@include ab.screen-40 {
+										font-size: 1.1rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.copyright {
+				display: flex;
+				gap: 0.8em;
+			}
+		}
+	}
+}

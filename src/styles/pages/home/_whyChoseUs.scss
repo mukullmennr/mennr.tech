@@ -2,9 +2,14 @@
 
 .whychoseus {
 	padding-block-start: 4em;
+	padding-block-end: 8em;
+
+	@include ab.screen-48 {
+		padding-block-end: 14em;
+	}
 
 	.ourcertifications {
-		background-color: ab.$white;
+		background-color: ab.$background3;
 	}
 
 	&-text {
