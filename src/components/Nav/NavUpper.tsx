@@ -17,10 +17,10 @@ export default function NavUpper() {
 				</a>
 			</div>
 
-			<Link href="/" className="nav-upper__item nav-button">
+			{/* <Link href="/" className="nav-upper__item nav-button">
 				<span className="nav-button__circle"></span>
 				Client Support
-			</Link>
+			</Link> */}
 
 			<Link href="/" className="nav-upper__item nav-button">
 				<span className="nav-button__circle"></span>

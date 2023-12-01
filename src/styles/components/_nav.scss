@@ -29,11 +29,11 @@
 			text-decoration-color: var(--text);
 		}
 
-		&:nth-child(3) {
-			span {
-				background-color: ab.$white;
-			}
-		}
+		// &:nth-child(3) {
+		// 	span {
+		// 		background-color: ab.$white;
+		// 	}
+		// }
 
 		span {
 			display: flex;
@@ -60,13 +60,17 @@
 	}
 
 	.nav-button {
-		background-color: ab.$white;
 		padding: 0.4em 1em;
 		border-radius: 0.4em;
+		background-color: ab.$background2;
+		color: ab.$white;
 
-		&:nth-child(3) {
-			background-color: ab.$background2;
-			color: ab.$white;
+		span {
+			background-color: ab.$white;
+		}
+
+		&:nth-child(2) {
+			// background-color: ab.$white;
 		}
 	}
 }

@@ -1,0 +1,261 @@
+@use "../../abstracts" as ab;
+
+.info {
+	background-color: ab.$background5;
+	background-image: url("../../../../public/home/flow-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 1.3em;
+
+	@include ab.screen-40 {
+		background-image: url("../../../../public/home/flow-desktop.svg");
+		background-position: center 1.6em;
+	}
+
+	p {
+		font-weight: 700;
+		letter-spacing: -0.03rem;
+		font-size: clamp(1.12rem, 2vw, 2rem);
+		background-color: ab.$background5;
+	}
+
+	&-item {
+		.info-child {
+			display: flex;
+			gap: 7.2rem;
+			flex-direction: column;
+			position: relative;
+
+			&__image {
+				width: min(100%, 35rem);
+				margin-inline: auto;
+
+				@include ab.screen-40 {
+					margin-inline: 0;
+				}
+
+				> img {
+					border-radius: 1.125rem;
+				}
+			}
+
+			@include ab.screen-40 {
+				flex-direction: row;
+				gap: 2em;
+				justify-content: space-between;
+				align-items: center;
+
+				> p {
+					width: 60%;
+				}
+			}
+
+			.img-arrow {
+				display: none;
+
+				@include ab.screen-40 {
+					display: block;
+					position: absolute;
+					width: calc(2.5rem + 1vw);
+					right: 0;
+					bottom: 0;
+					translate: -0.5vw 3.2em;
+				}
+
+				@include ab.screen-48 {
+					width: calc(3rem + 1vw);
+				}
+
+				@include ab.screen-54 {
+					width: calc(3.2rem + 1vw);
+				}
+
+				@include ab.screen-64 {
+					width: calc(3.6rem + 1vw);
+					translate: -2.2em 3.2rem;
+				}
+
+				@include ab.screen-74 {
+					translate: -5em 3.2em;
+				}
+
+				@include ab.screen-96 {
+					width: 5.6em;
+					translate: -10em 3.2em;
+				}
+			}
+		}
+	}
+
+	&-point {
+		position: absolute;
+		display: none;
+		top: 0;
+		right: 0;
+
+		@include ab.screen-40 {
+			display: block;
+			translate: -1vw -17em;
+		}
+
+		@include ab.screen-48 {
+			translate: calc(-1em - 1vw) -17em;
+		}
+
+		@include ab.screen-51 {
+			translate: 0 -15.5em;
+		}
+
+		@include ab.screen-64 {
+			translate: calc(-3em - 1vw) -16em;
+		}
+
+		@include ab.screen-74 {
+			translate: -6em -17.5em;
+		}
+
+		@include ab.screen-96 {
+			translate: -7em -19em;
+		}
+
+		> img {
+			width: 10rem;
+			margin-inline-start: 3em;
+
+			@include ab.screen-54 {
+				margin-inline-start: 2em;
+			}
+
+			@include ab.screen-64 {
+				width: 12em;
+			}
+
+			@include ab.screen-80 {
+				width: 12em;
+			}
+		}
+
+		> p {
+			color: ab.$accent2;
+			rotate: 5deg;
+			font-size: 1rem;
+
+			@include ab.screen-51 {
+				font-size: clamp(1.12rem, 1.6vw, 1.5rem);
+			}
+		}
+	}
+
+	&-one {
+		padding-block: 1.5em;
+
+		> div.container {
+			display: grid;
+			gap: 8.4rem;
+		}
+
+		p {
+			text-align: center;
+
+			@include ab.screen-40 {
+				width: 60%;
+
+				&:nth-child(odd) {
+					margin-inline-start: auto;
+				}
+			}
+		}
+	}
+
+	&-two {
+		padding-block: 3em;
+
+		.container > p:nth-child(3) {
+			display: none;
+
+			@include ab.screen-40 {
+				display: block;
+				width: 60%;
+			}
+		}
+
+		.info-button {
+			margin-block-start: 2.63rem;
+			text-align: center;
+
+			@include ab.screen-40 {
+				margin-block-end: 5.23rem;
+				text-align: right;
+			}
+
+			button {
+				color: white;
+				font-weight: 700;
+				font-size: clamp(1.04rem, 2vw, 1.5rem);
+				background-color: ab.$accent1;
+				border: 0.15em solid ab.$accent1;
+
+				padding: 0.5em 1.6em;
+				border-radius: 1.5em;
+
+				transition: background-color 300ms, color 300ms;
+
+				&:hover {
+					background-color: ab.$background5;
+					color: ab.$accent1;
+					cursor: pointer;
+				}
+
+				@include ab.screen-40 {
+					translate: -8vw;
+				}
+
+				@include ab.screen-64 {
+					translate: -5em;
+				}
+
+				@include ab.screen-74 {
+					translate: -7em;
+				}
+
+				@include ab.screen-96 {
+					translate: -12em;
+				}
+			}
+		}
+	}
+
+	&-three {
+		padding-block-start: 3em;
+
+		> .container {
+			position: relative;
+
+			.info-child {
+				padding-block-end: 3em;
+
+				background-image: linear-gradient(
+					transparent 75%,
+					ab.$background5 75%
+				);
+
+				@include ab.screen-40 {
+					background-image: linear-gradient(
+						transparent 50%,
+						ab.$background5 50%
+					);
+				}
+			}
+
+			p:first-child {
+				display: none;
+
+				@include ab.screen-40 {
+					display: block;
+					margin-block-end: 10rem;
+					width: 60%;
+				}
+			}
+		}
+	}
+}

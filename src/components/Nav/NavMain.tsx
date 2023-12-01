@@ -281,7 +281,7 @@ export default function NavMain() {
 								<Link href="/">Blog</Link>
 							</li>
 
-							<li className="hidden-large link-button">
+							{/* <li className="hidden-large link-button">
 								<Link
 									href="/"
 									className="nav-upper__item nav-button"
@@ -289,7 +289,7 @@ export default function NavMain() {
 									<span className="nav-button__circle"></span>
 									Client Support
 								</Link>
-							</li>
+							</li> */}
 
 							<li className="hidden-large link-button">
 								<Link
