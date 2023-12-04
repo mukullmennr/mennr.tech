@@ -29,3 +29,16 @@
 		}
 	}
 }
+
+.solutions-carousel {
+	.embla {
+		overflow: hidden;
+
+		.embla__container {
+			display: grid;
+			grid-auto-flow: column;
+			grid-auto-columns: min(100%, 25em);
+			gap: 4em;
+		}
+	}
+}
