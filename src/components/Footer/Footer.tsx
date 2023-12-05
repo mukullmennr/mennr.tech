@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import React from "react";
 
@@ -9,13 +7,12 @@ import {
 	faXTwitter,
 	faLinkedinIn,
 	faInstagram,
+	faThreads,
 } from "@fortawesome/free-brands-svg-icons";
 import { socials } from "@/data/social";
 import BlogForm from "./BlogForm";
 
 export default function Footer() {
-	const handleBlog = () => {};
-
 	return (
 		<footer className="footer">
 			<div className="container">
@@ -26,7 +23,7 @@ export default function Footer() {
 
 							<ul>
 								<li>
-									<Link href="/">Who we are</Link>
+									<Link href="/aboutus">Who we are</Link>
 								</li>
 								<li>
 									<Link href="/">What we do</Link>
@@ -50,13 +47,16 @@ export default function Footer() {
 									<Link href="/">Automotive</Link>
 								</li>
 								<li>
-									<Link href="/">Home Services</Link>
+									<Link href="/">General Contractors</Link>
 								</li>
 								<li>
 									<Link href="/">Personal Care</Link>
 								</li>
 								<li>
 									<Link href="/">Real Estate</Link>
+								</li>
+								<li>
+									<Link href="/">Landscaping Services</Link>
 								</li>
 
 								<li>
@@ -67,7 +67,8 @@ export default function Footer() {
 
 						<div className="link-grid__item">
 							<h3 className="list-head">Services</h3>
-							<ul>
+
+							<ul className="services-links">
 								<li>
 									<Link href="/">SEO</Link>
 								</li>
@@ -96,12 +97,24 @@ export default function Footer() {
 									<Link href="/">Display Advertisement</Link>
 								</li>
 								<li>
-									<Link href="/">Search Marketing</Link>
+									<Link href="/">Google My Business</Link>
+								</li>
+								<li>
+									<Link href="/">Reputation Management</Link>
+								</li>
+								<li>
+									<Link href="/">Business Listings</Link>
+								</li>
+								<li>
+									<Link href="/">Waze Ads</Link>
+								</li>
+								<li>
+									<Link href="/">Strategic Planning</Link>
 								</li>
 							</ul>
 						</div>
 
-						<div className="socials">
+						<div className="socials link-grid__item">
 							<div className="socials-container">
 								<h3 className="list-head">Mennr Blog</h3>
 
@@ -129,6 +142,10 @@ export default function Footer() {
 									</a>
 									<a href={socials.instagram} target="_blank">
 										<FontAwesomeIcon icon={faInstagram} />
+									</a>
+
+									<a href={socials.threads} target="_blank">
+										<FontAwesomeIcon icon={faThreads} />
 									</a>
 								</div>
 							</div>

@@ -12,9 +12,7 @@ interface OurCertificationsProps {
 export default function OurCertifications({
 	children,
 }: OurCertificationsProps) {
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-		Autoplay({ delay: 2000 }),
-	]);
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
@@ -34,6 +32,15 @@ export default function OurCertifications({
 	const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
 		setSelectedIndex(emblaApi.selectedScrollSnap());
 	}, []);
+
+	useEffect(() => {
+		const myInterval = setInterval(() => {
+			console.log("working");
+			if (emblaApi) emblaApi.scrollNext();
+		}, 3000);
+
+		return () => clearInterval(myInterval);
+	}, [emblaApi]);
 
 	useEffect(() => {
 		if (!emblaApi) return;

@@ -52,6 +52,7 @@
 
 			.img-arrow {
 				display: none;
+				color: ab.$accent1;
 
 				@include ab.screen-40 {
 					display: block;
@@ -189,7 +190,7 @@
 			}
 
 			button {
-				color: white;
+				color: ab.$white;
 				font-weight: 700;
 				font-size: clamp(1.04rem, 2vw, 1.5rem);
 				background-color: ab.$accent1;

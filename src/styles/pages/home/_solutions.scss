@@ -34,7 +34,7 @@
 		p {
 			font-weight: 700;
 			font-size: clamp(1.12rem, 2vw, 2.25rem);
-			background-color: ab.$background5;
+			background-color: ab.$background3;
 			border-radius: 0.6em;
 			padding-block: 0.8em;
 			padding-inline: 1em;
@@ -75,7 +75,7 @@
 		}
 
 		.card {
-			background-color: ab.$background1;
+			background-color: ab.$accent1;
 			border-radius: 0.6em;
 			padding: clamp(1.92rem, 2vw, 3.2rem);
 
@@ -91,7 +91,7 @@
 
 			h3 {
 				font-size: clamp(1.9rem, 3vw, 3rem);
-				color: ab.$text1;
+				color: ab.$text2;
 
 				@include ab.screen-40 {
 					width: 65%;
@@ -107,6 +107,9 @@
 			}
 
 			a {
+				--bg: #{ab.$white};
+				--text: #{ab.$accent1};
+
 				font-size: clamp(1.7rem, 2vw, 2rem);
 
 				@include ab.screen-40 {
@@ -259,6 +262,7 @@
 		background-color: ab.$background3;
 		padding-block-end: 2em;
 		text-align: center;
+		box-shadow: 0 3em ab.$background3;
 
 		a {
 			font-size: clamp(1.04rem, 1.6vw, 1.5rem);
@@ -267,6 +271,7 @@
 
 			&:hover {
 				--bg: #{ab.$background3};
+				text-decoration-color: transparent;
 			}
 		}
 	}

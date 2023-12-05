@@ -1,50 +1,53 @@
-// sm
+// sm 640
 @mixin screen-40 {
 	@media (min-width: 40em) {
 		@content;
 	}
 }
 
-// md
+// md 768
 @mixin screen-48 {
 	@media (min-width: 48em) {
 		@content;
 	}
 }
 
-// lg
+// lg 1024
 @mixin screen-64 {
 	@media (min-width: 64em) {
 		@content;
 	}
 }
 
-// xl
+// xl 1280
 @mixin screen-80 {
 	@media (min-width: 80em) {
 		@content;
 	}
 }
 
-// 2xl
+// 2xl 1536
 @mixin screen-96 {
 	@media (min-width: 96em) {
 		@content;
 	}
 }
 
+// 864
 @mixin screen-54 {
 	@media (min-width: 54em) {
 		@content;
 	}
 }
 
+// 1189
 @mixin screen-74 {
 	@media (min-width: 74.3em) {
 		@content;
 	}
 }
 
+// 826
 @mixin screen-51 {
 	@media (min-width: 51.6em) {
 		@content;

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,7 @@ export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
 	const [subOpen, setSubOpen] = useState(0);
 	const [show, setShow] = useState(true);
+	const pathname = usePathname();
 	const [lastScrollY, setLastScrollY] = useState(0);
 
 	const controlNavbar = () => {
@@ -28,6 +30,11 @@ export default function NavMain() {
 			setLastScrollY(scrollY);
 		}
 	};
+
+	// handle close nav on mobile when path changes
+	useEffect(() => {
+		setOpen(false);
+	}, [pathname]);
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
@@ -85,11 +92,12 @@ export default function NavMain() {
 					<div className="nav-bottom__links">
 						<ul className="nav-links">
 							<li>
-								<Link href="/">Who We Are</Link>
+								<Link href="/aboutus">Who We Are</Link>
 							</li>
 
 							<li>
-								<input
+								<Link href="/">What We Do</Link>
+								{/* <input
 									type="checkbox"
 									checked={one}
 									onChange={() => {}}
@@ -114,11 +122,12 @@ export default function NavMain() {
 											<Link href="/">Pricing</Link>
 										</li>
 									</ul>
-								</div>
+								</div> */}
 							</li>
 
 							<li>
-								<input
+								<Link href="/">Who We Help</Link>
+								{/* <input
 									type="checkbox"
 									checked={two}
 									onChange={() => {}}
@@ -157,7 +166,7 @@ export default function NavMain() {
 											</Link>
 										</li>
 									</ul>
-								</div>
+								</div> */}
 							</li>
 
 							<li>
