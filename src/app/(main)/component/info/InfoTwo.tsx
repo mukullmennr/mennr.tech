@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+import collabTeam from "@/../public/home/whychoseus.jpg";
+import arrrowDown from "@/../public/home/info-down.svg";
 
 export default function InfoTwo() {
 	return (
@@ -6,7 +9,8 @@ export default function InfoTwo() {
 			<div className="container">
 				<div className="info-child">
 					<div className="info-child__image">
-						<img src="/home/whychoseus.jpg" alt="collab team" />
+						{/* <img src="/home/whychoseus.jpg" alt="collab team" /> */}
+						<Image src={collabTeam} alt="collab team" />
 					</div>
 
 					<p>
@@ -16,9 +20,15 @@ export default function InfoTwo() {
 						following every step of the way.
 					</p>
 
-					<img
+					{/* <img
 						className="img-arrow"
 						src="/home/info-down.svg"
+						alt="arrow down"
+					/> */}
+
+					<Image
+						className="img-arrow"
+						src={arrrowDown}
 						alt="arrow down"
 					/>
 				</div>

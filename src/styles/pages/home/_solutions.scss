@@ -30,15 +30,32 @@
 		}
 	}
 
-	&-info {
-		p {
-			font-weight: 700;
-			font-size: clamp(1.12rem, 2vw, 2.25rem);
-			background-color: ab.$background3;
-			border-radius: 0.6em;
-			padding-block: 0.8em;
-			padding-inline: 1em;
+	&-pcard {
+		font-weight: 700;
+		font-size: clamp(1.12rem, 2vw, 2.25rem);
+		background-color: ab.$background3;
+		border-radius: 0.6em;
+		padding-block: 0.8em;
+		padding-inline: 1em;
+
+		width: 80%;
+		margin-inline: auto;
+		text-align: center;
+
+		@include ab.screen-40 {
+			width: 70%;
 		}
+	}
+
+	&-info {
+		// p {
+		// 	font-weight: 700;
+		// 	font-size: clamp(1.12rem, 2vw, 2.25rem);
+		// 	background-color: ab.$background3;
+		// 	border-radius: 0.6em;
+		// 	padding-block: 0.8em;
+		// 	padding-inline: 1em;
+		// }
 
 		.container {
 			display: grid;
@@ -55,11 +72,11 @@
 			}
 
 			p {
-				width: 80%;
-				margin-inline: auto;
+				// width: 80%;
+				// margin-inline: auto;
 
 				@include ab.screen-40 {
-					width: 70%;
+					// width: 70%;
 					margin-inline: auto 0;
 				}
 			}

@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+import collabTeam from "@/../public/home/whychoseus.jpg";
+import ArrowUp from "@/../public/home/info-up.svg";
 
 export default function InfoThree() {
 	return (
@@ -15,7 +18,8 @@ export default function InfoThree() {
 
 				<div className="info-child">
 					<div className="info-child__image">
-						<img src="/home/whychoseus.jpg" alt="collab team" />
+						{/* <img src="/home/whychoseus.jpg" alt="collab team" /> */}
+						<Image src={collabTeam} alt="collab team" />
 					</div>
 
 					<p>
@@ -29,7 +33,8 @@ export default function InfoThree() {
 				</div>
 
 				<div className="info-point">
-					<img src="/home/info-up.svg" alt="arrow up" />
+					{/* <img src="/home/info-up.svg" alt="arrow up" /> */}
+					<Image src={ArrowUp} alt="arrow up" />
 
 					<p>Find out why we are so meticulous</p>
 				</div>

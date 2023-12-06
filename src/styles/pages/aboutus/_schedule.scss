@@ -1,0 +1,76 @@
+@use "../../abstracts" as ab;
+
+.schedule {
+	.container {
+		// outline: 2px solid lightgreen;
+		padding-block: 3em;
+
+		@include ab.screen-64 {
+			display: flex;
+			gap: 2em;
+			flex-direction: row-reverse;
+		}
+	}
+
+	&-container {
+		// outline: 2px solid red;
+		// max-width: 50em;
+		margin-inline: auto;
+
+		@include ab.screen-64 {
+			width: 50em;
+		}
+	}
+	iframe {
+		margin: 0;
+		padding: 0;
+
+		overflow: hidden;
+		margin-inline: auto;
+	}
+
+	&-head {
+		position: relative;
+
+		@include ab.screen-64 {
+			width: 50%;
+		}
+
+		h3 {
+			font-size: clamp(1.5rem, 3vw, 2.5rem);
+			text-align: center;
+			margin-block-end: clamp(1.55rem, 2vw, 2.4rem);
+
+			@include ab.screen-64 {
+				// outline: 2px solid red;
+				margin: 0;
+				translate: 0 -1.5em;
+			}
+
+			@include ab.screen-80 {
+				padding-right: clamp(1em, 5vw, 5em);
+			}
+		}
+
+		img {
+			display: none;
+
+			@include ab.screen-64 {
+				display: block;
+				position: absolute;
+
+				width: clamp(18rem, 20vw, 26rem);
+				top: 1em;
+				// right: 1em;
+				// top: calc(90% + 1vw);
+			}
+
+			@include ab.screen-74 {
+				// width: clamp(10rem, 22vw, 26rem);
+				// right: clamp(1em, 5vw, 10rem);
+				// top: calc(100% + 1vw);
+				left: clamp(1em, 3vw, 5em);
+			}
+		}
+	}
+}

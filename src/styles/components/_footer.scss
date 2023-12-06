@@ -8,6 +8,7 @@
 
 	.container {
 		width: min(100%, 110rem);
+		position: relative;
 	}
 
 	&-container {
@@ -233,5 +234,28 @@
 				}
 			}
 		}
+	}
+}
+
+.footer-chipy {
+	// outline: 2px solid red;
+	position: absolute;
+	// bottom: calc(100% + 2em);
+	bottom: calc(100% + 2.5em);
+
+	@include ab.screen-54 {
+		bottom: calc(100% + 2.4em);
+	}
+
+	@include ab.screen-64 {
+		bottom: calc(100% + 2.3em);
+	}
+
+	@include ab.screen-80 {
+		bottom: calc(100% + 2.2em);
+	}
+
+	img {
+		width: clamp(3.42rem, 8vw, 6.92rem);
 	}
 }

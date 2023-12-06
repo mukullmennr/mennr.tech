@@ -9,11 +9,11 @@ export default function SolutionsInfo() {
 				<div className="solutions-info__item intro">
 					<Link href="/">Find a solution that fits your needs</Link>
 
-					<p>
+					<p className="solutions-pcard">
 						Think of us as your tech-savy cousin. Able to answer any
 						of your marketing questions.
 					</p>
-					<p>
+					<p className="solutions-pcard">
 						And just like your cousin, you can call us at anytime
 						and we&apos;ll be happy to help with anything!
 					</p>
@@ -30,11 +30,11 @@ export default function SolutionsInfo() {
 				</div>
 
 				<div className="solutions-info__item guide">
-					<p>
+					<p className="solutions-pcard">
 						And for those who want to learn more about what exactly
 						we do.
 					</p>
-					<p>
+					<p className="solutions-pcard">
 						Checkout our marketing services pages where we explain
 						everything from Paid Ads to Social Media Management with
 						no jargon.

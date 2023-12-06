@@ -1,5 +1,7 @@
 import OurCertifications from "@/components/Certifications/OurCertifications";
 import React from "react";
+import Image from "next/image";
+import whyChoseUs from "@/../public/home/whychoseus.jpg";
 
 export default function WhyChoseUs() {
 	return (
@@ -18,7 +20,8 @@ export default function WhyChoseUs() {
 					</OurCertifications>
 
 					<div className="whychoseus-container__image">
-						<img src="/home/whychoseus.jpg" alt="Why Choose Us" />
+						{/* <img src="/home/whychoseus.jpg" alt="Why Choose Us" /> */}
+						<Image src={whyChoseUs} alt="Why Choose Us" />
 
 						<div className="whychoseus-container__image-more">
 							<img src="/home/down.svg" alt="Down arrow" />

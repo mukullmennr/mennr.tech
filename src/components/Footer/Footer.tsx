@@ -12,10 +12,20 @@ import {
 import { socials } from "@/data/social";
 import BlogForm from "./BlogForm";
 
+import Image from "next/image";
+import MennrLogo from "@/../public/logo.svg";
+
 export default function Footer() {
 	return (
 		<footer className="footer">
 			<div className="container">
+				<div className="footer-chipy">
+					<img
+						src="/common/chipy/chipy-sitting.svg"
+						alt="chippy sitting"
+					/>
+				</div>
+
 				<div className="footer-container">
 					<div className="footer-container__item link-grid">
 						<div className="link-grid__item">
@@ -153,7 +163,8 @@ export default function Footer() {
 					</div>
 
 					<div className="footer-container__item copyright">
-						<img src="/logo.svg" alt="mennr" />
+						{/* <img src="/logo.svg" alt="mennr" /> */}
+						<Image src={MennrLogo} alt="Mennr" />
 
 						<p>
 							©2024 Mennr Inc. All rights reserved. Mennr and the

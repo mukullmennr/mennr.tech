@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { number } from "@/data/contact";
+import Image from "next/image";
+import MennrLogo from "@/../public/logo.svg";
 
 export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
@@ -85,7 +87,8 @@ export default function NavMain() {
 
 					<div className="nav-bottom__logo">
 						<Link href="/">
-							<img src="/logo.svg" alt="logo" />
+							{/* <img src="/logo.svg" alt="logo" /> */}
+							<Image src={MennrLogo} alt="Mennr" />
 						</Link>
 					</div>
 

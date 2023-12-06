@@ -3,7 +3,10 @@
 import React, { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel, { EmblaCarouselType } from "embla-carousel-react";
 import CarouselDots from "./CarouselDots";
-import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
+import GooglePartner from "@/../public/common/googlepartner.png";
+import Hubspot from "@/../public/common/hubspot.png";
+import Yext from "@/../public/common/yext.png";
 
 interface OurCertificationsProps {
 	children: React.ReactNode; // heading for component
@@ -71,18 +74,24 @@ export default function OurCertifications({
 					>
 						<div className="embla__container">
 							<div className="embla__slide">
-								<img
+								{/* <img
 									src="/common/googlepartner.png"
+									alt="Google Partner"
+								/> */}
+								<Image
+									src={GooglePartner}
 									alt="Google Partner"
 								/>
 							</div>
 
 							<div className="embla__slide">
-								<img src="/common/hubspot.png" alt="Hubspot" />
+								{/* <img src="/common/hubspot.png" alt="Hubspot" /> */}
+								<Image src={Hubspot} alt="Hubspot" />
 							</div>
 
 							<div className="embla__slide">
-								<img src="/common/yext.png" alt="Yext" />
+								{/* <img src="/common/yext.png" alt="Yext" /> */}
+								<Image src={Yext} alt="Yext" />
 							</div>
 						</div>
 					</div>

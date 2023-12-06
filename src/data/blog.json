@@ -1,0 +1,129 @@
+// res.id
+// res.fields.heading
+// res.fields.humanWritten
+// res.text.content(array)
+// res.text.content.map((item) => {
+// let nodeType = item.nodeType;
+
+// if(nodeType === "paragraph") {
+//     <p>{item.content.value}</p>
+// return;
+// }
+
+// if(nodeType === "embedded-asset-block")
+
+// })
+
+{
+	"metadata": {
+		"tags": []
+	},
+	"sys": {
+		"space": {
+			"sys": {
+				"type": "Link",
+				"linkType": "Space",
+				"id": "wws8l437wvmt"
+			}
+		},
+		"id": "5CJJ3tSdkuCzDiuGlymctm",
+		"type": "Entry",
+		"createdAt": "2023-12-06T08:25:40.038Z",
+		"updatedAt": "2023-12-06T08:25:40.038Z",
+		"environment": {
+			"sys": {
+				"id": "master",
+				"type": "Link",
+				"linkType": "Environment"
+			}
+		},
+		"revision": 1,
+		"contentType": {
+			"sys": {
+				"type": "Link",
+				"linkType": "ContentType",
+				"id": "blog"
+			}
+		},
+		"locale": "en-US"
+	},
+	"fields": {
+		"image": {
+			"sys": {
+				"type": "Link",
+				"linkType": "Asset",
+				"id": "47h9Go2M7smhZXxRHSivXB"
+			}
+		},
+		"heading": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"text": {
+			"data": {},
+			"content": [
+				{
+					"data": {},
+					"content": [
+						{
+							"data": {},
+							"marks": [],
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit \nmauris massa. Nulla pulvinar suscipit gravida. Fusce vitae convallis \nante. Etiam lacinia in metus non accumsan. Phasellus orci tortor, \ncondimentum non purus eget, lobortis varius lectus. Suspendisse \nelementum ligula in elementum dapibus. Donec ut luctus ipsum. Praesent \nvolutpat elit nec diam lobortis, non cursus massa tempus. Vestibulum \npharetra ligula eget arcu laoreet aliquet. Sed molestie metus eros, et \nfaucibus dolor efficitur at. Quisque venenatis pulvinar ex ac fermentum.\n Proin tincidunt pharetra facilisis. Duis felis dolor, volutpat sit amet\n nunc sit amet, malesuada interdum augue. Ut sit amet erat ac mauris \nmollis suscipit id sit amet est. Fusce ut sapien a mauris condimentum \nrutrum aliquet sit amet lacus.Integer elementum, magna sodales sollicitudin efficitur, ipsum dui ",
+							"nodeType": "text"
+						}
+					],
+					"nodeType": "paragraph"
+				},
+				{
+					"data": {
+						"target": {
+							"sys": {
+								"id": "47h9Go2M7smhZXxRHSivXB",
+								"type": "Link",
+								"linkType": "Asset"
+							}
+						}
+					},
+					"content": [],
+					"nodeType": "embedded-asset-block"
+				},
+				{
+					"data": {},
+					"content": [
+						{
+							"data": {},
+							"marks": [],
+							"value": "\neuismod dolor, eget pharetra nibh tellus vitae sem. Phasellus vitae \nsollicitudin turpis, eu porta lacus. Aenean mattis nunc vitae \nsollicitudin tempus. Quisque enim nunc, blandit ac ullamcorper non, \npretium quis enim. Fusce felis nunc, aliquet sit amet libero eget, \nfinibus efficitur massa. Duis lacinia justo finibus sodales hendrerit. \nSuspendisse potenti. Integer at ornare tortor, ut eleifend purus.Nunc bibendum diam in enim dapibus auctor. Pellentesque convallis dictum\n gravida. Donec id erat a erat lacinia tincidunt. Sed tristique, ligula \nnec malesuada sodales, metus orci lobortis elit, varius convallis nulla \nenim vel quam. Quisque dapibus eros arcu, id tincidunt lacus pharetra \nut. Suspendisse ut dignissim tellus. Nam rutrum imperdiet blandit. \nMaecenas nec euismod neque. Praesent lacinia ultricies leo, non tempus \naugue interdum sed. Morbi id metus porta, viverra mi vel, euismod \nlectus. Curabitur ullamcorper tortor vel molestie egestas. Curabitur \nornare lectus a convallis aliquet.Pellentesque fringilla felis tristique ipsum bibendum, eget ornare dui ",
+							"nodeType": "text"
+						}
+					],
+					"nodeType": "paragraph"
+				},
+				{
+					"data": {
+						"target": {
+							"sys": {
+								"id": "7G25WCaqRyi9WGu6Q4OaCh",
+								"type": "Link",
+								"linkType": "Asset"
+							}
+						}
+					},
+					"content": [],
+					"nodeType": "embedded-asset-block"
+				},
+				{
+					"data": {},
+					"content": [
+						{
+							"data": {},
+							"marks": [],
+							"value": "\naliquet. Morbi id porttitor arcu, sit amet mattis tellus. Nunc ut ex \nnisl. Etiam eu ligula ut urna auctor pulvinar at sed ligula. Integer eu \ncongue lectus. Maecenas et auctor nulla, ac pellentesque nulla. Vivamus \nsemper nec eros vel volutpat. Aliquam at feugiat augue, a malesuada \naugue. Donec faucibus lorem sed erat aliquet, sit amet euismod justo \nblandit. Suspendisse potenti. Quisque commodo sodales est et euismod. \nAenean tempus interdum quam viverra bibendum.Fusce quis mauris nisi. Nunc tristique eget ligula in faucibus. Nam \nblandit eget risus et euismod. Mauris non feugiat augue. Vivamus in leo \nnec neque dictum luctus. Nullam maximus pellentesque enim, elementum \naccumsan mauris tempor eu. Quisque hendrerit leo ac blandit egestas. \nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere\n cubilia curae; Mauris placerat tempus tortor, nec rutrum libero tempus \nsit amet. Integer dictum cursus pretium. Suspendisse imperdiet tortor \nvitae nulla auctor ultrices.",
+							"nodeType": "text"
+						}
+					],
+					"nodeType": "paragraph"
+				}
+			],
+			"nodeType": "document"
+		},
+		"humanWritten": false
+	}
+}
