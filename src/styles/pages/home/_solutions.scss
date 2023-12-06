@@ -4,6 +4,21 @@
 	// outline: 2px solid coral;
 	padding-block: 1.5em;
 
+	.chipy {
+		position: absolute;
+		width: clamp(5rem, 10vw, 9rem);
+		display: none;
+		bottom: calc(100% - 0.7rem);
+
+		@include ab.screen-40 {
+			display: block;
+		}
+
+		@include ab.screen-64 {
+			bottom: calc(100% - 0.9rem);
+		}
+	}
+
 	a {
 		--bg: #{ab.$accent1};
 		--text: #{ab.$white};
@@ -59,7 +74,7 @@
 
 		.container {
 			display: grid;
-			gap: 2em;
+			gap: 3.62em;
 		}
 
 		.intro {
@@ -74,10 +89,16 @@
 			p {
 				// width: 80%;
 				// margin-inline: auto;
+				position: relative;
 
 				@include ab.screen-40 {
 					// width: 70%;
 					margin-inline: auto 0;
+				}
+
+				img {
+					bottom: calc(100% - 0.35rem);
+					right: 1rem;
 				}
 			}
 
@@ -92,6 +113,7 @@
 		}
 
 		.card {
+			position: relative;
 			background-color: ab.$accent1;
 			border-radius: 0.6em;
 			padding: clamp(1.92rem, 2vw, 3.2rem);
@@ -148,18 +170,28 @@
 
 			:first-child {
 				margin-block: 0 3.57rem;
+
+				@include ab.screen-54 {
+					width: 110%;
+				}
 			}
 
 			@include ab.screen-40 {
+				display: flex;
+				flex-direction: row-reverse;
+				gap: clamp(2em, 2.5vw, 4em);
+
 				p {
-					width: 80%;
 					margin-inline: 0;
 					position: relative;
 				}
 
 				:first-child {
-					width: 40%;
-					margin-inline: auto 0;
+					margin-block-end: auto;
+				}
+
+				:nth-child(2) {
+					margin-block-start: 2.36rem;
 				}
 			}
 
@@ -177,13 +209,17 @@
 
 				&.arrow-pc {
 					display: none;
-					top: 0;
-					right: 0;
-					translate: 4em -1.5em;
+					top: 100%;
+					right: 1em;
+					// translate: 4em -1.5em;
 
 					@include ab.screen-40 {
 						display: block;
-						width: 7em;
+						width: 6em;
+					}
+
+					@include ab.screen-80 {
+						width: 5em;
 					}
 				}
 			}

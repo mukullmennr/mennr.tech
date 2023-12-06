@@ -16,6 +16,11 @@ export default function SolutionsInfo() {
 					<p className="solutions-pcard">
 						And just like your cousin, you can call us at anytime
 						and we&apos;ll be happy to help with anything!
+						<img
+							src="/common/chipy/chipy-phone.svg"
+							alt="chipy sitting"
+							className="chipy"
+						/>
 					</p>
 				</div>
 
@@ -27,21 +32,27 @@ export default function SolutionsInfo() {
 					<div>
 						<a href={`tel:${number}`}>Contact Us!</a>
 					</div>
+
+					<img
+						src="/common/chipy/chipy-sitting.svg"
+						alt="chipy sitting"
+						className="chipy"
+					/>
 				</div>
 
 				<div className="solutions-info__item guide">
 					<p className="solutions-pcard">
 						And for those who want to learn more about what exactly
 						we do.
+						<img
+							className="arrow-pc"
+							src="/home/solutions/solutions-down-pc.svg"
+						/>
 					</p>
 					<p className="solutions-pcard">
 						Checkout our marketing services pages where we explain
 						everything from Paid Ads to Social Media Management with
 						no jargon.
-						<img
-							className="arrow-pc"
-							src="/home/solutions/solutions-down-pc.svg"
-						/>
 					</p>
 
 					<img
