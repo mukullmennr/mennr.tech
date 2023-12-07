@@ -1,8 +1,8 @@
 @use "../../abstracts" as ab;
 
-.aboutus-solutions {
+.whoweare-solutions {
 	padding-block: clamp(3.07rem, 8vw, 7.52rem) 3rem;
-	background-image: url("../../../../public/home/aboutus/aboutus-solutions-flow-mobile.svg");
+	background-image: url("../../../../public/home/whoweare/whoweare-solutions-flow-mobile.svg");
 	background-repeat: no-repeat;
 	background-position: center calc(50% - 1em);
 
@@ -30,7 +30,7 @@
 	}
 
 	@include ab.screen-40 {
-		background-image: url("../../../../public/home/aboutus/aboutus-solutions-flow-pc.svg");
+		background-image: url("../../../../public/home/whoweare/whoweare-solutions-flow-pc.svg");
 		background-size: 40%;
 		background-position: center;
 

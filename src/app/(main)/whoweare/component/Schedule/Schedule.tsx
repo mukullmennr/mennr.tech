@@ -7,7 +7,7 @@ export default function Schedule() {
 				<div className="schedule-head">
 					<h3>Get to know us more!</h3>
 
-					<img src="/home/aboutus/get-to-know-us.svg" />
+					<img src="/home/whoweare/get-to-know-us.svg" />
 				</div>
 
 				<div className="meetings-iframe-container schedule-container">

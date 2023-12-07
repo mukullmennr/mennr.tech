@@ -95,7 +95,7 @@ export default function NavMain() {
 					<div className="nav-bottom__links">
 						<ul className="nav-links">
 							<li>
-								<Link href="/aboutus">Who We Are</Link>
+								<Link href="/whoweare">Who We Are</Link>
 							</li>
 
 							<li>

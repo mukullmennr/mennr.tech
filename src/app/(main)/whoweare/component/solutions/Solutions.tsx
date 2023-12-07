@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Solutions() {
 	return (
-		<div className="solutions aboutus-solutions">
+		<div className="solutions whoweare-solutions">
 			<div className="container">
 				<p className="solutions-pcard">
 					As a full-service digital marketing firm, Mennr works with

@@ -33,7 +33,7 @@ export default function Footer() {
 
 							<ul>
 								<li>
-									<Link href="/aboutus">Who we are</Link>
+									<Link href="/whoweare">Who we are</Link>
 								</li>
 								<li>
 									<Link href="/">What we do</Link>
