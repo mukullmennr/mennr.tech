@@ -21,7 +21,7 @@ export const services = {
 	metaAds: "/",
 	googleAds: "/",
 	reviewManagement: "/",
-	websiteDesignDevelopment: "/",
+	websiteDesignDevelopment: "/whatwedo/websitedesignanddevelopment",
 	printAds: "/",
 	googleMyBusiness: "/",
 	reputationManagement: "/",
