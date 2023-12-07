@@ -9,6 +9,7 @@ import { faAngleDown, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { number } from "@/data/contact";
 import Image from "next/image";
 import MennrLogo from "@/../public/logo.svg";
+import { links } from "@/data/navLinks";
 
 export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
@@ -95,11 +96,11 @@ export default function NavMain() {
 					<div className="nav-bottom__links">
 						<ul className="nav-links">
 							<li>
-								<Link href="/whoweare">Who We Are</Link>
+								<Link href={links.whoweare}>Who We Are</Link>
 							</li>
 
 							<li>
-								<Link href="/">What We Do</Link>
+								<Link href={links.whatwedo}>What We Do</Link>
 								{/* <input
 									type="checkbox"
 									checked={one}
@@ -129,7 +130,7 @@ export default function NavMain() {
 							</li>
 
 							<li>
-								<Link href="/">Who We Help</Link>
+								<Link href={links.whowehelp}>Who We Help</Link>
 								{/* <input
 									type="checkbox"
 									checked={two}
@@ -238,7 +239,7 @@ export default function NavMain() {
 										</ul>
 									</div>
 								</> */}
-								<Link href="/">Solutions</Link>
+								<Link href={links.solutions}>Solutions</Link>
 							</li>
 
 							{/* <li>
@@ -290,7 +291,7 @@ export default function NavMain() {
 							</li> */}
 
 							<li>
-								<Link href="/">Blog</Link>
+								<Link href={links.blog}>Blog</Link>
 							</li>
 
 							{/* <li className="hidden-large link-button">

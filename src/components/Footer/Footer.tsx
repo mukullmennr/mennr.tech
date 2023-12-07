@@ -15,6 +15,8 @@ import BlogForm from "./BlogForm";
 import Image from "next/image";
 import MennrLogo from "@/../public/logo.svg";
 
+import { links, industries, services } from "@/data/navLinks";
+
 export default function Footer() {
 	return (
 		<footer className="footer">
@@ -33,19 +35,27 @@ export default function Footer() {
 
 							<ul>
 								<li>
-									<Link href="/whoweare">Who we are</Link>
+									<Link href={links.whoweare}>
+										Who we are
+									</Link>
 								</li>
 								<li>
-									<Link href="/">What we do</Link>
+									<Link href={links.whatwedo}>
+										What we do
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Who we help</Link>
+									<Link href={links.whowehelp}>
+										Who we help
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Solutions</Link>
+									<Link href={links.solutions}>
+										Solutions
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Blog</Link>
+									<Link href={links.solutions}>Blog</Link>
 								</li>
 							</ul>
 						</div>
@@ -54,23 +64,39 @@ export default function Footer() {
 							<h3 className="list-head">Industries</h3>
 							<ul>
 								<li>
-									<Link href="/">Automotive</Link>
+									<Link href={industries.automotive}>
+										Automotive
+									</Link>
 								</li>
 								<li>
-									<Link href="/">General Contractors</Link>
+									<Link
+										href={
+											industries.skilledTradesBusinesses
+										}
+									>
+										Skilled Trades Businesses
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Personal Care</Link>
+									<Link href={industries.personalCare}>
+										Personal Care
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Real Estate</Link>
+									<Link href={industries.realEstate}>
+										Real Estate
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Landscaping Services</Link>
+									<Link href={industries.landscapingServices}>
+										Landscaping Services
+									</Link>
 								</li>
 
 								<li>
-									<Link href="/">Other Small Business</Link>
+									<Link href={industries.otherSmallBusiness}>
+										Other Small Business
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -80,46 +106,64 @@ export default function Footer() {
 
 							<ul className="services-links">
 								<li>
-									<Link href="/">SEO</Link>
+									<Link href={services.seo}>SEO</Link>
 								</li>
 								<li>
-									<Link href="/">
+									<Link href={services.socialMediaManagement}>
 										Social Media Management
 									</Link>
 								</li>
 								<li>
-									<Link href="/">Facebook Ads</Link>
+									<Link href={services.metaAds}>
+										Meta Ads
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Google Ads</Link>
+									<Link href={services.googleAds}>
+										Google Ads
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Review Management</Link>
+									<Link href={services.reviewManagement}>
+										Review Management
+									</Link>
 								</li>
 
 								<li>
-									<Link href="/">
+									<Link
+										href={services.websiteDesignDevelopment}
+									>
 										Website Design & Development
 									</Link>
 								</li>
 
 								<li>
-									<Link href="/">Display Advertisement</Link>
+									<Link href={services.printAds}>
+										Print Ads
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Google My Business</Link>
+									<Link href={services.googleMyBusiness}>
+										Google My Business
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Reputation Management</Link>
+									<Link href={services.reputationManagement}>
+										Reputation Management
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Business Listings</Link>
+									<Link href={services.businessListings}>
+										Business Listings
+									</Link>
 								</li>
 								<li>
-									<Link href="/">Waze Ads</Link>
+									<Link href={services.mapads}>Map Ads</Link>
 								</li>
 								<li>
-									<Link href="/">Strategic Planning</Link>
+									<Link href={services.strategicPlanning}>
+										Strategic Planning
+									</Link>
 								</li>
 							</ul>
 						</div>
