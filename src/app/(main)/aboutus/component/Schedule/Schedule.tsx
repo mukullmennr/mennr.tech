@@ -13,7 +13,7 @@ export default function Schedule() {
 				<div className="meetings-iframe-container schedule-container">
 					<iframe
 						src="https://meetings.hubspot.com/rohan90?embed=true"
-						// frameBorder="0"
+						frameBorder="0"
 					></iframe>
 				</div>
 			</div>
