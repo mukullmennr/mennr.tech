@@ -1,8 +1,21 @@
-@use "../../../abstracts" as ab;
+@use "../../abstracts" as ab;
 
 .comparison {
 	background-color: ab.$background7;
 	padding-block: 1.28rem 5.35rem;
+	position: relative;
+	margin-block: 9em clamp(1.64rem, 3vw, 3.81rem);
+
+	@include ab.screen-40 {
+		margin-block-start: 5em;
+	}
+
+	> img {
+		position: absolute;
+		bottom: calc(100% - 1.5em);
+		left: 50%;
+		translate: -50%;
+	}
 
 	.container {
 		width: min(90%, 91.5rem);

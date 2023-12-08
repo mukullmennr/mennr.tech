@@ -9,6 +9,13 @@ export const guide = [
 	},
 ];
 
+export const comparison = {
+	heading: "Well thought out design vs poorly thought out design",
+	correct:
+		"A bagel shop opens a new online storefront so customers can pre-order instead of waiting in line. The bakery places a button to reach the menu at the top of their website with clear instructions on how to pre order a meal. The customer orders through the website and is in and out of the store under two minutes.",
+	wrong: "A bagel shop opens a new online storefront so customers can pre-order instead of waiting in line. The bakery doesn’t put the menu button in an easy to find place, and has no instruction for ordering. The customer instead calls the bagel shop to order, causing more congestion at the register.",
+};
+
 export const faq = [
 	{
 		question: "Why is Home Services marketing important?",
@@ -27,3 +34,55 @@ export const faq = [
 		answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
 	},
 ];
+
+export const steps = {
+	heading:
+		"Now that you have an idea of what goes into creating a website that adds value to your small business, try it for yourself...",
+	steps: [
+		"Determine what the intention behind your website will be",
+		"Choose a platform to build your website on",
+		"Find a domain name and hosting provider",
+		"Find a website template or make a custom design with a UI design tool",
+		"Create meaningful website content relevant to your business",
+		"Setup Google Analytics to track website visitor behavior ",
+		"Make your website live and submit it to Google for indexing along with other SEO tasks",
+		"Regularly update content relevant to promotions and keep up on website maintenance",
+	],
+	last: "Or meet with one of our Google Certified marketing specialists and let us take care of everything for you!",
+};
+
+export const info = {
+	heading: "Website Design Best Practices for Small Businesses",
+	info: [
+		[
+			{
+				head: "Understand Your Audience",
+				text: "Know your customers wants and needs. Your website design should appeal to them, know what they are on your website for and give it to them.",
+			},
+			{
+				head: "Represent Yourself Consistently",
+				text: "There’s nothing worse than a website that has no resemblance of your brand colors, logo, and personality. Maintaining consistency across your branding builds recognition and trust.",
+			},
+		],
+		[
+			{
+				head: "Put Yourself in the Customers Shoes",
+				text: "A well laid-out website can mean the difference between new business or lost business. If a potential customer can’t get in contact you, that’s a problem which needs to be corrected ASAP.",
+			},
+			{
+				head: "Don’t Forget About Phones",
+				text: "Nowadays when someone needs something they take their phone out and Google it. Making sure the mobile design of your website is accessible guarentees that new business can find you on their mobile devices, where your customers are search for you most.",
+			},
+		],
+		[
+			{
+				head: "Create Content Relevant to Your Customers",
+				text: "Google uses AI to scan websites and read the content within those websites. If Google determines the content on your website is relevant to your business and helpful to your customers, Google rewards your website by recommending your business higher in Google Search. This means you can reach more customers without spending money on ads.",
+			},
+			{
+				head: "Don’t Force a Call-to- Action",
+				text: "Call-to-actions (CTAs) are a fancy word for actions you want the customer visiting your website to take, whether that's booking an appointment or ordering food. Strategically placing these CTAs throughout a website is critical to converting a website visitor into a potential customer.",
+			},
+		],
+	],
+};

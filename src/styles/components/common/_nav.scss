@@ -1,4 +1,4 @@
-@use "../abstracts" as ab;
+@use "../../abstracts" as ab;
 
 .nav-upper {
 	background-color: ab.$background1;
@@ -85,7 +85,7 @@
 	color: ab.$text2;
 	padding-block: 1em;
 	background-color: ab.$background1;
-	z-index: 2;
+	z-index: 3;
 
 	transition: translate 300ms;
 

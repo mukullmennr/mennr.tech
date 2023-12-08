@@ -1,16 +1,26 @@
 import React from "react";
 import Main from "./component/main/Main";
-import Guide from "./component/guide/Guide";
-import Comparison from "./component/comparison/Comparison";
-import { faq } from "@/data/services/websitedesignanddevelopment/data";
-import FAQ from "@/app/(main)/component/ourinfo/FAQ";
+import Guide from "@/components/Guide/Guide";
+import Comparison from "@/components/Comparison/Comparison";
+import {
+	faq,
+	steps,
+	comparison,
+	guide,
+	info,
+} from "@/data/services/websitedesignanddevelopment/data";
+import FAQ from "@/components/FAQ/FAQ";
+import Steps from "@/components/Steps/Steps";
+import Info from "@/components/Info/Info";
 
 export default function page() {
 	return (
 		<>
 			<Main />
-			<Guide />
-			<Comparison />
+			<Guide data={guide} />
+			<Comparison data={comparison} />
+			<Info data={info} />
+			<Steps data={steps} isServices={true} classname="webdev" />
 			<FAQ ques={faq}>Home Services Business Marketing FAQs</FAQ>
 		</>
 	);

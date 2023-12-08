@@ -11,20 +11,6 @@
 		}
 	}
 
-	&-container {
-		margin-inline: auto;
-		margin-block-end: 5em;
-
-		@include ab.screen-64 {
-			width: 50em;
-		}
-		iframe {
-			width: 100%;
-			height: 43.5rem;
-			border: none;
-		}
-	}
-
 	&-head {
 		position: relative;
 

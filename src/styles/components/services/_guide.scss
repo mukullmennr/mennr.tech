@@ -1,4 +1,4 @@
-@use "../../../abstracts" as ab;
+@use "../../abstracts" as ab;
 
 .guide {
 	padding-block: clamp(3.16rem, 2.6vw, 4.87rem) clamp(4.37rem, 3.5vw, 6.8rem);
@@ -29,7 +29,9 @@
 		gap: 1rem;
 
 		@include ab.screen-40 {
-			width: min(50%, 28em);
+			&.multiple {
+				width: min(50%, 28em);
+			}
 		}
 
 		&__heading,

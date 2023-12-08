@@ -53,3 +53,10 @@
 		@content;
 	}
 }
+
+// 1400
+@mixin screen-87 {
+	@media (min-width: 87.5em) {
+		@content;
+	}
+}

@@ -1,0 +1,177 @@
+@use "../../abstracts" as ab;
+
+.steps {
+	&-container {
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&.webdev {
+			background-image: url("../../../../public/common/steps/steps-services-webdev-mobile.svg");
+			background-position: center 10em;
+
+			@include ab.screen-40 {
+				background-image: url("../../../../public/common/steps/steps-services-webdev-pc.svg");
+				background-size: contain;
+				background-position: center 0em;
+			}
+
+			@include ab.screen-48 {
+				// background-position: center 8em;
+			}
+
+			@include ab.screen-51 {
+				// background-position: center 5em;
+			}
+		}
+
+		img {
+			position: absolute;
+			display: none;
+			z-index: 2;
+
+			@include ab.screen-54 {
+				display: block;
+				width: clamp(10em, 20vw, 15em);
+				right: clamp(1em, 2.5vw, 5em);
+			}
+
+			@include ab.screen-64 {
+				width: clamp(11em, 17vw, 15em);
+			}
+
+			@include ab.screen-74 {
+				right: 10%;
+			}
+
+			@include ab.screen-87 {
+				right: 20%;
+			}
+
+			@include ab.screen-96 {
+				right: clamp(25%, 28vw, 35%);
+			}
+		}
+	}
+
+	&-heading {
+		font-size: clamp(1.5rem, 2vw, 2.5rem);
+		text-align: center;
+		width: 80%;
+		margin-inline: auto;
+		margin-block-end: clamp(4.27rem, 5vw, 6.06rem);
+		background-color: ab.$white;
+
+		@include ab.screen-40 {
+			width: 90%;
+		}
+	}
+
+	&-item {
+		:nth-child(n + 2) {
+			margin-block-start: clamp(6.33rem, 8vw, 9.31rem);
+		}
+
+		p {
+			text-align: center;
+			width: 80%;
+			margin-inline: auto;
+			font-size: clamp(1.125rem, 1.4vw, 2rem);
+			background-color: ab.$white;
+
+			span {
+				display: block;
+			}
+
+			@include ab.screen-40 {
+				width: 40%;
+
+				span {
+					display: inline;
+				}
+			}
+		}
+
+		p:nth-child(odd) {
+			@include ab.screen-40 {
+				margin-inline: 0 auto;
+			}
+		}
+
+		p:nth-child(even) {
+			@include ab.screen-40 {
+				margin-inline: auto 0;
+			}
+		}
+
+		&.right {
+			p:nth-child(odd) {
+				@include ab.screen-40 {
+					margin-inline: auto 0;
+				}
+			}
+
+			p:nth-child(even) {
+				@include ab.screen-40 {
+					margin-inline: 0 auto;
+				}
+			}
+		}
+	}
+
+	&-subheading {
+		text-align: center;
+		width: 80%;
+		margin-inline: auto;
+
+		font-size: clamp(1.5rem, 1.6vw, 2rem);
+		margin-block: 4.6rem;
+		background-color: ab.$white;
+
+		@include ab.screen-40 {
+			width: 40%;
+			margin-inline: auto 0;
+			margin-block-end: 1em;
+		}
+	}
+
+	.calender-container {
+		position: relative;
+		z-index: 1;
+
+		@include ab.screen-54 {
+			margin-inline: 0;
+			width: calc(38em + 4vw);
+		}
+
+		@include ab.screen-64 {
+			width: 50em;
+		}
+	}
+
+	.chipy-parent {
+		position: relative;
+
+		@include ab.screen-54 {
+			margin-inline: 0;
+			width: calc(38em + 4vw);
+		}
+
+		@include ab.screen-64 {
+			width: 50em;
+		}
+
+		img {
+			position: absolute;
+			display: none;
+
+			@include ab.screen-54 {
+				display: block;
+				right: -8em;
+				bottom: 1.8em;
+
+				rotate: 30deg;
+			}
+		}
+	}
+}

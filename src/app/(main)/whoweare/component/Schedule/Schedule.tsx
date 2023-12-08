@@ -10,7 +10,7 @@ export default function Schedule() {
 					<img src="/home/whoweare/get-to-know-us.svg" />
 				</div>
 
-				<div className="meetings-iframe-container schedule-container">
+				<div className="calender-container">
 					<iframe
 						src="https://meetings.hubspot.com/rohan90?embed=true"
 						frameBorder="0"

@@ -71,15 +71,16 @@
 
 				.accordion-content {
 					margin-block-start: 1.3rem;
-					overflow: scroll;
+					overflow: hidden;
 
 					&[data-state="open"] {
-						animation: open 300ms cubic-bezier(0.87, 0, 0.13, 1);
-						animation-fill-mode: forwards;
+						animation: open 300ms ease;
+						// animation-fill-mode: forwards;
+						// max-height: 120px;
 					}
 					&[data-state="closed"] {
-						animation: close 300ms cubic-bezier(0.87, 0, 0.13, 1);
-						animation-fill-mode: forwards;
+						animation: close 300ms ease;
+						// animation-fill-mode: forwards;
 					}
 				}
 			}
@@ -89,18 +90,18 @@
 
 @keyframes open {
 	from {
-		height: 0;
+		max-height: 0;
 	}
 	to {
-		height: 120px;
+		max-height: 500px;
 	}
 }
 
 @keyframes close {
 	from {
-		height: 120px;
+		max-height: 500px;
 	}
 	to {
-		height: 0;
+		max-height: 0;
 	}
 }
