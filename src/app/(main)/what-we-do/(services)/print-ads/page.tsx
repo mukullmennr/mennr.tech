@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "./component/main/Main";
+import Main from "@/components/Main/Main";
 import Guide from "@/components/Guide/Guide";
 import Comparison from "@/components/Comparison/Comparison";
 import {
@@ -8,7 +8,8 @@ import {
 	comparison,
 	guide,
 	info,
-} from "@/data/services/websitedesignanddevelopment/data";
+	main,
+} from "@/data/services/print-ads/data";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Info from "@/components/Info/Info";
@@ -16,7 +17,7 @@ import Info from "@/components/Info/Info";
 export default function page() {
 	return (
 		<>
-			<Main />
+			<Main data={main} />
 			<Guide data={guide} />
 			<Comparison data={comparison} />
 			<Info data={info} />

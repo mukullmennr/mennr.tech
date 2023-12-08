@@ -1,7 +1,6 @@
 @use "../../abstracts" as ab;
 
 .solutions {
-	// outline: 2px solid coral;
 	padding-block: 1.5em;
 
 	.chipy {
@@ -243,6 +242,12 @@
 			overflow: hidden;
 			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+			// grid
+			// display: grid;
+			// grid-template-rows: subgrid;
+			// grid-row: span 4;
+			// gap: 0;
+
 			&-info {
 				padding-inline: 1.6em;
 				padding-block: 0.5em 1.6em;
@@ -251,7 +256,10 @@
 				text-align: center;
 
 				display: grid;
+				// grid-template-rows: subgrid;
+				// grid-row: span 4;
 				gap: 1.6em;
+				// gap: 0;
 
 				h3 {
 					font-size: clamp(0.9rem, 2vw, 1.9rem);

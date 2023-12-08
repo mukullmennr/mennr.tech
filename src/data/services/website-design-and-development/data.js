@@ -1,3 +1,8 @@
+export const main = {
+	heading: "The Role a Website Plays in Marketing For Small Businesses",
+	text: "Let’s be honest, the Digital Age isn’t coming, it’s here. Having a website is now a necessity for any business, serving as a digital storefront where the first impression is made with new customers. Below we will explore the basics of website design and development, how design can impact business growth, best practices in design, and at the end we will cover how you can design and build your website today.",
+};
+
 export const guide = [
 	{
 		heading: "What is Website Design?",

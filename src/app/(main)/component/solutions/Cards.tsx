@@ -18,7 +18,9 @@ export default function Cards({ image, title, text, link }: CardsProps) {
 			</div>
 
 			<div className="item-info">
-				<h3>{title}</h3>
+				<div>
+					<h3>{title}</h3>
+				</div>
 
 				<p>{text}</p>
 
