@@ -9,6 +9,7 @@ import {
 	guide,
 	info,
 	main,
+	breadcrumb,
 } from "@/data/services/social-media-management/data";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
@@ -17,12 +18,12 @@ import Info from "@/components/Info/Info";
 export default function page() {
 	return (
 		<>
-			<Main data={main} />
+			<Main data={main} breadcrumb={breadcrumb} />
 			<Guide data={guide} />
 			<Comparison data={comparison} />
 			<Info data={info} />
 			<Steps data={steps} isServices={true} classname="webdev" />
-			<FAQ ques={faq}>Home Services Business Marketing FAQs</FAQ>
+			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 		</>
 	);
 }
