@@ -234,7 +234,7 @@ export default function NavMain() {
 												</Link>
 											</li>
 											<li>
-												<Link href="/">Print Ads</Link>
+												<Link href="/">Direct Mail Ads</Link>
 											</li>
 										</ul>
 									</div>

@@ -10,7 +10,7 @@ import {
 	info,
 	main,
 	breadcrumb,
-} from "@/data/services/print-ads/data";
+} from "@/data/services/direct-mail-ads/data";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Info from "@/components/Info/Info";

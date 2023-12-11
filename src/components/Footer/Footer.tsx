@@ -139,7 +139,7 @@ export default function Footer() {
 
 								<li>
 									<Link href={services.printAds}>
-										Print Ads
+										Direct Mail Ads
 									</Link>
 								</li>
 								<li>

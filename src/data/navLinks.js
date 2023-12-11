@@ -22,7 +22,7 @@ export const services = {
 	googleAds: "/what-we-do/google-ads",
 	reviewManagement: "/what-we-do/review-management",
 	websiteDesignDevelopment: "/what-we-do/website-design-and-development",
-	printAds: "/what-we-do/print-ads",
+	printAds: "/what-we-do/direct-mail-ads",
 	googleMyBusiness: "/what-we-do/google-business-profile",
 	reputationManagement: "/what-we-do/reputation-management",
 	businessListings: "/what-we-do/business-listings",
