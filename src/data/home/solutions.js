@@ -45,7 +45,7 @@ export const solutions = [
 		link: "/",
 	},
 	{
-		heading: "Print Ads",
+		heading: "Direct Mail Ads",
 		text: "In the realm of online visibility, two primary means of reaching your target audience reign supreme: paid ads and organic listings...",
 		link: "/",
 	},

@@ -67,7 +67,7 @@ export const breadcrumb = {
 		text: "What We Do",
 		link: "/what-we-do",
 	},
-	our: "Print Ads",
+	our: "Direct Mail Ads",
 	prev: {
 		text: "Business Listings",
 		link: "/what-we-do/business-listings",

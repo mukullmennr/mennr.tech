@@ -69,8 +69,8 @@ export const breadcrumb = {
 	},
 	our: "Strategic Planning",
 	prev: {
-		text: "Print Ads",
-		link: "/what-we-do/print-ads",
+		text: "Direct Mail Ads",
+		link: "/what-we-do/direct-mail-ads",
 	},
 	next: {
 		text: "Website Design and Development",
