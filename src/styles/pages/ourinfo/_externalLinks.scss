@@ -1,0 +1,68 @@
+@use "../../abstracts" as ab;
+
+.externalLinks {
+	padding-block: clamp(4.75rem, 3vw, 2.94rem);
+
+	&-container {
+		border: 1px solid ab.$text1;
+		border-radius: 1em;
+
+		&__item {
+			border-bottom: 1px solid ab.$text1;
+			padding-inline: clamp(1.36rem, 3vw, 5.23rem);
+			padding-block: clamp(1.7rem, 3vw, 3.47rem);
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
+				background-color: ab.$white;
+				width: 1em;
+				height: clamp(1rem, 2.5vw, 2.5rem);
+				position: absolute;
+				left: -0.5rem;
+			}
+
+			&::after {
+				left: auto;
+				right: -0.5rem;
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+			p {
+				font-size: clamp(1.125rem, 2vw, 2rem);
+				font-weight: 500;
+				width: 70%;
+			}
+
+			a {
+				font-weight: 500;
+				font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+				color: ab.$white;
+				text-align: center;
+
+				border: 0.1em solid ab.$accent1;
+				border-radius: 1.5em;
+				background-color: ab.$accent1;
+
+				padding-inline: 1.2em;
+				padding-block: 0.2em;
+
+				text-decoration: none;
+				transition: background-color 300ms, color 300ms;
+
+				&:hover {
+					background-color: ab.$white;
+					color: ab.$accent1;
+				}
+			}
+		}
+	}
+}

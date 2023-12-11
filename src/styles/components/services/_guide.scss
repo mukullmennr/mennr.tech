@@ -1,0 +1,42 @@
+@use "../../abstracts" as ab;
+
+.guide {
+	padding-block: clamp(3.16rem, 2.6vw, 4.87rem) clamp(4.37rem, 3.5vw, 6.8rem);
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 2.29rem;
+		width: min(90%, 100rem);
+
+		@include ab.screen-40 {
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+	}
+
+	&-item {
+		text-align: center;
+		border-radius: 1.25rem;
+		box-shadow: 0px 4px 20px 2px rgba(231, 111, 81, 0.2);
+		padding-inline: clamp(1.21rem, 1.8vw, 2.2rem);
+		padding-block: clamp(1.61rem, 2vw, 2.65rem);
+
+		font-size: clamp(1rem, 1.4vw, 1.5rem);
+
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		@include ab.screen-40 {
+			&.multiple {
+				width: min(50%, 28em);
+			}
+		}
+
+		&__heading,
+		&__text {
+			font-size: clamp(1rem, 1.4vw, 1.5rem);
+		}
+	}
+}

@@ -1,17 +1,27 @@
-@mixin screen-50 {
-	@media (min-width: 50em) {
-		@content;
-	}
-}
+$white: #faf9f6;
 
-@mixin screen-70 {
-	@media (min-width: 70em) {
-		@content;
-	}
-}
+$background1: #1c3752;
+$background2: #333;
+$background3: #d1e5f7;
+$background4: #ebebeb;
+$background5: $white;
+$background6: #625349;
+$background7: #d1e5f7;
+$background8: #29c1661a;
+$background9: #f232031a;
+$background10: #55a7fa40;
 
-@mixin screen-40 {
-	@media (min-width: 40em) {
-		@content;
-	}
-}
+$text1: #333;
+$text2: #faf9f6;
+$text3: #1c3752;
+$text-placeholder: rgba(0, 0, 0, 0.6);
+$line: #00000033;
+
+$accent1: #e76f51;
+$accent2: #1c3752;
+
+$linkedin: #0077b5;
+$twitter: #1d9bf0;
+$instagram: #da426c;
+$facebook: #4867aa;
+$threads: #333333;

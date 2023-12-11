@@ -1,0 +1,339 @@
+@use "../../abstracts" as ab;
+
+.solutions {
+	padding-block: 1.5em;
+
+	.chipy {
+		position: absolute;
+		width: clamp(5rem, 10vw, 9rem);
+		display: none;
+		bottom: calc(100% - 0.7rem);
+
+		@include ab.screen-40 {
+			display: block;
+		}
+
+		@include ab.screen-64 {
+			bottom: calc(100% - 0.9rem);
+		}
+	}
+
+	a {
+		--bg: #{ab.$accent1};
+		--text: #{ab.$white};
+
+		background-color: var(--bg);
+		color: var(--text);
+		text-decoration-color: transparent;
+
+		transition: background-color 300ms, color 300ms,
+			text-decoration-color 300ms;
+
+		font-weight: 700;
+		padding-inline: 1em;
+		padding-block: 0.3em;
+		border: 0.15em solid ab.$accent1;
+		display: inline-block;
+		border-radius: 0.4em;
+
+		&:hover {
+			--bg: #{ab.$white};
+			--text: #{ab.$accent1};
+
+			text-decoration-color: var(--text);
+		}
+	}
+
+	&-pcard {
+		font-weight: 700;
+		font-size: clamp(1.12rem, 2vw, 2.25rem);
+		background-color: ab.$background3;
+		border-radius: 0.6em;
+		padding-block: 0.8em;
+		padding-inline: 1em;
+
+		width: 80%;
+		margin-inline: auto;
+		text-align: center;
+
+		@include ab.screen-40 {
+			width: 70%;
+		}
+	}
+
+	&-info {
+		// p {
+		// 	font-weight: 700;
+		// 	font-size: clamp(1.12rem, 2vw, 2.25rem);
+		// 	background-color: ab.$background3;
+		// 	border-radius: 0.6em;
+		// 	padding-block: 0.8em;
+		// 	padding-inline: 1em;
+		// }
+
+		.container {
+			display: grid;
+			gap: 3.62em;
+		}
+
+		.intro {
+			text-align: center;
+
+			a {
+				font-size: clamp(1.04rem, 1.6vw, 1.5rem);
+
+				display: inline-block;
+			}
+
+			p {
+				// width: 80%;
+				// margin-inline: auto;
+				position: relative;
+
+				@include ab.screen-40 {
+					// width: 70%;
+					margin-inline: auto 0;
+				}
+
+				img {
+					bottom: calc(100% - 0.35rem);
+					right: 1rem;
+				}
+			}
+
+			:nth-child(2) {
+				margin-block: clamp(2.8rem, 2.6vw, 4.4rem)
+					clamp(1.8rem, 2.6vw, 4.4rem);
+
+				@include ab.screen-40 {
+					margin-inline: 0 auto;
+				}
+			}
+		}
+
+		.card {
+			position: relative;
+			background-color: ab.$accent1;
+			border-radius: 0.6em;
+			padding: clamp(1.92rem, 2vw, 3.2rem);
+
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+
+			@include ab.screen-40 {
+				text-align: left;
+				flex-direction: row;
+			}
+
+			h3 {
+				font-size: clamp(1.9rem, 3vw, 3rem);
+				color: ab.$text2;
+
+				@include ab.screen-40 {
+					width: 65%;
+				}
+			}
+
+			div {
+				@include ab.screen-40 {
+					margin-inline-start: auto;
+					display: flex;
+					align-items: flex-end;
+				}
+			}
+
+			a {
+				--bg: #{ab.$white};
+				--text: #{ab.$accent1};
+
+				font-size: clamp(1.7rem, 2vw, 2rem);
+
+				@include ab.screen-40 {
+					font-size: clamp(1.1rem, 2vw, 2rem);
+				}
+
+				padding-inline: 1.4em;
+			}
+		}
+
+		.guide {
+			position: relative;
+
+			p {
+				width: 80%;
+				text-align: center;
+				margin-inline: auto;
+			}
+
+			:first-child {
+				margin-block: 0 3.57rem;
+
+				@include ab.screen-54 {
+					width: 110%;
+				}
+			}
+
+			@include ab.screen-40 {
+				display: flex;
+				flex-direction: row-reverse;
+				gap: clamp(2em, 2.5vw, 4em);
+
+				p {
+					margin-inline: 0;
+					position: relative;
+				}
+
+				:first-child {
+					margin-block-end: auto;
+				}
+
+				:nth-child(2) {
+					margin-block-start: 2.36rem;
+				}
+			}
+
+			img {
+				position: absolute;
+
+				&.arrow-mobile {
+					translate: 0 -3em;
+					right: 0;
+
+					@include ab.screen-40 {
+						display: none;
+					}
+				}
+
+				&.arrow-pc {
+					display: none;
+					top: 100%;
+					right: 1em;
+					// translate: 4em -1.5em;
+
+					@include ab.screen-40 {
+						display: block;
+						width: 6em;
+					}
+
+					@include ab.screen-80 {
+						width: 5em;
+					}
+				}
+			}
+		}
+	}
+
+	&-carousel {
+		margin-block: 2em 0;
+		padding-block: 2em;
+		background-image: linear-gradient(ab.$white 50%, ab.$background3 50%);
+
+		.container {
+			width: min(85%, 100rem);
+			margin-inline: auto;
+			position: relative;
+		}
+
+		.item {
+			background-color: ab.$background2;
+			border-radius: 0.8em;
+			overflow: hidden;
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+			// grid
+			// display: grid;
+			// grid-template-rows: subgrid;
+			// grid-row: span 4;
+			// gap: 0;
+
+			&-info {
+				padding-inline: 1.6em;
+				padding-block: 0.5em 1.6em;
+
+				color: ab.$white;
+				text-align: center;
+
+				display: grid;
+				// grid-template-rows: subgrid;
+				// grid-row: span 4;
+				gap: 1.6em;
+				// gap: 0;
+
+				h3 {
+					font-size: clamp(0.9rem, 2vw, 1.9rem);
+				}
+
+				p {
+					font-size: clamp(0.7rem, 1.3vw, 1.2rem);
+				}
+
+				a {
+					font-size: clamp(0.6rem, 1.1vw, 1.1rem);
+					color: ab.$text1;
+					background-color: ab.$white;
+					font-weight: 700;
+					text-decoration-color: transparent;
+					padding-inline: 3em;
+					padding-block: 0.6em;
+					display: inline-block;
+					border-radius: 2em;
+					border: 0.15em solid ab.$white;
+
+					transition: text-decoration-color 300ms;
+
+					&:hover {
+						text-decoration-color: ab.$text1;
+					}
+				}
+			}
+		}
+
+		button {
+			position: absolute;
+			top: 50%;
+
+			translate: 0 -50%;
+			left: -1em;
+
+			background-color: transparent;
+			border: none;
+
+			font-size: 1.6rem;
+			color: black;
+			cursor: pointer;
+
+			@include ab.screen-48 {
+				left: -2em;
+			}
+		}
+
+		.right {
+			right: -1em;
+			left: auto;
+
+			@include ab.screen-48 {
+				right: -2em;
+			}
+		}
+	}
+
+	&-services {
+		background-color: ab.$background3;
+		padding-block-end: 2em;
+		text-align: center;
+		box-shadow: 0 3em ab.$background3;
+
+		a {
+			font-size: clamp(1.04rem, 1.6vw, 1.5rem);
+			border-radius: 1.5em;
+			padding-inline: 2em;
+
+			&:hover {
+				--bg: #{ab.$background3};
+				text-decoration-color: transparent;
+			}
+		}
+	}
+}

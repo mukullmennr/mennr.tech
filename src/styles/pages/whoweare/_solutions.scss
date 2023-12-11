@@ -1,0 +1,55 @@
+@use "../../abstracts" as ab;
+
+.whoweare-solutions {
+	padding-block: clamp(3.07rem, 8vw, 7.52rem) 3rem;
+	background-image: url("../../../../public/home/whoweare/whoweare-solutions-flow-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: center calc(50% - 1em);
+
+	p {
+		position: relative;
+
+		img {
+			display: none;
+			position: absolute;
+			width: 5em;
+			bottom: calc(100% - 0.6em);
+
+			@include ab.screen-40 {
+				display: block;
+			}
+		}
+	}
+
+	p:nth-child(even) {
+		margin-block: clamp(3.73rem, 7vw, 7.22rem);
+
+		img {
+			right: 6em;
+		}
+	}
+
+	@include ab.screen-40 {
+		background-image: url("../../../../public/home/whoweare/whoweare-solutions-flow-pc.svg");
+		background-size: 40%;
+		background-position: center;
+
+		p:nth-child(odd) {
+			margin-inline: 0 auto;
+		}
+
+		p:nth-child(even) {
+			margin-inline: auto 0;
+		}
+	}
+
+	@include ab.screen-48 {
+		// background-size: 45%;
+		background-position: center calc(50% + 1em);
+	}
+
+	@include ab.screen-96 {
+		background-size: 35rem;
+		background-position: center center;
+	}
+}

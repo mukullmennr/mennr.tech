@@ -1,0 +1,45 @@
+@use "../../abstracts" as ab;
+
+.ourcertifications {
+	.embla {
+		overflow: hidden;
+
+		&__container {
+			display: flex;
+			gap: 1em;
+		}
+
+		img {
+			object-fit: contain;
+		}
+
+		&__slide {
+			flex: 0 0 100%;
+			min-width: 0;
+
+			@include ab.container-40 {
+				flex: 0 0 10rem;
+			}
+
+			@include ab.screen-96 {
+				@include ab.container-40 {
+					flex: 0 0 11rem;
+				}
+			}
+		}
+	}
+}
+
+.solutions-carousel {
+	.embla {
+		overflow: hidden;
+
+		.embla__container {
+			display: grid;
+			grid-auto-flow: column;
+			grid-auto-columns: min(100%, 25em);
+			// grid-template-rows: repeat(4, auto);
+			gap: 4em;
+		}
+	}
+}

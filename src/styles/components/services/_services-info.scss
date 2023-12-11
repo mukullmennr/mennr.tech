@@ -1,0 +1,84 @@
+@use "../../abstracts" as ab;
+
+.services-info {
+	margin-block-end: clamp(2.5rem, 4vw, 5.63rem);
+
+	.container {
+		width: min(90%, 91.5rem);
+	}
+
+	&__heading {
+		text-align: center;
+		font-size: clamp(1.5rem, 2vw, 2.5rem);
+
+		margin-block-end: clamp(1.89rem, 2vw, 4.19rem);
+	}
+
+	&__content {
+		display: grid;
+		gap: clamp(1.65rem, 3vw, 4.2rem);
+
+		.services-items {
+			text-align: center;
+
+			display: grid;
+
+			@include ab.screen-40 {
+				text-align: left;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto auto;
+				gap: 1em;
+			}
+
+			&__element:nth-child(2) {
+				display: none;
+				text-align: right;
+
+				@include ab.screen-40 {
+					display: grid;
+
+					div {
+						justify-content: flex-end;
+					}
+				}
+			}
+
+			&__element {
+				display: grid;
+				gap: 1em;
+
+				@include ab.screen-40 {
+					grid-template-rows: subgrid;
+					grid-row: span 2;
+				}
+
+				> div {
+					display: inline-flex;
+					align-items: flex-end;
+				}
+
+				&-head {
+					background-color: ab.$background10;
+
+					display: inline-block;
+					padding-inline: 1em;
+					padding-block: 0.2em;
+					border-radius: 0.6em;
+
+					margin-inline: auto;
+
+					font-size: clamp(1.125rem, 1.5vw, 2rem);
+					font-weight: 600;
+
+					@include ab.screen-40 {
+						margin-inline: 0;
+					}
+				}
+
+				&-text {
+					font-size: clamp(1.125rem, 1.4vw, 1.5rem);
+				}
+			}
+		}
+	}
+}

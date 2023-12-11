@@ -1,0 +1,53 @@
+@use "../../abstracts" as ab;
+
+.schedule {
+	.container {
+		padding-block: 3em;
+
+		@include ab.screen-64 {
+			display: flex;
+			gap: 2em;
+			flex-direction: row-reverse;
+		}
+	}
+
+	&-head {
+		position: relative;
+
+		@include ab.screen-64 {
+			width: 50%;
+		}
+
+		h3 {
+			font-size: clamp(1.5rem, 3vw, 2.5rem);
+			text-align: center;
+			margin-block-end: clamp(1.55rem, 2vw, 2.4rem);
+
+			@include ab.screen-64 {
+				// outline: 2px solid red;
+				margin: 0;
+				translate: 0 -1.5em;
+			}
+
+			@include ab.screen-80 {
+				padding-right: clamp(1em, 5vw, 5em);
+			}
+		}
+
+		img {
+			display: none;
+
+			@include ab.screen-64 {
+				display: block;
+				position: absolute;
+
+				width: clamp(18rem, 20vw, 26rem);
+				top: 1em;
+			}
+
+			@include ab.screen-74 {
+				left: clamp(1em, 3vw, 5em);
+			}
+		}
+	}
+}
