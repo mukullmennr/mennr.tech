@@ -97,13 +97,13 @@ export const breadcrumb = {
 		text: "What We Do",
 		link: "/what-we-do",
 	},
-	our: "Web Development & Designing ",
+	our: "Search Engine Optimization",
 	prev: {
-		text: "Google My Business",
-		link: "/what-we-do/google-business-profile",
+		text: "Website Design and Development",
+		link: "/what-we-do/website-design-and-development",
 	},
 	next: {
-		text: "Search Engine Optimization",
-		link: "/what-we-do/seo",
+		text: "Map Ads",
+		link: "/what-we-do/map-ads",
 	},
 };

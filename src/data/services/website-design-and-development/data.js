@@ -102,8 +102,8 @@ export const breadcrumb = {
 	},
 	our: "Web Development & Designing ",
 	prev: {
-		text: "Google My Business",
-		link: "/what-we-do/google-business-profile",
+		text: "Strategic Planning",
+		link: "/what-we-do/strategic-planning",
 	},
 	next: {
 		text: "Search Engine Optimization",
