@@ -3,51 +3,39 @@ export const breadcrumb = {
 		text: "Who We Help",
 		link: "/who-we-help",
 	},
-	our: "Skilled Trades Businesses",
+	our: "Other Small Businesses",
 };
 
 export const main = {
 	heading:
-		"We're the go-to company for Skilled Trades Businesses  looking to attract more business online",
+		"We're the go-to company for small businesses looking to attract more business online",
 	subIndustries: [
 		{
-			text: "Plumbers",
+			text: "Restaurants ",
 			link: "/",
 		},
 		{
-			text: "Painters",
+			text: "Outdoor Activities",
 			link: "/",
 		},
 		{
-			text: "Concrete & Paving ",
+			text: "Hotels",
 			link: "/",
 		},
 		{
-			text: "Contactors",
+			text: "Law Firms",
 			link: "/",
 		},
 		{
-			text: "Electricians",
+			text: "Tourism",
 			link: "/",
 		},
 		{
-			text: "HVAC",
-			link: "/",
-		},
-		{
-			text: "Cleaning Services",
-			link: "/",
-		},
-		{
-			text: "Roofers",
-			link: "/",
-		},
-		{
-			text: "Solar Installation",
+			text: "Retail Shops",
 			link: "/",
 		},
 	],
-	img: "/common/chipy/industries/chipy-skill-traded-business.svg",
+	img: "/common/chipy/industries/chipy-other-small-businesses.svg",
 };
 
 export const faq = {

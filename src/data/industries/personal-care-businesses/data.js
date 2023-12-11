@@ -3,51 +3,51 @@ export const breadcrumb = {
 		text: "Who We Help",
 		link: "/who-we-help",
 	},
-	our: "Skilled Trades Businesses",
+	our: "Personal Care Businesses",
 };
 
 export const main = {
 	heading:
-		"We're the go-to company for Skilled Trades Businesses  looking to attract more business online",
+		"We're the go-to company for personal care businesses looking to attract more business online",
 	subIndustries: [
 		{
-			text: "Plumbers",
+			text: "Hair Salons",
 			link: "/",
 		},
 		{
-			text: "Painters",
+			text: "Barbers",
 			link: "/",
 		},
 		{
-			text: "Concrete & Paving ",
+			text: "Nail Salons ",
 			link: "/",
 		},
 		{
-			text: "Contactors",
+			text: "Spas",
 			link: "/",
 		},
 		{
-			text: "Electricians",
+			text: "Estheticians",
 			link: "/",
 		},
 		{
-			text: "HVAC",
+			text: "Tanning Salons",
 			link: "/",
 		},
 		{
-			text: "Cleaning Services",
+			text: "Gyms",
 			link: "/",
 		},
 		{
-			text: "Roofers",
+			text: "Tattoo Shops",
 			link: "/",
 		},
 		{
-			text: "Solar Installation",
+			text: "Yoga Studios",
 			link: "/",
 		},
 	],
-	img: "/common/chipy/industries/chipy-skill-traded-business.svg",
+	img: "/common/chipy/industries/chipy-personal-care-businesses.svg",
 };
 
 export const faq = {

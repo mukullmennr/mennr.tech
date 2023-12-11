@@ -3,51 +3,47 @@ export const breadcrumb = {
 		text: "Who We Help",
 		link: "/who-we-help",
 	},
-	our: "Skilled Trades Businesses",
+	our: "Automotive Businesses ",
 };
 
 export const main = {
 	heading:
-		"We're the go-to company for Skilled Trades Businesses  looking to attract more business online",
+		"We're the go-to company for Automotive Businesses looking to attract more business online",
 	subIndustries: [
 		{
-			text: "Plumbers",
+			text: "Auto Body",
 			link: "/",
 		},
 		{
-			text: "Painters",
+			text: "Tire Shops",
 			link: "/",
 		},
 		{
-			text: "Concrete & Paving ",
+			text: "Tuners",
 			link: "/",
 		},
 		{
-			text: "Contactors",
+			text: "Diesel Shops",
 			link: "/",
 		},
 		{
-			text: "Electricians",
+			text: "Service Shops",
 			link: "/",
 		},
 		{
-			text: "HVAC",
+			text: "Community Auto Shops",
 			link: "/",
 		},
 		{
-			text: "Cleaning Services",
+			text: "Automotive Restorations",
 			link: "/",
 		},
 		{
-			text: "Roofers",
-			link: "/",
-		},
-		{
-			text: "Solar Installation",
+			text: "Carwashes",
 			link: "/",
 		},
 	],
-	img: "/common/chipy/industries/chipy-skill-traded-business.svg",
+	img: "/common/chipy/industries/chipy-automotive-businesses.svg",
 };
 
 export const faq = {

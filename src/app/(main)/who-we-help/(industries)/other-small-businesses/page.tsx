@@ -3,7 +3,7 @@ import {
 	breadcrumb,
 	faq,
 	main,
-} from "@/data/industries/skilled-trades-businesses/data";
+} from "@/data/industries/other-small-businesses/data";
 import FAQ from "@/components/FAQ/FAQ";
 import Main from "../../component/industries/main/Main";
 
