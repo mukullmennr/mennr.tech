@@ -5,7 +5,6 @@
 	color: ab.$text2;
 	background-color: ab.$background1;
 	border-radius: 0 0 1em 1em;
-	outline: 2px solid coral;
 
 	// background color
 	&::before {
@@ -32,6 +31,9 @@
 		flex-direction: column;
 		gap: 3em;
 
+		> div {
+			// outline: 2px solid lightgreen;
+		}
 		@include ab.screen-40 {
 			flex-direction: row;
 			gap: 1em;
@@ -95,6 +97,35 @@
 
 			width: clamp(15.682rem, 40cqw, 32.684rem);
 			height: clamp(18.9665rem, 50cqw, 39.529rem);
+		}
+	}
+
+	.sub-industries__certification {
+		margin-block-start: 1.36rem;
+
+		font-size: clamp(1.2rem, 2cqw, 1.5rem);
+
+		.sub-industries__images {
+			margin-block-start: 1rem;
+			display: flex;
+			gap: 3em;
+			width: min(45em, 100%);
+
+			img {
+				height: 100%;
+			}
+
+			> img {
+				max-width: 8rem;
+			}
+
+			> div > img {
+				width: 40cqw;
+			}
+
+			.google > img {
+				width: 55cqw;
+			}
 		}
 	}
 }

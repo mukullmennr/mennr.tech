@@ -11,6 +11,7 @@ export interface BreadCrumbContent {
 	our: string;
 	prev?: BreadCrumbItem;
 	next?: BreadCrumbItem;
+	industry?: BreadCrumbItem;
 }
 
 interface BreadcrumbProps {
@@ -24,6 +25,14 @@ export default function Breadcrumb({ data, classname }: BreadcrumbProps) {
 			<div className="breadcrumb-parent">
 				<Link href={data.home.link}>{data.home.text}</Link>
 				{" > "}
+				{data.industry && (
+					<>
+						<Link href={data.industry.link}>
+							{data.industry.text}
+						</Link>
+						{" > "}
+					</>
+				)}
 				<p>{data.our}</p>
 			</div>
 

@@ -40,7 +40,7 @@ export const main = {
 		},
 		{
 			text: "Pest Control",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/pest-control",
 		},
 		{
 			text: "Fence Installation",
