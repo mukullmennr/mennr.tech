@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: "Automotive Businesses ",
+	next:{
+		text:"Skilled Trades Businesses",
+		link:"/who-we-help/skilled-trades-businesses"
+	},
+	prev:{
+		text:"Other Small Businesses",
+		link:"/who-we-help/other-small-businesses"
+	}
 };
 
 export const main = {
@@ -12,35 +20,35 @@ export const main = {
 	subIndustries: [
 		{
 			text: "Auto Body",
-			link: "/",
+			link: "/who-we-help/automotive-business/auto-body",
 		},
 		{
 			text: "Tire Shops",
-			link: "/",
+			link: "/who-we-help/automotive-business/tire-shops",
 		},
 		{
 			text: "Tuners",
-			link: "/",
+			link: "/who-we-help/automotive-business/tuners",
 		},
 		{
 			text: "Diesel Shops",
-			link: "/",
+			link: "/who-we-help/automotive-business/diesel-shop",
 		},
 		{
 			text: "Service Shops",
-			link: "/",
+			link: "/who-we-help/automotive-business/service-shops",
 		},
 		{
 			text: "Community Auto Shops",
-			link: "/",
+			link: "/who-we-help/automotive-business/community-auto-shops",
 		},
 		{
 			text: "Automotive Restorations",
-			link: "/",
+			link: "/who-we-help/automotive-business/automotive-restorations",
 		},
 		{
 			text: "Carwashes",
-			link: "/",
+			link: "/who-we-help/automotive-business/carwashes",
 		},
 	],
 	img: "/common/chipy/industries/chipy-automotive-businesses.svg",
@@ -70,7 +78,7 @@ export const faq = {
 
 export const importance = {
 	heading:
-		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+		"Let’s cut to the chase, how does Mennr add value to Automotive businesses? ",
 	steps: [
 		"Let new customers find you through Google Search & Google Maps",
 		"Get return business with email & text promotions",
@@ -93,7 +101,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/Automotive-Businesses-1.svg",
+	"/industries/Automotive-Businesses-2.svg",
+	"/industries/Automotive-Businesses-3.svg",
 ];

@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: "Real Estate",
+	next:{
+		text:"Personal Care Businesses",
+		link:"/who-we-help/personal-care-businesses"
+	},
+	prev:{
+		text:"Skilled Trades Businesses",
+		link:"/who-we-help/skilled-trades-businesses"
+	}
 };
 
 export const main = {
@@ -54,7 +62,7 @@ export const faq = {
 
 export const importance = {
 	heading:
-		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+		"Let’s cut to the chase, how does Mennr add value to people in Real Estate?",
 	steps: [
 		"Let new customers find you through Google Search & Google Maps",
 		"Get return business with email & text promotions",
@@ -77,7 +85,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/real-estate-1.svg",
+	"/industries/real-estate-2.svg",
+	"/industries/real-estate-3.svg",
 ];
