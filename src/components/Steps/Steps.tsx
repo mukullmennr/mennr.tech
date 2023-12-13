@@ -1,3 +1,4 @@
+import { plusJakartaSans } from "@/app/layout";
 import React from "react";
 
 interface StepsData {
@@ -9,15 +10,22 @@ interface StepsData {
 interface StepsProps {
 	data: StepsData;
 	isServices: boolean;
-	classname: string;
+	classname?: string;
 }
 
 export default function Steps({ data, isServices, classname }: StepsProps) {
 	let even: boolean = data.steps.length % 2 === 0;
 
 	const stepItems = data.steps.map((step, index) => {
+		if (!isServices && index === 2) {
+			return (
+				<pre className={plusJakartaSans.className} key={index}>
+					{isServices && <span>{index + 1}.</span>} {step}
+				</pre>
+			);
+		}
 		return (
-			<p key={index}>
+			<p className={plusJakartaSans.className} key={index}>
 				{isServices && <span>{index + 1}.</span>} {step}
 			</p>
 		);
@@ -26,16 +34,26 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 	return (
 		<div className="steps">
 			<div className="container">
-				<div className={`steps-container ${classname}`}>
+				<div className={`steps-container ${classname} `}>
 					{data.heading && (
 						<h3 className="steps-heading">{data.heading}</h3>
 					)}
 
-					<div className={`steps-item ${even && "right"}`}>
+					<div
+						className={`steps-item ${even && "right"} ${
+							!isServices && "industries"
+						}`}
+					>
 						{stepItems}
 					</div>
 
-					<h4 className="steps-subheading">{data.last}</h4>
+					<h4
+						className={`steps-subheading ${
+							!isServices && "industries"
+						}`}
+					>
+						{data.last}
+					</h4>
 
 					<img
 						src="/common/calender/calender-point.svg"
