@@ -3,51 +3,51 @@ export const breadcrumb = {
 		text: "Who We Help",
 		link: "/who-we-help",
 	},
-	our: "Skilled Trades Businesses",
+	our: " Landscaping Businesses",
 };
 
 export const main = {
 	heading:
-		"We're the go-to company for Skilled Trades Businesses  looking to attract more business online",
+		"We're the go-to company for landscape businesses looking to attract more business online",
 	subIndustries: [
 		{
-			text: "Plumbers",
+			text: "Tree Removal",
 			link: "/",
 		},
 		{
-			text: "Painters",
+			text: "Lawn Maintenance",
 			link: "/",
 		},
 		{
-			text: "Concrete & Paving ",
+			text: "Turf Installation ",
 			link: "/",
 		},
 		{
-			text: "Contactors",
+			text: "Pool Installation",
 			link: "/",
 		},
 		{
-			text: "Electricians",
+			text: "Irrigation",
 			link: "/",
 		},
 		{
-			text: "HVAC",
+			text: "Snow Removal",
 			link: "/",
 		},
 		{
-			text: "Cleaning Services",
+			text: "Excavation",
 			link: "/",
 		},
 		{
-			text: "Roofers",
+			text: "Pest Control",
 			link: "/",
 		},
 		{
-			text: "Solar Installation",
+			text: "Fence Installation",
 			link: "/",
 		},
 	],
-	img: "/common/chipy/industries/chipy-skill-traded-business.svg",
+	img: "/common/chipy/industries/chipy-landscaping-business.svg",
 };
 
 export const faq = {

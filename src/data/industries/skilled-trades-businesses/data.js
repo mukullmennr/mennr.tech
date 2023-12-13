@@ -47,7 +47,7 @@ export const main = {
 			link: "/",
 		},
 	],
-	img: "/common/chipy/industries/chipy-skill-traded-business.svg",
+	img: "/common/chipy/industries/chipy-skilled-trades-businesses.svg",
 };
 
 export const faq = {
