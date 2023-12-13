@@ -68,16 +68,55 @@
 	}
 
 	&-item {
+		&.industries {
+			p:nth-child(odd),
+			pre {
+				@include ab.screen-40 {
+					margin-inline: 0 auto;
+					text-align: left;
+				}
+			}
+
+			p:nth-child(even) {
+				@include ab.screen-40 {
+					margin-inline: auto 0;
+					text-align: right;
+				}
+			}
+
+			&.right {
+				p:nth-child(odd) {
+					@include ab.screen-40 {
+						margin-inline: auto 0;
+						text-align: right;
+					}
+				}
+
+				p:nth-child(even) {
+					@include ab.screen-40 {
+						margin-inline: 0 auto;
+						text-align: left;
+					}
+				}
+			}
+		}
+
 		:nth-child(n + 2) {
 			margin-block-start: clamp(6.33rem, 8vw, 9.31rem);
 		}
 
-		p {
+		pre {
+			white-space: pre-wrap;
+		}
+
+		p,
+		pre {
 			text-align: center;
 			width: 80%;
 			margin-inline: auto;
 			font-size: clamp(1.125rem, 1.4vw, 2rem);
 			background-color: ab.$white;
+			font-weight: 500;
 
 			span {
 				display: block;
@@ -92,7 +131,8 @@
 			}
 		}
 
-		p:nth-child(odd) {
+		p:nth-child(odd),
+		pre {
 			@include ab.screen-40 {
 				margin-inline: 0 auto;
 			}
@@ -127,6 +167,12 @@
 		font-size: clamp(1.5rem, 1.6vw, 2rem);
 		margin-block: 4.6rem;
 		background-color: ab.$white;
+
+		&.industries {
+			@include ab.screen-40 {
+				text-align: right;
+			}
+		}
 
 		@include ab.screen-40 {
 			width: 40%;
