@@ -14,6 +14,7 @@ import {
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Info from "@/components/Info/Info";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 
 export default function page() {
 	return (
@@ -24,6 +25,7 @@ export default function page() {
 			<Info data={info} />
 			<Steps data={steps} isServices={true} classname="webdev" />
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+			<Breadcrumb classname="bottom" data={breadcrumb} />
 		</>
 	);
 }

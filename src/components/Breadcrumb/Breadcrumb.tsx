@@ -15,11 +15,12 @@ export interface BreadCrumbContent {
 
 interface BreadcrumbProps {
 	data: BreadCrumbContent;
+	classname?: string;
 }
 
-export default function Breadcrumb({ data }: BreadcrumbProps) {
+export default function Breadcrumb({ data, classname }: BreadcrumbProps) {
 	return (
-		<div className="breadcrumb container">
+		<div className={`breadcrumb container ${classname}`}>
 			<div className="breadcrumb-parent">
 				<Link href={data.home.link}>{data.home.text}</Link>
 				{" > "}

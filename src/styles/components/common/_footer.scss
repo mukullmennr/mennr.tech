@@ -1,6 +1,7 @@
 @use "../../abstracts" as ab;
 
 .footer {
+	margin-block-start: clamp(5rem, 7vw, 13rem);
 	padding-block: 3em 5em;
 	background-color: ab.$background6;
 	border-radius: 1em 1em 0 0;

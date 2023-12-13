@@ -169,7 +169,7 @@ export default function Footer() {
 						</div>
 
 						<div className="socials link-grid__item">
-							<div className="socials-container">
+							{/* <div className="socials-container">
 								<h3 className="list-head">Mennr Blog</h3>
 
 								<p>
@@ -179,7 +179,7 @@ export default function Footer() {
 								</p>
 
 								<BlogForm />
-							</div>
+							</div> */}
 
 							<div className="socials-container">
 								<h3 className="list-head">Connect With Us</h3>

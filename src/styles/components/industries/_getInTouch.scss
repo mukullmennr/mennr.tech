@@ -1,0 +1,90 @@
+@use "../../abstracts" as ab;
+
+.getintouch {
+	// outline: 2px solid coral;
+	margin-block-end: 4.94em;
+
+	.container {
+		padding-inline: clamp(1.26rem, 2vw, 3.63rem);
+		background-color: ab.$background7;
+		border-radius: 0.8em;
+
+		// width: min(95%, 110rem);
+
+		display: flex;
+		flex-direction: column;
+		gap: clamp(1.31rem, 3vw, 4.32rem);
+
+		padding-block: clamp(1.58rem, 2.5vw, 3rem);
+
+		@include ab.screen-48 {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(1.89rem, 2.4vw, 3.06rem);
+
+		// outline: 2px solid red;
+		container-type: inline-size;
+
+		@include ab.screen-48 {
+			width: 40%;
+			padding-block-start: 0.6em;
+		}
+
+		p {
+			font-weight: 700;
+			font-size: clamp(1.125rem, 3vw, 2.5rem);
+			text-align: center;
+
+			@include ab.screen-48 {
+				text-align: left;
+				font-size: clamp(1.125rem, 8cqw, 2.5rem);
+			}
+		}
+	}
+
+	.chipy-parent {
+		position: relative;
+
+		@include ab.screen-48 {
+			width: 55%;
+		}
+
+		@include ab.screen-64 {
+			width: 55em;
+		}
+
+		.getintouch-calender-container {
+			position: relative;
+			z-index: 1;
+
+			iframe {
+				height: 43.5rem;
+				width: min(50em, 100%);
+				background-color: white;
+
+				@include ab.screen-64 {
+					background-color: ab.$background7;
+				}
+
+				border-radius: 0.8em;
+			}
+		}
+
+		img {
+			position: absolute;
+			display: none;
+
+			@include ab.screen-48 {
+				display: block;
+				left: -12em;
+				bottom: -1em;
+			}
+		}
+	}
+}

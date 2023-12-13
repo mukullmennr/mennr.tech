@@ -135,22 +135,22 @@
 		}
 	}
 
-	.calender-container {
-		position: relative;
-		z-index: 1;
-
-		@include ab.screen-54 {
-			margin-inline: 0;
-			width: calc(38em + 4vw);
-		}
-
-		@include ab.screen-64 {
-			width: 50em;
-		}
-	}
-
 	.chipy-parent {
 		position: relative;
+
+		.calender-container {
+			position: relative;
+			z-index: 1;
+
+			@include ab.screen-54 {
+				margin-inline: 0;
+				width: calc(38em + 4vw);
+			}
+
+			@include ab.screen-64 {
+				width: 50em;
+			}
+		}
 
 		@include ab.screen-54 {
 			margin-inline: 0;

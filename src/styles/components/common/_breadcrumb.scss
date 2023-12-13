@@ -3,6 +3,15 @@
 .breadcrumb {
 	font-size: clamp(0.75rem, 1vw, 1rem);
 
+	&.bottom {
+		// margin-block: 1rem clamp(4rem, 6vw, 8rem);
+		margin-block-start: 1rem;
+
+		a {
+			color: rgba(black, 0.8);
+		}
+	}
+
 	a {
 		color: rgba(ab.$white, 0.8);
 		text-decoration: none;
