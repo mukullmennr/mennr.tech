@@ -67,3 +67,33 @@ export const faq = {
 		},
 	],
 };
+
+export const importance = {
+	heading:
+		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+	steps: [
+		"Let new customers find you through Google Search & Google Maps",
+		"Get return business with email & text promotions",
+		"Strategies as personalized as a fingerprint",
+		"Become a known member of the community through Facebook",
+		" On call 24/7 ",
+		"Finding out what your customers want and how they view your business",
+		"Marketing Report Dashboard",
+		"Engaging with your customers by responding to reviews",
+		"Appear as a recommended contractor on sites like HomeAdvisor and Angi",
+		"We wouldn’t be comfortable letting someone manage our companies online presence without having oversight of it, and we don’t expect you to either",
+		"Helping you understand the process and what all the numbers mean is our job, and we love it",
+	],
+	button: "Start using the internet to your advantage",
+};
+
+export const getInTouch = {
+	text1: "Make the first move towards setting your business up to succeed in the digital age.",
+	text2: "Get in touch with one of our marketing specialists and conquer the upcoming busy season!",
+};
+
+export const yourCertifications = [
+	"/industries/skilltraded-1.png",
+	"/industries/skilltraded-2.png",
+	"/industries/skilltraded-3.png",
+];

@@ -290,9 +290,9 @@ export default function NavMain() {
 								</div>
 							</li> */}
 
-							<li>
+							{/* <li>
 								<Link href={links.blog}>Blog</Link>
-							</li>
+							</li> */}
 
 							{/* <li className="hidden-large link-button">
 								<Link

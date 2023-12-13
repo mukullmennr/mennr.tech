@@ -5,15 +5,16 @@ import {
 	main,
 	importance,
 	getInTouch,
-	table,
 	yourCertifications,
 } from "@/data/industries/skilled-trades-businesses/data";
+import { table } from "@/data/industries/table";
 import FAQ from "@/components/FAQ/FAQ";
 import Main from "../../component/industries/main/Main";
 import Importance from "../../component/industries/importance/Importance";
 import GetInTouch from "../../component/industries/get-in-touch/GetInTouch";
 import Table from "../../component/industries/table/Table";
 import Certification from "../../component/industries/certification/Certification";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 
 export default function page() {
 	return (
@@ -24,6 +25,7 @@ export default function page() {
 			<Table data={table} />
 			<GetInTouch data={getInTouch} />
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+			<Breadcrumb data={breadcrumb} classname="bottom" />
 		</>
 	);
 }
