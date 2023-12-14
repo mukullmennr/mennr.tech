@@ -2,7 +2,7 @@ export const links = {
 	whoweare: "/who-we-are",
 	whatwedo: "/what-we-do",
 	whowehelp: "/who-we-help",
-	solutions: "/",
+	solutions: "/solutions",
 	blog: "/",
 };
 

@@ -26,10 +26,11 @@
 
 			.tabs-trigger {
 				font-weight: 600;
-				font-size: clamp(0.6rem, 1vw, 1rem);
+				font-size: clamp(0.6rem, 1.5vw, 1rem);
 				background-color: transparent;
 				border: none;
 				outline: none;
+				color: ab.$text1;
 
 				cursor: pointer;
 				padding: 0;
@@ -61,27 +62,20 @@
 		}
 
 		&__content {
-			// outline: 2px solid lightblue;
-
 			.tabs-content {
-				// outline: 2px solid red;
 				display: flex;
 				flex-direction: column-reverse;
 				gap: clamp(3.66rem, 8vw, 8.85rem);
-				// text-align: center;
 
 				@include ab.screen-40 {
 					flex-direction: row;
-					// text-align: left;
 
 					&:nth-child(even) {
 						flex-direction: row-reverse;
-						// text-align: right;
 					}
 				}
 
 				&__item {
-					// outline: 2px solid lightpink;
 					text-align: center;
 
 					display: flex;
