@@ -16,6 +16,8 @@ export default function Card() {
 						Start using the internet to your advantage
 						<FontAwesomeIcon icon={faAngleDown} />
 					</a>
+
+					<img src="/common/chipy/chipy-sitting.svg" alt="chipy" />
 				</div>
 			</div>
 		</div>

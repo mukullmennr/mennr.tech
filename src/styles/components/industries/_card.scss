@@ -8,6 +8,7 @@
 	}
 
 	&-container {
+		position: relative;
 		background-color: ab.$background7;
 		border-radius: 1.25rem;
 
@@ -45,6 +46,19 @@
 			&:hover {
 				background-color: ab.$white;
 				color: ab.$accent1;
+			}
+		}
+
+		img {
+			position: absolute;
+			width: 10rem;
+			bottom: calc(100% - 1.2em);
+			left: 50%;
+			translate: -50%;
+
+			@include ab.screen-40 {
+				left: 25%;
+				translate: 0;
 			}
 		}
 	}

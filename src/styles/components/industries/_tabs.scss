@@ -1,0 +1,139 @@
+@use "../../abstracts" as ab;
+
+.tabs {
+	// outline: 2px solid coral;
+	margin-block: 2em 11rem;
+
+	&-container {
+		// outline: 2px solid red;
+		display: grid;
+		gap: clamp(2.32rem, 4.5vw, 5.13rem);
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			column-gap: clamp(2.31rem, 3.5vw, 4.59rem);
+			row-gap: 1rem;
+
+			border-radius: 1.25rem;
+			box-shadow: 0px 4px 20px 0px rgba(231, 111, 81, 0.25);
+			padding-block: clamp(1rem, 1.3vw, 1.6rem);
+			padding-inline: 1rem;
+
+			width: min(100%, 70rem);
+			margin-inline: auto;
+
+			.tabs-trigger {
+				font-weight: 600;
+				font-size: clamp(0.6rem, 1vw, 1rem);
+				background-color: transparent;
+				border: none;
+				outline: none;
+
+				cursor: pointer;
+				padding: 0;
+				margin: 0;
+
+				position: relative;
+
+				&::before {
+					content: "";
+					position: absolute;
+					// width: 100%;
+					height: 0.1rem;
+					background-color: ab.$accent1;
+					bottom: -0.1rem;
+					left: 50%;
+					right: 50%;
+
+					transition: left 200ms, right 200ms;
+				}
+
+				&[data-state="active"],
+				&:hover {
+					&::before {
+						left: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+
+		&__content {
+			// outline: 2px solid lightblue;
+
+			.tabs-content {
+				// outline: 2px solid red;
+				display: flex;
+				flex-direction: column-reverse;
+				gap: clamp(3.66rem, 8vw, 8.85rem);
+				// text-align: center;
+
+				@include ab.screen-40 {
+					flex-direction: row;
+					// text-align: left;
+
+					&:nth-child(even) {
+						flex-direction: row-reverse;
+						// text-align: right;
+					}
+				}
+
+				&__item {
+					// outline: 2px solid lightpink;
+					text-align: center;
+
+					display: flex;
+					flex-direction: column;
+					gap: clamp(1.3rem, 3cqw, 2.72rem);
+
+					max-height: 25rem;
+
+					container-type: inline-size;
+
+					@include ab.screen-40 {
+						text-align: left;
+						flex: 1;
+					}
+
+					.heading {
+						font-size: clamp(1.125rem, 5cqw, 1.875rem);
+					}
+
+					.text {
+						font-size: clamp(0.75rem, 3cqw, 1.5rem);
+					}
+
+					.image {
+						border-radius: 1.125rem;
+						height: 100%;
+						object-fit: cover;
+					}
+
+					.link {
+						font-weight: 700;
+						font-size: clamp(0.9rem, 4cqw, 1.5rem);
+						background-color: ab.$accent1;
+						color: ab.$white;
+
+						text-decoration: none;
+
+						display: inline-block;
+						padding-inline: 1em;
+						padding-block: 0.3em;
+						border-radius: 0.42rem;
+
+						border: 0.1em solid ab.$accent1;
+						transition: color 300ms, background-color 300ms;
+
+						&:hover {
+							background-color: ab.$white;
+							color: ab.$accent1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
