@@ -1,8 +1,7 @@
 @use "../../abstracts" as ab;
 
 .table {
-	// outline: 2px solid red;
-	margin-block: 2em;
+	margin-block-start: 2em;
 	display: none;
 
 	@include ab.screen-48 {
@@ -10,17 +9,14 @@
 	}
 
 	&-container {
-		// outline: 2px solid coral;
-
 		h2 {
 			font-size: clamp(1.5rem, 3vw, 3rem);
 		}
 
 		&__table {
-			// outline: 2px solid lightgreen;
 			position: relative;
 
-			margin-block: 4em;
+			margin-block-start: 4em;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(8, 1fr);

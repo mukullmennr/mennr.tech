@@ -2,10 +2,18 @@
 @use "./pages";
 @use "./components";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: ab.$white;
 	-webkit-tap-highlight-color: transparent;
 	color: ab.$text1;
+}
+
+pre {
+	margin: 0;
 }
 
 .container {

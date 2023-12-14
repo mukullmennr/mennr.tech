@@ -54,9 +54,9 @@ export default function Footer() {
 										Solutions
 									</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link href={links.solutions}>Blog</Link>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 
@@ -169,7 +169,7 @@ export default function Footer() {
 						</div>
 
 						<div className="socials link-grid__item">
-							{/* <div className="socials-container">
+							<div className="socials-container">
 								<h3 className="list-head">Mennr Blog</h3>
 
 								<p>
@@ -179,7 +179,7 @@ export default function Footer() {
 								</p>
 
 								<BlogForm />
-							</div> */}
+							</div>
 
 							<div className="socials-container">
 								<h3 className="list-head">Connect With Us</h3>
@@ -198,9 +198,9 @@ export default function Footer() {
 										<FontAwesomeIcon icon={faInstagram} />
 									</a>
 
-									<a href={socials.threads} target="_blank">
+									{/* <a href={socials.threads} target="_blank">
 										<FontAwesomeIcon icon={faThreads} />
-									</a>
+									</a> */}
 								</div>
 							</div>
 						</div>

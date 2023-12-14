@@ -25,6 +25,11 @@
 			}
 		}
 
+		&.sub-industries {
+			// outline: 2px solid coral;
+			// background-image: url("../../../../public/common/steps/sub-industries-flow-mobile.svg");
+		}
+
 		img {
 			position: absolute;
 			display: none;
@@ -68,6 +73,14 @@
 	}
 
 	&-item {
+		// outline: 2px solid lightgreen;
+		display: grid;
+		gap: 6.12rem;
+
+		@include ab.screen-40 {
+			gap: 5.51rem;
+		}
+
 		&.industries {
 			p:nth-child(odd),
 			pre {
@@ -102,7 +115,8 @@
 		}
 
 		:nth-child(n + 2) {
-			margin-block-start: clamp(6.33rem, 8vw, 9.31rem);
+			// margin-block-start: clamp(6.33rem, 8vw, 9.31rem);
+			// background-color: lightgreen;
 		}
 
 		pre {
@@ -117,6 +131,7 @@
 			font-size: clamp(1.125rem, 1.4vw, 2rem);
 			background-color: ab.$white;
 			font-weight: 500;
+			// outline: 2px solid red;
 
 			span {
 				display: block;
@@ -165,12 +180,17 @@
 		margin-inline: auto;
 
 		font-size: clamp(1.5rem, 1.6vw, 2rem);
-		margin-block: 4.6rem;
+		// margin-block: 4.6rem;
 		background-color: ab.$white;
+		// background-color: red;
+		margin-block: 6.12rem;
 
 		&.industries {
+			margin-block: 6.12rem;
+
 			@include ab.screen-40 {
 				text-align: right;
+				margin-block-start: 5.51rem;
 			}
 		}
 
@@ -178,6 +198,7 @@
 			width: 40%;
 			margin-inline: auto 0;
 			margin-block-end: 1em;
+			margin-block-start: 5.51rem;
 		}
 	}
 

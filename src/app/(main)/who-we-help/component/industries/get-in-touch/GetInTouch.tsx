@@ -6,7 +6,7 @@ interface GetInTouchProps {
 
 export default function GetInTouch({ data }: GetInTouchProps) {
 	return (
-		<div className="getintouch">
+		<div className="getintouch" id="industry-getintouch">
 			<div className="container">
 				<div className="getintouch-text">
 					<p>{data.text1}</p>

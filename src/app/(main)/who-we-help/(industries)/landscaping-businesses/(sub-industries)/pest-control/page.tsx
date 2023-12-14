@@ -10,14 +10,18 @@ import Main from "@/app/(main)/who-we-help/component/industries/main/Main";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Quote from "@/app/(main)/who-we-help/component/industries/quote/Quote";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import Card from "@/app/(main)/who-we-help/component/industries/card/Card";
 
 export default function page() {
 	return (
 		<>
 			<Main data={main} breadcrumb={breadcrumb} />
 			<Quote content={quote} />
-			<Steps data={steps} isServices={false} classname="webde" />
+			<Card />
+			<Steps data={steps} isServices={false} classname="sub-industries" />
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+			<Breadcrumb data={breadcrumb} classname="bottom" />
 		</>
 	);
 }
