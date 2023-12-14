@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: "Other Small Businesses",
+	next:{
+		text:"Automotive Businesses",
+		link:"/who-we-help/automotive-business"
+	},
+	prev:{
+		text:"Landscaping Businesses",
+		link:"/who-we-help/landscaping-businesses"
+	}
 };
 
 export const main = {
@@ -12,27 +20,27 @@ export const main = {
 	subIndustries: [
 		{
 			text: "Restaurants ",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/restaurants",
 		},
 		{
 			text: "Outdoor Activities",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/outdoor-activities",
 		},
 		{
 			text: "Hotels",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/hotels",
 		},
 		{
 			text: "Law Firms",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/law-firms",
 		},
 		{
 			text: "Tourism",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/tourism",
 		},
 		{
 			text: "Retail Shops",
-			link: "/",
+			link: "/who-we-help/other-small-businesses/retail-shops",
 		},
 	],
 	img: "/common/chipy/industries/chipy-other-small-businesses.svg",
@@ -62,7 +70,7 @@ export const faq = {
 
 export const importance = {
 	heading:
-		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+		"Let’s cut to the chase, how does Mennr add value to small businesses?",
 	steps: [
 		"Let new customers find you through Google Search & Google Maps",
 		"Get return business with email & text promotions",
@@ -85,7 +93,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/other-small-business-1.svg",
+	"/industries/other-small-business-2.svg",
+	"/industries/other-small-business-3.svg",
 ];

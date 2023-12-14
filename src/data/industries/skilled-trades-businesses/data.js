@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: "Skilled Trades Businesses",
+	next:{
+		text:"Groups and Individuals in Real Estate",
+		link:"/who-we-help/real-estate"
+	},
+	prev:{
+		text:"Automotive Businesses",
+		link:"/who-we-help/automotive-business"
+	}
 };
 
 export const main = {
@@ -12,39 +20,39 @@ export const main = {
 	subIndustries: [
 		{
 			text: "Plumbers",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/plumbers",
 		},
 		{
 			text: "Painters",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/painters",
 		},
 		{
 			text: "Concrete & Paving ",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/Concrete-and-paving",
 		},
 		{
 			text: "Contactors",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/contactors",
 		},
 		{
 			text: "Electricians",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/electricians",
 		},
 		{
 			text: "HVAC",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/HVAC",
 		},
 		{
 			text: "Cleaning Services",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/cleaning-services",
 		},
 		{
 			text: "Roofers",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/roofers",
 		},
 		{
 			text: "Solar Installation",
-			link: "/",
+			link: "/who-we-help/skilled-trades-businesses/solar-installation",
 		},
 	],
 	img: "/common/chipy/industries/chipy-skilled-trades-businesses.svg",
@@ -97,7 +105,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/skilltraded-1.svg",
+	"/industries/skilltraded-2.svg",
+	"/industries/skilltraded-3.svg",
 ];

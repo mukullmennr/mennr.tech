@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: " Landscaping Businesses",
+	next:{
+		text:"Other Small Businesses",
+		link:"/who-we-help/other-small-businesses"
+	},
+	prev:{
+		text:"Personal Care Businesses",
+		link:"/who-we-help/personal-care-businesses"
+	}
 };
 
 export const main = {
@@ -12,31 +20,31 @@ export const main = {
 	subIndustries: [
 		{
 			text: "Tree Removal",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/tree-removal",
 		},
 		{
 			text: "Lawn Maintenance",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/lawn-maintenance",
 		},
 		{
 			text: "Turf Installation ",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/turf-installation",
 		},
 		{
 			text: "Pool Installation",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/pool-installation",
 		},
 		{
 			text: "Irrigation",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/irrigation",
 		},
 		{
 			text: "Snow Removal",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/snow-removal",
 		},
 		{
 			text: "Excavation",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/excavation",
 		},
 		{
 			text: "Pest Control",
@@ -44,7 +52,7 @@ export const main = {
 		},
 		{
 			text: "Fence Installation",
-			link: "/",
+			link: "/who-we-help/landscaping-businesses/fence-installation",
 		},
 	],
 	img: "/common/chipy/industries/chipy-landscaping-business.svg",
@@ -74,7 +82,7 @@ export const faq = {
 
 export const importance = {
 	heading:
-		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+		"Let’s cut to the chase, how does Mennr add value to landscaping companies?",
 	steps: [
 		"Let new customers find you through Google Search & Google Maps",
 		"Get return business with email & text promotions",
@@ -97,7 +105,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/landscaping-businesses-1.svg",
+	"/industries/landscaping-businesses-2.svg",
+	"/industries/landscaping-businesses-3.svg",
 ];

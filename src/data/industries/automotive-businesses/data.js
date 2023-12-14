@@ -32,7 +32,7 @@ export const main = {
 		},
 		{
 			text: "Diesel Shops",
-			link: "/who-we-help/automotive-business/diesel-shop",
+			link: "/who-we-help/automotive-business/diesel-shops",
 		},
 		{
 			text: "Service Shops",

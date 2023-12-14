@@ -4,6 +4,14 @@ export const breadcrumb = {
 		link: "/who-we-help",
 	},
 	our: "Personal Care Businesses",
+	next:{
+		text:"Landscaping Businesses",
+		link:"/who-we-help/landscaping-businesses"
+	},
+	prev:{
+		text:"Groups and Individuals in Real Estate",
+		link:"/who-we-help/real-estate"
+	}
 };
 
 export const main = {
@@ -12,39 +20,39 @@ export const main = {
 	subIndustries: [
 		{
 			text: "Hair Salons",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/hair-salons",
 		},
 		{
 			text: "Barbers",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/barbers",
 		},
 		{
 			text: "Nail Salons ",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/nail-salons",
 		},
 		{
 			text: "Spas",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/spas",
 		},
 		{
 			text: "Estheticians",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/estheticians",
 		},
 		{
 			text: "Tanning Salons",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/tanning-salons",
 		},
 		{
 			text: "Gyms",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/gyms",
 		},
 		{
 			text: "Tattoo Shops",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/tattoo-shops",
 		},
 		{
 			text: "Yoga Studios",
-			link: "/",
+			link: "/who-we-help/personal-care-businesses/yoga-studios",
 		},
 	],
 	img: "/common/chipy/industries/chipy-personal-care-businesses.svg",
@@ -74,7 +82,7 @@ export const faq = {
 
 export const importance = {
 	heading:
-		"Let’s cut to the chase, how does Mennr add value to Skilled Trades Businesses?",
+		"Let’s cut to the chase, how does Mennr add value to personal care businesses?",
 	steps: [
 		"Let new customers find you through Google Search & Google Maps",
 		"Get return business with email & text promotions",
@@ -97,7 +105,7 @@ export const getInTouch = {
 };
 
 export const yourCertifications = [
-	"/industries/skilltraded-1.png",
-	"/industries/skilltraded-2.png",
-	"/industries/skilltraded-3.png",
+	"/industries/personal-care-1.svg",
+	"/industries/personal-care-2.svg",
+	"/industries/personal-care-3.svg",
 ];

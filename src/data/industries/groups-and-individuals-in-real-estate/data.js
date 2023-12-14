@@ -20,19 +20,19 @@ export const main = {
 	subIndustries: [
 		{
 			text: "House Flippers",
-			link: "/",
+			link: "/who-we-help/groups-and-individuals-in-real-estate/house-flippers",
 		},
 		{
 			text: "Property Managers",
-			link: "/",
+			link: "/who-we-help/groups-and-individuals-in-real-estate/property-managers",
 		},
 		{
 			text: "Brokers",
-			link: "/",
+			link: "/who-we-help/groups-and-individuals-in-real-estate/brokers",
 		},
 		{
 			text: "Moving Companies",
-			link: "/",
+			link: "/who-we-help/groups-and-individuals-in-real-estate/moving-companies",
 		},
 	],
 	img: "/common/chipy/industries/chipy-groups-and-individuals-in-real-estate.svg",
