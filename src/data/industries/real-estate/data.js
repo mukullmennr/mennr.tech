@@ -20,22 +20,22 @@ export const main = {
 	subIndustries: [
 		{
 			text: "House Flippers",
-			link: "/who-we-help/groups-and-individuals-in-real-estate/house-flippers",
+			link: "/who-we-help/real-estate/house-flippers",
 		},
 		{
 			text: "Property Managers",
-			link: "/who-we-help/groups-and-individuals-in-real-estate/property-managers",
+			link: "/who-we-help/real-estate/property-managers",
 		},
 		{
 			text: "Brokers",
-			link: "/who-we-help/groups-and-individuals-in-real-estate/brokers",
+			link: "/who-we-help/real-estate/brokers",
 		},
 		{
 			text: "Moving Companies",
-			link: "/who-we-help/groups-and-individuals-in-real-estate/moving-companies",
+			link: "/who-we-help/real-estate/moving-companies",
 		},
 	],
-	img: "/common/chipy/industries/chipy-groups-and-individuals-in-real-estate.svg",
+	img: "/common/chipy/industries/chipy-real-estate.svg",
 };
 
 export const faq = {

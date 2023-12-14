@@ -10,7 +10,7 @@ export const industries = {
 	automotive: "/who-we-help/automotive-business",
 	skilledTradesBusinesses: "/who-we-help/skilled-trades-businesses",
 	personalCare: "/who-we-help/personal-care-businesses",
-	realEstate: "/who-we-help/groups-and-individuals-in-real-estate",
+	realEstate: "/who-we-help/real-estate",
 	landscapingServices: "/who-we-help/landscaping-businesses",
 	otherSmallBusiness: "/who-we-help/other-small-businesses",
 };
