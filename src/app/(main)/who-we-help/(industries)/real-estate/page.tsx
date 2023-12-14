@@ -6,7 +6,7 @@ import {
 	importance,
 	getInTouch,
 	yourCertifications,
-} from "@/data/industries/groups-and-individuals-in-real-estate/data";
+} from "@/data/industries/real-estate/data";
 import { table } from "@/data/industries/table";
 import FAQ from "@/components/FAQ/FAQ";
 import Main from "../../component/industries/main/Main";
