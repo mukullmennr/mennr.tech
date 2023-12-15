@@ -8,6 +8,14 @@ export const breadcrumb = {
 		link: "/who-we-help/other-small-businesses",
 	},
 	our: "Hotels",
+	next:{
+        text:"Law Firms",
+        link:"/who-we-help/other-small-businesses/law-firms",
+    },
+    prev:{
+        text:"Outdoor Activities",
+        link:"/who-we-help/other-small-businesses/outdoor-activities",
+    }
 };
 
 export const main = {

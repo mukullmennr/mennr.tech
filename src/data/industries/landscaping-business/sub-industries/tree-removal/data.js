@@ -8,6 +8,14 @@ export const breadcrumb = {
 		link: "/who-we-help/landscaping-businesses",
 	},
 	our: "Tree Removal",
+	next:{
+        text:"Lawn Maintenance",
+        link:"/who-we-help/landscaping-businesses/lawn-maintenance",
+    },
+    prev:{
+        text:"Fence Installation",
+        link:"/who-we-help/landscaping-businesses/fence-installation",
+    }
 };
 
 export const main = {

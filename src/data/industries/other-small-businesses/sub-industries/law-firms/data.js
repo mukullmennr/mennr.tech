@@ -8,12 +8,20 @@ export const breadcrumb = {
 		link: "/who-we-help/other-small-businesses",
 	},
 	our: "Law Firms",
+	next:{
+        text:"Tourism",
+        link:"/who-we-help/other-small-businesses/tourism",
+    },
+    prev:{
+        text:"Hotels",
+        link:"/who-we-help/other-small-businesses/hotels",
+    }
 };
 
 export const main = {
 	heading:
-		"Why is Mennr the trusted marketing firm for Hotels in New England?",
-	img: "/common/chipy/sub-industries/other-small-businesses/hotels.svg",
+		"Why is Mennr the trusted marketing firm for Law Firms in New England?",
+	img: "/common/chipy/sub-industries/other-small-businesses/law.svg",
 	showCertification: true,
 };
 
@@ -41,8 +49,8 @@ export const faq = {
 
 export const steps = {
 	steps: [
-		"Seeing how you compare to other Hotels in your area is easy",
-		"Open a new tab in your browser, and type the following line into your search bar: ‘hotels near me’",
+		"Seeing how you compare to other Law Firms in your area is easy",
+		"Open a new tab in your browser, and type the following line into your search bar: ‘law firms near me’",
 		`You’ll notice 3 things:\n
 1. Sponsored websites (paid)
 2. Map showing all relevant businesses (free)
@@ -52,8 +60,8 @@ export const steps = {
 		" If you’re not ranking in the top 3, you’re losing out on  business, simple as that",
 		"But don’t fret, with time and the right strategy, appearing as one of the top 3 recommended businesses isn’t rocket science",
 	],
-	last: "Talk with one of our Google Certified marketing specialists today, find a marketing strategy that works best for you and your Hotel",
+	last: "Talk with one of our Google Certified marketing specialists today, find a marketing strategy that works best for you and your Law Firm",
 };
 
 export const quote =
-	"Apart from experience, our ability to turn struggling businesses into sustaining ones helps Hotels in New England stay operational for years to come.";
+	"Apart from experience, our ability to turn struggling businesses into sustaining ones helps Law Firms in New England stay operational for years to come.";
