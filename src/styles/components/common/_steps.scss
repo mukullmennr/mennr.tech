@@ -222,6 +222,7 @@
 
 	.chipy-parent {
 		position: relative;
+		height: 43.5em;
 
 		&.solutions-steps {
 			@include ab.screen-64 {
@@ -236,14 +237,17 @@
 		.calender-container {
 			position: relative;
 			z-index: 1;
+			height: 100%;
 
 			@include ab.screen-54 {
 				margin-inline: 0;
 				width: calc(38em + 4vw);
+				width: 100%;
 			}
 
 			@include ab.screen-64 {
 				width: 50em;
+				width: 100%;
 			}
 		}
 
