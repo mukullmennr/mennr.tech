@@ -8,6 +8,14 @@ export const breadcrumb = {
 		link: "/who-we-help/automotive-business",
 	},
 	our: "Community Auto Shops",
+	next:{
+        text:"Automotive Restorations",
+        link:"/who-we-help/automotive-business/automotive-restorations",
+    },
+    prev:{
+        text:"Service Shops",
+        link:"/who-we-help/automotive-business/service-shops",
+    }
 };
 
 export const main = {
