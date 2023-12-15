@@ -149,7 +149,6 @@
 
 	&-one {
 		padding-block: 1.5em;
-		outline: 2px solid red;
 
 		> div.container {
 			display: grid;
@@ -183,7 +182,6 @@
 			}
 
 			&:nth-child(3) {
-				// outline: 2px solid red;
 				@include ab.screen-40 {
 					width: 100%;
 					display: flex;
