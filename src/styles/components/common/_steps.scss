@@ -1,10 +1,29 @@
 @use "../../abstracts" as ab;
 
 .steps {
+	&.solutions-steps {
+		background-image: url("../../../../public/home/solution-steps-mobile.svg");
+		background-repeat: no-repeat;
+		background-position: top center;
+
+		@include ab.screen-40 {
+			// background-image: url("../../../../public/home/solution-steps-pc.svg");
+		}
+
+		img {
+			display: none;
+		}
+	}
 	&-container {
 		position: relative;
 		background-repeat: no-repeat;
 		background-position: center;
+
+		&.solutions-steps {
+			img {
+				display: none;
+			}
+		}
 
 		&.webdev {
 			background-image: url("../../../../public/common/steps/steps-services-webdev-mobile.svg");
@@ -131,7 +150,6 @@
 			font-size: clamp(1.125rem, 1.4vw, 2rem);
 			background-color: ab.$white;
 			font-weight: 500;
-			// outline: 2px solid red;
 
 			span {
 				display: block;
@@ -204,6 +222,16 @@
 
 	.chipy-parent {
 		position: relative;
+
+		&.solutions-steps {
+			@include ab.screen-64 {
+				margin-inline: 2rem;
+			}
+
+			@include ab.screen-74 {
+				margin-inline: clamp(5rem, 12.5vw, 15rem);
+			}
+		}
 
 		.calender-container {
 			position: relative;

@@ -32,7 +32,7 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 	});
 
 	return (
-		<div className="steps">
+		<div className={`steps ${classname}`}>
 			<div className="container">
 				<div className={`steps-container ${classname} `}>
 					{data.heading && (
@@ -40,7 +40,7 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 					)}
 
 					<div
-						className={`steps-item ${even && "right"} ${
+						className={`steps-item ${even ? "right" : ""} ${
 							!isServices && "industries"
 						}`}
 					>
@@ -61,7 +61,7 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 					/>
 				</div>
 
-				<div className="chipy-parent">
+				<div className={`chipy-parent ${classname}`}>
 					<div className="calender-container" id="calender">
 						<iframe
 							src="https://meetings.hubspot.com/rohan90?embed=true"
