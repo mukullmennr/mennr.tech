@@ -9,7 +9,7 @@ config.autoAddCss = false;
 export const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Mennr.tech",
+	title: "Local digital marketing for small businesses | mennr.tech",
 	description: "The official website for Mennr.tech",
 };
 
