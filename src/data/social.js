@@ -1,7 +1,7 @@
 export const socials = {
-	facebook: "https://facebook.com",
+	facebook: "https://www.facebook.com/mennr.tech/",
 	twitter: "https://twitter.com",
-	linkedin: "https://linkedin.com",
-	instagram: "https://instagram.com",
-	threads: "https://www.threads.net/",
+	linkedin: "https://www.linkedin.com/company/mennr/",
+	instagram: "https://www.instagram.com/mennr.tech/",
+	// threads: "https://www.threads.net/",
 };

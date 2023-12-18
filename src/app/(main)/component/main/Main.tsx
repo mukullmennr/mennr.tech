@@ -22,7 +22,7 @@ export default function Main() {
 					</div>
 
 					<div className="main-buttons__item">
-						<Link href="/">Get a quote in 5 minutes</Link>
+						<Link href="/solutions">Get a quote in 5 minutes</Link>
 					</div>
 				</div>
 			</div>

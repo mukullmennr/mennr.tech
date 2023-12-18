@@ -7,7 +7,7 @@ export default function SolutionsInfo() {
 		<div className="solutions-info">
 			<div className="container">
 				<div className="solutions-info__item intro">
-					<Link href="/">Find a solution that fits your needs</Link>
+					<Link href="/solutions">Find a solution that fits your needs</Link>
 
 					<p className="solutions-pcard">
 						Think of us as your tech-savy cousin. Able to answer any
@@ -30,7 +30,7 @@ export default function SolutionsInfo() {
 					</h3>
 
 					<div>
-						<a href={`tel:${number}`}>Contact Us!</a>
+						<Link href="/solutions/#calender">Contact Us!</Link>
 					</div>
 
 					<img
