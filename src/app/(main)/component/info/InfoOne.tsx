@@ -17,7 +17,7 @@ export default function InfoOne() {
 					<img src="/common/chipy/chipy-meet.svg" alt="chipy" />
 				</p>
 				<p>
-					<img src="/common/chipy/chipy-phone.svg" alt="chipy" />
+					<img src="/common/chipy/chipy-call-color.svg" alt="chipy" />
 					<span>
 						The initial consultation can last upwards of one hour.
 						This is where we talk about your business, location,
@@ -26,8 +26,15 @@ export default function InfoOne() {
 					</span>
 				</p>
 				<p>
-					Post consultation, our team goes back and creates a 6 month
-					marketing plan specific for your business.
+					<span>
+						Post consultation, our team goes back and creates a 6
+						month marketing plan specific for your business.
+					</span>
+
+					<img
+						src="/common/chipy/chipy-group-sitting.svg"
+						alt="chipy"
+					/>
 				</p>
 			</div>
 		</div>
