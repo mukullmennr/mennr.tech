@@ -51,7 +51,7 @@ export default function LoginForm() {
 				</div>
 
 				<div className="form-item">
-					<label htmlFor="email">Password</label>
+					<label htmlFor="password">Password</label>
 					<input
 						id="password"
 						name="password"
