@@ -1,5 +1,7 @@
-import { plusJakartaSans } from "@/app/layout";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import React from "react";
+
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 interface StepsData {
 	heading?: string;
