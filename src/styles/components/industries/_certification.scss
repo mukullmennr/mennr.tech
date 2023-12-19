@@ -1,0 +1,81 @@
+@use "../../abstracts" as ab;
+
+.industries-certification {
+	display: none;
+
+	@include ab.screen-48 {
+		display: block;
+	}
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+		width: min(95%, 83rem);
+	}
+
+	.container > div {
+		width: 45%;
+		background-color: ab.$background7;
+		border-radius: 0.98606rem;
+		padding-inline: 2rem;
+		padding-block: 1.14rem;
+
+		.industries-heaading {
+			font-size: 1.21119rem;
+			line-height: 1.95825rem;
+			letter-spacing: -0.02425rem;
+		}
+
+		.industries-images {
+			display: flex;
+			gap: 0.6em;
+
+			> img {
+				flex: 1;
+				position: relative;
+				width: 4rem;
+			}
+
+			> div {
+				flex: 2;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	&__yours {
+		position: relative;
+
+		> img {
+			position: absolute;
+			width: 8rem;
+			bottom: calc(100% - 0.9em);
+		}
+
+		.industries-heading {
+			text-align: right;
+		}
+
+		> div > img {
+			top: -0.8em;
+			@include ab.screen-64 {
+				top: -1em;
+			}
+		}
+	}
+
+	&__ours {
+		margin-inline-start: auto;
+		margin-block-start: 5.89rem;
+
+		> div > img {
+			top: -0.8em;
+
+			@include ab.screen-64 {
+				top: -2em;
+			}
+		}
+	}
+}

@@ -10,6 +10,22 @@
 
 	.ourcertifications {
 		background-color: ab.$background3;
+
+		> img {
+			position: absolute;
+			display: none;
+			bottom: 100%;
+			width: 11rem;
+			left: 28%;
+
+			@include ab.screen-48 {
+				display: block;
+			}
+		}
+
+		@include ab.screen-48 {
+			translate: 0 12em;
+		}
 	}
 
 	&-text {
@@ -89,7 +105,7 @@
 			}
 
 			@include ab.screen-48 {
-				translate: 0 6em;
+				// translate: 0 6em;
 			}
 
 			&-more {

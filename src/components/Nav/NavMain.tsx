@@ -234,7 +234,7 @@ export default function NavMain() {
 												</Link>
 											</li>
 											<li>
-												<Link href="/">Print Ads</Link>
+												<Link href="/">Direct Mail Ads</Link>
 											</li>
 										</ul>
 									</div>
@@ -290,9 +290,9 @@ export default function NavMain() {
 								</div>
 							</li> */}
 
-							<li>
+							{/* <li>
 								<Link href={links.blog}>Blog</Link>
-							</li>
+							</li> */}
 
 							{/* <li className="hidden-large link-button">
 								<Link
@@ -322,7 +322,7 @@ export default function NavMain() {
 								</a>
 							</div>
 
-							<Link className="links-button" href="/">
+							<Link className="links-button" href="/solutions">
 								Get Started
 							</Link>
 						</div>

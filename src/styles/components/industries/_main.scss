@@ -1,0 +1,137 @@
+@use "../../abstracts" as ab;
+
+.industries-main {
+	padding-block: 5em 4em; // 5 4
+	color: ab.$text2;
+	background-color: ab.$background1;
+	border-radius: 0 0 1.875rem 1.875rem;
+
+	// background color
+	&::before {
+		content: "";
+		background-color: ab.$background1;
+		position: absolute;
+
+		top: 0;
+		height: 10em;
+		right: 0;
+		left: 0;
+
+		z-index: -1;
+	}
+
+	.breadcrumb {
+		translate: 0 -3em;
+	}
+
+	// my code
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+
+		> div {
+			// outline: 2px solid lightgreen;
+		}
+		@include ab.screen-40 {
+			flex-direction: row;
+			gap: 1em;
+		}
+	}
+
+	.links {
+		margin-block-start: 1.5rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		column-gap: clamp(1.19rem, 1.5vw, 3.94rem);
+		row-gap: clamp(0.74rem, 1vw, 1.19rem);
+
+		a {
+			border: 2px solid ab.$accent1;
+			color: ab.$white;
+			font-weight: 700;
+			font-size: clamp(0.66825rem, 1vw, 1.125rem);
+
+			text-decoration-color: transparent;
+
+			transition: background-color 300ms;
+
+			display: flex;
+			justify-content: space-between;
+
+			padding-inline: 1.19rem;
+			padding-block: 0.5rem;
+			border-radius: 0.3em;
+
+			&:hover {
+				background-color: ab.$accent1;
+			}
+		}
+	}
+
+	&__element {
+		&:first-child {
+			container-type: inline-size;
+		}
+
+		@include ab.screen-40 {
+			&:first-child {
+				width: 60%;
+			}
+
+			&:last-child {
+				display: flex;
+				align-items: center;
+				width: 40%;
+			}
+		}
+
+		.heading {
+			font-size: clamp(1.5rem, 5cqw, 3rem);
+		}
+
+		img {
+			margin-inline: auto;
+
+			width: clamp(15.682rem, 40cqw, 32.684rem);
+			height: clamp(18.9665rem, 50cqw, 39.529rem);
+			height: 100%;
+		}
+	}
+
+	.sub-industries__certification {
+		margin-block-start: 1.36rem;
+		display: none;
+
+		@include ab.screen-40 {
+			display: block;
+		}
+
+		font-size: clamp(1.2rem, 2cqw, 1.5rem);
+
+		.sub-industries__images {
+			margin-block-start: 1rem;
+			display: flex;
+			gap: 5cqw;
+			width: min(45em, 100%);
+
+			img {
+				height: 100%;
+			}
+
+			> img {
+				width: min(25cqw, 8rem);
+			}
+
+			> div > img {
+				width: 40cqw;
+			}
+
+			.google > img {
+				width: 55cqw;
+			}
+		}
+	}
+}

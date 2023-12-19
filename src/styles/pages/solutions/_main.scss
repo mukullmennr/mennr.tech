@@ -1,0 +1,60 @@
+@use "../../abstracts" as ab;
+
+.solutions-main {
+	// outline: 2px solid coral;
+	padding-block: 5em 5em;
+	color: ab.$text2;
+	background-color: ab.$background1;
+	border-radius: 0 0 1.875rem 1.875rem;
+	position: relative;
+
+	// background color
+	&::before {
+		content: "";
+		background-color: ab.$background1;
+		position: absolute;
+
+		top: -10em;
+		height: 10em;
+		right: 0;
+		left: 0;
+
+		z-index: -1;
+	}
+
+	.container > div {
+		container-type: inline-size;
+		text-align: center;
+
+		@include ab.screen-40 {
+			width: 40%;
+
+			text-align: left;
+
+			&:last-child {
+				text-align: right;
+				margin-inline-start: auto;
+			}
+		}
+	}
+
+	&__text {
+		font-weight: 700;
+		font-size: clamp(1.5rem, 5.5cqw, 2.5rem);
+		// outline: 2px solid lightpink;
+	}
+
+	img {
+		// outline: 2px solid red;
+		margin-inline: auto;
+		margin-block: 3rem;
+
+		@include ab.screen-40 {
+			position: absolute;
+			margin: 0;
+			left: 50%;
+			translate: -60%;
+			bottom: 1em;
+		}
+	}
+}

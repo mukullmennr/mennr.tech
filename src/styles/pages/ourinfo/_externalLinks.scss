@@ -1,7 +1,7 @@
 @use "../../abstracts" as ab;
 
 .externalLinks {
-	padding-block: clamp(4.75rem, 3vw, 2.94rem);
+	padding-block: clamp(2.94rem, 3vw, 4.75rem);
 
 	&-container {
 		border: 1px solid ab.$text1;

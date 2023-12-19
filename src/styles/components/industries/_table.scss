@@ -1,0 +1,67 @@
+@use "../../abstracts" as ab;
+
+.table {
+	margin-block-start: 2em;
+	display: none;
+
+	@include ab.screen-48 {
+		display: block;
+	}
+
+	&-container {
+		h2 {
+			font-size: clamp(1.5rem, 3vw, 3rem);
+		}
+
+		&__table {
+			position: relative;
+
+			margin-block-start: 4em;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(8, 1fr);
+			gap: 1em;
+
+			&::before {
+				content: "";
+				background-color: ab.$line;
+				position: absolute;
+				height: 100%;
+				width: 0.0625rem;
+				left: 25%;
+			}
+
+			.table-item {
+				border-bottom: 0.0625rem solid ab.$line;
+				display: grid;
+				grid-template-columns: subgrid;
+				grid-column: span 4;
+				gap: 5em; // 5rem
+				align-items: center;
+
+				img {
+					position: absolute;
+					// display: none;
+					width: min(15vw, 12rem);
+					// outline: 2px solid red;
+					translate: 45% -20%;
+				}
+
+				&__head {
+					font-size: 1.875rem;
+					font-size: clamp(0.8955rem, 1.8vw, 1.875rem);
+					font-weight: 700;
+					text-align: center;
+				}
+
+				&__content {
+					font-size: 1.25rem;
+					font-size: clamp(0.71638rem, 1.5vw, 1.25rem);
+					text-align: center;
+					// outline: 2px solid red;
+					margin-block: 0.5em;
+				}
+			}
+		}
+	}
+}

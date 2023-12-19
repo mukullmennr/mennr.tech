@@ -9,6 +9,11 @@ export default function page() {
 	return (
 		<>
 			<Main />
+
+			<div className="who-we-help-chipy container">
+				<img src="/common/chipy/chipy-who-we-help.svg" alt="chipy" />
+			</div>
+
 			<ExternalLinks links={whowehelp} />
 			<FAQ ques={faqs}>Who We Help FAQs</FAQ>
 		</>

@@ -2,10 +2,18 @@
 @use "./pages";
 @use "./components";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: ab.$white;
 	-webkit-tap-highlight-color: transparent;
 	color: ab.$text1;
+}
+
+pre {
+	margin: 0;
 }
 
 .container {
@@ -31,6 +39,7 @@ img {
 	iframe {
 		width: 100%;
 		height: 43.5rem;
+		// height: 100%;
 		border: none;
 	}
 }

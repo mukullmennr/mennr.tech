@@ -50,4 +50,51 @@
 			}
 		}
 	}
+
+	.chipy-parent {
+		position: relative;
+		height: 43.5em;
+		background-color: ab.$white;
+
+		.calender-container {
+			position: relative;
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			background-color: ab.$white;
+
+			@include ab.screen-54 {
+				margin-inline: 0;
+				width: calc(38em + 4vw);
+				width: 100%;
+			}
+
+			@include ab.screen-64 {
+				width: 50em;
+				width: 100%;
+			}
+		}
+
+		@include ab.screen-54 {
+			margin-inline: 0;
+			width: calc(38em + 4vw);
+		}
+
+		@include ab.screen-64 {
+			width: 50em;
+		}
+
+		img {
+			position: absolute;
+			display: none;
+
+			@include ab.screen-54 {
+				display: block;
+				right: -8em;
+				bottom: 1.8em;
+
+				rotate: 30deg;
+			}
+		}
+	}
 }

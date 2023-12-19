@@ -42,7 +42,7 @@ export const whatwedo = [
 		link: services.businessListings,
 	},
 	{
-		text: "Print Ads",
+		text: "Direct Mail Ads",
 		link: services.printAds,
 	},
 	{

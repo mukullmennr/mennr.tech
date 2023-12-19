@@ -1,0 +1,121 @@
+@use "../../abstracts" as ab;
+
+.industries-importance {
+	padding-block: 2em;
+
+	.container {
+		box-shadow: 4px 0px 30px rgba(28, 55, 82, 0.3);
+		border-radius: 1.5em;
+		padding-block: clamp(2rem, 2vw, 3.6rem);
+		padding-inline: 1rem;
+		text-align: center;
+		width: min(95%, 83rem);
+
+		@include ab.screen-48 {
+			padding-inline: 2rem;
+		}
+	}
+
+	&__heading {
+		text-align: center;
+		width: 90%;
+		margin-inline: auto;
+		font-size: clamp(1.5rem, 2vw, 2.5rem);
+		line-height: 2.5rem;
+		letter-spacing: -0.03rem;
+		margin-block-end: 3.31rem;
+
+		@include ab.screen-48 {
+			width: 75%;
+		}
+	}
+
+	&__steps {
+		background-image: url("../../../../public/common/importance/importance-flow-mobile.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		@include ab.screen-48 {
+			background-image: url("../../../../public/common/importance/importance-flow-pc.svg");
+		}
+
+		> div {
+			margin-block-end: 5.34rem;
+			text-align: center;
+			max-width: 80%;
+			margin-inline: auto;
+
+			@include ab.screen-48 {
+				margin-block-end: 2.77rem;
+			}
+
+			&:last-child {
+				margin-block-end: 0;
+			}
+
+			&:nth-child(even) {
+				display: none;
+			}
+
+			@include ab.screen-48 {
+				max-width: 46%;
+				margin-inline: 0;
+
+				&:nth-child(even) {
+					margin-inline-start: auto;
+					display: block;
+				}
+			}
+
+			> p {
+				display: inline-block;
+				background-color: ab.$background7;
+				font-weight: 500;
+				font-size: clamp(1.125rem, 1.8vw, 1.5rem);
+
+				padding-inline: 2rem;
+				padding-block: 0.4em;
+				text-align: center;
+				border-radius: 0.8em;
+			}
+		}
+	}
+
+	a {
+		font-size: clamp(1.056rem, 1.8vw, 2rem);
+		color: ab.$white;
+		text-align: center;
+		font-weight: 700;
+		text-decoration: none;
+
+		background-color: ab.$accent1;
+		display: inline-block;
+
+		padding-block: 0.4em;
+		padding-inline: 1.8em;
+		border-radius: 0.6em;
+		border: 2px solid ab.$accent1;
+
+		transition: background-color 300ms, color 300ms;
+		margin-inline: auto;
+		margin-block-start: 5rem;
+
+		svg {
+			display: none;
+
+			@include ab.screen-40 {
+				display: inline;
+			}
+		}
+
+		@include ab.screen-48 {
+			margin-block-start: 4.06rem;
+		}
+
+		&:hover {
+			background-color: ab.$white;
+			color: ab.$accent1;
+		}
+	}
+}

@@ -19,24 +19,31 @@ export default function InfoThree() {
 				<div className="info-child">
 					<div className="info-child__image">
 						{/* <img src="/home/whychoseus.jpg" alt="collab team" /> */}
-						<Image src={collabTeam} alt="collab team" />
+						{/* <Image src={collabTeam} alt="collab team" /> */}
+						<img
+							src="/common/chipy/chipy-celebrating.svg"
+							alt="chipy"
+						/>
 					</div>
 
 					<p>
-						But every business has unique needs and there&apos;s not
-						a one size fits all marketing strategy. Budget,
-						location, what you sell, all of these play critical
-						roles in determining an effective strategy to
-						successfully finding new business through the power of
-						the internet.
+						It’s important to remember every business has unique
+						needs and there’s not a one-size-fits-all marketing
+						strategy. Budget, location, what you sell, all of these
+						play critical roles in determining an effective strategy
+						to successfully finding new business through the power
+						of the internet.
 					</p>
 				</div>
 
-				<div className="info-point">
-					{/* <img src="/home/info-up.svg" alt="arrow up" /> */}
-					<Image src={ArrowUp} alt="arrow up" />
+				{/* <div className="info-point">
+					<img src="/home/info-up.svg" alt="arrow up" />
 
 					<p>Find out why we are so meticulous</p>
+				</div> */}
+
+				<div className="info-chipy">
+					<img src="/common/chipy/chipy-salute.svg" alt="chipy" />
 				</div>
 			</div>
 		</div>

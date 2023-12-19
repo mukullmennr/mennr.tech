@@ -54,9 +54,9 @@ export default function Footer() {
 										Solutions
 									</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link href={links.solutions}>Blog</Link>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 
@@ -139,7 +139,7 @@ export default function Footer() {
 
 								<li>
 									<Link href={services.printAds}>
-										Print Ads
+										Direct Mail Ads
 									</Link>
 								</li>
 								<li>
@@ -198,9 +198,9 @@ export default function Footer() {
 										<FontAwesomeIcon icon={faInstagram} />
 									</a>
 
-									<a href={socials.threads} target="_blank">
+									{/* <a href={socials.threads} target="_blank">
 										<FontAwesomeIcon icon={faThreads} />
-									</a>
+									</a> */}
 								</div>
 							</div>
 						</div>

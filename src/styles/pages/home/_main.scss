@@ -4,14 +4,18 @@
 	padding-block: 5em 4em;
 	color: ab.$text2;
 	background-color: ab.$background1;
-	border-radius: 0 0 1em 1em;
+	border-radius: 0 0 1.875rem 1.875rem;
+
+	.breadcrumb {
+		translate: 0 -3em;
+	}
 
 	// background color
 	&::before {
 		content: "";
 		background-color: ab.$background1;
 		position: absolute;
-		// border-radius: 0 0 1em 1em;
+		// border-radius: 0 0 1.875rem 1.875rem;
 
 		top: 0;
 		height: 10em;

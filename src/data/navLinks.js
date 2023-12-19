@@ -2,17 +2,17 @@ export const links = {
 	whoweare: "/who-we-are",
 	whatwedo: "/what-we-do",
 	whowehelp: "/who-we-help",
-	solutions: "/",
+	solutions: "/solutions",
 	blog: "/",
 };
 
 export const industries = {
-	automotive: "/",
-	skilledTradesBusinesses: "/",
-	personalCare: "/",
-	realEstate: "/",
-	landscapingServices: "/",
-	otherSmallBusiness: "/",
+	automotive: "/who-we-help/automotive-business",
+	skilledTradesBusinesses: "/who-we-help/skilled-trades-businesses",
+	personalCare: "/who-we-help/personal-care-businesses",
+	realEstate: "/who-we-help/real-estate",
+	landscapingServices: "/who-we-help/landscaping-businesses",
+	otherSmallBusiness: "/who-we-help/other-small-businesses",
 };
 
 export const services = {
@@ -22,7 +22,7 @@ export const services = {
 	googleAds: "/what-we-do/google-ads",
 	reviewManagement: "/what-we-do/review-management",
 	websiteDesignDevelopment: "/what-we-do/website-design-and-development",
-	printAds: "/what-we-do/print-ads",
+	printAds: "/what-we-do/direct-mail-ads",
 	googleMyBusiness: "/what-we-do/google-business-profile",
 	reputationManagement: "/what-we-do/reputation-management",
 	businessListings: "/what-we-do/business-listings",

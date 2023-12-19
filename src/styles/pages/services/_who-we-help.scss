@@ -1,0 +1,9 @@
+@use "../../abstracts" as ab;
+
+.who-we-help-chipy {
+	margin-block: clamp(4.75rem, 3vw, 2.94rem) clamp(-4.75rem, -3vw, -2.94rem);
+
+	img {
+		width: 100%;
+	}
+}

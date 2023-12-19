@@ -59,6 +59,10 @@ export default function OurCertifications({
 	return (
 		<div className="containerQuery ourcertifications-parent">
 			<div className="ourcertifications">
+				<img
+					src="/common/chipy/chipy-hands-up-standing.svg"
+					alt="chipy"
+				/>
 				{children}
 
 				<div className="ourcertifications-content">

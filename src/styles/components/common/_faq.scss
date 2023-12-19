@@ -1,7 +1,8 @@
 @use "../../abstracts" as ab;
 
 .faq {
-	padding-block-end: clamp(5rem, 7vw, 13rem);
+	// padding-block-end: clamp(5rem, 7vw, 13rem);
+	// margin-block-end: clamp(5rem, 6vw, 10rem);
 
 	&-heading {
 		font-size: clamp(1.5rem, 2vw, 2.5rem);
