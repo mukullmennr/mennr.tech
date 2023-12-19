@@ -66,7 +66,7 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 				<div className={`chipy-parent ${classname}`}>
 					<div className="calender-container" id="calender">
 						<iframe
-							src="https://meetings.hubspot.com/rohan90?embed=true"
+							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
 						></iframe>
 					</div>

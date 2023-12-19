@@ -1,6 +1,7 @@
 @use "../../abstracts" as ab;
 
 .plans {
+	margin-block: 3em;
 	&-heading {
 		font-weight: 700;
 		font-size: clamp(1.5rem, 5.5cqw, 2.5rem);
@@ -109,4 +110,10 @@
 			}
 		}
 	}
+}
+
+.typeform {
+	margin-block: 3em;
+
+	background-color: ab.$white;
 }

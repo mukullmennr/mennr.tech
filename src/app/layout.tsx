@@ -20,6 +20,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
+			<head>
+				<script src="//embed.typeform.com/next/embed.js"></script>
+			</head>
 			<body className={plusJakartaSans.className}>{children}</body>
 		</html>
 	);
