@@ -2,7 +2,8 @@
 
 .solutions-main {
 	// outline: 2px solid coral;
-	padding-block: 5em 5em;
+	// padding-block: 5em 5em;
+	padding-block: 5em 0;
 	color: ab.$text2;
 	background-color: ab.$background1;
 	border-radius: 0 0 1.875rem 1.875rem;
@@ -23,8 +24,9 @@
 	}
 
 	.container > div {
-		container-type: inline-size;
+		// container-type: inline-size;
 		text-align: center;
+		// outline: 2px solid red;
 
 		@include ab.screen-40 {
 			width: 40%;
@@ -34,13 +36,15 @@
 			&:last-child {
 				text-align: right;
 				margin-inline-start: auto;
+				translate: 0 -50%;
 			}
 		}
 	}
 
 	&__text {
 		font-weight: 700;
-		font-size: clamp(1.5rem, 5.5cqw, 2.5rem);
+		// font-size: clamp(1.5rem, 5.5cqvw, 2.5rem);
+		font-size: clamp(1.7rem, 6vw, 2.9rem);
 		// outline: 2px solid lightpink;
 	}
 
@@ -55,6 +59,7 @@
 			left: 50%;
 			translate: -60%;
 			bottom: 1em;
+			bottom: 10%;
 		}
 	}
 }
