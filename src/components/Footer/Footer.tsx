@@ -185,22 +185,42 @@ export default function Footer() {
 								<h3 className="list-head">Connect With Us</h3>
 
 								<div className="social-links">
-									<a href={socials.facebook} target="_blank">
+									<a
+										href={socials.facebook}
+										className="facebook"
+										target="_blank"
+									>
 										<FontAwesomeIcon icon={faFacebookF} />
 									</a>
-									<a href={socials.twitter} target="_blank">
+									{/* <a
+										href={socials.twitter}
+										className="twitter"
+										target="_blank"
+									>
 										<FontAwesomeIcon icon={faXTwitter} />
-									</a>
-									<a href={socials.linkedin} target="_blank">
+									</a> */}
+									<a
+										href={socials.linkedin}
+										className="linkedin"
+										target="_blank"
+									>
 										<FontAwesomeIcon icon={faLinkedinIn} />
 									</a>
-									<a href={socials.instagram} target="_blank">
+									<a
+										href={socials.instagram}
+										className="instagram"
+										target="_blank"
+									>
 										<FontAwesomeIcon icon={faInstagram} />
 									</a>
 
-									{/* <a href={socials.threads} target="_blank">
+									<a
+										href={socials.threads}
+										className="threads"
+										target="_blank"
+									>
 										<FontAwesomeIcon icon={faThreads} />
-									</a> */}
+									</a>
 								</div>
 							</div>
 						</div>

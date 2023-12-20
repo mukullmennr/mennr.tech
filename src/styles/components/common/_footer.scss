@@ -161,35 +161,35 @@
 								transition: background-color 300ms;
 
 								// facebook
-								&:nth-child(1) {
+								&.facebook {
 									&:hover {
 										background-color: ab.$facebook;
 									}
 								}
 
 								// twitter
-								&:nth-child(2) {
+								&.twitter {
 									&:hover {
 										background-color: ab.$twitter;
 									}
 								}
 
 								// linkedin
-								&:nth-child(3) {
+								&.linkedin {
 									&:hover {
 										background-color: ab.$linkedin;
 									}
 								}
 
 								// instagram
-								&:nth-child(4) {
+								&.instagram {
 									&:hover {
 										background-color: ab.$instagram;
 									}
 								}
 
 								// threads
-								&:nth-child(5) {
+								&.threads {
 									&:hover {
 										background-color: ab.$threads;
 									}
