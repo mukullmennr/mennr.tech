@@ -15,7 +15,7 @@ export default function BlogForm() {
 				value={email}
 				onChange={(e) => setEmail(e.target.value)}
 			/>
-			<button>Join</button>
+			<button aria-label="join our blog">Join</button>
 		</form>
 	);
 }

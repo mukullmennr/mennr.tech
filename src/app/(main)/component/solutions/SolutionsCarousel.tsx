@@ -97,11 +97,11 @@ export default function SolutionsCarousel() {
 				</div>
 
 				<>
-					<button onClick={scrollPrev}>
+					<button onClick={scrollPrev} aria-label="previous slide">
 						<FontAwesomeIcon icon={faAngleLeft} />
 					</button>
 
-					<button className="right" onClick={scrollNext}>
+					<button className="right" onClick={scrollNext} aria-label="next slide">
 						<FontAwesomeIcon icon={faAngleRight} />
 					</button>
 				</>

@@ -189,6 +189,7 @@ export default function Footer() {
 										href={socials.facebook}
 										className="facebook"
 										target="_blank"
+										aria-label="mennr_facebook"
 									>
 										<FontAwesomeIcon icon={faFacebookF} />
 									</a>
@@ -203,6 +204,7 @@ export default function Footer() {
 										href={socials.linkedin}
 										className="linkedin"
 										target="_blank"
+										aria-label="mennr_linkedin"
 									>
 										<FontAwesomeIcon icon={faLinkedinIn} />
 									</a>
@@ -210,6 +212,7 @@ export default function Footer() {
 										href={socials.instagram}
 										className="instagram"
 										target="_blank"
+										aria-label="mennr_instagram"
 									>
 										<FontAwesomeIcon icon={faInstagram} />
 									</a>
@@ -218,6 +221,7 @@ export default function Footer() {
 										href={socials.threads}
 										className="threads"
 										target="_blank"
+										aria-label="mennr_threads"
 									>
 										<FontAwesomeIcon icon={faThreads} />
 									</a>
