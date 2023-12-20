@@ -43,7 +43,7 @@ export default function Table({ data }: TableProps) {
 
 					<div className="table-container__table">
 						<div className="table-item">
-							<img src="/table-arrow.svg" />
+							<img src="/table-arrow.svg" alt="arrow" />
 							<p></p>
 							{columnHead}
 						</div>

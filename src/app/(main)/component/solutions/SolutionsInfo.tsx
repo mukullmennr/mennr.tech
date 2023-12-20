@@ -47,6 +47,7 @@ export default function SolutionsInfo() {
 						<img
 							className="arrow-pc"
 							src="/home/solutions/solutions-down-pc.svg"
+							alt="line_pointing_down"
 						/>
 					</p>
 					<p className="solutions-pcard">
@@ -58,6 +59,7 @@ export default function SolutionsInfo() {
 					<img
 						className="arrow-mobile"
 						src="/home/solutions/solutions-down-mobile.svg"
+						alt="line_pointing_down"
 					/>
 				</div>
 			</div>

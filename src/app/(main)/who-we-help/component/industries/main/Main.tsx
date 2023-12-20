@@ -55,7 +55,7 @@ export default function Main({ data, breadcrumb }: MainContentProps) {
 								<h3>Certified by</h3>
 
 								<div className="sub-industries__images ">
-									<img src="/industries/our-certification-arrow-white.svg" />
+									<img src="/industries/our-certification-arrow-white.svg" alt="arrow"/>
 
 									<div className="sub-industries-images__container google">
 										<Image
@@ -75,7 +75,7 @@ export default function Main({ data, breadcrumb }: MainContentProps) {
 					</div>
 
 					<div className="industries-main__element image">
-						<img src={data.img} />
+						<img src={data.img} alt="chipy"/>
 					</div>
 				</div>
 			</div>
