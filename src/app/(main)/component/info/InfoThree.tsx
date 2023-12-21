@@ -7,32 +7,27 @@ export default function InfoThree() {
 	return (
 		<div className="info-item info-three">
 			<div className="container">
-				<p>
+				{/* <p>
 					Typically our work starts with designing and developing a
 					website that attracts new business, not scare it away. From
 					there we move onto establishing or refreshing the businesses
 					social media and reviews presence before we get started with
 					the advertising campaigns to make sure we put the businesses
 					best face forward.
-				</p>
+				</p> */}
 
 				<div className="info-child">
 					<div className="info-child__image">
 						{/* <img src="/home/whychoseus.jpg" alt="collab team" /> */}
 						{/* <Image src={collabTeam} alt="collab team" /> */}
-						<img
+						{/* <img
 							src="/common/chipy/chipy-celebrating.svg"
 							alt="chipy"
-						/>
+						/> */}
 					</div>
 
 					<p>
-						It’s important to remember every business has unique
-						needs and there’s not a one-size-fits-all marketing
-						strategy. Budget, location, what you sell, all of these
-						play critical roles in determining an effective strategy
-						to successfully finding new business through the power
-						of the internet.
+					That’s why our team of certified marketing strategists have a diverse set of skills to help small businesses like yours reach customers online.
 					</p>
 				</div>
 
@@ -43,7 +38,7 @@ export default function InfoThree() {
 				</div> */}
 
 				<div className="info-chipy">
-					<img src="/common/chipy/chipy-salute.svg" alt="chipy" />
+					{/* <img src="/common/chipy/chipy-salute.svg" alt="chipy" /> */}
 				</div>
 			</div>
 		</div>

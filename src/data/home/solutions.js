@@ -1,62 +1,62 @@
 export const solutions = [
 	{
 		heading: "SEO",
-		text: "Search Engine Optimization (SEO) is an essential tool to make sure your business can be found by customers searching on Google or....",
+		text: "How customers find you through Google and Bing search",
 		link: "/what-we-do/seo",
 	},
 	{
 		heading: "Social Media Management",
-		text: "How your business is perceived by the community has always been a main point of emphasis in business success. Nowadays in the digital...",
+		text: "The face of your business, your social presence on the community",
 		link: "/what-we-do/social-media-management",
 	},
 	{
 		heading: "Facebook Ads",
-		text: "Meta Ads, formerly Facebook Ads, now allows for you to run ads on both Meta and Instagram. We find that Meta Ads take a bit more effort...",
+		text: "Targeting where your customer base likes to hangout online",
 		link: "/what-we-do/meta-ads",
 	},
 	{
 		heading: "Google Ads",
-		text: "Being visible in the location where your customers look for your products or services most is pretty important. That’s where Google...",
+		text: "Get in front of customers actively looking for your services",
 		link: "/what-we-do/google-ads",
 	},
 	{
 		heading: "Review Management",
-		text: "As we all know reviews can make or break a small business. While a few extra positive 5 star reviews can help you beat out...",
+		text: "Build creditability by responding to reviews and interacting with customers",
 		link: "/what-we-do/review-management",
 	},
 	{
 		heading: "Reputation Management",
-		text: "For small local businesses, Reputation Management is what larger corporate companies would call PR. You want the public to perceive...",
+		text: "Maintain that creditability with local news station appearances, local articles, and positive social interactions",
 		link: "/what-we-do/reputation-management",
 	},
 	{
 		heading: "Website Design & Development",
-		text: "Let’s be honest, the Digital Age isn’t coming, it’s here. Having a website is now a necessity for any business, serving as a digital...",
+		text: "75% of people judge a business based on their website design before reading anything",
 		link: "/what-we-do/website-design-and-development",
 	},
 	{
 		heading: "Google My Business",
-		text: "To local businesses, a Google Business Profile (GBP) is essential for digital presence and customer engagement. It serves as your...",
+		text: "Your way of telling Google you’re a legit business ready to be visible to the public",
 		link: "/what-we-do/google-business-profile",
 	},
 	{
 		heading: "Business Listings",
-		text: "When a potential customer finds your business online, you want them to be able to contact your business. Sounds like common sense...",
+		text: "Ensure your businesses name, address, and contact info is displayed accurately across the internet",
 		link: "/what-we-do/business-listings",
 	},
 	{
 		heading: "Direct Mail Ads",
-		text: "While it's true that the shift towards online advertising has led to a decrease in the use of Direct Mail Ads, we find they still hold a...",
+		text: "Digital is great, but sometimes handing out flyers the traditional way is a better approach",
 		link: "/what-we-do/direct-mail-ads",
 	},
 	{
 		heading: "Map Ads",
-		text: "We find Map Ads (Performance Max campaigns for store goals) work best for businesses like restaurants, gas stations, tire shops...",
+		text: "Best for restaurants who want to attract foot traffic from people driving and hungry",
 		link: "/what-we-do/map-ads",
 	},
 	{
 		heading: "Strategic Planning",
-		text: "As a small business owner, you have goals you want your business to achieve. Maybe you want to get more sales, open more locations...",
+		text: "How we keep everyone on the same page",
 		link: "/what-we-do/strategic-planning",
 	},
 ];

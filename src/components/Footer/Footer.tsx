@@ -28,7 +28,7 @@ export default function Footer() {
 					/>
 				</div>
 
-				<div className="footer-container">
+				<div className="footer-container" id ="footer">
 					<div className="footer-container__item link-grid">
 						<div className="link-grid__item">
 							<h3 className="list-head">Navigations</h3>

@@ -12,7 +12,7 @@ export default function Solutions() {
 			<SolutionsCarousel />
 
 			<div className="solutions-services">
-				<Link href="/what-we-do">See all our services</Link>
+				<Link href="/what-we-do">See how we grow your business</Link>
 			</div>
 		</div>
 	);
