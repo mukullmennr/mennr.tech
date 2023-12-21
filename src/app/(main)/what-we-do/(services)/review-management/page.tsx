@@ -23,7 +23,7 @@ export default function page() {
 			<Guide data={guide} />
 			<Comparison data={comparison} />
 			<Info data={info} />
-			<Steps data={steps} isServices={true} classname="webdev" />
+			<Steps data={steps} isServices={true} classname="review" />
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 			<Breadcrumb classname="bottom" data={breadcrumb} />
 		</>

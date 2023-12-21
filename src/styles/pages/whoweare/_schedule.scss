@@ -42,7 +42,8 @@
 				position: absolute;
 
 				width: clamp(18rem, 20vw, 26rem);
-				top: 1em;
+				// top: 1em;
+				top: 4em;
 			}
 
 			@include ab.screen-74 {

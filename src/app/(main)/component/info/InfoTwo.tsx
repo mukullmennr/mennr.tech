@@ -35,11 +35,11 @@ export default function InfoTwo() {
 						alt="arrow down"
 					/> */}
 
-					<Image
+					{/* <Image
 						className="img-arrow"
 						src={arrrowDown}
 						alt="arrow down"
-					/>
+					/> */}
 				</div>
 
 				<div className="info-button">
