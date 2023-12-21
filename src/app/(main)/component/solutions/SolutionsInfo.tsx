@@ -17,7 +17,7 @@ export default function SolutionsInfo() {
 						And just like your cousin, you can call us at anytime
 						and we&apos;ll be happy to help with anything!
 						<img
-							src="/common/chipy/chipy-phone.svg"
+							src="/common/chipy/chipy_laptop.svg"
 							alt="chipy sitting"
 							className="chipy"
 						/>
@@ -26,11 +26,11 @@ export default function SolutionsInfo() {
 
 				<div className="solutions-info__item card">
 					<h3>
-						Take your first step into the Digital Age with Mennr.
+					Discover marketing solutions that fit your businesses needs and goals.
 					</h3>
 
 					<div>
-						<Link href="/solutions/#calender">Contact Us!</Link>
+						<Link href="/solutions/#typeform">Take our Quiz!</Link>
 					</div>
 
 					<img
