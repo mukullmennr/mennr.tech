@@ -29,7 +29,7 @@ export default function Plans({ data }: PlansProps) {
 							<li key={point + index}>
 								<div>
 									<span>
-										<img src="/tick.svg" />
+										<img src="/tick.svg" alt="tick" />
 									</span>
 									<p>{point}</p>
 								</div>

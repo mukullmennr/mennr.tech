@@ -73,7 +73,7 @@ export default function LoginForm() {
 				</div>
 
 				<div className="form-item">
-					<button type="submit">Login</button>
+					<button type="submit" aria-label="login">Login</button>
 				</div>
 			</form>
 

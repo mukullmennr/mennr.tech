@@ -12,7 +12,7 @@ export default function Certification({ data }: CertificationProps) {
 	const images = data.map((image) => {
 		return (
 			<div key={image} className="industries-image__container">
-				<img src={image} />
+				<img src={image} alt="certificate"/>
 			</div>
 		);
 	});
@@ -21,13 +21,13 @@ export default function Certification({ data }: CertificationProps) {
 		<div className="industries-certification">
 			<div className="container">
 				<div className="industries-certification__yours">
-					<img src="/common/chipy/chipy-hands-up.svg" />
+					<img src="/common/chipy/chipy-hands-up.svg" alt="chipy" />
 					<h3 className="industries-heading">Your certifications</h3>
 
 					<div className="industries-images">
 						{images}
 
-						<img src="/industries/your-certification-arrow.svg" />
+						<img src="/industries/your-certification-arrow.svg" alt="arrow" />
 					</div>
 				</div>
 
@@ -35,7 +35,7 @@ export default function Certification({ data }: CertificationProps) {
 					<h3 className="industries-heading">Our certifications</h3>
 
 					<div className="industries-images">
-						<img src="/industries/our-certification-arrow.svg" />
+						<img src="/industries/our-certification-arrow.svg" alt="arrow"/>
 
 						<div className="industries-image__container">
 							<Image src={GooglePartner} alt="Google Partner" />

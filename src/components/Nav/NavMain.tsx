@@ -317,7 +317,7 @@ export default function NavMain() {
 
 						<div className="nav-bottom__links-ours">
 							<div className="links-phone hidden-large">
-								<a href={`tel:${number}`}>
+								<a href={`tel:${number}`} aria-label="phone_number">
 									<FontAwesomeIcon icon={faPhoneVolume} />
 								</a>
 							</div>

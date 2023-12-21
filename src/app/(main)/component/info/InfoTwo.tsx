@@ -43,7 +43,7 @@ export default function InfoTwo() {
 				</div>
 
 				<div className="info-button">
-					<button onClick={handleSolution}>
+					<button onClick={handleSolution} aria-label="Go to solution">
 						What&apos;s in the growth strategy?
 					</button>
 				</div>
