@@ -60,3 +60,17 @@
 		@content;
 	}
 }
+
+// 885
+@mixin screen-55 {
+	@media (min-width: 55.3125em) {
+		@content;
+	}
+}
+
+// 1245
+@mixin screen-77 {
+	@media (min-width: 77.8125em) {
+		@content;
+	}
+}

@@ -21,13 +21,19 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 	const stepItems = data.steps.map((step, index) => {
 		if (!isServices && index === 2) {
 			return (
-				<pre className={plusJakartaSans.className} key={index}>
+				<pre
+					className={`${plusJakartaSans.className} steps-item__element`}
+					key={index}
+				>
 					{isServices && <span>{index + 1}.</span>} {step}
 				</pre>
 			);
 		}
 		return (
-			<p className={plusJakartaSans.className} key={index}>
+			<p
+				className={`${plusJakartaSans.className} steps-item__element`}
+				key={index}
+			>
 				{isServices && <span>{index + 1}.</span>} {step}
 			</p>
 		);
