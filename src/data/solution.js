@@ -43,11 +43,24 @@ export const plans = [
 	{
 		heading: "Sustainable growth ",
 		text: "Best for businesses that want to build a sustainable business with the next generation in mind.",
-		points: ["Reputation Management", "Website Design & Development"],
+		points: [
+			"Build up your website and SEO to consistently bring organic traffic to your website.",
+			"Create and maintain a community that engages with your business on social media.",
+			"Setup webpages for the products or services you offer and locations you serve if applicable.",
+			"Integrate your site with ‘Pixels’ to retarget people who interact with your business online.",
+			"Optimize your Google Business Profile and manage customer reviews across the internet.",
+			"Run offline campaigns including news station appearances and direct mail ads.",
+		],
 	},
 	{
 		heading: "Hybrid",
 		text: "Best for businesses that need immediate business but also want consistent business long term.  ",
-		points: ["Reputation Management", "Website Design & Development"],
+		points: [
+			"Setup ads on Google to immediately put you in front of new business.",
+			"Make sure your business appear at the top of Google Maps and local searches.",
+			"Integrate your site with ‘Pixels’ to retarget people who interact with your business online.",
+			"Build up your website and SEO to consistently bring organic traffic to your website.",
+			"Optimize your Google Business Profile and manage customer reviews across the internet.",
+		],
 	},
 ];

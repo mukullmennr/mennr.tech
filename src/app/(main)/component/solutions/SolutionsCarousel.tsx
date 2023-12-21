@@ -101,7 +101,11 @@ export default function SolutionsCarousel() {
 						<FontAwesomeIcon icon={faAngleLeft} />
 					</button>
 
-					<button className="right" onClick={scrollNext} aria-label="next slide">
+					<button
+						className="right"
+						onClick={scrollNext}
+						aria-label="next slide"
+					>
 						<FontAwesomeIcon icon={faAngleRight} />
 					</button>
 				</>

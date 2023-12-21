@@ -7,7 +7,9 @@ export default function SolutionsInfo() {
 		<div className="solutions-info">
 			<div className="container">
 				<div className="solutions-info__item intro">
-					<Link href="/solutions">Find a solution that fits your needs</Link>
+					{/* <Link href="/solutions">
+						Find a solution that fits your needs
+					</Link> */}
 
 					<p className="solutions-pcard">
 						Think of us as your tech-savy cousin. Able to answer any
@@ -26,7 +28,8 @@ export default function SolutionsInfo() {
 
 				<div className="solutions-info__item card">
 					<h3>
-					Discover marketing solutions that fit your businesses needs and goals.
+						Discover marketing solutions that fit your businesses
+						needs and goals.
 					</h3>
 
 					<div>
@@ -40,7 +43,7 @@ export default function SolutionsInfo() {
 					/>
 				</div>
 
-				<div className="solutions-info__item guide">
+				{/* <div className="solutions-info__item guide">
 					<p className="solutions-pcard">
 						And for those who want to learn more about what exactly
 						we do.
@@ -61,6 +64,32 @@ export default function SolutionsInfo() {
 						src="/home/solutions/solutions-down-mobile.svg"
 						alt="line_pointing_down"
 					/>
+				</div> */}
+
+				<div className="solutions-info__item home-solution__chipy">
+					<h3>
+						Or schedule a consultation with one of our certified
+						marketing strategists to get started!
+					</h3>
+
+					<img
+						src="/home/home-solution-arrow-down.svg"
+						alt="arrow-down"
+					/>
+
+					<div className="chipy-parent">
+						<div className="calender-container" id="calender">
+							<iframe
+								src="https://meetings.hubspot.com/luca-veneziano?embed=true"
+								frameBorder="0"
+							></iframe>
+						</div>
+
+						<img
+							src="/common/chipy/chipy-call-color.svg"
+							alt="chipy contact"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>

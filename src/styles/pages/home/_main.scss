@@ -56,6 +56,7 @@
 		margin-block-start: clamp(4em, 10vw, 6em);
 		display: grid;
 		gap: 1em;
+		// background-color: red;
 
 		@include ab.screen-40 {
 			grid-template-columns: 1fr 1fr;
@@ -77,8 +78,10 @@
 				background-color: ab.$white;
 				border: 0.1em solid ab.$accent1;
 				font-size: clamp(0.9rem, 4vw, 1.3rem);
-				width: 14em;
+				// width: 14em;
+				width: 16em;
 				padding-block: 0.3em;
+				// padding-inline: 1.8em;
 
 				border-radius: 5em;
 

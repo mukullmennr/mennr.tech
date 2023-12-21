@@ -18,7 +18,11 @@ interface ExternalLinksItemProps {
 function ExternalLinksItem({ text, link }: ExternalLinksItemProps) {
 	return (
 		<div className="externalLinks-container__item">
-			<p><Link href={link}>{text}</Link></p>
+			{/* <p className="externalLinks-container__item-text">{text}</p> */}
+			<Link className="externalLinks-container__item-text" href={link}>
+				{text}
+			</Link>
+			{/* <Link className="externalLinks-container__item-link" href={link}>Read More</Link> */}
 		</div>
 	);
 }
