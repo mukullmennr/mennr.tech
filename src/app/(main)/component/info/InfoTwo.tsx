@@ -23,10 +23,7 @@ export default function InfoTwo() {
 					</div>
 
 					<p>
-						Our specialist meets with you (virtually or in person)
-						to review the 6 month plan. There we cover our growth
-						strategy with you in detail, making sure that you are
-						following every step of the way.
+					Once you’re satisfied, we waste no time and immediately get to work building up your online presence. 
 					</p>
 
 					{/* <img
@@ -35,23 +32,21 @@ export default function InfoTwo() {
 						alt="arrow down"
 					/> */}
 
-					<Image
+					{/* <Image
 						className="img-arrow"
 						src={arrrowDown}
 						alt="arrow down"
-					/>
+					/> */}
 				</div>
 
 				<div className="info-button">
-					<button onClick={handleSolution}>
-						What&apos;s in the growth strategy?
+					<button onClick={handleSolution} aria-label="Go to solution">
+						What&apos;s in the marketing plan? 
 					</button>
 				</div>
 
 				<p>
-					After reviewing the 6 month plan, and ensuring you and the
-					rest of the family are satisfied with our projections, we
-					sign some paperwork and begin our work immediately.
+				We craft our marketing strategies to fit your business, supporting you for both immediate and long-term success.
 				</p>
 			</div>
 		</div>

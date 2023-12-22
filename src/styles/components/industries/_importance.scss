@@ -9,7 +9,7 @@
 		padding-block: clamp(2rem, 2vw, 3.6rem);
 		padding-inline: 1rem;
 		text-align: center;
-		width: min(95%, 83rem);
+		// width: min(95%, 83rem);
 
 		@include ab.screen-48 {
 			padding-inline: 2rem;

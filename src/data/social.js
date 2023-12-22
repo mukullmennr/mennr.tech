@@ -3,5 +3,5 @@ export const socials = {
 	twitter: "https://twitter.com",
 	linkedin: "https://www.linkedin.com/company/mennr/",
 	instagram: "https://www.instagram.com/mennr.tech/",
-	// threads: "https://www.threads.net/",
+	threads: "https://www.threads.net/@mennr.tech",
 };

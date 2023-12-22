@@ -36,13 +36,27 @@
 				border: none;
 			}
 
-			p {
+			&-text {
 				font-size: clamp(1.125rem, 2vw, 2rem);
 				font-weight: 500;
-				width: 70%;
+				// width: 70%;
+				// width: 100%;
+
+				// color: ab.$text1;
+				// text-decoration: none;
+
+				// transition: color 300ms;
+
+				// text-align: center;
+				// display: inline-block;
+
+				// margin-inline: auto;
+				// &:hover {
+				// 	color: ab.$accent1;
+				// }
 			}
 
-			a {
+			&-link {
 				font-weight: 500;
 				font-size: clamp(0.65rem, 1.5vw, 1.5rem);
 				color: ab.$white;

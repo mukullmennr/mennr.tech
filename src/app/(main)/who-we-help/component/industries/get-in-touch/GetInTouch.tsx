@@ -17,7 +17,7 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 				<div className="chipy-parent">
 					<div className="getintouch-calender-container">
 						<iframe
-							src="https://meetings.hubspot.com/rohan90?embed=true"
+							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
 						></iframe>
 					</div>

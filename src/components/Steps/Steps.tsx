@@ -1,5 +1,7 @@
-import { plusJakartaSans } from "@/app/layout";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import React from "react";
+
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 interface StepsData {
 	heading?: string;
@@ -19,13 +21,19 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 	const stepItems = data.steps.map((step, index) => {
 		if (!isServices && index === 2) {
 			return (
-				<pre className={plusJakartaSans.className} key={index}>
+				<pre
+					className={`${plusJakartaSans.className} steps-item__element`}
+					key={index}
+				>
 					{isServices && <span>{index + 1}.</span>} {step}
 				</pre>
 			);
 		}
 		return (
-			<p className={plusJakartaSans.className} key={index}>
+			<p
+				className={`${plusJakartaSans.className} steps-item__element`}
+				key={index}
+			>
 				{isServices && <span>{index + 1}.</span>} {step}
 			</p>
 		);
@@ -64,7 +72,7 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 				<div className={`chipy-parent ${classname}`}>
 					<div className="calender-container" id="calender">
 						<iframe
-							src="https://meetings.hubspot.com/rohan90?embed=true"
+							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
 						></iframe>
 					</div>

@@ -19,14 +19,16 @@ export default function Cards({ image, title, text, link }: CardsProps) {
 
 			<div className="item-info">
 				<div>
-					<h3>{title}</h3>
+					<Link href={link} className="item-info__heading">
+						{title}
+					</Link>
 				</div>
 
-				<p>{text}</p>
+				<p className="item-info__text">{text}</p>
 
-				<div>
-					<Link href={link}>Learn More</Link>
-				</div>
+				{/* <div>
+					<Link className="item-info__link" href={link}>Learn More</Link>
+				</div> */}
 			</div>
 		</div>
 	);

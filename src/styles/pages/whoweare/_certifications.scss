@@ -1,0 +1,21 @@
+@use "../../abstracts" as ab;
+
+.whoweare-certification {
+	h2 {
+		font-size: clamp(1.5rem, 3.2vw, 3rem);
+
+		@include ab.screen-40 {
+			width: 70%;
+		}
+
+		margin-block-end: clamp(2.4rem, 3.2vw, 4rem);
+	}
+
+	&__certificates {
+		display: flex;
+		align-items: center;
+		gap: clamp(1em, 1.8vw, 2em);
+
+		margin-block-end: clamp(1em, 1.8vw, 2em);
+	}
+}

@@ -13,7 +13,7 @@ export default function Schedule() {
 				<div className="chipy-parent">
 					<div className="calender-container" id="calender">
 						<iframe
-							src="https://meetings.hubspot.com/rohan90?embed=true"
+							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
 						></iframe>
 					</div>

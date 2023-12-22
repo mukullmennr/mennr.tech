@@ -4,6 +4,7 @@ export const links = {
 	whowehelp: "/who-we-help",
 	solutions: "/solutions",
 	blog: "/",
+	login: "/login",
 };
 
 export const industries = {

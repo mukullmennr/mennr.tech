@@ -1,0 +1,210 @@
+@use "../../abstracts" as ab;
+
+.login {
+	background-color: ab.$background1;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.nav-login {
+	padding-block: 2em 0;
+	// outline: 2px solid red;
+
+	&.container {
+		// width: min(96%, 100rem);
+	}
+
+	a {
+		min-width: 8em;
+		display: block;
+
+		img {
+			width: clamp(8em, 13vw + 0.5em, 12em);
+			margin-inline: auto;
+
+			@include ab.screen-40 {
+				margin-inline: 0;
+			}
+		}
+	}
+}
+
+.login-form {
+	color: ab.$white;
+	// outline: 2px solid lightgreen;
+	margin-block: clamp(3.9rem, 6vw, 6.9rem);
+
+	display: flex;
+	gap: 8.31em;
+	flex-direction: column;
+
+	@include ab.screen-40 {
+		flex-direction: row;
+		gap: 2em;
+	}
+
+	&.container {
+		// width: min(96%, 100rem);
+	}
+
+	&__element {
+		// outline: 2px solid red;
+		flex: 3;
+		position: relative;
+
+		@include ab.screen-64 {
+			flex: 5;
+		}
+
+		&:first-child {
+			> img {
+				position: absolute;
+				display: none;
+
+				top: 100%;
+
+				@include ab.screen-40 {
+					display: block;
+					translate: 0 -50%;
+
+					width: clamp(15rem, 20vw, 28.3rem);
+				}
+			}
+		}
+
+		&:last-child {
+			flex: 2;
+
+			background-color: ab.$white;
+			color: ab.$text1;
+			padding-inline: clamp(1.19rem, 1.6vw, 1.9rem);
+			padding-block: clamp(1.73rem, 2.3vw, 2.88rem) 1em;
+			border-radius: 0.75rem;
+
+			display: grid;
+			gap: clamp(1.45rem, 1.8vw, 2.42rem);
+
+			width: min(80%, 26rem);
+			margin-inline: auto;
+
+			> img {
+				position: absolute;
+				width: clamp(5.3rem, 6vw, 7.3rem);
+				bottom: calc(100% - 1em);
+				right: 0;
+			}
+		}
+
+		h1 {
+			line-height: normal;
+			letter-spacing: -0.03rem;
+			font-size: clamp(1.5rem, 4.5vw, 4.9rem);
+
+			width: 80%;
+			margin-inline: auto;
+
+			text-align: center;
+
+			@include ab.screen-40 {
+				letter-spacing: -0.09819rem;
+				width: 100%;
+				text-align: left;
+			}
+
+			span {
+				color: ab.$accent1;
+			}
+		}
+
+		h3 {
+			font-size: clamp(1.21525rem, 1.8vw, 2.02544rem);
+		}
+
+		.form {
+			// outline: 2px solid lightpink;
+
+			color: ab.$text1;
+
+			display: grid;
+			gap: clamp(1.45rem, 1.8vw, 2.42rem);
+
+			&-item {
+				> label {
+					font-size: clamp(0.74rem, 1vw, 1.23rem);
+					display: block;
+
+					margin-block-end: clamp(0.28rem, 0.3vw, 0.48rem);
+				}
+
+				> input {
+					width: 100%;
+					border-radius: 0.25rem;
+
+					border: 0.4px solid ab.$background2;
+					background-color: rgba(0, 0, 128, 0.05);
+
+					font-size: clamp(0.74rem, 1vw, 1.23rem);
+					padding-block: 0.2em;
+					padding-inline: 0.3em;
+				}
+
+				&__sub {
+					display: flex;
+					gap: 0.1em;
+
+					align-items: center;
+
+					label {
+						font-size: clamp(0.52rem, 0.6vw, 0.71rem);
+					}
+				}
+
+				&:last-child {
+					text-align: center;
+
+					> button {
+						font-size: clamp(0.87rem, 1.25vw, 1.45rem);
+						background-color: ab.$accent1;
+
+						color: ab.$white;
+						border: none;
+
+						border-radius: 0.25rem;
+						padding-inline: 1.6em;
+						padding-block: 0.2em;
+
+						border: 0.1em solid ab.$accent1;
+
+						cursor: pointer;
+						transition: background-color 300ms, color 300ms;
+
+						&:hover {
+							background-color: ab.$white;
+							color: ab.$accent1;
+						}
+					}
+				}
+			}
+		}
+
+		.login-links {
+			display: flex;
+
+			justify-content: space-between;
+
+			&__element {
+				> a {
+					font-size: clamp(0.58rem, 0.85vw, 0.96rem);
+					color: ab.$text1;
+					text-decoration: underline transparent;
+
+					transition: text-decoration-color 300ms;
+
+					&:hover {
+						text-decoration-color: ab.$text1;
+					}
+				}
+			}
+		}
+	}
+}
