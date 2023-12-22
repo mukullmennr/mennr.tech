@@ -27,7 +27,9 @@ export default function InfoThree() {
 					</div>
 
 					<p>
-					That’s why our team of certified marketing strategists have a diverse set of skills to help small businesses like yours reach customers online.
+						That’s why our team of certified marketing strategists
+						have a diverse set of skills to help small businesses
+						like yours reach customers online.
 					</p>
 				</div>
 
