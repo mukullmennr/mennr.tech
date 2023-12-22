@@ -23,7 +23,8 @@ export default function InfoTwo() {
 					</div>
 
 					<p>
-					Once you’re satisfied, we waste no time and immediately get to work building up your online presence. 
+						Once you’re satisfied, we waste no time and immediately
+						get to work building up your online presence.
 					</p>
 
 					{/* <img
@@ -40,13 +41,21 @@ export default function InfoTwo() {
 				</div>
 
 				<div className="info-button">
-					<button onClick={handleSolution} aria-label="Go to solution">
-						What&apos;s in the marketing plan? 
+					<button
+						onClick={handleSolution}
+						aria-label="Go to solution"
+					>
+						What&apos;s in the marketing plan?
 					</button>
 				</div>
 
-				<p>
-				We craft our marketing strategies to fit your business, supporting you for both immediate and long-term success.
+				<p className="chipy-sigma">
+					<span>
+						We craft our marketing strategies to fit your business,
+						supporting you for both immediate and long-term success.
+					</span>
+
+					<img src="/common/chipy/chipy-sigma.svg" alt="chipy" />
 				</p>
 			</div>
 		</div>
