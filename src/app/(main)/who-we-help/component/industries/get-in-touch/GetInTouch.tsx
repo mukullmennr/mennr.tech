@@ -19,6 +19,8 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 						<iframe
 							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
+							loading="lazy"
+							title="meeting-calander"
 						></iframe>
 					</div>
 

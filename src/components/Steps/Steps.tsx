@@ -74,6 +74,8 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 						<iframe
 							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
+							loading="lazy"
+							title="meeting-calander"
 						></iframe>
 					</div>
 
