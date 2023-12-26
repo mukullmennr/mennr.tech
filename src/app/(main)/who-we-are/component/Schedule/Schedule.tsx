@@ -15,6 +15,7 @@ export default function Schedule() {
 						<iframe
 							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
+							loading="lazy"
 						></iframe>
 					</div>
 

@@ -82,6 +82,7 @@ export default function SolutionsInfo() {
 							<iframe
 								src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 								frameBorder="0"
+								loading="lazy"
 							></iframe>
 						</div>
 
