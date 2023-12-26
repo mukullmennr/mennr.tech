@@ -322,7 +322,7 @@ export default function NavMain() {
 								</a>
 							</div>
 
-							<Link className="links-button" href="#getstarted">
+							<Link className="links-button" href="/#getstarted">
 								Get Started
 							</Link>
 						</div>
