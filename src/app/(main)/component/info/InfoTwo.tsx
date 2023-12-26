@@ -23,7 +23,9 @@ export default function InfoTwo() {
 					</div>
 
 					<p>
-					Then, when you're happy with the plan, we waste no time and immediately get to work building up your online presence. 
+						Then, when you&apos;re happy with the plan, we waste no
+						time and immediately get to work building up your online
+						presence.
 					</p>
 
 					{/* <img

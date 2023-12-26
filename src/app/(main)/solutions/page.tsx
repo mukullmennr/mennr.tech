@@ -5,13 +5,11 @@ import Main from "./component/main/Main";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Plans from "./component/plans/Plans";
-import Typeform from "./component/typeform/Typeform";
 
 export default function page() {
 	return (
 		<>
 			<Main />
-			{/* <Typeform /> */}
 			<Plans data={plans} />
 			<Steps
 				data={steps}
