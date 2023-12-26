@@ -1,7 +1,4 @@
 import Script from "next/script";
-// import { Plus_Jakarta_Sans } from "next/font/google";
-
-// const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 interface SolutionsLayoutProps {
 	children: React.ReactNode;
@@ -10,10 +7,13 @@ interface SolutionsLayoutProps {
 export default function SolutionsLayout({ children }: SolutionsLayoutProps) {
 	return (
 		<>
-			<Script src="//embed.typeform.com/next/embed.js"></Script>
+			<Script
+				id="typeform-script"
+				src="//embed.typeform.com/next/embed.js"
+			></Script>
 
 			{children}
-			<Script>window.tf.load()</Script>
+			<Script id="typeform-script-load">window.tf.load()</Script>
 		</>
 	);
 }
