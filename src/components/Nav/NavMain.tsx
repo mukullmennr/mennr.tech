@@ -13,7 +13,7 @@ import { links } from "@/data/navLinks";
 
 export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
-	const [subOpen, setSubOpen] = useState(0);
+	// const [subOpen, setSubOpen] = useState(0);
 	const [show, setShow] = useState(true);
 	const pathname = usePathname();
 	const [lastScrollY, setLastScrollY] = useState(0);
@@ -50,8 +50,8 @@ export default function NavMain() {
 		}
 	}, [lastScrollY]);
 
-	let one = subOpen === 1;
-	let two = subOpen === 2;
+	// let one = subOpen === 1;
+	// let two = subOpen === 2;
 	// let three = subOpen === 3;
 	// let four = subOpen === 4;
 
@@ -59,14 +59,14 @@ export default function NavMain() {
 		setOpen((prev) => !prev);
 	};
 
-	const handleSubOpen = (val: number) => {
-		if (subOpen === val) {
-			setSubOpen(0);
-			return;
-		}
+	// const handleSubOpen = (val: number) => {
+	// 	if (subOpen === val) {
+	// 		setSubOpen(0);
+	// 		return;
+	// 	}
 
-		setSubOpen(val);
-	};
+	// 	setSubOpen(val);
+	// };
 
 	return (
 		<nav className={`nav ${!show && !open && "hide"}`}>
@@ -322,7 +322,7 @@ export default function NavMain() {
 								</a>
 							</div>
 
-							<Link className="links-button" href="#footer">
+							<Link className="links-button" href="#getstarted">
 								Get Started
 							</Link>
 						</div>

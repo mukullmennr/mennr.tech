@@ -8,9 +8,11 @@ export default function WhyChoseUs() {
 		<div className="whychoseus">
 			<div className="container">
 				<div className="whychoseus-text">
-					<p>
-						You found us, and we can help your customers find you
-						online too.
+					<p className="whychoseus-text1">
+						You found us, 
+					</p>
+					<p className="whychoseus-text2">
+					and we can help your customers find you online too.
 					</p>
 				</div>
 

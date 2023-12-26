@@ -11,7 +11,7 @@ export default function page() {
 	return (
 		<>
 			<Main />
-			<Typeform />
+			{/* <Typeform /> */}
 			<Plans data={plans} />
 			<Steps
 				data={steps}

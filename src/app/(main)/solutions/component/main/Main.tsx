@@ -17,8 +17,7 @@ export default function Main() {
 
 				<div>
 					<p className="solutions-main__text">
-						Take our 5 minute quiz and find a strategy that fits
-						your needs
+					That’s why we take the time to build personalized marketing plans for all of our partners 
 					</p>
 				</div>
 			</div>

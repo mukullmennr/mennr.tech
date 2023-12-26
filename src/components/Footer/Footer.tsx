@@ -235,8 +235,7 @@ export default function Footer() {
 						<Image src={MennrLogo} alt="Mennr" />
 
 						<p>
-							©2024 Mennr Inc. All rights reserved. Mennr and the
-							Mennr logo are trademarks of Mennr Inc.
+						©2024 Mennr  LLC. All rights reserved. Mennr  and the Mennr logo are trademarks of Mennr LLC.
 						</p>
 					</div>
 				</div>
