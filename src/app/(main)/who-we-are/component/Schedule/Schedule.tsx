@@ -16,6 +16,7 @@ export default function Schedule() {
 							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
 							loading="lazy"
+							title="meeting-calander"
 						></iframe>
 					</div>
 
