@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function InfoOne() {
@@ -19,13 +20,23 @@ export default function InfoOne() {
 					<img src="/common/chipy/chipy-meet.svg" alt="chipy" />
 				</p>
 				<p>
-					<img src="/common/chipy/chipy-call-color.svg" alt="chipy" />
+					{/* <img src="/common/chipy/chipy-call-color.svg" alt="chipy" /> */}
+					<span>
+						<Link
+							href="/solutions"
+							aria-label="What's in the marketing plan?"
+						>
+							What&apos;s in the marketing plan?
+						</Link>
+					</span>
+
 					<span>
 						Based on your initial consultation, our strategist
 						creates a detailed 6-month marketing plan, personalized
 						to your business&apos;s needs and goals.
 					</span>
 				</p>
+
 				<p>
 					<span>
 						Once we complete your 6-month plan, your strategist

@@ -345,7 +345,7 @@
 					background-color: ab.$accent1;
 					color: ab.$white;
 
-					padding: 0.4em 1em;
+					padding: 0.4em clamp(0.5em, 1vw, 1em);
 					border-radius: 0.4em;
 
 					text-decoration-color: transparent;

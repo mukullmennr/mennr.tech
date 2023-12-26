@@ -41,14 +41,14 @@ export default function InfoTwo() {
 					/> */}
 				</div>
 
-				<div className="info-button">
+				{/* <div className="info-button">
 					<button
 						onClick={handleSolution}
 						aria-label="What's in the marketing plan?"
 					>
 						What&apos;s in the marketing plan?
 					</button>
-				</div>
+				</div> */}
 
 				<p className="chipy-sigma">
 					<span>
