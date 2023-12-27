@@ -78,18 +78,14 @@ export default function SolutionsInfo() {
 					/>
 
 					<div className="chipy-parent">
-						{/* <div className="calender-container" id="getstarted">
+						<div className="calender-container" id="getstarted">
 							<iframe
 								src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 								frameBorder="0"
 								loading="lazy"
 								title="meeting-calander"
 							></iframe>
-						</div> */}
-						<div
-							className="meetings-iframe-container"
-							data-src="https://meetings.hubspot.com/luca-veneziano?embed=true"
-						></div>
+						</div>
 
 						<img
 							src="/common/chipy/chipy-call-color.svg"

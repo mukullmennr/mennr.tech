@@ -38,7 +38,6 @@ export default function OurCertifications({
 
 	useEffect(() => {
 		const myInterval = setInterval(() => {
-			console.log("working");
 			if (emblaApi) emblaApi.scrollNext();
 		}, 3000);
 

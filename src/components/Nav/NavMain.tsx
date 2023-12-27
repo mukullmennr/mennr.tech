@@ -306,7 +306,7 @@ export default function NavMain() {
 
 							<li className="hidden-large link-button">
 								<Link
-									href="/"
+									href={links.login}
 									className="nav-upper__item nav-button"
 								>
 									<span className="nav-button__circle"></span>
@@ -317,7 +317,10 @@ export default function NavMain() {
 
 						<div className="nav-bottom__links-ours">
 							<div className="links-phone hidden-large">
-								<a href={`tel:${number}`} aria-label="phone_number">
+								<a
+									href={`tel:${number}`}
+									aria-label="phone_number"
+								>
 									<FontAwesomeIcon icon={faPhoneVolume} />
 								</a>
 							</div>
