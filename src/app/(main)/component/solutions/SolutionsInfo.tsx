@@ -33,7 +33,7 @@ export default function SolutionsInfo() {
 					</h3>
 
 					<div>
-						<Link href="/solutions/#typeform">Take our Quiz!</Link>
+						<Link href="/solutions/#typeform">Find your strategy!</Link>
 					</div>
 
 					<img
