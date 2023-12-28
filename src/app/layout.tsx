@@ -21,9 +21,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
-			<head>
-				<Script src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></Script>
-			</head>
 			<body className={plusJakartaSans.className}>{children}</body>
 		</html>
 	);
