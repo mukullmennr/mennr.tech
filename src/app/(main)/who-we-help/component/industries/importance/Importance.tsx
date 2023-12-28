@@ -12,7 +12,31 @@ interface ImportanceProps {
 }
 
 export default function Importance({ data }: ImportanceProps) {
-	const steps = data.steps.map((step) => {
+	const steps = data.steps.map((step, index) => {
+		if (index === 8) {
+			return (
+				<div key={step} className="chipy-rocket">
+					<p>{step}</p>
+
+					<img src="/common/chipy/chipy-rocket.svg" alt="chipy" />
+				</div>
+			);
+		}
+
+		if (index === 9) {
+			return (
+				<div key={step} className="chipy-sitting">
+					<p>{step}</p>
+
+					<img
+						src="/common/chipy/chipy-sitting.svg"
+						width={128}
+						alt="chipy"
+					/>
+				</div>
+			);
+		}
+
 		return (
 			<div key={step}>
 				<p>{step}</p>
