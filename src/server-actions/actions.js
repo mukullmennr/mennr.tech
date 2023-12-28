@@ -36,8 +36,12 @@ export const addMail = async (email) => {
 
 		return {
 			success: true,
+			message: "Successfully added email",
 		};
 	} catch (error) {
-		throw new Error(error.message);
+		return {
+			success: false,
+			message: error.message,
+		};
 	}
 };

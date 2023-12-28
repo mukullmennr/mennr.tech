@@ -31,9 +31,7 @@ export default function BlogForm() {
 		if (email) {
 			addMail(email)
 				.then((res: any) => {
-					if (res.success) {
-						alert("Successfully added");
-					}
+					alert(res.message);
 				})
 				.catch((err) => {
 					alert(err.message);
