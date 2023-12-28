@@ -23,7 +23,6 @@ export const addMail = async (email) => {
 		});
 
 		res = await res.json();
-		console.log(res);
 
 		if (res.status === "error") {
 			if (res.category === "CONFLICT")
