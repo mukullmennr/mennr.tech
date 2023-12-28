@@ -26,7 +26,7 @@ export const addMail = async (email) => {
 
 		if (res.status === "error") {
 			if (res.category === "CONFLICT")
-				throw new Error("Email already exist");
+				throw new Error("Email already exists");
 			else if (res.category === "VALIDATION_ERROR") {
 				throw new Error("Invalid email");
 			} else {
