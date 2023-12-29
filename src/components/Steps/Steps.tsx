@@ -2,7 +2,10 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({
+	subsets: ["latin"],
+	display: "swap",
+});
 
 interface StepsData {
 	heading?: string;

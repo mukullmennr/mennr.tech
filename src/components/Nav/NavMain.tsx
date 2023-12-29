@@ -89,7 +89,11 @@ export default function NavMain() {
 					<div className="nav-bottom__logo">
 						<Link href="/">
 							{/* <img src="/logo.svg" alt="logo" /> */}
-							<Image src={MennrLogo} alt="Mennr" />
+							<Image
+								src={MennrLogo}
+								alt="Mennr"
+								priority={true}
+							/>
 						</Link>
 					</div>
 
