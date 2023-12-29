@@ -150,10 +150,15 @@
 
 				&__sub {
 					display: flex;
-					gap: 0.1em;
-					padding-block: 0.6em;
+					gap: 0.6em;
+					padding-block: 0.8em;
 
 					align-items: center;
+
+					input {
+						width: 1.5rem;
+						height: 1.5rem;
+					}
 
 					label {
 						font-size: clamp(0.76rem, 0.6vw, 0.71rem);
