@@ -60,29 +60,19 @@ export default function Main({ data, breadcrumb }: MainContentProps) {
 										alt="arrow"
 										width="93"
 										height="49"
-										priority={true}
 									/>
 
 									<div className="sub-industries-images__container google">
 										<Image
 											src={GooglePartner}
 											alt="Google Partner"
-											priority={true}
 										/>
 									</div>
 									<div className="sub-industries-images__container">
-										<Image
-											src={Hubspot}
-											alt="Hubspot"
-											priority={true}
-										/>
+										<Image src={Hubspot} alt="Hubspot" />
 									</div>
 									<div className="sub-industries-images__container">
-										<Image
-											src={Yext}
-											alt="Yext"
-											priority={true}
-										/>
+										<Image src={Yext} alt="Yext" />
 									</div>
 								</div>
 							</div>
