@@ -95,6 +95,7 @@ export default function Main({ data, breadcrumb }: MainContentProps) {
 							alt="chipy"
 							width="442"
 							height="354"
+							priority={true}
 						/>
 					</div>
 				</div>
