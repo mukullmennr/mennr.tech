@@ -1,13 +1,19 @@
 import React from "react";
 import Link from "next/link";
 import LoginForm from "../Components/LoginForm";
+import Image from "next/image";
 
 export default function page() {
 	return (
 		<div className="login">
 			<nav className="nav-login container">
 				<Link href="/">
-					<img src="/logo.svg" alt="mennr" />
+					<Image
+						src="/logo.svg"
+						alt="mennr"
+						width="192"
+						height="36"
+					/>
 				</Link>
 			</nav>
 
@@ -17,9 +23,11 @@ export default function page() {
 						Grow your business <span>today</span> with Mennr
 					</h1>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-hands-up-standing.svg"
 						alt="chipy"
+						width="115"
+						height="109"
 					/>
 				</div>
 

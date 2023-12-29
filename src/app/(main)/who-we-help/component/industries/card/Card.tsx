@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Card() {
 	return (
@@ -17,7 +18,12 @@ export default function Card() {
 						<FontAwesomeIcon icon={faAngleDown} />
 					</a>
 
-					<img src="/common/chipy/chipy-sitting.svg" alt="chipy" />
+					<Image
+						src="/common/chipy/chipy-sitting.svg"
+						alt="chipy"
+						width="160"
+						height="151"
+					/>
 				</div>
 			</div>
 		</div>

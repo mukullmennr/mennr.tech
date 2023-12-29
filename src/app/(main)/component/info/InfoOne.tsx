@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default function InfoOne() {
 	return (
@@ -17,7 +18,12 @@ export default function InfoOne() {
 						including location, customer base, online presence,
 						needs, and goals.
 					</span>
-					<img src="/common/chipy/chipy-meet.svg" alt="chipy" />
+					<Image
+						src="/common/chipy/chipy-meet.svg"
+						alt="chipy"
+						width="544"
+						height="126"
+					/>
 				</p>
 				<p>
 					{/* <img src="/common/chipy/chipy-call-color.svg" alt="chipy" /> */}
@@ -44,9 +50,11 @@ export default function InfoOne() {
 						through our proposed plan.
 					</span>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-group-sitting.svg"
 						alt="chipy"
+						width="544"
+						height="257"
 					/>
 				</p>
 			</div>

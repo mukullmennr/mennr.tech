@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ComparisonData {
@@ -13,9 +14,11 @@ interface ComparisonProps {
 export default function Comparison({ data }: ComparisonProps) {
 	return (
 		<div className="comparison">
-			<img
+			<Image
 				src="/common/chipy/chipy-sitting-handsup.svg"
 				alt="chipy sitting handsup"
+				width="214"
+				height="186"
 			/>
 			<div className="container">
 				<h3 className="comparison-heading">{data.heading}</h3>

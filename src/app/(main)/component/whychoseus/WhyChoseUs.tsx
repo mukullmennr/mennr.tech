@@ -19,11 +19,20 @@ export default function WhyChoseUs() {
 					</OurCertifications>
 
 					<div className="whychoseus-container__image">
-					
-						<img src="/home/whychoseus.WebP" alt="Why Choose Us" />
+						<Image
+							src="/home/whychoseus.WebP"
+							alt="Why Choose Us"
+							width="544"
+							height="363"
+						/>
 
 						<div className="whychoseus-container__image-more">
-							<img src="/home/down.svg" alt="Down arrow" />
+							<Image
+								src="/home/down.svg"
+								alt="Down arrow"
+								width="41"
+								height="94"
+							/>
 
 							<p>And we&apos;re family owned</p>
 						</div>

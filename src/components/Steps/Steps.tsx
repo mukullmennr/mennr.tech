@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Image from "next/image";
 import React from "react";
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
@@ -63,9 +64,11 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 						{data.last}
 					</h4>
 
-					<img
+					<Image
 						src="/common/calender/calender-point.svg"
 						alt="calender pointer"
+						width="192"
+						height="293"
 					/>
 				</div>
 
@@ -76,12 +79,16 @@ export default function Steps({ data, isServices, classname }: StepsProps) {
 							frameBorder="0"
 							loading="lazy"
 							title="meeting-calander"
+							width="792"
+							height="690"
 						></iframe>
 					</div>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-call-color.svg"
 						alt="chipy contact"
+						width="200"
+						height="210"
 					/>
 				</div>
 			</div>
