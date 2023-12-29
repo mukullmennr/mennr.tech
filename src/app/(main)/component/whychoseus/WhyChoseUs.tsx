@@ -19,7 +19,7 @@ export default function WhyChoseUs() {
 					</OurCertifications>
 
 					<div className="whychoseus-container__image">
-						{/* <img src="/home/whychoseus.jpg" alt="Why Choose Us" /> */}
+					
 						<img src="/home/whychoseus.WebP" alt="Why Choose Us" />
 
 						<div className="whychoseus-container__image-more">

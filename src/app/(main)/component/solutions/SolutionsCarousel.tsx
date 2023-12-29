@@ -26,7 +26,7 @@ export default function SolutionsCarousel() {
 			<Cards
 				key={index}
 				// image={`/home/solutions/solutions${index + 1}.WebP`}
-				image={`/home/solutions/solutions${index + 1}.WebP`}
+				image={`/home/solutions/solutions${index + 1}.svg`}
 				title={item.heading}
 				text={item.text}
 				link={item.link}

@@ -8,15 +8,15 @@ export default function Certifications() {
 
 				<div className="whoweare-certification__certificates">
 					<div className="certificates-item">
-						<img src="/awards/google.png" alt="google partners" />
+						<img src="/awards/google.svg" alt="google partners" />
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/amazon.png" alt="amazon ads" />
+						<img src="/awards/amazon.svg" alt="amazon ads" />
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/meta.png" alt="meta partners" />
+						<img src="/awards/meta.svg" alt="meta partners" />
 					</div>
 
 					<div className="certificates-item">
@@ -32,39 +32,39 @@ export default function Certifications() {
 
 				<div className="whoweare-certification__certificates">
 					<div className="certificates-item">
-						<img src="/awards/localogy.png" alt="localogy" />
+						<img src="/awards/localogy.svg" alt="localogy" />
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/microsoft.png" alt="microsoft" />
+						<img src="/awards/microsoft.svg" alt="microsoft" />
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/bbb.png" alt="bbb" />
+						<img src="/awards/bbb.svg" alt="bbb" />
 					</div>
 				</div>
 
 				<div className="whoweare-certification__certificates">
 					<div className="certificates-item">
 						<img
-							src="/awards/consumer-affairs.png"
+							src="/awards/consumer-affairs.svg"
 							alt="consumer affairs"
 						/>
 					</div>
 
 					<div className="certificates-item">
 						<img
-							src="/awards/localogy-certified.png"
+							src="/awards/localogy-certified.svg"
 							alt="localogy"
 						/>
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/yext.png" alt="yext" />
+						<img src="/awards/yext.svg" alt="yext" />
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/sp.png" alt="sp" />
+						<img src="/awards/sp.svg" alt="sp" />
 					</div>
 				</div>
 			</div>

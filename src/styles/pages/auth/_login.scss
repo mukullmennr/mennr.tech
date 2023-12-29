@@ -130,7 +130,7 @@
 
 			&-item {
 				> label {
-					font-size: clamp(0.74rem, 1vw, 1.23rem);
+					font-size: clamp(0.76rem, 1vw, 1.23rem);
 					display: block;
 
 					margin-block-end: clamp(0.28rem, 0.3vw, 0.48rem);
@@ -143,7 +143,7 @@
 					border: 0.4px solid ab.$background2;
 					background-color: rgba(0, 0, 128, 0.05);
 
-					font-size: clamp(0.74rem, 1vw, 1.23rem);
+					font-size: clamp(0.76rem, 1vw, 1.23rem);
 					padding-block: 0.2em;
 					padding-inline: 0.3em;
 				}
@@ -155,7 +155,7 @@
 					align-items: center;
 
 					label {
-						font-size: clamp(0.52rem, 0.6vw, 0.71rem);
+						font-size: clamp(0.76rem, 0.6vw, 0.71rem);
 					}
 				}
 
@@ -194,7 +194,7 @@
 
 			&__element {
 				> a {
-					font-size: clamp(0.58rem, 0.85vw, 0.96rem);
+					font-size: clamp(0.76rem, 0.85vw, 0.96rem);
 					color: ab.$text1;
 					text-decoration: underline transparent;
 
