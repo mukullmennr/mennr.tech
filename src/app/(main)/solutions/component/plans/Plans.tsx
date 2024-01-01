@@ -19,10 +19,12 @@ export default function Plans({ data }: PlansProps) {
 
 				<p>{card.text}</p>
 
-				<a href="#calender">
-					Get in touch
-					<FontAwesomeIcon icon={faAngleDown} />
-				</a>
+				<div>
+					<a href="#calender">
+						Get in touch
+						<FontAwesomeIcon icon={faAngleDown} />
+					</a>
+				</div>
 
 				<ul className="plans-points">
 					{card.points.map((point, index) => {
