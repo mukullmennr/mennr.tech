@@ -9,7 +9,7 @@ export default function page() {
 	return (
 		<>
 			<Main />
-			<ExternalLinks links={whatwedo} linkText="How we do it"/>
+			<ExternalLinks links={whatwedo} linkText="How It Impacts Marketing"/>
 			<FAQ ques={faqs}>What We Do FAQs</FAQ>
 		</>
 	);

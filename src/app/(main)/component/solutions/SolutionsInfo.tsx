@@ -36,7 +36,7 @@ export default function SolutionsInfo() {
 					</h3>
 
 					<div>
-						<Link href="/solutions/#typeform">
+						<Link href="/solutions">
 							Find your strategy!
 						</Link>
 					</div>

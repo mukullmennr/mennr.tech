@@ -20,7 +20,7 @@ export default function page() {
 				/>
 			</div>
 
-			<ExternalLinks links={whowehelp} linkText="How we help"/>
+			<ExternalLinks links={whowehelp} linkText="How We Help"/>
 			<FAQ ques={faqs}>Who We Help FAQs</FAQ>
 		</>
 	);
