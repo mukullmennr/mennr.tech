@@ -8,14 +8,16 @@ interface ExternalLinks {
 
 interface ExternalLinksProps {
 	links: ExternalLinks[];
+	linkText: string;
 }
 
 interface ExternalLinksItemProps {
 	text: string;
 	link: string;
+	linkText: string;
 }
 
-function ExternalLinksItem({ text, link }: ExternalLinksItemProps) {
+function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 	return (
 		<div className="externalLinks-container__item">
 			<p className="externalLinks-container__item-text">{text}</p>
@@ -24,19 +26,20 @@ function ExternalLinksItem({ text, link }: ExternalLinksItemProps) {
 			</Link> */}
 
 			<Link className="externalLinks-container__item-link" href={link}>
-				Read More
+			{linkText}
 			</Link>
 		</div>
 	);
 }
 
-export default function ExternalLinks({ links }: ExternalLinksProps) {
+export default function ExternalLinks({ links, linkText }: ExternalLinksProps) {
 	const item = links.map((link) => {
 		return (
 			<ExternalLinksItem
 				key={link.text}
 				text={link.text}
 				link={link.link}
+				linkText={linkText}
 			/>
 		);
 	});
