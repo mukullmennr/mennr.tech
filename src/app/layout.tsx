@@ -25,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
 			<body className={plusJakartaSans.className}>{children}</body>
-			<GoogleTagManager gtmId="GT-NB974JZ" />
+			<GoogleTagManager gtmId="G-HCZ7C019E7" />
 		</html>
 	);
 }
