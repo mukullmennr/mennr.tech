@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Schedule() {
@@ -7,7 +8,12 @@ export default function Schedule() {
 				<div className="schedule-head">
 					<h3>Get to know us more!</h3>
 
-					<img src="/home/whoweare/get-to-know-us.svg" />
+					<Image
+						src="/home/whoweare/get-to-know-us.svg"
+						width="384"
+						height="425"
+						alt="arrow"
+					/>
 				</div>
 
 				<div className="chipy-parent">
@@ -17,12 +23,16 @@ export default function Schedule() {
 							frameBorder="0"
 							loading="lazy"
 							title="meeting-calander"
+							width="792"
+							height="690"
 						></iframe>
 					</div>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-call-color.svg"
 						alt="chipy contact"
+						width="200"
+						height="210"
 					/>
 				</div>
 			</div>

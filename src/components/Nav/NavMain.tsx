@@ -89,7 +89,11 @@ export default function NavMain() {
 					<div className="nav-bottom__logo">
 						<Link href="/">
 							{/* <img src="/logo.svg" alt="logo" /> */}
-							<Image src={MennrLogo} alt="Mennr" />
+							<Image
+								src={MennrLogo}
+								alt="Mennr"
+								priority={true}
+							/>
 						</Link>
 					</div>
 
@@ -97,36 +101,6 @@ export default function NavMain() {
 						<ul className="nav-links">
 							<li>
 								<Link href={links.whoweare}>Who We Are</Link>
-							</li>
-
-							<li>
-								<Link href={links.whatwedo}>What We Do</Link>
-								{/* <input
-									type="checkbox"
-									checked={one}
-									onChange={() => {}}
-								/>
-								<div
-									className="nav-hover"
-									onClick={() => handleSubOpen(1)}
-								>
-									<span>
-										What We Do
-										<FontAwesomeIcon icon={faAngleDown} />
-									</span>
-
-									<ul className="nav-links__sub">
-										<li>
-											<Link href="/">Solution</Link>
-										</li>
-										<li>
-											<Link href="/">Services</Link>
-										</li>
-										<li>
-											<Link href="/">Pricing</Link>
-										</li>
-									</ul>
-								</div> */}
 							</li>
 
 							<li>
@@ -168,6 +142,36 @@ export default function NavMain() {
 											<Link href="/">
 												Other Small Business
 											</Link>
+										</li>
+									</ul>
+								</div> */}
+							</li>
+
+							<li>
+								<Link href={links.whatwedo}>What We Do</Link>
+								{/* <input
+									type="checkbox"
+									checked={one}
+									onChange={() => {}}
+								/>
+								<div
+									className="nav-hover"
+									onClick={() => handleSubOpen(1)}
+								>
+									<span>
+										What We Do
+										<FontAwesomeIcon icon={faAngleDown} />
+									</span>
+
+									<ul className="nav-links__sub">
+										<li>
+											<Link href="/">Solution</Link>
+										</li>
+										<li>
+											<Link href="/">Services</Link>
+										</li>
+										<li>
+											<Link href="/">Pricing</Link>
 										</li>
 									</ul>
 								</div> */}

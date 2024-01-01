@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ClientInfo {
 	email: string;
@@ -33,7 +34,12 @@ export default function LoginForm() {
 
 	return (
 		<div className="login-form__element">
-			<img src="/common/chipy/chipy-sitting.svg" alt="chipy" />
+			<Image
+				src="/common/chipy/chipy-sitting.svg"
+				alt="chipy"
+				width="384"
+				height="404"
+			/>
 
 			<h3>User Login</h3>
 
@@ -73,7 +79,9 @@ export default function LoginForm() {
 				</div>
 
 				<div className="form-item">
-					<button type="submit" aria-label="login">Login</button>
+					<button type="submit" aria-label="login">
+						Login
+					</button>
 				</div>
 			</form>
 

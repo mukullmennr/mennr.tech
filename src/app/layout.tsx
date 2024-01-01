@@ -7,7 +7,10 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({
+	subsets: ["latin"],
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "Mennr: Marketing for Small Businesses",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Solutions() {
@@ -12,9 +13,11 @@ export default function Solutions() {
 					The tactics we use aren&apos; magic, they&apos;re proven
 					methods that have worked for us and thousands of other local
 					small businesses.
-					<img
+					<Image
 						src="/common/chipy/chipy-sitting.svg"
 						alt="chipy sitting"
+						width="180"
+						height="170"
 					/>
 				</p>
 				<p className="solutions-pcard">
@@ -22,9 +25,11 @@ export default function Solutions() {
 					a marketing team certified by Google, HubSpot, and Meta.
 					You&apos;re working with a team that understands the
 					dynamics of a local family business.
-					<img
+					<Image
 						src="/common/chipy/chipy-salute.svg"
 						alt="chipy salute"
+						width="180"
+						height="188"
 					/>
 				</p>
 			</div>

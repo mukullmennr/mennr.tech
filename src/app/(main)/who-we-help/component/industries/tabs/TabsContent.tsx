@@ -35,7 +35,13 @@ export default function TabsContent({
 			</div>
 
 			<div className="tabs-content__item">
-				<img className="image" src={image} alt={heading} />
+				<Image
+					className="image"
+					src={image}
+					alt={heading}
+					width="489"
+					height="339"
+				/>
 			</div>
 		</Tabs.Content>
 	);
