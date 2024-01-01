@@ -27,6 +27,7 @@ export default function TabSection() {
 				link={tab.link}
 				image={tab.image}
 				value={`tab${index + 1}`}
+				btn={tab.btn}
 			/>
 		);
 	});

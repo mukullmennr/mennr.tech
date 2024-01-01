@@ -13,7 +13,7 @@ import { links } from "@/data/navLinks";
 
 export default function NavMain() {
 	const [open, setOpen] = useState<boolean>(false);
-	const [subOpen, setSubOpen] = useState(0);
+	// const [subOpen, setSubOpen] = useState(0);
 	const [show, setShow] = useState(true);
 	const pathname = usePathname();
 	const [lastScrollY, setLastScrollY] = useState(0);
@@ -50,8 +50,8 @@ export default function NavMain() {
 		}
 	}, [lastScrollY]);
 
-	let one = subOpen === 1;
-	let two = subOpen === 2;
+	// let one = subOpen === 1;
+	// let two = subOpen === 2;
 	// let three = subOpen === 3;
 	// let four = subOpen === 4;
 
@@ -59,14 +59,14 @@ export default function NavMain() {
 		setOpen((prev) => !prev);
 	};
 
-	const handleSubOpen = (val: number) => {
-		if (subOpen === val) {
-			setSubOpen(0);
-			return;
-		}
+	// const handleSubOpen = (val: number) => {
+	// 	if (subOpen === val) {
+	// 		setSubOpen(0);
+	// 		return;
+	// 	}
 
-		setSubOpen(val);
-	};
+	// 	setSubOpen(val);
+	// };
 
 	return (
 		<nav className={`nav ${!show && !open && "hide"}`}>
@@ -89,7 +89,11 @@ export default function NavMain() {
 					<div className="nav-bottom__logo">
 						<Link href="/">
 							{/* <img src="/logo.svg" alt="logo" /> */}
-							<Image src={MennrLogo} alt="Mennr" />
+							<Image
+								src={MennrLogo}
+								alt="Mennr"
+								priority={true}
+							/>
 						</Link>
 					</div>
 
@@ -97,36 +101,6 @@ export default function NavMain() {
 						<ul className="nav-links">
 							<li>
 								<Link href={links.whoweare}>Who We Are</Link>
-							</li>
-
-							<li>
-								<Link href={links.whatwedo}>What We Do</Link>
-								{/* <input
-									type="checkbox"
-									checked={one}
-									onChange={() => {}}
-								/>
-								<div
-									className="nav-hover"
-									onClick={() => handleSubOpen(1)}
-								>
-									<span>
-										What We Do
-										<FontAwesomeIcon icon={faAngleDown} />
-									</span>
-
-									<ul className="nav-links__sub">
-										<li>
-											<Link href="/">Solution</Link>
-										</li>
-										<li>
-											<Link href="/">Services</Link>
-										</li>
-										<li>
-											<Link href="/">Pricing</Link>
-										</li>
-									</ul>
-								</div> */}
 							</li>
 
 							<li>
@@ -168,6 +142,36 @@ export default function NavMain() {
 											<Link href="/">
 												Other Small Business
 											</Link>
+										</li>
+									</ul>
+								</div> */}
+							</li>
+
+							<li>
+								<Link href={links.whatwedo}>What We Do</Link>
+								{/* <input
+									type="checkbox"
+									checked={one}
+									onChange={() => {}}
+								/>
+								<div
+									className="nav-hover"
+									onClick={() => handleSubOpen(1)}
+								>
+									<span>
+										What We Do
+										<FontAwesomeIcon icon={faAngleDown} />
+									</span>
+
+									<ul className="nav-links__sub">
+										<li>
+											<Link href="/">Solution</Link>
+										</li>
+										<li>
+											<Link href="/">Services</Link>
+										</li>
+										<li>
+											<Link href="/">Pricing</Link>
 										</li>
 									</ul>
 								</div> */}
@@ -306,7 +310,7 @@ export default function NavMain() {
 
 							<li className="hidden-large link-button">
 								<Link
-									href="/"
+									href={links.login}
 									className="nav-upper__item nav-button"
 								>
 									<span className="nav-button__circle"></span>
@@ -317,12 +321,15 @@ export default function NavMain() {
 
 						<div className="nav-bottom__links-ours">
 							<div className="links-phone hidden-large">
-								<a href={`tel:${number}`} aria-label="phone_number">
+								<a
+									href={`tel:${number}`}
+									aria-label="phone_number"
+								>
 									<FontAwesomeIcon icon={faPhoneVolume} />
 								</a>
 							</div>
 
-							<Link className="links-button" href="#footer">
+							<Link className="links-button" href="/#getstarted">
 								Get Started
 							</Link>
 						</div>

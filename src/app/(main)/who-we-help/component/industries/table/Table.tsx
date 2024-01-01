@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface TableProps {
@@ -43,7 +44,12 @@ export default function Table({ data }: TableProps) {
 
 					<div className="table-container__table">
 						<div className="table-item">
-							<img src="/table-arrow.svg" alt="arrow" />
+							<Image
+								src="/table-arrow.svg"
+								alt="arrow"
+								width="192"
+								height="159"
+							/>
 							<p></p>
 							{columnHead}
 						</div>

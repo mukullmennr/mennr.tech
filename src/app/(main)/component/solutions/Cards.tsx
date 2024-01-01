@@ -1,9 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 interface CardsProps {
-	image: StaticImageData;
+	image: string;
 	title: string;
 	text: string;
 	link: string;
@@ -14,7 +14,7 @@ export default function Cards({ image, title, text, link }: CardsProps) {
 		<div className="item embla__slide">
 			<div className="item-image">
 				{/* <img src={image} alt={title} /> */}
-				<Image src={image} alt={title} />
+				<Image src={image} alt={title} width="400" height="198" />
 			</div>
 
 			<div className="item-info">

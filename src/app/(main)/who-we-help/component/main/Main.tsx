@@ -5,8 +5,7 @@ export default function Main() {
 		<div className="main">
 			<div className="container">
 				<h1>
-					Who We Help Best are Small Business Looking to Gain More
-					Exposure in the Digital Age
+				Who We Help Best are Small Business Looking to Reach More Customers Online
 				</h1>
 			</div>
 		</div>

@@ -46,6 +46,30 @@
 			max-width: 80%;
 			margin-inline: auto;
 
+			&.chipy-sitting {
+				position: relative;
+
+				img {
+					position: absolute;
+					bottom: calc(100% - 1em);
+					right: 0;
+				}
+			}
+
+			&.chipy-rocket {
+				position: relative;
+
+				img {
+					position: absolute;
+					bottom: calc(100% + 1em);
+					display: none;
+
+					@include ab.screen-48 {
+						display: block;
+					}
+				}
+			}
+
 			@include ab.screen-48 {
 				margin-block-end: 2.77rem;
 			}

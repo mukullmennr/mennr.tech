@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 interface ImportanceProps {
 	data: {
@@ -12,7 +13,37 @@ interface ImportanceProps {
 }
 
 export default function Importance({ data }: ImportanceProps) {
-	const steps = data.steps.map((step) => {
+	const steps = data.steps.map((step, index) => {
+		// if (index === 8) {
+		// 	return (
+		// 		<div key={step} className="chipy-rocket">
+		// 			<p>{step}</p>
+
+		// 			<Image
+		// 				src="/common/chipy/chipy-rocket.svg"
+		// 				alt="chipy"
+		// 				width="134"
+		// 				height="134"
+		// 			/>
+		// 		</div>
+		// 	);
+		// }
+
+		if (index === 9) {
+			return (
+				<div key={step} className="chipy-sitting">
+					<p>{step}</p>
+
+					<Image
+						src="/common/chipy/chipy-sitting.svg"
+						width="128"
+						height="121"
+						alt="chipy"
+					/>
+				</div>
+			);
+		}
+
 		return (
 			<div key={step}>
 				<p>{step}</p>

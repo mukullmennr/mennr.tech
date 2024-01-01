@@ -30,7 +30,7 @@ export default function NavUpper() {
 					className="nav-upper__item nav-button"
 				>
 					{/* <span className="nav-button__circle"></span> */}
-					Client Login
+					Partner Login
 				</Link>
 			</div>
 		</div>

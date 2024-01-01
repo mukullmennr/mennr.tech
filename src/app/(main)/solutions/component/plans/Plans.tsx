@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 interface PlansProps {
 	data: {
@@ -18,10 +19,12 @@ export default function Plans({ data }: PlansProps) {
 
 				<p>{card.text}</p>
 
-				<a href="#calender">
-					Get in touch
-					<FontAwesomeIcon icon={faAngleDown} />
-				</a>
+				<div>
+					<a href="#calender">
+						Get in touch
+						<FontAwesomeIcon icon={faAngleDown} />
+					</a>
+				</div>
 
 				<ul className="plans-points">
 					{card.points.map((point, index) => {
@@ -29,7 +32,12 @@ export default function Plans({ data }: PlansProps) {
 							<li key={point + index}>
 								<div>
 									<span>
-										<img src="/tick.svg" alt="tick" />
+										<Image
+											src="/tick.svg"
+											alt="tick"
+											width="14"
+											height="14"
+										/>
 									</span>
 									<p>{point}</p>
 								</div>
@@ -44,9 +52,18 @@ export default function Plans({ data }: PlansProps) {
 	return (
 		<div className="plans">
 			<div className="container">
-				<h2 className="plans-heading">Mennr Marketing Solutions</h2>
-
+				<h2 className="plans-heading">
+					We breakdown our solutions into three main categories based
+					on common needs and wants of business owners like yourself.
+					This helps us identify what marketing tactics we might want
+					to use to help you reach your goal.
+				</h2>
 				<div className="plans-cards">{cards}</div>
+				<h2 className="plans-heading">
+					Once we identify your goal, one of our marketing strategists
+					will meet with you to discuss what our specific approach for
+					your business will look like.
+				</h2>
 			</div>
 		</div>
 	);

@@ -159,6 +159,28 @@
 		p {
 			text-align: center;
 
+			a {
+				color: ab.$white;
+				font-weight: 700;
+				font-size: clamp(1.04rem, 2vw, 1.5rem);
+				background-color: ab.$accent1;
+				border: 0.15em solid ab.$accent1;
+
+				display: inline-block;
+
+				padding: 0.5em 1.6em;
+				border-radius: 1.5em;
+
+				transition: background-color 300ms, color 300ms;
+				text-decoration: none;
+
+				&:hover {
+					background-color: ab.$background5;
+					color: ab.$accent1;
+					cursor: pointer;
+				}
+			}
+
 			&:nth-child(2),
 			&:nth-child(4) {
 				background-color: transparent;
@@ -178,10 +200,10 @@
 
 				img {
 					display: none;
-					width: 100%;
 					flex: 1;
 
 					@include ab.screen-40 {
+						width: 50%;
 						display: block;
 					}
 				}
@@ -240,6 +262,10 @@
 		// 	}
 		// }
 
+		p {
+			text-align: center;
+		}
+
 		.info-child {
 			&__image {
 				display: none;
@@ -259,50 +285,50 @@
 			}
 		}
 
-		.info-button {
-			margin-block: 2.63rem;
-			text-align: center;
+		// .info-button {
+		// 	margin-block: 2.63rem;
+		// 	text-align: center;
 
-			@include ab.screen-40 {
-				margin-block-end: 5.23rem;
-				text-align: right;
-			}
+		// 	@include ab.screen-40 {
+		// 		margin-block-end: 5.23rem;
+		// 		text-align: right;
+		// 	}
 
-			button {
-				color: ab.$white;
-				font-weight: 700;
-				font-size: clamp(1.04rem, 2vw, 1.5rem);
-				background-color: ab.$accent1;
-				border: 0.15em solid ab.$accent1;
+		// 	button {
+		// 		color: ab.$white;
+		// 		font-weight: 700;
+		// 		font-size: clamp(1.04rem, 2vw, 1.5rem);
+		// 		background-color: ab.$accent1;
+		// 		border: 0.15em solid ab.$accent1;
 
-				padding: 0.5em 1.6em;
-				border-radius: 1.5em;
+		// 		padding: 0.5em 1.6em;
+		// 		border-radius: 1.5em;
 
-				transition: background-color 300ms, color 300ms;
+		// 		transition: background-color 300ms, color 300ms;
 
-				&:hover {
-					background-color: ab.$background5;
-					color: ab.$accent1;
-					cursor: pointer;
-				}
+		// 		&:hover {
+		// 			background-color: ab.$background5;
+		// 			color: ab.$accent1;
+		// 			cursor: pointer;
+		// 		}
 
-				@include ab.screen-40 {
-					translate: -8vw;
-				}
+		// 		@include ab.screen-40 {
+		// 			translate: -8vw;
+		// 		}
 
-				@include ab.screen-64 {
-					translate: -5em;
-				}
+		// 		@include ab.screen-64 {
+		// 			translate: -5em;
+		// 		}
 
-				@include ab.screen-74 {
-					translate: -7em;
-				}
+		// 		@include ab.screen-74 {
+		// 			translate: -7em;
+		// 		}
 
-				@include ab.screen-96 {
-					translate: -12em;
-				}
-			}
-		}
+		// 		@include ab.screen-96 {
+		// 			translate: -12em;
+		// 		}
+		// 	}
+		// }
 
 		.chipy-sigma {
 			position: relative;
@@ -312,7 +338,7 @@
 			gap: 5em;
 			align-items: center;
 			flex-direction: column;
-			margin-block-start: 1em;
+			margin-block-start: 4em;
 
 			@include ab.screen-40 {
 				width: 100%;
@@ -342,6 +368,10 @@
 
 	&-three {
 		// padding-block-start: 3em;
+
+		p {
+			text-align: center;
+		}
 
 		.info-chipy {
 			position: absolute;

@@ -1,1 +1,1 @@
-export const number = "+1 (860) 329 2988";
+export const number = "(860) 746-1049";

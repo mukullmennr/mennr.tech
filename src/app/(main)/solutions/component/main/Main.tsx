@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Main() {
@@ -5,20 +6,22 @@ export default function Main() {
 		<div className="solutions-main">
 			<div className="container">
 				<div>
-					<p className="solutions-main__text">
+					<h1 className="solutions-main__text">
 						Marketing solutions aren’t one size fits all
-					</p>
+					</h1>
 				</div>
 
-				<img
+				<Image
 					src="/common/chipy/chipy-hands-up-standing.svg"
 					alt="chipy"
+					width="209"
+					height="220"
 				/>
 
 				<div>
 					<p className="solutions-main__text">
-						Take our 5 minute quiz and find a strategy that fits
-						your needs
+						That’s why we take the time to build personalized
+						marketing plans for all of our partners
 					</p>
 				</div>
 			</div>

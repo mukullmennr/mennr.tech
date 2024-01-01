@@ -19,12 +19,18 @@ export default function InfoTwo() {
 					<div className="info-child__image">
 						{/* <img src="/home/whychoseus.jpg" alt="collab team" /> */}
 						{/* <Image src={collabTeam} alt="collab team" /> */}
-						<img src="/common/chipy/chipy-board.svg" alt="chipy" />
+						<Image
+							src="/common/chipy/chipy-board.svg"
+							alt="chipy"
+							width="224"
+							height="220"
+						/>
 					</div>
 
 					<p>
-						Once you’re satisfied, we waste no time and immediately
-						get to work building up your online presence.
+						Then, when you&apos;re happy with the plan, we waste no
+						time and immediately get to work building up your online
+						presence.
 					</p>
 
 					{/* <img
@@ -40,14 +46,14 @@ export default function InfoTwo() {
 					/> */}
 				</div>
 
-				<div className="info-button">
+				{/* <div className="info-button">
 					<button
 						onClick={handleSolution}
-						aria-label="Go to solution"
+						aria-label="What's in the marketing plan?"
 					>
 						What&apos;s in the marketing plan?
 					</button>
-				</div>
+				</div> */}
 
 				<p className="chipy-sigma">
 					<span>
@@ -55,7 +61,12 @@ export default function InfoTwo() {
 						supporting you for both immediate and long-term success.
 					</span>
 
-					<img src="/common/chipy/chipy-sigma.svg" alt="chipy" />
+					<Image
+						src="/common/chipy/chipy-sigma.svg"
+						alt="chipy"
+						width="384"
+						height="400"
+					/>
 				</p>
 			</div>
 		</div>

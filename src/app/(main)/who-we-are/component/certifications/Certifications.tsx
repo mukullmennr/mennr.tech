@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Certifications() {
 	return (
@@ -8,15 +9,30 @@ export default function Certifications() {
 
 				<div className="whoweare-certification__certificates">
 					<div className="certificates-item">
-						<img src="/awards/google.png" alt="google partners" />
+						<Image
+							src="/awards/google.svg"
+							alt="google partners"
+							width="199"
+							height="98"
+						/>
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/amazon.png" alt="amazon ads" />
+						<Image
+							src="/awards/amazon.svg"
+							alt="amazon ads"
+							width="249"
+							height="178"
+						/>
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/meta.png" alt="meta partners" />
+						<Image
+							src="/awards/meta.svg"
+							alt="meta partners"
+							width="307"
+							height="208"
+						/>
 					</div>
 
 					<div className="certificates-item">
@@ -25,46 +41,80 @@ export default function Certifications() {
 							title="Digital Marketing "
 							target="__blank"
 						>
-							<img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/08c8444f497c449c851370b1cf552778.png" />
+							<img
+								src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/08c8444f497c449c851370b1cf552778.png"
+								width="308"
+								height="164"
+								alt="hubspot"
+							/>
 						</a>
 					</div>
 				</div>
 
 				<div className="whoweare-certification__certificates">
 					<div className="certificates-item">
-						<img src="/awards/localogy.png" alt="localogy" />
-					</div>
-
-					<div className="certificates-item">
-						<img src="/awards/microsoft.png" alt="microsoft" />
-					</div>
-
-					<div className="certificates-item">
-						<img src="/awards/bbb.png" alt="bbb" />
-					</div>
-				</div>
-
-				<div className="whoweare-certification__certificates">
-					<div className="certificates-item">
-						<img
-							src="/awards/consumer-affairs.png"
-							alt="consumer affairs"
-						/>
-					</div>
-
-					<div className="certificates-item">
-						<img
-							src="/awards/localogy-certified.png"
+						<Image
+							width="280"
+							height="103"
+							src="/awards/localogy.svg"
 							alt="localogy"
 						/>
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/yext.png" alt="yext" />
+						<Image
+							width="350"
+							height="168"
+							src="/awards/microsoft.svg"
+							alt="microsoft"
+						/>
 					</div>
 
 					<div className="certificates-item">
-						<img src="/awards/sp.png" alt="sp" />
+						<Image
+							width="240"
+							height="42"
+							src="/awards/bbb.svg"
+							alt="bbb"
+						/>
+					</div>
+				</div>
+
+				<div className="whoweare-certification__certificates">
+					<div className="certificates-item">
+						<Image
+							width="400"
+							height="224"
+							src="/awards/consumer-affairs.svg"
+							alt="consumer affairs"
+						/>
+					</div>
+
+					<div className="certificates-item">
+						<Image
+							width="180"
+							height="85"
+							src="/awards/localogy-certified.svg"
+							alt="localogy"
+						/>
+					</div>
+
+					<div className="certificates-item">
+						<Image
+							width="250"
+							height="249"
+							src="/awards/yext.svg"
+							alt="yext"
+						/>
+					</div>
+
+					<div className="certificates-item">
+						<Image
+							width="180"
+							height="89"
+							src="/awards/sp.svg"
+							alt="sp"
+						/>
 					</div>
 				</div>
 			</div>

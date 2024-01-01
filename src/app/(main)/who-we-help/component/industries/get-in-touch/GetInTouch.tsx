@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface GetInTouchProps {
@@ -19,12 +20,18 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 						<iframe
 							src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 							frameBorder="0"
+							loading="lazy"
+							title="meeting-calander"
+							width="792"
+							height="690"
 						></iframe>
 					</div>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-call-color-left.svg"
 						alt="chipy contact"
+						width="200"
+						height="210"
 					/>
 				</div>
 			</div>

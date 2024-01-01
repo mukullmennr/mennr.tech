@@ -11,6 +11,7 @@ interface TabsContentProps {
 	link: string;
 	image: string;
 	value: string;
+	btn: string;
 }
 
 export default function TabsContent({
@@ -19,6 +20,7 @@ export default function TabsContent({
 	link,
 	image,
 	value,
+	btn,
 }: TabsContentProps) {
 	return (
 		<Tabs.Content className="tabs-content" value={value}>
@@ -29,13 +31,19 @@ export default function TabsContent({
 
 				<div>
 					<Link className="link" href={link}>
-						Learn More
+						{btn}
 					</Link>
 				</div>
 			</div>
 
 			<div className="tabs-content__item">
-				<img className="image" src={image} alt={heading} />
+				<Image
+					className="image"
+					src={image}
+					alt={heading}
+					width="489"
+					height="339"
+				/>
 			</div>
 		</Tabs.Content>
 	);

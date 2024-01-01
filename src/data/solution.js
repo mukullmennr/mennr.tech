@@ -30,7 +30,7 @@ export const steps = {
 
 export const plans = [
 	{
-		heading: "I need new business now",
+		heading: "I need more business now",
 		text: "Best for businesses that want to generate immediate business with paid ads.",
 		points: [
 			"Setup ads on Google to immediately put yourself in front of new business.",
@@ -41,8 +41,8 @@ export const plans = [
 		],
 	},
 	{
-		heading: "Sustainable growth ",
-		text: "Best for businesses that want to build a sustainable business with the next generation in mind.",
+		heading: "I want to build with the future in mind ",
+		text: "Best for businesses that want to build a sustainable business with the future in mind.",
 		points: [
 			"Build up your website and SEO to consistently bring organic traffic to your website.",
 			"Create and maintain a community that engages with your business on social media.",
@@ -53,8 +53,8 @@ export const plans = [
 		],
 	},
 	{
-		heading: "Hybrid",
-		text: "Best for businesses that need immediate business but also want consistent business long term.  ",
+		heading: "I need business now, but still want longevity",
+		text: "Best for businesses that want a balance of short term growth and long term growth.  ",
 		points: [
 			"Setup ads on Google to immediately put you in front of new business.",
 			"Make sure your business appear at the top of Google Maps and local searches.",

@@ -38,7 +38,6 @@ export default function OurCertifications({
 
 	useEffect(() => {
 		const myInterval = setInterval(() => {
-			console.log("working");
 			if (emblaApi) emblaApi.scrollNext();
 		}, 3000);
 
@@ -59,17 +58,21 @@ export default function OurCertifications({
 	return (
 		<div className="containerQuery ourcertifications-parent">
 			<div className="ourcertifications">
-				<img
+				<Image
 					src="/common/chipy/chipy-hands-up-standing.svg"
 					alt="chipy"
+					width="176"
+					height="185"
 				/>
 				{children}
 
 				<div className="ourcertifications-content">
-					<img
+					<Image
 						className="ourcertifications-content__image"
 						src="/common/right.svg"
 						alt="right arrow"
+						width="64"
+						height="128"
 					/>
 
 					<div

@@ -22,13 +22,15 @@ export default function Footer() {
 		<footer className="footer">
 			<div className="container">
 				<div className="footer-chipy">
-					<img
+					<Image
 						src="/common/chipy/chipy-sitting.svg"
 						alt="chippy sitting"
+						width="111"
+						height="105"
 					/>
 				</div>
 
-				<div className="footer-container" id ="footer">
+				<div className="footer-container" id="footer">
 					<div className="footer-container__item link-grid">
 						<div className="link-grid__item">
 							<h3 className="list-head">Navigations</h3>
@@ -235,8 +237,8 @@ export default function Footer() {
 						<Image src={MennrLogo} alt="Mennr" />
 
 						<p>
-							©2024 Mennr Inc. All rights reserved. Mennr and the
-							Mennr logo are trademarks of Mennr Inc.
+							©2024 Mennr LLC. All rights reserved. Mennr and the
+							Mennr logo are trademarks of Mennr LLC.
 						</p>
 					</div>
 				</div>

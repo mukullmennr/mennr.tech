@@ -1,6 +1,7 @@
 import React from "react";
 import { number } from "@/data/contact";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SolutionsInfo() {
 	return (
@@ -18,10 +19,12 @@ export default function SolutionsInfo() {
 					<p className="solutions-pcard">
 						And just like your cousin, you can call us at anytime
 						and we&apos;ll be happy to help with anything!
-						<img
+						<Image
 							src="/common/chipy/chipy_laptop.svg"
 							alt="chipy sitting"
 							className="chipy"
+							width="192"
+							height="234"
 						/>
 					</p>
 				</div>
@@ -33,13 +36,17 @@ export default function SolutionsInfo() {
 					</h3>
 
 					<div>
-						<Link href="/solutions/#typeform">Take our Quiz!</Link>
+						<Link href="/solutions">
+							Find your strategy!
+						</Link>
 					</div>
 
-					<img
+					<Image
 						src="/common/chipy/chipy-sitting.svg"
 						alt="chipy sitting"
 						className="chipy"
+						width="160"
+						height="151"
 					/>
 				</div>
 
@@ -72,22 +79,28 @@ export default function SolutionsInfo() {
 						marketing strategists to get started!
 					</h3>
 
-					<img
+					<Image
 						src="/home/home-solution-arrow-down.svg"
 						alt="arrow-down"
+						width="192"
+						height="302"
 					/>
 
 					<div className="chipy-parent">
-						<div className="calender-container" id="calender">
+						<div className="calender-container" id="getstarted">
 							<iframe
 								src="https://meetings.hubspot.com/luca-veneziano?embed=true"
 								frameBorder="0"
+								loading="lazy"
+								title="meeting-calander"
 							></iframe>
 						</div>
 
-						<img
+						<Image
 							src="/common/chipy/chipy-call-color.svg"
 							alt="chipy contact"
+							width="200"
+							height="210"
 						/>
 					</div>
 				</div>

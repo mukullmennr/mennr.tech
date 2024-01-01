@@ -74,7 +74,7 @@ export const importance = {
 		"Engaging with your customers by responding to reviews",
 		"Appear as a recommended contractor on sites like HomeAdvisor and Angi",
 		"We wouldn’t be comfortable letting someone manage our companies online presence without having oversight of it, and we don’t expect you to either",
-		"Helping you understand the process and what all the numbers mean is our job, and we love it",
+		"Helping you understand the process and what all the numbers mean is our job, and we love it!",
 	],
 	button: "Start using the internet to your advantage",
 };
