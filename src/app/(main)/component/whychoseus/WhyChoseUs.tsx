@@ -20,7 +20,7 @@ export default function WhyChoseUs() {
 
 					<div className="whychoseus-container__image">
 					
-						<img src="/home/whychoseus.WebP" alt="Why Choose Us" />
+						<img src="/home/whychoseus.svg" alt="Why Choose Us" />
 
 						<div className="whychoseus-container__image-more">
 							<img src="/home/down.svg" alt="Down arrow" />
