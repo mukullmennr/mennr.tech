@@ -3,11 +3,15 @@
 .solutions-main {
 	// outline: 2px solid coral;
 	// padding-block: 5em 5em;
-	padding-block: 5em 0;
+	padding-block: 5em 2em;
 	color: ab.$text2;
 	background-color: ab.$background1;
 	border-radius: 0 0 1.875rem 1.875rem;
 	position: relative;
+
+	@include ab.screen-40 {
+		// padding-block: 5em 0;
+	}
 
 	// background color
 	&::before {
@@ -26,17 +30,24 @@
 	.container > div {
 		// container-type: inline-size;
 		text-align: center;
-		// outline: 2px solid red;
 
 		@include ab.screen-40 {
 			width: 40%;
 
 			text-align: left;
 
+			@include ab.screen-40 {
+				width: 50%;
+			}
+
 			&:last-child {
 				text-align: right;
 				margin-inline-start: auto;
 				translate: 0 -50%;
+
+				@include ab.screen-40 {
+					width: 45%;
+				}
 			}
 		}
 	}
@@ -44,7 +55,7 @@
 	&__text {
 		font-weight: 700;
 		// font-size: clamp(1.5rem, 5.5cqvw, 2.5rem);
-		font-size: clamp(1.7rem, 6vw, 2.9rem);
+		font-size: clamp(1.7rem, 2vw, 2.1rem);
 		// outline: 2px solid lightpink;
 	}
 
@@ -57,9 +68,11 @@
 			position: absolute;
 			margin: 0;
 			left: 50%;
-			translate: -60%;
+			translate: -50% 10%;
 			bottom: 1em;
 			bottom: 10%;
+
+			scale: 0.8;
 		}
 	}
 }
