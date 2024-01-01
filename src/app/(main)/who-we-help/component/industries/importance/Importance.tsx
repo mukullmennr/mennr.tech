@@ -14,20 +14,20 @@ interface ImportanceProps {
 
 export default function Importance({ data }: ImportanceProps) {
 	const steps = data.steps.map((step, index) => {
-		if (index === 8) {
-			return (
-				<div key={step} className="chipy-rocket">
-					<p>{step}</p>
+		// if (index === 8) {
+		// 	return (
+		// 		<div key={step} className="chipy-rocket">
+		// 			<p>{step}</p>
 
-					<Image
-						src="/common/chipy/chipy-rocket.svg"
-						alt="chipy"
-						width="134"
-						height="134"
-					/>
-				</div>
-			);
-		}
+		// 			<Image
+		// 				src="/common/chipy/chipy-rocket.svg"
+		// 				alt="chipy"
+		// 				width="134"
+		// 				height="134"
+		// 			/>
+		// 		</div>
+		// 	);
+		// }
 
 		if (index === 9) {
 			return (

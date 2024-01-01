@@ -26,6 +26,30 @@
 			}
 		}
 
+		&.sub-industries {
+			background-image: url("../../../../public/common/subindustries/line-sm.svg");
+
+			@include ab.screen-40 {
+				background-image: url("../../../../public/common/subindustries/line-md.svg");
+			}
+
+			@include ab.screen-48 {
+				background-image: url("../../../../public/common/subindustries/line-lg.svg");
+			}
+
+			@include ab.screen-64 {
+				background-image: url("../../../../public/common/subindustries/line-xl.svg");
+			}
+
+			@include ab.screen-87 {
+				background-image: url("../../../../public/common/subindustries/line.svg");
+			}
+
+			@include ab.screen-96 {
+				background-size: contain;
+			}
+		}
+
 		// &.webdev {
 		// 	background-image: url("../../../../public/common/steps/webdev-line-mobile.svg");
 		// 	background-size: contain;
