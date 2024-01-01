@@ -2,29 +2,29 @@ export const faq = {
 	heading: "Home Services Business Marketing FAQ",
 	data: [
 		{
-			question: "Why is Home Services marketing important?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "How much does Mennr's marketing services cost?",
+			answer: "The pricing for Mennr's comprehensive digital marketing services is tailored to each business's unique needs. To get an accurate quote, businesses are encouraged to contact Mennr directly. This allows for a customized plan that fits your specific marketing goals and budgets.",
 		},
 		{
-			question: "What are the strategies for Home Services Marketing?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "When to use a marketing agency?",
+			answer: "Utilizing a marketing agency like Mennr is ideal when your business is ready to expand its reach, become more visible online, and effectively engage with your customers. It's particularly valuable for small businesses lacking in-house marketing expertise or resources, and when you aim to leverage digital marketing for growth and increased customer engagement.",
 		},
 		{
-			question: "How will Home Services marketing help your business?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "How fast can we expect results from your marketing?",
+			answer: "The timeline for seeing results from Mennr's marketing strategies can vary based on the specific tactics used. Immediate results might be seen with paid advertising, while strategies like SEO and Social Media marketing build over time, offering sustainable growth.",
 		},
 		{
-			question: "How do you generate  Home Services Customers?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "How do you help more customers find our business online?",
+			answer: "Mennr enhances your business's online discoverability through SEO optimization, targeted social media strategies, and efficient use of platforms like Google My Business. These methods ensure your business appears prominently in search results and online directories, making it easier for potential customers to find and choose your services.",
 		},
 	],
 };
 
 export const steps = {
 	steps: [
-		"Not yet convinced we’re the right people for the job? ",
-		"We recommend you shop around, talk to other agencies and see how they compare to us.",
-		"When you’re ready, book a meeting with one of our Google Certified marketing specialists and get started expanding your business online!",
+		"In that meeting we highlight what you can do yourself to improve your online marketing efforts, what your competitors are doing that is working well for them, what marketing tactics we recommend employing, what kind of growth you can expect, and what pricing would look like for your business.",
+		"We then create a marketing plan and share it with you to review. After you're happy with the plan, we immediately get started building up your businesses online presence starting with a website redesign and Google Business Profile set-up.",
+		"Our goal for 2024 is to help small businesses across America reach more customers online. Help us help you, book a meeting with one of our Google certified marketing strategists to get started with an initial consultation.",
 	],
 };
 
