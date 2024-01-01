@@ -31,8 +31,12 @@
 			padding-block: clamp(1.38rem, 1.9vw, 2.1rem);
 
 			display: grid;
-			grid-template-rows: subgrid;
-			grid-row: 1/5;
+
+			@include ab.screen-64 {
+				grid-template-rows: subgrid;
+				grid-row: 1/5;
+			}
+
 			gap: 1em;
 
 			&::after,
@@ -68,13 +72,19 @@
 				font-size: clamp(2rem, 2vw, 2.25rem);
 				line-height: 2.5rem; /* 125% */
 				letter-spacing: -0.04rem;
-				grid-row: 1 / 2;
+
+				@include ab.screen-64 {
+					grid-row: 1 / 2;
+				}
 			}
 
 			> p {
 				line-height: 1.96875rem; /* 194.444% */
 				letter-spacing: -0.02025rem;
-				grid-row: 2 / 3;
+
+				@include ab.screen-64 {
+					grid-row: 2 / 3;
+				}
 			}
 
 			a {
@@ -92,7 +102,9 @@
 
 				transition: color 300ms, background-color 300ms;
 
-				grid-row: 3 / 4;
+				@include ab.screen-64 {
+					grid-row: 3 / 4;
+				}
 
 				&:hover {
 					background-color: #fff;
@@ -103,11 +115,14 @@
 			.plans-points {
 				list-style-type: none;
 				padding: 0;
-				grid-row: 4 / 5;
 
 				display: grid;
 				gap: 1.5em;
 				align-content: start;
+
+				@include ab.screen-64 {
+					grid-row: 4 / 5;
+				}
 
 				li {
 					div {

@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "The Role of Business Listings Management in Marketing For Small Businesses",
+    title: "The Role of Listings Management in Marketing for Small Businesses",
 };
 
 interface ClientLayoutProps {

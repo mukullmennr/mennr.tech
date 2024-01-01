@@ -6,33 +6,34 @@ import Link from "next/link";
 import { links } from "@/data/navLinks";
 
 export default function NavUpper() {
-	return (
-		<div className="nav-upper">
-			<div className="container">
-				<div className="nav-upper__item">
-					<a href={`tel:${number}`}>
-						<span>
-							<FontAwesomeIcon icon={faPhoneVolume} />
-						</span>
+    return (
+        <div className="nav-upper">
+            <div className="container">
+                <div className="nav-upper__item">
+                    <a href={`tel:${number}`}>
+                        <span>
+                            <FontAwesomeIcon icon={faPhoneVolume} />
+                        </span>
 
-						{number}
-					</a>
-				</div>
+                        {number}
+                    </a>
+                </div>
 
-				{/* <Link href="/" className="nav-upper__item nav-button">
+                {/* <Link href="/" className="nav-upper__item nav-button">
 				<span className="nav-button__circle"></span>
 				Client Support
 			</Link> */}
 
-				<Link
-					href={links.login}
-					target="_blank"
-					className="nav-upper__item nav-button"
-				>
-					{/* <span className="nav-button__circle"></span> */}
-					Partner Login
-				</Link>
-			</div>
-		</div>
-	);
+                <Link
+                    rel="canonical"
+                    href={links.login}
+                    target="_blank"
+                    className="nav-upper__item nav-button"
+                >
+                    {/* <span className="nav-button__circle"></span> */}
+                    Partner Login
+                </Link>
+            </div>
+        </div>
+    );
 }
