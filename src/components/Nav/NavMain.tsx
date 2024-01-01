@@ -104,36 +104,6 @@ export default function NavMain() {
 							</li>
 
 							<li>
-								<Link href={links.whatwedo}>What We Do</Link>
-								{/* <input
-									type="checkbox"
-									checked={one}
-									onChange={() => {}}
-								/>
-								<div
-									className="nav-hover"
-									onClick={() => handleSubOpen(1)}
-								>
-									<span>
-										What We Do
-										<FontAwesomeIcon icon={faAngleDown} />
-									</span>
-
-									<ul className="nav-links__sub">
-										<li>
-											<Link href="/">Solution</Link>
-										</li>
-										<li>
-											<Link href="/">Services</Link>
-										</li>
-										<li>
-											<Link href="/">Pricing</Link>
-										</li>
-									</ul>
-								</div> */}
-							</li>
-
-							<li>
 								<Link href={links.whowehelp}>Who We Help</Link>
 								{/* <input
 									type="checkbox"
@@ -172,6 +142,36 @@ export default function NavMain() {
 											<Link href="/">
 												Other Small Business
 											</Link>
+										</li>
+									</ul>
+								</div> */}
+							</li>
+
+							<li>
+								<Link href={links.whatwedo}>What We Do</Link>
+								{/* <input
+									type="checkbox"
+									checked={one}
+									onChange={() => {}}
+								/>
+								<div
+									className="nav-hover"
+									onClick={() => handleSubOpen(1)}
+								>
+									<span>
+										What We Do
+										<FontAwesomeIcon icon={faAngleDown} />
+									</span>
+
+									<ul className="nav-links__sub">
+										<li>
+											<Link href="/">Solution</Link>
+										</li>
+										<li>
+											<Link href="/">Services</Link>
+										</li>
+										<li>
+											<Link href="/">Pricing</Link>
 										</li>
 									</ul>
 								</div> */}

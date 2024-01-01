@@ -6,9 +6,9 @@ export default function Main() {
 		<div className="solutions-main">
 			<div className="container">
 				<div>
-					<p className="solutions-main__text">
+					<h1 className="solutions-main__text">
 						Marketing solutions aren’t one size fits all
-					</p>
+					</h1>
 				</div>
 
 				<Image
@@ -19,10 +19,10 @@ export default function Main() {
 				/>
 
 				<div>
-					<p className="solutions-main__text">
+					<h1 className="solutions-main__text">
 						That’s why we take the time to build personalized
 						marketing plans for all of our partners
-					</p>
+					</h1>
 				</div>
 			</div>
 		</div>
