@@ -20,7 +20,7 @@ export default function WhyChoseUs() {
 
 					<div className="whychoseus-container__image">
 						<Image
-							src="/home/whychoseus.svg"
+							src="/home/whychoseus.WebP"
 							alt="Why Choose Us"
 							width="544"
 							height="363"

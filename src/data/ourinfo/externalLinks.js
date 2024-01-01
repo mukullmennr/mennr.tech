@@ -1,5 +1,4 @@
 import { industries, services } from "../navLinks";
-
 export const whatwedo = [
 	{
 		text: "Website Design and Development",
