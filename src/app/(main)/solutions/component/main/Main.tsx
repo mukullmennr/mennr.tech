@@ -19,10 +19,10 @@ export default function Main() {
 				/>
 
 				<div>
-					<h1 className="solutions-main__text">
+					<p className="solutions-main__text">
 						That’s why we take the time to build personalized
 						marketing plans for all of our partners
-					</h1>
+					</p>
 				</div>
 			</div>
 		</div>
