@@ -1,6 +1,12 @@
 @use "../../abstracts/" as ab;
 .home_service {
-    padding-bottom: 6em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10.5em;
+    gap: 2em;
+    @include ab.screen-40 {
+        justify-content: space-between;
+    }
     &_content {
         border-radius: 0.5em;
         box-shadow: 0px 2.228px 2.228px 0px rgba(0, 0, 0, 0.25);
@@ -9,8 +15,7 @@
         // justify-content: center;
         align-items: center;
         flex-direction: column;
-
-        width: min(100%, 35rem);
+        width: min(100%, 30rem);
 
         ul {
             display: flex;
@@ -22,6 +27,7 @@
                     text-decoration: none;
                     color: black;
                     font-weight: 700;
+                    font-size: clamp(1rem, 1.9vw, 2rem);
                 }
             }
         }
@@ -36,5 +42,34 @@
     }
     &_chipy {
         display: none;
+        // outline: 2px solid red;
+        width: 50%;
+        h3 {
+            font-size: clamp(1.5rem, 1.9vw, 2rem);
+            // margin-block-end: clamp(3rem, 4vw, 6.75rem);
+
+            // margin-inline: auto;
+
+            // @include ab.screen-40 {
+            //     width: 80%;
+            // }
+
+            // @include ab.screen-64 {
+            //     width: 50%;
+            // }
+        }
+        @include ab.screen-40 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            gap: 3.5em;
+            img {
+                width: clamp(9em, 12vw, 11em);
+            }
+        }
+        @include ab.screen-54 {
+            margin-right: 2em;
+        }
     }
 }

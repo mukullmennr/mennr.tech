@@ -5,10 +5,10 @@ export default function Chipy() {
     return (
         <div className="container">
             <div className="home-solution__chipy">
-                <h3>
+                {/* <h3>
                     Or schedule a consultation with one of our certified
                     marketing strategists to get started!
-                </h3>
+                </h3> */}
                 <div className="home-solution__chipy_arrow">
                     <Image
                         src="/home/home-solution-arrow-down.svg"

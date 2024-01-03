@@ -21,6 +21,7 @@ const copyMap = {
 	".next/standalone": "",
 	".next/static": ".next/static",
 	public: "public",
+	".next/cache": ".next/cache",
 };
 
 const fromRelative = (relative, base = root) =>
