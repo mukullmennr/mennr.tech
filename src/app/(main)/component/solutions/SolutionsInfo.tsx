@@ -4,51 +4,53 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function SolutionsInfo() {
-    return (
-        <div className="solutions-info">
-            <div className="container">
-                <div className="solutions-info__item intro">
-                    {/* <Link href="/solutions">
+	return (
+		<div className="solutions-info">
+			<div className="container">
+				<div className="solutions-info__item intro">
+					{/* <Link href="/solutions">
 						Find a solution that fits your needs
 					</Link> */}
 
-                    <p className="solutions-pcard">
-                        Think of us as your tech-savy cousin. Able to answer any
-                        of your marketing questions.
-                    </p>
-                    <p className="solutions-pcard">
-                        And just like your cousin, you can call us at anytime
-                        and we&apos;ll be happy to help with anything!
-                        <Image
-                            src="/common/chipy/chipy_laptop.svg"
-                            alt="chipy sitting"
-                            className="chipy"
-                            width="192"
-                            height="234"
-                        />
-                    </p>
-                </div>
+					<p className="solutions-pcard">
+						Think of us as your tech-savy cousin. Able to answer any
+						of your marketing questions.
+					</p>
+					<p className="solutions-pcard">
+						And just like your cousin, you can call us at anytime
+						and we&apos;ll be happy to help with anything!
+						<Image
+							src="/common/chipy/chipy_laptop.svg"
+							alt="chipy sitting"
+							className="chipy"
+							width="192"
+							height="234"
+						/>
+					</p>
+				</div>
 
-                <div className="solutions-info__item card">
-                    <h3>
-                        Discover marketing solutions that fit your businesses
-                        needs and goals.
-                    </h3>
+				<div className="solutions-info__item card">
+					<h3>
+						Discover marketing solutions that fit your businesses
+						needs and goals.
+					</h3>
 
-                    <div>
-                        <Link href="/solutions">Find your strategy!</Link>
-                    </div>
+					<div>
+						<Link href="/solutions" prefetch={false}>
+							Find your strategy!
+						</Link>
+					</div>
 
-                    <Image
-                        src="/common/chipy/chipy-sitting.svg"
-                        alt="chipy sitting"
-                        className="chipy"
-                        width="160"
-                        height="151"
-                    />
-                </div>
+					<Image
+						src="/common/chipy/chipy-sitting.svg"
+						alt="chipy sitting"
+						className="chipy"
+						width="160"
+						height="151"
+					/>
+				</div>
 
-                {/* <div className="solutions-info__item guide">
+				{/* <div className="solutions-info__item guide">
 					<p className="solutions-pcard">
 						And for those who want to learn more about what exactly
 						we do.
@@ -71,7 +73,7 @@ export default function SolutionsInfo() {
 					/>
 				</div> */}
 
-                {/* <div className="solutions-info__item home-solution__chipy">
+				{/* <div className="solutions-info__item home-solution__chipy">
 					<h3>
 						Or schedule a consultation with one of our certified
 						marketing strategists to get started!
@@ -102,7 +104,7 @@ export default function SolutionsInfo() {
 						/>
 					</div>
 				</div> */}
-            </div>
-        </div>
-    );
+			</div>
+		</div>
+	);
 }

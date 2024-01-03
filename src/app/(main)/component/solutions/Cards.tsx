@@ -19,7 +19,11 @@ export default function Cards({ image, title, text, link }: CardsProps) {
 
 			<div className="item-info">
 				<div>
-					<Link href={link} className="item-info__heading">
+					<Link
+						href={link}
+						className="item-info__heading"
+						prefetch={false}
+					>
 						{title}
 					</Link>
 				</div>

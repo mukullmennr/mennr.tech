@@ -87,13 +87,15 @@ export default function LoginForm() {
 
 			<div className="login-links">
 				<div className="login-links__element">
-					<Link href="/" target="_blank">
+					<Link href="/" target="_blank" prefetch={false}>
 						Forgot Password
 					</Link>
 				</div>
 
 				<div className="login-links__element">
-					<Link href="/">Admin Login</Link>
+					<Link href="/" prefetch={false}>
+						Admin Login
+					</Link>
 				</div>
 			</div>
 		</div>
