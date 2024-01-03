@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleTagManager } from "@next/third-parties/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "../styles/main.scss";
 
@@ -35,7 +34,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 			</head>
 
 			<body className={plusJakartaSans.className}>{children}</body>
-			{/* <GoogleTagManager gtmId="AW-11406722063" /> */}
 		</html>
 	);
 }

@@ -8,22 +8,6 @@ export default function BlogForm() {
 	const [email, setEmail] = useState<string>("");
 	const [loading, setLoading] = useState(false);
 
-	// const handleBlog = (e: React.FormEvent<HTMLFormElement>) => {
-	// 	e.preventDefault();
-	// 	setLoading(true);
-
-	// 	addMarketingEmail({ email })
-	// 		.then((res) => {
-	// 			alert("successfully added");
-	// 		})
-	// 		.catch((err) => {
-	// 			alert("can't add email right now");
-	// 		})
-	// 		.finally(() => {
-	// 			setLoading(false);
-	// 		});
-	// };
-
 	const handleBlog = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setLoading(true);

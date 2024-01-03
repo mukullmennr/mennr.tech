@@ -60,7 +60,7 @@ export default function Importance({ data }: ImportanceProps) {
 
 				<div className="industries-importance__steps">{steps}</div>
 
-				<Link href="#industry-getintouch">
+				<Link href="#industry-getintouch" prefetch={false}>
 					{data.button}
 					<FontAwesomeIcon icon={faAngleDown} />
 				</Link>

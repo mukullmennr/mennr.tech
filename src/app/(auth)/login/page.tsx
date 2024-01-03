@@ -7,12 +7,13 @@ export default function page() {
 	return (
 		<div className="login">
 			<nav className="nav-login container">
-				<Link href="/">
+				<Link href="/" prefetch={false}>
 					<Image
 						src="/logo.svg"
 						alt="mennr"
 						width="192"
 						height="36"
+						priority={true}
 					/>
 				</Link>
 			</nav>

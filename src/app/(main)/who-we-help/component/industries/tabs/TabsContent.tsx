@@ -30,7 +30,7 @@ export default function TabsContent({
 				<p className="text">{text}</p>
 
 				<div>
-					<Link className="link" href={link}>
+					<Link className="link" href={link} prefetch={false}>
 						{btn}
 					</Link>
 				</div>
