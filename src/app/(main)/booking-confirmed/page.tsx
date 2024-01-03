@@ -27,7 +27,7 @@ export default function booking_confirmed() {
                             Learn more about what we do
                         </Link>
                     </div>
-                    <div>
+                    <div className="booking_link2">
                         <Link href="/who-we-help">
                             Learn more about who we help
                         </Link>
