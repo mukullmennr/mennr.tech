@@ -54,6 +54,10 @@ export default function Services() {
                         width="252"
                         height="268"
                     />
+                    <h3>
+                        Or schedule a consultation with one of our certified
+                        marketing strategists to get started!
+                    </h3>
                 </div>
             </div>
         </div>
