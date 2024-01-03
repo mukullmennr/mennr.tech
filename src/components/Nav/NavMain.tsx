@@ -87,7 +87,7 @@ export default function NavMain() {
 					</>
 
 					<div className="nav-bottom__logo">
-						<Link href="/">
+						<Link href="/" prefetch={false}>
 							{/* <img src="/logo.svg" alt="logo" /> */}
 							<Image
 								src={MennrLogo}
@@ -100,11 +100,15 @@ export default function NavMain() {
 					<div className="nav-bottom__links">
 						<ul className="nav-links">
 							<li>
-								<Link href={links.whoweare}>Who We Are</Link>
+								<Link href={links.whoweare} prefetch={false}>
+									Who We Are
+								</Link>
 							</li>
 
 							<li>
-								<Link href={links.whowehelp}>Who We Help</Link>
+								<Link href={links.whowehelp} prefetch={false}>
+									Who We Help
+								</Link>
 								{/* <input
 									type="checkbox"
 									checked={two}
@@ -148,7 +152,9 @@ export default function NavMain() {
 							</li>
 
 							<li>
-								<Link href={links.whatwedo}>What We Do</Link>
+								<Link href={links.whatwedo} prefetch={false}>
+									What We Do
+								</Link>
 								{/* <input
 									type="checkbox"
 									checked={one}
@@ -243,7 +249,9 @@ export default function NavMain() {
 										</ul>
 									</div>
 								</> */}
-								<Link href={links.solutions}>Solutions</Link>
+								<Link href={links.solutions} prefetch={false}>
+									Solutions
+								</Link>
 							</li>
 
 							{/* <li>
@@ -312,6 +320,7 @@ export default function NavMain() {
 								<Link
 									href={links.login}
 									className="nav-upper__item nav-button"
+									prefetch={false}
 								>
 									<span className="nav-button__circle"></span>
 									Client Login
@@ -329,7 +338,11 @@ export default function NavMain() {
 								</a>
 							</div>
 
-							<Link className="links-button" href="/#getstarted">
+							<Link
+								className="links-button"
+								href="/#getstarted"
+								prefetch={false}
+							>
 								Get Started
 							</Link>
 						</div>

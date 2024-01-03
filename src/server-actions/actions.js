@@ -1,8 +1,6 @@
 "use server";
 
 export const addMail = async (email) => {
-	// const email = formData.get("email");
-
 	try {
 		const url = "https://api.hubapi.com/crm/v3/objects/contacts";
 		const body = JSON.stringify({

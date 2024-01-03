@@ -36,7 +36,7 @@ export default function SolutionsInfo() {
 					</h3>
 
 					<div>
-						<Link href="/solutions">
+						<Link href="/solutions" prefetch={false}>
 							Find your strategy!
 						</Link>
 					</div>
@@ -73,7 +73,7 @@ export default function SolutionsInfo() {
 					/>
 				</div> */}
 
-				<div className="solutions-info__item home-solution__chipy">
+				{/* <div className="solutions-info__item home-solution__chipy">
 					<h3>
 						Or schedule a consultation with one of our certified
 						marketing strategists to get started!
@@ -103,7 +103,7 @@ export default function SolutionsInfo() {
 							height="210"
 						/>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

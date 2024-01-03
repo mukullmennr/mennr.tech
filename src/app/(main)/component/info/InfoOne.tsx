@@ -31,6 +31,7 @@ export default function InfoOne() {
 						<Link
 							href="/solutions"
 							aria-label="What's in the marketing plan?"
+							prefetch={false}
 						>
 							What&apos;s in the marketing plan?
 						</Link>

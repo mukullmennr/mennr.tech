@@ -28,7 +28,11 @@ interface MainContentProps {
 export default function Main({ data, breadcrumb }: MainContentProps) {
 	const links = data.subIndustries?.map((subindustry) => {
 		return (
-			<Link key={subindustry.text} href={subindustry.link}>
+			<Link
+				key={subindustry.text}
+				href={subindustry.link}
+				prefetch={false}
+			>
 				{subindustry.text}
 				<span>
 					<FontAwesomeIcon icon={faAngleRight} />

@@ -25,8 +25,12 @@ function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 				{text}
 			</Link> */}
 
-			<Link className="externalLinks-container__item-link" href={link}>
-			{linkText}
+			<Link
+				className="externalLinks-container__item-link"
+				href={link}
+				prefetch={false}
+			>
+				{linkText}
 			</Link>
 		</div>
 	);
