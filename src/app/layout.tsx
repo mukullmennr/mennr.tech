@@ -5,6 +5,7 @@ import "../styles/main.scss";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Script from "next/script";
 config.autoAddCss = false;
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -24,8 +25,17 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
+			<head>
+				<Script
+					id="gtag-script"
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=AW-11406722063"
+				/>
+				<Script id="gtag-code">{` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11406722063'); `}</Script>
+			</head>
+
 			<body className={plusJakartaSans.className}>{children}</body>
-			<GoogleTagManager gtmId="AW-11406722063" />
+			{/* <GoogleTagManager gtmId="AW-11406722063" /> */}
 		</html>
 	);
 }
