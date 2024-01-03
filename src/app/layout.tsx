@@ -27,10 +27,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
 		<html lang="en">
 			<head>
 				<Script
+					id="gtag-script"
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=AW-11406722063"
 				/>
-				<Script>{` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11406722063'); `}</Script>
+				<Script id="gtag-code">{` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11406722063'); `}</Script>
 			</head>
 
 			<body className={plusJakartaSans.className}>{children}</body>
