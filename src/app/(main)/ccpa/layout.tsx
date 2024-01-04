@@ -1,0 +1,11 @@
+export const metadata = {
+    title: "Marketing Services Provided by Mennr",
+};
+
+interface ClientLayoutProps {
+    children: React.ReactNode;
+}
+
+export default function ClientLayout({ children }: ClientLayoutProps) {
+    return children;
+}
