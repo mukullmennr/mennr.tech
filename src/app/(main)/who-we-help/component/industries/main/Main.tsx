@@ -23,9 +23,10 @@ interface MainContent {
 interface MainContentProps {
 	data: MainContent;
 	breadcrumb: BreadCrumbContent;
+	imgClass?: string;
 }
 
-export default function Main({ data, breadcrumb }: MainContentProps) {
+export default function Main({ data, breadcrumb, imgClass }: MainContentProps) {
 	const links = data.subIndustries?.map((subindustry) => {
 		return (
 			<Link
@@ -87,9 +88,10 @@ export default function Main({ data, breadcrumb }: MainContentProps) {
 						<Image
 							src={data.img}
 							alt="chipy"
-							width="442"
-							height="354"
+							width="200"
+							height="293"
 							priority={true}
+							className={`${imgClass}`}
 						/>
 					</div>
 				</div>

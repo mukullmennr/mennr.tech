@@ -14,12 +14,12 @@ interface ExternalLinksProps {
 interface ExternalLinksItemProps {
 	text: string;
 	link: string;
-	linkText: string;
+	linkText?: string;
 }
 
 function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 	return (
-		<div className="externalLinks-container__item">
+		<div className="externalLinks-container__item large">
 			<p className="externalLinks-container__item-text">{text}</p>
 			{/* <Link className="externalLinks-container__item-text" href={link}>
 				{text}
@@ -31,6 +31,20 @@ function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 				prefetch={false}
 			>
 				{linkText}
+			</Link>
+		</div>
+	);
+}
+
+function ExternalLinksItemMobile({ text, link }: ExternalLinksItemProps) {
+	return (
+		<div className="externalLinks-container__item small">
+			{/* <Link className="externalLinks-container__item-text" href={link}>
+        {text}
+    </Link> */}
+
+			<Link className="" href={link} prefetch={false}>
+				{text}
 			</Link>
 		</div>
 	);
@@ -48,9 +62,23 @@ export default function ExternalLinks({ links, linkText }: ExternalLinksProps) {
 		);
 	});
 
+	const itemMobile = links.map((link) => {
+		return (
+			<ExternalLinksItemMobile
+				key={link.text}
+				text={link.text}
+				link={link.link}
+				linkText={linkText}
+			/>
+		);
+	});
+
 	return (
 		<div className="externalLinks">
-			<div className="container externalLinks-container">{item}</div>
+			<div className="container externalLinks-container">
+				{item}
+				{itemMobile}
+			</div>
 		</div>
 	);
 }

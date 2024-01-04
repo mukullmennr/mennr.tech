@@ -17,6 +17,14 @@
 			justify-content: space-between;
 			position: relative;
 
+			&.large {
+				display: none;
+
+				@include ab.screen-40 {
+					display: flex;
+				}
+			}
+
 			&::before,
 			&::after {
 				content: "";
@@ -58,7 +66,7 @@
 
 			&-link {
 				font-weight: 500;
-				font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+				font-size: clamp(0.75rem, 1.5vw, 1.5rem);
 				color: ab.$white;
 				text-align: center;
 
@@ -75,6 +83,22 @@
 				&:hover {
 					background-color: ab.$white;
 					color: ab.$accent1;
+				}
+			}
+
+			&.small {
+				a {
+					font-size: clamp(1.125rem, 2vw, 2rem);
+					font-weight: 500;
+					text-align: center;
+					text-wrap: balance;
+					color: ab.$accent1;
+
+					width: 100%;
+				}
+
+				@include ab.screen-40 {
+					display: none;
 				}
 			}
 		}
