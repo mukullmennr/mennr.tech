@@ -19,7 +19,7 @@ import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 export default function page() {
 	return (
 		<>
-			<Main data={main} breadcrumb={breadcrumb} />
+			<Main data={main} breadcrumb={breadcrumb} imgClass="real-estate" />
 			<Importance data={importance} />
 			<Certification data={yourCertifications} />
 			<Table data={table} />

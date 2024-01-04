@@ -2,8 +2,11 @@
 
 .industries-main {
 	padding-block: 5em 4em; // 5 4
+	padding-block: 1em 2em;
 	color: ab.$text2;
+	// color: ab.$text1;
 	background-color: ab.$background1;
+	// background-color: red;
 	border-radius: 0 0 1.875rem 1.875rem;
 
 	// background color
@@ -21,7 +24,7 @@
 	}
 
 	.breadcrumb {
-		translate: 0 -3em;
+		translate: 0 -0.5em;
 	}
 
 	// my code
@@ -29,7 +32,7 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 3em;
+		gap: 1.5em;
 
 		> div {
 			// outline: 2px solid lightgreen;
@@ -41,7 +44,7 @@
 	}
 
 	.links {
-		margin-block-start: 1.5rem;
+		margin-block-start: 1rem;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 
@@ -51,6 +54,7 @@
 		a {
 			border: 2px solid ab.$accent1;
 			color: ab.$white;
+			// color: ab.$text1;
 			font-weight: 700;
 			font-size: clamp(0.66825rem, 1vw, 1.125rem);
 
@@ -62,7 +66,8 @@
 			justify-content: space-between;
 
 			padding-inline: 1.19rem;
-			padding-block: 0.5rem;
+			// padding-block: 0.5rem;
+			padding-block: 0.3rem;
 			border-radius: 0.3em;
 
 			&:hover {
@@ -72,9 +77,11 @@
 	}
 
 	&__element {
-		&:first-child {
-			container-type: inline-size;
-		}
+		// &:first-child {
+		container-type: inline-size;
+		// }
+
+		// outline: 2px solid red;
 
 		@include ab.screen-40 {
 			&:first-child {
@@ -83,21 +90,42 @@
 
 			&:last-child {
 				display: flex;
-				align-items: center;
+				// align-items: center;
 				width: 40%;
+				justify-content: flex-start;
+				// background-color: blue;
 			}
 		}
 
 		.heading {
-			font-size: clamp(1.5rem, 5cqw, 3rem);
+			font-size: clamp(1.5rem, 6cqw, 3rem);
+			text-align: center;
+			text-wrap: balance;
+
+			@include ab.screen-40 {
+				text-align: left;
+			}
 		}
 
 		img {
 			margin-inline: auto;
+			width: clamp(15.682rem, 30vw, 32.684rem);
 
-			width: clamp(15.682rem, 40cqw, 32.684rem);
-			height: clamp(18.9665rem, 50cqw, 39.529rem);
-			height: 100%;
+			&.other-small-businesses {
+				width: clamp(12rem, 50cqw, 18rem);
+			}
+
+			&.real-estate {
+				width: clamp(15.682rem, 25vw, 20rem);
+			}
+
+			&.skilled-traded-businesses {
+				width: clamp(12rem, 50cqw, 18rem);
+
+				@include ab.screen-40 {
+					width: clamp(15.632rem, 70cqw, 18rem);
+				}
+			}
 		}
 	}
 
