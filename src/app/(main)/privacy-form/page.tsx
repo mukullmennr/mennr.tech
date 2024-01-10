@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-// import Link from "next/link";
-// import Script from "next/script";
 export default function Page() {
     // const count = useRef(0);
 
