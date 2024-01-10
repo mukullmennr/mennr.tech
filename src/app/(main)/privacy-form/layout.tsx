@@ -1,5 +1,7 @@
+import Script from "next/script";
+
 export const metadata = {
-    title: "Marketing Services Provided by Mennr",
+    title: "Privacy Form | Mennr",
 };
 
 interface ClientLayoutProps {
@@ -7,5 +9,5 @@ interface ClientLayoutProps {
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
-    return children;
+    return <>{children}</>;
 }

@@ -4,6 +4,20 @@
     color: ab.$text2;
     background-color: ab.$background1;
     border-radius: 0 0 1.875rem 1.875rem;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+
+        @include ab.screen-40 {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        img {
+            width: clamp(19em, 24vw, 24em);
+        }
+    }
     // background color
     &::before {
         content: "";
@@ -20,9 +34,90 @@
     }
 
     h1 {
-        font-size: clamp(1.7rem, 6vw, 2.9rem);
+        font-size: clamp(1.7rem, 4vw, 4rem);
         letter-spacing: -0.03rem;
         margin-block-end: 0.2em;
         text-align: center;
+        @include ab.screen-40 {
+            text-align: left;
+        }
+    }
+}
+.ccpa {
+    font-size: clamp(1.125rem, 2vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2.5em;
+    span {
+        font-weight: 700;
+    }
+    ul {
+        padding: 0em 0em 0em min(10%, 1rem);
+        // outline: 2px solid red;
+        margin: 0em;
+    }
+    a {
+        color: #418fde;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &_content1 {
+        h4 {
+            font-style: italic;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    &_content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+        td {
+            border: 0.1em solid black;
+            // border-collapse: collapse;
+        }
+        th {
+            border: 0.1em solid black;
+            // border-collapse: collapse;
+        }
+    }
+    &_content3 {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    &_content4 {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .ccpa_list {
+            li {
+                font-weight: 700;
+            }
+        }
+    }
+    &_button {
+        text-align: center;
+        margin-top: 1em;
+        a {
+            background-color: #e76f51;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: clamp(0.8rem, 2vw, 1.6rem);
+            padding: 0.7em 1.5em 0.7em 1.5em;
+            border-radius: 0.3em;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Marketing Services Provided by Mennr",
+    title: "Privacy Policy | Mennr",
 };
 
 interface ClientLayoutProps {

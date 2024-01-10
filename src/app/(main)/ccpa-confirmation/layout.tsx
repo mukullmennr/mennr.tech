@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "California Privacy Rights",
+    title: "CCPA Request Form Confirmation",
 };
 
 interface ClientLayoutProps {
