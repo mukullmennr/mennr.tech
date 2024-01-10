@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Marketing Services Provided by Mennr",
+    title: "Opt Out from Sale or Sharing of Personal Information | Mennr",
 };
 
 interface ClientLayoutProps {

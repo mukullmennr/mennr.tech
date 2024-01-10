@@ -1,0 +1,64 @@
+@use "../../abstracts" as ab;
+.do-not_main {
+    padding-block: 5em 4em;
+    color: ab.$text2;
+    background-color: ab.$background1;
+    border-radius: 0 0 1.875rem 1.875rem;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+
+        @include ab.screen-40 {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        img {
+            width: clamp(19em, 24vw, 24em);
+        }
+    }
+    // background color
+    &::before {
+        content: "";
+        background-color: ab.$background1;
+        position: absolute;
+        // border-radius: 0 0 1.875rem 1.875rem;
+
+        top: 0;
+        height: 10em;
+        right: 0;
+        left: 0;
+
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: clamp(1.7rem, 4vw, 4rem);
+        letter-spacing: -0.03rem;
+        margin-block-end: 0.2em;
+        text-align: center;
+        @include ab.screen-40 {
+            text-align: left;
+        }
+    }
+}
+.do-not {
+    a {
+        color: #418fde;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        padding: 0em 0em 0em min(10%, 1rem);
+        // outline: 2px solid red;
+        margin: 0em;
+    }
+    margin-top: 2.5em;
+    font-size: clamp(1.125rem, 2vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
