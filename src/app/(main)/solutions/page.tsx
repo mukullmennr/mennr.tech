@@ -5,6 +5,7 @@ import Main from "./component/main/Main";
 import FAQ from "@/components/FAQ/FAQ";
 import Steps from "@/components/Steps/Steps";
 import Plans from "./component/plans/Plans";
+import NotSure from "./component/not-sure/NotSure";
 
 export default function page() {
 	return (
@@ -17,6 +18,8 @@ export default function page() {
 				classname="solutions-steps"
 			/> */}
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+
+			<NotSure />
 		</>
 	);
 }
