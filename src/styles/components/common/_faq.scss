@@ -1,9 +1,6 @@
 @use "../../abstracts" as ab;
 
 .faq {
-	// padding-block-end: clamp(5rem, 7vw, 13rem);
-	// margin-block-end: clamp(5rem, 6vw, 10rem);
-
 	&-heading {
 		font-size: clamp(1.5rem, 2vw, 2.5rem);
 		text-align: center;
@@ -18,7 +15,7 @@
 			gap: clamp(1.41rem, 2vw, 2.06rem);
 
 			.accordion-item {
-				border-bottom: 0.0625rem solid ab.$accent1;
+				border-bottom: 0.0625rem solid ab.$blue;
 				padding-block-end: clamp(0.6rem, 1.4vw, 1.31rem);
 				padding-inline: 0.81rem;
 
@@ -37,30 +34,40 @@
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
+						margin-block-end: 0.6rem;
+						gap: 1em;
 
 						&[data-state="open"] {
-							span {
+							div {
 								span:last-child {
 									rotate: 0deg;
 								}
 							}
 						}
 
-						> span {
+						> div {
 							display: flex;
 							align-items: center;
+							justify-content: flex-start;
+							background-color: ab.$background1;
+							width: 1.2rem;
+							height: 1.2rem;
+							aspect-ratio: 1/ 1;
+							border-radius: 50%;
+
+							position: relative;
 
 							span {
 								display: inline-block;
-								width: 1em;
-								height: 0.1em;
-								background-color: black;
+								width: 0.6rem;
+								height: 0.1rem;
+								background-color: ab.$white;
+
+								position: absolute;
 
 								transition: rotate 300ms;
-
-								&:first-child {
-									translate: 100%;
-								}
+								left: 50%;
+								translate: -50%;
 
 								&:last-child {
 									rotate: 90deg;
@@ -71,17 +78,19 @@
 				}
 
 				.accordion-content {
-					margin-block-start: 1.3rem;
+					--duration: 200ms;
+					--animation-function: cubic-bezier(0.87, 0, 0.13, 1);
+					--max-height: 500px;
+
 					overflow: hidden;
 
 					&[data-state="open"] {
-						animation: open 300ms ease;
-						// animation-fill-mode: forwards;
-						// max-height: 120px;
+						animation: open var(--duration)
+							var(--animation-function);
 					}
 					&[data-state="closed"] {
-						animation: close 300ms ease;
-						// animation-fill-mode: forwards;
+						animation: close var(--duration)
+							var(--animation-function);
 					}
 				}
 			}
@@ -91,18 +100,22 @@
 
 @keyframes open {
 	from {
+		// height: 0;
 		max-height: 0;
 	}
 	to {
-		max-height: 500px;
+		// height: var(--radix-accordion-content-height);
+		max-height: var(--max-height);
 	}
 }
 
 @keyframes close {
 	from {
-		max-height: 500px;
+		// height: var(--radix-accordion-content-height);
+		max-height: var(--max-height);
 	}
 	to {
+		// height: 0;
 		max-height: 0;
 	}
 }
