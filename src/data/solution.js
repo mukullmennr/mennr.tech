@@ -25,3 +25,49 @@ export const notSure = {
 	heading: "Still Unable To Decide? ",
 	text: "Finalizing on a digital marketing strategy can be overwhelming. Let us help. Take the first step and talk to a Mennr marketing strategist today for absolutely FREE!",
 };
+
+export const cards = {
+	heading: {
+		initial: "So Why Mennr,",
+		rest: "You Ask? Here Are Some Obvious Reasons:",
+	},
+	cardItems: [
+		{
+			heading: "Certified Teams",
+			img: "home/solutions/cards/card1.svg",
+			content:
+				"All of Mennr's teams are in-house in-house and span across multiple specializations bringing your business the support of a team of professionals.",
+		},
+		{
+			heading: "Hubspot Partners ",
+			img: "home/solutions/cards/card2.svg",
+			content:
+				"Hubspot is one of the largest CMS and marketing solutions platform in the world. And guess who's a proud & exclusive Hubspot partner? We are!",
+		},
+		{
+			heading: "Partner Dashboard",
+			img: "home/solutions/cards/card3.svg",
+			content:
+				"Mennr prioritizes transparency. With our partner dashboard access, you get a birds eye view of the process, spends and performance, ANYTIME you want.",
+		},
+		{
+			heading: "You Are In Control ",
+			img: "home/solutions/cards/card4.svg",
+			content:
+				"You will be in the driver's seat, always! We execute solutions only when you are happy and approve of our execution plan.",
+		},
+		{
+			heading: "Dedicated Relationship Manager",
+			img: "home/solutions/cards/card5.svg",
+			content:
+				"With Mennr, you get direct access to a dedicated relationship manager anytime you want, how many every times you need!",
+		},
+		{
+			heading: "Flexible Payment Plans",
+			img: "home/solutions/cards/card6.svg",
+			content:
+				"Our flexible payment plans make it a no-brainer to opt for Mennr premium services and allow you to unlock fast growth.",
+		},
+	],
+	link: "/rohan",
+};
