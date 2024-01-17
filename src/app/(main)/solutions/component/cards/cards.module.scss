@@ -3,7 +3,6 @@
 .cards {
 	.container {
 		display: grid;
-		gap: clamp(4em, 6vw, 6em);
 	}
 
 	.link {
@@ -62,6 +61,8 @@
 		padding-inline: 1em;
 		background-color: transparent;
 
+		margin-block: 4em;
+
 		overflow-x: scroll;
 		overflow-y: hidden;
 
@@ -70,7 +71,6 @@
 		gap: 2em;
 
 		overscroll-behavior-inline: contain;
-		// scroll-snap-type: x mandatory;
 		scroll-snap-type: inline mandatory;
 
 		> * {

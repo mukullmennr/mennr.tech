@@ -71,3 +71,19 @@ export const cards = {
 	],
 	link: "/rohan",
 };
+
+export const main = {
+	heading: "Marketing Solutions For Business Growth",
+	text: "Personalized Mennr Marketing Solutions Led By Certifiied Performance Marketers To Help Take Your Business to The Next Level.",
+	services: [
+		"Web Development",
+		"Web Designs",
+		"Google ADs",
+		"SEO",
+		"Facebook ADs",
+		"Instagram ADs",
+		"Content Marketing",
+		"Reputation Management",
+	],
+	flagText: "Mennr Specialties",
+};
