@@ -59,11 +59,12 @@ export const main = {
 };
 
 export const faq = {
-    heading: "Home Services Business Marketing FAQ",
+    heading: "Marketing FAQ's for Personal Care Business",
     data: [
         {
-            question: "Why is Home Services marketing important?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question:
+                "What digital marketing strategies do we use to enhance the online presence of your personal care business?",
+            answer: "Elevating the online presence of your personal care business involves a strategic blend of digital marketing strategies. Develop valuable content through blog posts and guides to engage and showcase expertise, optimizing for search engines to enhance visibility. Utilize social media platforms like Instagram and Facebook for product displays, testimonials, and audience interaction. Build and leverage an email list for regular newsletters and promotions, ensuring ongoing engagement. Maintain a user-friendly website for a seamless shopping experience. Collaborate with influencers, invest in PPC advertising, and create high-quality video content for broader reach and interactive engagement. By integrating these strategies, your personal care business can effectively attract customers, strengthen its online presence, and establish a distinct brand identity in the digital landscape.",
         },
         {
             question: "What are the strategies for Home Services Marketing?",

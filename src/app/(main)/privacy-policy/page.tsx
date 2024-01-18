@@ -867,9 +867,11 @@ export default function page() {
                         </p>
                         <p>
                             We may update this policy from time to time so you
-                            may want to check it each time you visit our
-                            website. We last changed this policy in January
-                            2024.
+                            may want to check it each time you visit&nbsp;
+                            <Link href="/" prefetch={false}>
+                                our website
+                            </Link>
+                            . We last changed this policy in January 2024.
                         </p>
                     </div>
                 </div>

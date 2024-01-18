@@ -26,19 +26,21 @@ export const main = {
 };
 
 export const faq = {
-    heading: "Home Services Business Marketing FAQ",
+    heading: "Marketing FAQ's for Automotive Tuning Businesses",
     data: [
         {
-            question: "Why is Home Services marketing important?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question: "How do I market my tuning business?",
+            answer: "Marketing your auto tuning business effectively requires a combination of community involvement, targeted promotions, strategic partnerships, localized advertising, digital marketing, and SEO. Getting involved in your community through events or sponsorships can build brand awareness and credibility. Offering special promotions for first-time customers can attract new clientele. Partnering with adjacent local businesses, such as body shops, can create beneficial synergies and cross-promotional opportunities. Local advertising, whether through traditional media or local online platforms, can increase visibility in your area. Running targeted social media ads allows you to reach specific demographics interested in auto tuning. Lastly, improving your SEO ensures that your business ranks higher in search engine results, making it easier for potential customers to find your services online. These strategies collectively can effectively market your tuning business and attract new customers.",
         },
         {
-            question: "What are the strategies for Home Services Marketing?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question:
+                "What are the benefits of digital marketing for my Automotive Tuning Business?",
+            answer: "Digital marketing offers numerous benefits for an Automotive Tuning Business. It is cost-effective compared to traditional marketing methods, allowing for a wider reach with a smaller investment. Through digital channels, you gain deeper insights into your customers’ preferences and behaviors, enabling personalized marketing strategies. Digital marketing also significantly extends your reach, allowing you to connect with larger and more diverse audiences, both locally and globally. It enhances brand awareness and facilitates customer engagement through interactive platforms like social media. Targeted marketing techniques in digital channels ensure that your marketing efforts reach the most relevant audiences, leading to higher conversion rates. Implementing SEO strategies improves your online visibility, giving you a competitive edge in the market. Content and email marketing can be used to nurture leads and maintain customer relationships. These strategies contribute to a greater Return on Investment (ROI) and increased customer loyalty. Additionally, a strong online presence through digital marketing ensures measurable results and provides opportunities for better customer service, further boosting your business's success.",
         },
         {
-            question: "How will Home Services marketing help your business?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question:
+                "How is digital marketing used in the automotive Tuning Businesses? ",
+            answer: "Digital marketing in automotive tuning businesses is employed to effectively reach and engage potential customers. It focuses on generating and delivering customized messages that resonate with the target audience, particularly those in the process of considering or making a purchase. This personalization is achieved through understanding customer preferences and behaviors, often gathered from online interactions and data analytics. Digital marketing tools like email campaigns, social media, and targeted online advertising allow for the delivery of these tailored messages. By doing so, automotive tuning businesses can attract potential buyers at various stages of their purchase journey, from initial interest to the final decision. This approach not only increases the likelihood of attracting new customers but also helps in building long-term customer relationships by continuously providing value and relevant information throughout the customer's journey. ",
         },
         {
             question: "How do you generate  Home Services Customers?",
