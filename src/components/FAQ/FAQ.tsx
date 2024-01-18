@@ -21,11 +21,11 @@ function AccordionTrigger({ children, ...props }: AccordionElement) {
 	return (
 		<Accordion.Header className="accordion-header">
 			<Accordion.Trigger className="accordion-trigger" {...props}>
-				{children}
-				<span>
+				<p>{children}</p>
+				<div>
 					<span></span>
 					<span></span>
-				</span>
+				</div>
 			</Accordion.Trigger>
 		</Accordion.Header>
 	);
@@ -34,7 +34,7 @@ function AccordionTrigger({ children, ...props }: AccordionElement) {
 function AccordionContent({ children, ...props }: AccordionElement) {
 	return (
 		<Accordion.Content {...props} className="accordion-content">
-			<div className="accordion-content__text">{children}</div>
+			{children}
 		</Accordion.Content>
 	);
 }

@@ -1,11 +1,16 @@
 export const metadata = {
-    title: "CCPA Request Form Confirmation",
+	title: "CCPA Request Form Confirmation",
 };
 
 interface ClientLayoutProps {
-    children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
-    return children;
+	return (
+		<>
+			{children}
+			<div className="footer-space"></div>
+		</>
+	);
 }

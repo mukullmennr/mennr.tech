@@ -1,11 +1,16 @@
 export const metadata = {
-    title: "California Privacy Rights",
+	title: "California Privacy Rights",
 };
 
 interface ClientLayoutProps {
-    children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
-    return children;
+	return (
+		<>
+			{children}
+			<div className="footer-space"></div>
+		</>
+	);
 }

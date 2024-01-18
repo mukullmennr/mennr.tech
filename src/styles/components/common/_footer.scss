@@ -1,7 +1,7 @@
 @use "../../abstracts" as ab;
 
 .footer {
-    margin-block-start: clamp(5rem, 7vw, 13rem);
+    // margin-block-start: clamp(5rem, 7vw, 13rem);
     padding-block: 3em 5em;
     background-color: ab.$background6;
     border-radius: 1em 1em 0 0;
@@ -302,6 +302,28 @@
             }
         }
     }
+			&.copyright {
+				display: flex;
+				gap: 1.22rem;
+
+				img {
+					width: clamp(8em, 10vw, 12em);
+				}
+				a {
+					color: white;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				p {
+					align-self: flex-end;
+					color: ab.$white;
+					font-size: clamp(0.4375rem, 1.5vw, 0.93rem);
+				}
+			}
+		}
+	}
 }
 
 .footer-chipy {

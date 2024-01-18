@@ -1,0 +1,98 @@
+@use "/src/styles/abstracts" as ab;
+
+.main {
+	--color: var(--white);
+	--background: var(--bg1);
+
+	padding-block: 2em;
+	color: var(--color);
+	background-color: var(--background);
+
+	border-radius: 0 0 1.875rem 1.875rem;
+
+	@include ab.screen-48 {
+		padding-block: 2em 3em;
+	}
+
+	// background color
+	&::before {
+		content: "";
+		background-color: ab.$background1;
+		position: absolute;
+
+		top: 0;
+		height: 10em;
+		right: 0;
+		left: 0;
+
+		z-index: -1;
+	}
+
+	.container {
+		display: flex;
+		gap: 1.5em;
+
+		flex-direction: column;
+
+		@include ab.screen-48 {
+			flex-direction: row;
+		}
+	}
+
+	.text {
+		@include ab.screen-48 {
+			width: 65%;
+			justify-content: space-between;
+		}
+
+		.heading {
+			font-size: clamp(2.5rem, 3vw, 3rem);
+			line-height: clamp(3.75rem, 5vw, 5rem);
+			letter-spacing: -0.05rem;
+
+			text-wrap: balance;
+		}
+
+		.content {
+			margin-block-start: 1.5em;
+			font-size: clamp(1.125rem, 1.6vw, 1.625rem);
+
+			display: none;
+
+			@include ab.screen-48 {
+				text-wrap: pretty;
+				display: block;
+			}
+		}
+	}
+
+	.services {
+		position: relative;
+
+		p {
+			font-size: clamp(1.5rem, 2vw, 2rem);
+			font-weight: 700;
+			position: absolute;
+
+			translate: 0 35%;
+
+			width: 100%;
+			height: 3.3rem;
+			text-align: center;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include ab.screen-48 {
+				height: clamp(3.3rem, 5.7vw, 4rem);
+
+				translate: 0 40%;
+			}
+		}
+
+		img {
+			margin-inline: auto;
+		}
+	}
+}
