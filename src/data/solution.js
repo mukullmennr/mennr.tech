@@ -1,3 +1,5 @@
+const link = "/rohan";
+
 export const faq = {
 	heading: "Home Services Business Marketing FAQ",
 	data: [
@@ -69,7 +71,7 @@ export const cards = {
 				"Our flexible payment plans make it a no-brainer to opt for Mennr premium services and allow you to unlock fast growth.",
 		},
 	],
-	link: "/rohan",
+	link: link,
 };
 
 export const main = {
@@ -84,6 +86,12 @@ export const main = {
 		"Instagram ADs",
 		"Content Marketing",
 		"Reputation Management",
+		"Web Development",
 	],
 	flagText: "Mennr Specialties",
+};
+
+export const road = {
+	heading: "Here's Our FREE Audit Process BEFORE You Pay Us Anything:",
+	link: link,
 };

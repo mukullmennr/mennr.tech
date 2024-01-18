@@ -6,6 +6,7 @@
 
 :root {
 	--bg1: #{ab.$background1};
+	--blue: #{ab.$text3};
 
 	--white: #{ab.$white};
 	--accent: #{ab.$accent1};
@@ -81,4 +82,9 @@ img {
 		// height: 100%;
 		border: none;
 	}
+}
+
+.solution-heading {
+	font-size: clamp(1.3rem, 2.5vw, 2.4rem);
+	letter-spacing: -0.05rem;
 }

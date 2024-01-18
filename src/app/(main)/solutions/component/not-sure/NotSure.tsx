@@ -14,7 +14,9 @@ export default function NotSure({ data }: NotSureProps) {
 			<div className="container">
 				<div className={styles.container}>
 					<div className={styles.textContainer}>
-						<h2 className={styles.heading}>{data.heading}</h2>
+						<h2 className={`${styles.heading} solution-heading`}>
+							{data.heading}
+						</h2>
 
 						<p className={styles.text}>{data.text}</p>
 
