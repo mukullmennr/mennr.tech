@@ -52,6 +52,13 @@
             font-weight: 700;
         }
     }
+    a {
+        color: #418fde;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     #hubspotForm {
         background-color: #d1e5f7;
         padding: 1em;

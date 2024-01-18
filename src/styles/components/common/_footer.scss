@@ -276,21 +276,28 @@
             &.copyright {
                 display: flex;
                 gap: 1.22rem;
-
+                &_content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: clamp(0.2em, 1vw, 0.6em);
+                }
                 img {
-                    width: clamp(8em, 10vw, 12em);
+                    width: clamp(11em, 15vw, 14em);
                 }
-                a {
-                    color: white;
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
+
                 p {
                     align-self: flex-end;
                     color: ab.$white;
                     font-size: clamp(0.4375rem, 1.5vw, 0.93rem);
+
+                    a {
+                        font-size: clamp(0.4rem, 1.5vw, 0.9rem);
+                        color: rgb(198, 198, 198);
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }

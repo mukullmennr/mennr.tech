@@ -297,17 +297,17 @@ export default function Footer() {
                     <div className="footer-container__item copyright">
                         {/* <img src="/logo.svg" alt="mennr" /> */}
                         <Image src={MennrLogo} alt="Mennr" />
-                        <div>
+                        <div className="footer-container__item copyright_content">
                             <div>
                                 <p>
                                     <Link href="/privacy-policy">
                                         Privacy Policy
                                     </Link>
-                                    &nbsp;|&nbsp;
+                                    &nbsp;&nbsp; | &nbsp;&nbsp;
                                     <Link href="/ccpa">
                                         California Privacy Rights
                                     </Link>
-                                    &nbsp;|&nbsp;
+                                    &nbsp;&nbsp; | &nbsp;&nbsp;
                                     <Link href="/do-not-sell-or-share">
                                         Do Not Sell or Share My Personal Info
                                     </Link>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Page() {
     // const count = useRef(0);
 
@@ -47,7 +48,11 @@ export default function Page() {
                         webform to submit your request, as permitted by
                         applicable law, to access, correct or delete personal
                         information collected by Mennr LLC, including on our
-                        websites mennr.tech.
+                        websites&nbsp;
+                        <Link href="/" prefetch={false}>
+                            mennr.tech
+                        </Link>
+                        .
                     </p>
                     {/* <form>
                         <div className="form_name">
