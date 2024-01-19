@@ -95,3 +95,93 @@ export const road = {
 	heading: "Here's Our FREE Audit Process BEFORE You Pay Us Anything:",
 	link: link,
 };
+
+export const getInTouch = {
+	heading: "Want To Get In Touch? Here Are Three Ways. Take Your Pick:",
+	buttons: [
+		{
+			title: "Reach Us Via Email",
+			link: "email",
+			dropDown: {
+				title: "What happens next?",
+				steps: [
+					{
+						id: "1",
+						heading: "The First Step",
+						points: [
+							"Give us your email",
+							"Tell us about you",
+							"Tell us about your business",
+							"Sit back and relax",
+						],
+					},
+					{
+						id: "2",
+						heading: "Next Steps",
+						points: [
+							"We review your info",
+							"We do a free initial audit of your business",
+							"You get a response from an Mennr strategist within 48hrs",
+						],
+					},
+				],
+			},
+		},
+		{
+			title: "Get a Call back",
+			link: "call",
+			dropDown: {
+				title: "What happens next?",
+				steps: [
+					{
+						id: "3",
+						heading: "The First Step",
+						points: [
+							"Give us your phone number",
+							"Tell us about you",
+							"Tell us about your business",
+							"Sit back and relax",
+						],
+					},
+					{
+						id: "4",
+						heading: "Next Steps",
+						points: [
+							"We review your info",
+							"We do a free initial audit of your business",
+							"You get a response from an Mennr strategist within 48hrs",
+						],
+					},
+				],
+			},
+		},
+		{
+			title: "Book Free Consulation",
+			link: "consultation",
+			dropDown: {
+				title: "What happens next?",
+				steps: [
+					{
+						id: "5",
+						heading: "The First Step",
+						points: [
+							"Tell us about you",
+							"Tell us about your business",
+							"Schedule a time you would like to connect",
+							"Sit back and relax",
+						],
+					},
+					{
+						id: "6",
+						heading: "Next Steps",
+						points: [
+							"We review your info",
+							"We do a free initial audit of your business",
+							"You get a response from an Mennr strategist within 48hrs",
+						],
+					},
+				],
+			},
+		},
+	],
+};

@@ -74,3 +74,9 @@
 		@content;
 	}
 }
+
+@mixin screen-43 {
+	@media (min-width: 43.375em) {
+		@content;
+	}
+}
