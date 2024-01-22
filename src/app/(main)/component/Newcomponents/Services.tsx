@@ -59,7 +59,7 @@ export default function Services() {
                                 href={services.websiteDesignDevelopment}
                                 prefetch={false}
                             >
-                                Website Design & Developemnt
+                                Website Design & Development
                             </Link>
                         </li>
                         <li>
