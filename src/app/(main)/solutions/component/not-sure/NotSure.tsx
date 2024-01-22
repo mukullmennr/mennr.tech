@@ -6,6 +6,7 @@ interface NotSureProps {
 	data: {
 		heading: string;
 		text: string;
+		link: string;
 	};
 }
 export default function NotSure({ data }: NotSureProps) {
@@ -14,13 +15,15 @@ export default function NotSure({ data }: NotSureProps) {
 			<div className="container">
 				<div className={styles.container}>
 					<div className={styles.textContainer}>
-						<h2 className={styles.heading}>{data.heading}</h2>
+						<h2 className={`${styles.heading} solution-heading`}>
+							{data.heading}
+						</h2>
 
 						<p className={styles.text}>{data.text}</p>
 
 						<div>
 							<Link
-								href="/rohan"
+								href={data.link}
 								aria-label="get in touch"
 								className={styles.link}
 							>

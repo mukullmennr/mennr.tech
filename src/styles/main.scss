@@ -6,6 +6,7 @@
 
 :root {
 	--bg1: #{ab.$background1};
+	--blue: #{ab.$text3};
 
 	--white: #{ab.$white};
 	--accent: #{ab.$accent1};
@@ -59,6 +60,11 @@ pre {
 	margin-inline: auto;
 }
 
+.container-wide {
+	width: min(90%, 80rem);
+	margin-inline: auto;
+}
+
 .containerQuery {
 	container-type: inline-size;
 }
@@ -81,4 +87,10 @@ img {
 		// height: 100%;
 		border: none;
 	}
+}
+
+.solution-heading {
+	font-size: clamp(1.3rem, 2.5vw, 2.4rem);
+	letter-spacing: -0.05rem;
+	line-height: 1.875rem;
 }

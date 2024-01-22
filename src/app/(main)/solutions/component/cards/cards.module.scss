@@ -1,6 +1,7 @@
 @use "/src/styles/abstracts" as ab;
 
 .cards {
+	color: var(--blue);
 	.container {
 		display: grid;
 	}
@@ -38,7 +39,6 @@
 		--color: var(--bg1);
 		--background: transparent;
 
-		font-size: clamp(1.3rem, 2.5vw, 2.4rem);
 		text-align: center;
 		text-wrap: balance;
 		color: var(--color);
@@ -46,12 +46,13 @@
 		span {
 			--color: var(--white);
 			--background: var(--bg1);
+			--block: 0.3em;
 
 			color: var(--color);
 
 			background-color: var(--background);
 			display: inline-block;
-			padding: 0.1rem 0.2em 0.1em 0.1em;
+			padding: var(--block) 0.2em var(--block) 0.1em;
 			border-radius: 0.3rem;
 		}
 	}

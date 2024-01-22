@@ -24,7 +24,10 @@ export default function Main({ data }: MainProps) {
 
 					<div className={styles.services}>
 						<div className={styles.chipy}>
-							<Services services={data.services} />
+							<Services
+								className={styles.list}
+								services={data.services}
+							/>
 
 							<picture>
 								<source
