@@ -6,6 +6,7 @@ interface NotSureProps {
 	data: {
 		heading: string;
 		text: string;
+		link: string;
 	};
 }
 export default function NotSure({ data }: NotSureProps) {
@@ -22,7 +23,7 @@ export default function NotSure({ data }: NotSureProps) {
 
 						<div>
 							<Link
-								href="/rohan"
+								href={data.link}
 								aria-label="get in touch"
 								className={styles.link}
 							>

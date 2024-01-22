@@ -1,4 +1,4 @@
-const link = "/rohan";
+const link = "#get-in-touch";
 
 export const faq = {
 	heading: "Home Services Business Marketing FAQ",
@@ -25,6 +25,7 @@ export const faq = {
 
 export const notSure = {
 	heading: "Still Unable To Decide? ",
+	link: link,
 	text: "Finalizing on a digital marketing strategy can be overwhelming. Let us help. Take the first step and talk to a Mennr marketing strategist today for absolutely FREE!",
 };
 
