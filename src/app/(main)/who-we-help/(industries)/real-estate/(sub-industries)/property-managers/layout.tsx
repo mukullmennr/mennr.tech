@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Property Managers in New England",
+    title: "Marketing for Property Managers",
+    description:
+        "Mennr Tech specializes in digital marketing for property managers in USA. Connect with property owners and enhance your online presence effectively.",
 };
 
 interface ClientLayoutProps {

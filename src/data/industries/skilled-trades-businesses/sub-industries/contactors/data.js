@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Contractors in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Contractors?",
     img: "/common/chipy/sub-industries/skilled-trades-businesses/contactors.svg",
     showCertification: true,
 };
@@ -42,9 +41,8 @@ export const faq = {
             answer: "The best advertising for construction companies involves a combination of online and offline strategies. Firstly, clearly define your ideal customer to tailor your advertising effectively. Create a visually appealing website showcasing your projects, services, and expertise. Set up and optimize your Google My Business (GMB) profile for enhanced local visibility. Establish profiles on customer review sites to build credibility and trust. Run a review campaign to encourage satisfied clients to share their positive experiences. Utilize hoarding signage at construction sites for local advertising and brand visibility. Join major industry associations for networking opportunities and to establish credibility. Finally, launch Google Local Service Ads to target potential clients in your area actively seeking construction services. These strategies together provide a comprehensive approach to effectively advertise a construction company, reaching both a broad and targeted audience.",
         },
         {
-            question:
-                "How can I get clients for my construction business in USA?",
-            answer: "To attract clients for your construction business in the USA, focus on building and maintaining a strong reputation by consistently delivering quality work and excellent customer service. Use clear, professional signage on your job sites and vehicles to increase brand visibility. Ensure that your job sites are well-organized and professional, as they often serve as live advertisements of your workmanship. Regularly keep in touch with past clients and your network to stay top-of-mind for future projects or referrals. Educate yourself about marketing principles and apply them to promote your business effectively. Make in-person visits to potential clients or local businesses to establish a personal connection and understand their needs. Finally, ensure that your website is updated, mobile-friendly, and showcases your projects, testimonials, and contact information. These strategies can help you attract and retain clients in the competitive construction industry in the USA.",
+            question: "How can I get clients for my construction business?",
+            answer: "To attract clients for your construction business, focus on building and maintaining a strong reputation by consistently delivering quality work and excellent customer service. Use clear, professional signage on your job sites and vehicles to increase brand visibility. Ensure that your job sites are well-organized and professional, as they often serve as live advertisements of your workmanship. Regularly keep in touch with past clients and your network to stay top-of-mind for future projects or referrals. Educate yourself about marketing principles and apply them to promote your business effectively. Make in-person visits to potential clients or local businesses to establish a personal connection and understand their needs. Finally, ensure that your website is updated, mobile-friendly, and showcases your projects, testimonials, and contact information. These strategies can help you attract and retain clients in the competitive construction industry.",
         },
     ],
 };
@@ -66,4 +64,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Contractors in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Contractors stay operational for years to come.";

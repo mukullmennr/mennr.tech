@@ -20,7 +20,7 @@ export const breadcrumb = {
 
 export const main = {
     heading:
-        "Why is Mennr the trusted marketing firm for Automotive Services Businesses in New England?",
+        "Why is Mennr the trusted marketing firm for Automotive Services Businesses?",
     img: "/common/chipy/sub-industries/automotive-businesses/autobody.svg",
     showCertification: true,
 };
@@ -66,4 +66,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Automotive Services companies in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Automotive Services companies stay operational for years to come.";

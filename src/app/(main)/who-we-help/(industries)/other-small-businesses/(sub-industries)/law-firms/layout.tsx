@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Law Firms in New England",
+    title: "Marketing for Law Firms",
+    description:
+        "Mennr Tech specializes in digital marketing for law firms, offering tailored solutions to grow your online reach and attract more customers in USA.",
 };
 
 interface ClientLayoutProps {

@@ -20,7 +20,7 @@ export const breadcrumb = {
 
 export const main = {
     heading:
-        "Why is Mennr the trusted marketing firm for Outdoor Activities Businesses in New England?",
+        "Why is Mennr the trusted marketing firm for Outdoor Activities Businesses?",
     img: "/common/chipy/sub-industries/other-small-businesses/outdoor-activities.svg",
     showCertification: true,
 };
@@ -64,4 +64,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Outdoor Activities Businesses in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Outdoor Activities Businesses stay operational for years to come.";

@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Carwash Businesses in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Carwash Businesses?",
     img: "/common/chipy/sub-industries/automotive-businesses/carwashes.svg",
     showCertification: true,
 };
@@ -64,4 +63,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Carwash companies in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Carwash companies stay operational for years to come.";

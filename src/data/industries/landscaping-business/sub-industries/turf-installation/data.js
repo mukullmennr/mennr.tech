@@ -20,7 +20,7 @@ export const breadcrumb = {
 
 export const main = {
     heading:
-        "Why is Mennr the trusted marketing firm for Turf Installation Businesses in New England?",
+        "Why is Mennr the trusted marketing firm for Turf Installation Businesses?",
     img: "/common/chipy/sub-industries/landscaping-businesses/turf.svg",
     showCertification: true,
 };
@@ -64,4 +64,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Turf Installation companies in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Turf Installation companies stay operational for years to come.";

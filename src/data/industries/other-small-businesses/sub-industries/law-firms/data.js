@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Law Firms in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Law Firms?",
     img: "/common/chipy/sub-industries/other-small-businesses/law.svg",
     showCertification: true,
 };
@@ -64,4 +63,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Law Firms in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Law Firms stay operational for years to come.";

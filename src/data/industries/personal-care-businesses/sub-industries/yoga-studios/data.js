@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Yoga Studios in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Yoga Studios?",
     img: "/common/chipy/sub-industries/personal-care-businesses/yoga-studios.svg",
     showCertification: true,
 };
@@ -64,4 +63,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Yoga Studios in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Yoga Studios stay operational for years to come.";

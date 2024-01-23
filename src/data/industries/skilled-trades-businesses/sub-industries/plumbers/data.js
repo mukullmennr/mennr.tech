@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Plumbers in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Plumbers?",
     img: "/common/chipy/sub-industries/skilled-trades-businesses/plumbers.svg",
     showCertification: true,
 };
@@ -64,4 +63,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Plumbers in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Plumbers stay operational for years to come.";

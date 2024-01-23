@@ -20,7 +20,7 @@ export const breadcrumb = {
 
 export const main = {
     heading:
-        "Why is Mennr the trusted marketing firm for Hair Salon Businesses in New England?",
+        "Why is Mennr the trusted marketing firm for Hair Salon Businesses?",
     img: "/common/chipy/sub-industries/personal-care-businesses/hair-salons.svg",
     showCertification: true,
 };
@@ -64,4 +64,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Hair Salons in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Hair Salons stay operational for years to come.";
