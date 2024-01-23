@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Real Estate Brokers in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Real Estate Brokers?",
     img: "/common/chipy/sub-industries/real-estate/brokers.svg",
     showCertification: true,
 };
@@ -67,4 +66,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Real Estate Brokers in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Real Estate Brokers stay operational for years to come.";

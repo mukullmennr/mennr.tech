@@ -19,8 +19,7 @@ export const breadcrumb = {
 };
 
 export const main = {
-    heading:
-        "Why is Mennr the trusted marketing firm for Moving Companies in New England?",
+    heading: "Why is Mennr the trusted marketing firm for Moving Companies?",
     img: "/common/chipy/sub-industries/real-estate/moving-companies.svg",
     showCertification: true,
 };
@@ -64,4 +63,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Moving Companies in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps Moving Companies stay operational for years to come.";

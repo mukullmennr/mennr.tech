@@ -6,8 +6,11 @@ import { services, links } from "@/data/navLinks";
 export default function Services() {
 	return (
 		<div className="container">
-			<div className="home_service" id="getstarted">
-				<div className="calender-container calender-mobile">
+			<div className="home_service">
+				<div
+					className="calender-container calender-mobile"
+					id="getstarted"
+				>
 					<h3>
 						Or schedule a consultation with one of our certified
 						marketing strategists to get started!

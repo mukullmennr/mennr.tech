@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Automotive Services Businesses in New England",
+    title: "Marketing for Automotive Services Businesses",
+    description:
+        "Discover Mennr's specialized marketing for automotive service shops in USA. Boost your online visibility and attract more customers effectively.",
 };
 
 interface ClientLayoutProps {

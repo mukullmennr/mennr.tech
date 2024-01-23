@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Automotive Tuning Businesses in New England",
+    title: "Marketing for Automotive Tuning Businesses",
+    description:
+        "Mennr Tech specializes in marketing for automotive tuning companies. Boost your online visibility and reach more customers in USA.",
 };
 
 interface ClientLayoutProps {

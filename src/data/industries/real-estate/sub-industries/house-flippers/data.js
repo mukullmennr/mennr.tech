@@ -20,7 +20,7 @@ export const breadcrumb = {
 
 export const main = {
     heading:
-        "Why is Mennr the trusted marketing firm for House Flipping Businesses in New England?",
+        "Why is Mennr the trusted marketing firm for House Flipping Businesses?",
     img: "/common/chipy/sub-industries/real-estate/house-flippers.svg",
     showCertification: true,
 };
@@ -68,4 +68,4 @@ export const steps = {
 };
 
 export const quote =
-    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps House Flipping companies in New England stay operational for years to come.";
+    "Apart from experience, our ability to turn struggling businesses into sustaining ones helps House Flipping companies stay operational for years to come.";
