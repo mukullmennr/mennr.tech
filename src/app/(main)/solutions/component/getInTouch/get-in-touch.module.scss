@@ -3,8 +3,9 @@
 .getintouch {
 	--background: var(--bg1);
 	--color: var(--white);
+	--scroll-margin: 15em;
 
-	scroll-margin-block-start: 25em;
+	scroll-margin-block-start: var(--scroll-margin);
 
 	.container {
 		background-color: var(--background);

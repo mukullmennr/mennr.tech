@@ -78,6 +78,10 @@ export const cards = {
 export const main = {
 	heading: "Marketing Solutions For Business Growth",
 	text: "Personalized Mennr Marketing Solutions Led By Certifiied Performance Marketers To Help Take Your Business to The Next Level.",
+	modal: {
+		text: "service asdfasd",
+	},
+
 	services: [
 		"Web Development",
 		"Web Designs",
@@ -183,6 +187,383 @@ export const getInTouch = {
 					},
 				],
 			},
+		},
+	],
+};
+
+const hoverText =
+	"A curated bucket of services focused on reducing your marketing spend on paid channels and getting better conversions and results through your organic channels over time. ";
+
+export const pricing = {
+	heading:
+		"Mennr Solutions Built To Get Your Business The Growth It Deserves: ",
+	cards: [
+		{
+			icon: "/home/solutions/price/star-silver.svg",
+			heading: "Mennr Silver Plan",
+			card: [
+				{
+					text: "The Mennr Silver Plan will help establish a strong digital presence for your business on the internet, ensuring you are more visible to your potential customers, are perceived as an industry leader within your industry, and get more paid customers online.",
+					price: "$1000 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd asdfas",
+					},
+
+					services: [
+						{
+							id: "ao",
+							head: "Mennr Digital Presence Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "ap",
+							head: "Organic Marketing Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "aq",
+							head: "Paid Marketing Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "ar",
+							head: "The Mennr Advantages Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "as",
+							head: "Hubspot Integration",
+							hover: hoverText,
+						},
+					],
+				},
+			],
+		},
+
+		{
+			icon: "/home/solutions/price/star-gold.svg",
+			heading: "Mennr Gold Plan",
+			card: [
+				{
+					text: "With the Mennr Gold Plan, you get everything your business needs to hit any marketing goals you may have, under one plan. Establish an authoritative online presence, get better quality leads, utilize the power of content and social media, and much more.",
+					price: "$1500 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd wqfqwef",
+					},
+
+					services: [
+						{
+							id: "aj",
+							head: "Mennr Digital Presence Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "ak",
+							head: "Organic Marketing Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "al",
+							head: "Paid Marketing Bundle ",
+							hover: hoverText,
+						},
+						{
+							id: "am",
+							head: "The Mennr Advantages Bundle",
+							hover: hoverText,
+						},
+						{
+							id: "an",
+							head: "Hubspot Integration",
+							hover: hoverText,
+						},
+					],
+				},
+			],
+		},
+
+		{
+			icon: "/home/solutions/price/chipy-price.svg",
+			heading: "Mennr Individual Services",
+			card: [
+				{
+					heading: "Search Engine Optimization",
+					text: "Mennr's in-house SEO specialists work to ensure your website and other digital assets are consistently following the SEO best practices to get your business to ranki higher in search results over time.",
+					price: "$200 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd awfqag",
+					},
+
+					services: [
+						{
+							id: "ae",
+							head: "Keyword Analysis & Implementation",
+							hover: hoverText,
+						},
+						{
+							id: "af",
+							head: "Complete On-Site SEO",
+							hover: hoverText,
+						},
+						{
+							id: "ag",
+							head: "Complete Technical SEO",
+							hover: hoverText,
+						},
+						{
+							id: "ah",
+							head: "Regular A/B Testing",
+							hover: hoverText,
+						},
+						{
+							id: "ai",
+							head: "Regular Optimization",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Paid Advertisements:",
+					text: "With Mennr Paid Ads, we help your business achieve your paid marketing goals through relevant paid channels. Mennr specializes in all paid channels including Google, Meta, Amazon, & more.",
+					price: "$200 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd q[jqwerf",
+					},
+
+					services: [
+						{
+							id: "z",
+							head: "All Paid Channels Are Covered",
+							hover: hoverText,
+						},
+						{
+							id: "aa",
+							head: "Engaging  AD Campaigns",
+							hover: hoverText,
+						},
+						{
+							id: "ab",
+							head: "Audience Targeting Strategy",
+							hover: hoverText,
+						},
+						{
+							id: "ac",
+							head: "Compelling AD Copies",
+							hover: hoverText,
+						},
+						{
+							id: "ad",
+							head: "Reporting Dashboard Access",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Website Design & Development",
+					text: "Mennr’s in-house web design & development team create a custom-made, visually beautiful and seamlessly functional websites, every time! Professional websites for all types of businesses.",
+					price: "$200",
+					link: link,
+
+					modal: {
+						text: "service asdfasd pqjiowfj",
+					},
+
+					services: [
+						{
+							id: "u",
+							head: "Professional Web Designs",
+							hover: hoverText,
+						},
+						{
+							id: "v",
+							head: "Functional Web Pages",
+							hover: hoverText,
+						},
+						{
+							id: "w",
+							head: "Domain & Hosting",
+							hover: hoverText,
+						},
+						{
+							id: "x",
+							head: "Seamless Brand Integration",
+							hover: hoverText,
+						},
+						{
+							id: "y",
+							head: "Mobile-Friendly Websites",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Listings & Reputation Mgmt.",
+					text: "Mennr ensures that your brand is visible and consistent across all your digital assets.  Mennr specialists manage your online reputation by engaging with your audience interactions and online reviews.",
+					price: "$100 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd qipfan",
+					},
+
+					services: [
+						{
+							id: "p",
+							head: "Online Listings Management",
+							hover: hoverText,
+						},
+						{
+							id: "q",
+							head: "Customer Reviews Management",
+							hover: hoverText,
+						},
+						{
+							id: "r",
+							head: "Consistent Brand Messaging",
+							hover: hoverText,
+						},
+						{
+							id: "s",
+							head: "Easy To Manage Alerts",
+							hover: hoverText,
+						},
+						{
+							id: "t",
+							head: "In-House Specialists",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Social Media Managment",
+					text: "Mennr social media specialists work on creating platform-specific strategies & content with focus on increasing following & engagement for your business, leading to more sales.",
+					price: "$100 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd pqwjeif",
+					},
+
+					services: [
+						{
+							id: "k",
+							head: "Relevant Platform Selection",
+							hover: hoverText,
+						},
+						{
+							id: "l",
+							head: "Brand Positioning",
+							hover: hoverText,
+						},
+						{
+							id: "m",
+							head: "Platform Specific Content ",
+							hover: hoverText,
+						},
+						{
+							id: "n",
+							head: "Multi Format Content",
+							hover: hoverText,
+						},
+						{
+							id: "o",
+							head: "Audience Engagement Management",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Content Marketing ",
+					text: "Whether content is in the form of  text, image, or video, our in-house team of content specialists ensures that every piece of content is relevant to your business and creates value for your audience. ",
+					price: "$100 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd phajnv",
+					},
+
+					services: [
+						{
+							id: "f",
+							head: "Result Oriented Content",
+							hover: hoverText,
+						},
+						{
+							id: "g",
+							head: "Professional Copy Writing",
+							hover: hoverText,
+						},
+						{
+							id: "h",
+							head: "Well Researched Blog Posts",
+							hover: hoverText,
+						},
+						{
+							id: "i",
+							head: "Premium Content Creation Tools",
+							hover: hoverText,
+						},
+						{
+							id: "j",
+							head: "In-House Specialists",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+				{
+					heading: "Email & SMS Marketing ",
+					text: "Mennr helps your business utilize the extensive reach of Email and SMS Marketing to get your business more awareness, customers and sales. Use  email and SMS marketing campaigns to target existing or new customers.",
+					price: "$100 / mo",
+					link: link,
+
+					modal: {
+						text: "service asdfasd pinvasd",
+					},
+
+					services: [
+						{
+							id: "a",
+							head: "Compelling Email Flows",
+							hover: hoverText,
+						},
+						{
+							id: "b",
+							head: "Engaging SMS Campaigns",
+							hover: hoverText,
+						},
+						{
+							id: "c",
+							head: "Professional Copy Writing",
+							hover: hoverText,
+						},
+						{
+							id: "d",
+							head: "Reporting Dashboards",
+							hover: hoverText,
+						},
+						{
+							id: "e",
+							head: "In-House Specialists",
+							hover: hoverText,
+						},
+					],
+					free: "Free Add Ons: The Mennr Advantage Bundle",
+				},
+			],
 		},
 	],
 };
