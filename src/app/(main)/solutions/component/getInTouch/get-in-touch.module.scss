@@ -1,0 +1,48 @@
+@use "/src/styles/abstracts" as ab;
+
+.getintouch {
+	--background: var(--bg1);
+	--color: var(--white);
+	--scroll-margin: 15em;
+
+	scroll-margin-block-start: var(--scroll-margin);
+
+	.container {
+		background-color: var(--background);
+		color: var(--white);
+		border-radius: 0.75rem;
+		padding: 2em;
+
+		display: grid;
+		gap: clamp(2em, 2.5vw, 3em);
+
+		@include ab.screen-40 {
+			padding: 1em;
+		}
+
+		@include ab.screen-48 {
+			padding: 2em;
+		}
+
+		.heading {
+			font-size: clamp(1.2rem, 2.3vw, 2.2rem);
+			text-align: center;
+		}
+
+		.buttons {
+			display: grid;
+			padding-inline: 1em;
+			gap: 1.5em;
+
+			@include ab.screen-40 {
+				grid-template-columns: repeat(3, 1fr);
+				padding: 0;
+				gap: 0;
+			}
+
+			@include ab.screen-48 {
+				padding-inline: 1em;
+			}
+		}
+	}
+}

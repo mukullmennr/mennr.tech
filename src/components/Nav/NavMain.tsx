@@ -340,7 +340,7 @@ export default function NavMain() {
 
 							<Link
 								className="links-button"
-								href="/#getstarted"
+								href="/solutions/#get-in-touch"
 								prefetch={false}
 							>
 								Get Started

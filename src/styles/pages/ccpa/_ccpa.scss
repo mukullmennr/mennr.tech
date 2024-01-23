@@ -83,10 +83,13 @@
         td {
             border: 0.1em solid black;
             // border-collapse: collapse;
+            padding: 1em;
+            font-size: clamp(1.1rem, 1vw, 3rem);
         }
         th {
             border: 0.1em solid black;
             // border-collapse: collapse;
+            font-size: clamp(1.1rem, 2vw, 1.7rem);
         }
     }
     &_content3 {

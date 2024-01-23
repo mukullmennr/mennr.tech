@@ -1,0 +1,72 @@
+@use "/src/styles/abstracts" as ab;
+
+.scene {
+	perspective: 600px;
+	height: 23rem;
+	width: min(20rem, 100%);
+	min-width: 20rem;
+	// margin-inline: 1em;
+
+	&:hover {
+		.card {
+			transform: rotateY(180deg);
+		}
+	}
+
+	.card {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition: transform 500ms;
+		transform-style: preserve-3d;
+		box-shadow: 0px 3.79px 15px 1px rgba(0, 31, 255, 0.2);
+		border-radius: 0.75rem;
+	}
+
+	.face {
+		--background: var(--white);
+
+		position: absolute;
+		inset: 0;
+		backface-visibility: hidden;
+		border-radius: 0.75rem;
+
+		background-color: var(--background);
+
+		padding: 1.2em 1.5em;
+		text-align: center;
+
+		.heading {
+			text-wrap: balance;
+			width: 10ch;
+
+			margin-inline: auto;
+
+			font-size: clamp(1.125rem, 1.8vw, 2rem);
+			line-height: 2.5rem;
+			letter-spacing: -0.01rem;
+		}
+
+		&.front {
+			border-radius: 0.75rem;
+
+			img {
+				margin-block-start: 2rem;
+				margin-inline: auto;
+			}
+		}
+
+		&.back {
+			--background: var(--bg1);
+			border-radius: 0.75rem;
+			transform: rotateY(180deg);
+			color: var(--white);
+
+			.text {
+				margin-block-start: 1.5em;
+				text-wrap: balance;
+				font-size: 1.25rem;
+			}
+		}
+	}
+}

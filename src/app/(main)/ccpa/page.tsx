@@ -41,7 +41,7 @@ export default function page() {
                             is a California resident. For purposes of this CCPA
                             / CPRA Privacy Notice when we refer to “you” or
                             “your” we mean a Consumer. For more information on
-                            our privacy practices, please see our
+                            our privacy practices, please see our&nbsp;
                             <Link href="/privacy-policy" prefetch={false}>
                                 Privacy Policy
                             </Link>

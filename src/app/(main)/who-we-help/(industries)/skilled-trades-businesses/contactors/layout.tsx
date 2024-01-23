@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Contractors in New England",
+    title: "Marketing for Contractors",
+    description:
+        "Mennr Tech specializes in digital marketing for contractors in USA. Enhance your online presence, connect with more clients, and grow your business.",
 };
 
 interface ClientLayoutProps {

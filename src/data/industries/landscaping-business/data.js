@@ -59,11 +59,11 @@ export const main = {
 };
 
 export const faq = {
-    heading: "Home Services Business Marketing FAQ",
+    heading: "Marketing FAQ's for Landscaping Business",
     data: [
         {
-            question: "Why is Home Services marketing important?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question: "How do I market my small landscaping business?",
+            answer: "Effectively marketing your small landscaping business involves a multi-faceted approach. Joining local business associations like the chamber of commerce, utilizing flyers, lawn signs, and door hangers for targeted local advertising, and leveraging social media platforms can enhance your visibility. Building a strong online presence with a professional website optimized for search engines is crucial. Additionally, offering referral discounts, partnering with local businesses, and participating in community events contribute to a well-rounded marketing strategy. Implementing these tactics can help attract new clients, establish a positive reputation, and foster growth in your local market.",
         },
         {
             question: "What are the strategies for Home Services Marketing?",

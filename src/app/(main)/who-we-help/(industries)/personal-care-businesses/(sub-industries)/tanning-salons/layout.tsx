@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "Marketing for Tanning Salon in New England",
+    title: "Marketing for Tanning Salon",
+    description:
+        "Transform your tanning salon's digital marketing with Mennr Tech. Attract more customers and grow in the competitive beauty industry.",
 };
 
 interface ClientLayoutProps {

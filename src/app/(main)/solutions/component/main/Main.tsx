@@ -1,28 +1,47 @@
-import Image from "next/image";
 import React from "react";
+import styles from "./main.module.scss";
+import Services from "./Services";
 
-export default function Main() {
+interface MainProps {
+	data: {
+		heading: string;
+		text: string;
+		services: string[];
+		flagText: string;
+	};
+}
+
+export default function Main({ data }: MainProps) {
 	return (
-		<div className="solutions-main">
+		<div className={styles.main}>
 			<div className="container">
-				<div>
-					<h1 className="solutions-main__text">
-						Marketing solutions aren’t one size fits all
-					</h1>
-				</div>
+				<div className={styles.container}>
+					<div className={styles.text}>
+						<h1 className={styles.heading}>{data.heading}</h1>
 
-				<Image
-					src="/common/chipy/chipy-hands-up-standing.svg"
-					alt="chipy"
-					width="209"
-					height="220"
-				/>
+						<p className={styles.content}>{data.text}</p>
+					</div>
 
-				<div>
-					<p className="solutions-main__text">
-						That’s why we take the time to build personalized
-						marketing plans for all of our partners
-					</p>
+					<div className={styles.services}>
+						<div className={styles.chipy}>
+							<Services
+								className={styles.list}
+								services={data.services}
+							/>
+
+							<picture>
+								<source
+									media="(min-width: 48em)"
+									srcSet="home/solutions/chipy/chipy-flag-640.svg"
+								/>
+
+								<img
+									src="home/solutions/chipy/chipy-flag-360.svg"
+									alt="chipy"
+								/>
+							</picture>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,43 @@
+@use "/src/styles/abstracts" as ab;
+
+.button {
+	--color: var(--white);
+	--bg: var(--accent);
+
+	text-align: center;
+	scroll-margin-block-start: 25em;
+
+	.link {
+		border: 0.1em solid var(--accent);
+		color: var(--color);
+		font-weight: 700;
+		text-decoration: none;
+
+		margin-block: 0 0.4em;
+
+		background-color: var(--bg);
+		padding: 0.3em 1.5em;
+
+		display: inline-block;
+
+		font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+		border-radius: 0.5rem;
+
+		transition: background-color 300ms, color 300ms;
+		width: 14rem;
+
+		@include ab.screen-40 {
+			font-size: 0.8rem;
+			width: auto;
+		}
+
+		@include ab.screen-43 {
+			font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+		}
+
+		&:hover {
+			--color: var(--accent);
+			--bg: var(--white);
+		}
+	}
+}

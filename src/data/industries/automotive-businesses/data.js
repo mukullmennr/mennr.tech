@@ -55,23 +55,24 @@ export const main = {
 };
 
 export const faq = {
-    heading: "Home Services Business Marketing FAQ",
+    heading: "Marketing FAQ's for Automotive Businesses",
     data: [
         {
-            question: "Why is Home Services marketing important?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question: "What is marketing in the automotive industry?",
+            answer: "Marketing in the automotive industry encompasses strategies and activities aimed at connecting car dealerships with potential buyers. It targets individuals actively seeking to purchase a vehicle as well as those still in the research phase. This involves a combination of advertising, promotions, digital presence, and customer engagement tactics to attract and retain customers, ultimately facilitating the sale of cars. The approach is tailored to meet the unique demands of the automotive market, addressing consumer needs, preferences, and behaviours specific to car buying.",
         },
         {
-            question: "What are the strategies for Home Services Marketing?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question: "Why is marketing important in the automotive industry?",
+            answer: "Marketing is crucial in the automotive industry as it significantly contributes to increasing sales and the overall success of a company. Effective marketing strategies enhance visibility and appeal of vehicles to potential buyers, thereby boosting sales figures. It plays a vital role in creating brand awareness, establishing brand loyalty, and differentiating products in a competitive market. Additionally, marketing helps in understanding consumer preferences and trends, which is essential for tailoring vehicles and services to meet market demands. It's a key tool for communication with customers, influencing their purchase decisions and fostering long-term relationships.",
         },
         {
-            question: "How will Home Services marketing help your business?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question: "What is the SEO of the automobile industry?",
+            answer: "SEO (Search Engine Optimization) in the automobile industry refers to specialized online marketing strategies aimed at enhancing the visibility of car dealership websites in search engine results. This involves optimizing various elements on the website (on-page optimizations), such as keywords related to the automotive sector, engaging content, and site layout. It also includes local SEO initiatives to target potential customers in specific geographic areas. Additionally, the use of structured data helps search engines better understand and display the content, improving the site's relevance and ranking. These tactics collectively increase the likelihood of appearing higher in search engine results, attracting more potential customers to the dealership's website.",
         },
         {
-            question: "How do you generate  Home Services Customers?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+            question:
+                "How is digital marketing used in the automobile industry?",
+            answer: "In the automobile industry, digital marketing is employed to engage and connect with customers through various digital platforms, notably social media. This approach involves gathering customer data from these platforms to gain insights into consumer preferences and behaviors. With this information, automotive companies tailor their marketing strategies to more effectively target potential customers. The goal is to convert these targeted individuals into actual buyers by presenting them with personalized and relevant content, offers, and interactions. Digital marketing in this industry also encompasses email campaigns, online advertising, search engine optimization, and content marketing, all geared towards enhancing the customer journey from awareness to purchase.",
         },
     ],
 };
