@@ -46,6 +46,8 @@ export default function Pricing({ data }: PricingProps) {
 						{data.heading}
 					</h2>
 
+					<div className={styles.cardsSmall}></div>
+
 					<div className={styles.cards}>{cards}</div>
 				</div>
 			</div>

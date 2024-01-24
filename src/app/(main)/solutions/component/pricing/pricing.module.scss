@@ -5,7 +5,7 @@
 
 	.container {
 		display: grid;
-		gap: 2.5em;
+		gap: 3em;
 
 		.heading {
 			text-align: center;
@@ -15,14 +15,31 @@
 			color: var(--color);
 		}
 
+		.cardsSmall {
+			display: none;
+			position: relative;
+			inline-size: 100%;
+			block-size: 30em;
+			background-color: lightblue;
+
+			@include ab.screen-71 {
+				display: none;
+			}
+		}
+
 		.cards {
-			display: grid;
 			gap: 2em;
+			display: none;
+			display: grid;
 
 			grid-template-columns: repeat(
 				auto-fit,
 				minmax(min(20rem, 100%), 1fr)
 			);
+
+			@include ab.screen-71 {
+				display: grid;
+			}
 		}
 	}
 }
