@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./pricing-card.module.scss";
 
 import { Card, Service } from "../Pricing";
@@ -77,6 +77,8 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 
 				<ul className={styles.list}>{services}</ul>
 
+				{data.free && <p className={styles.free}>{data.free}</p>}
+
 				{/* <div className={styles.modalOpen}>
 					<button onClick={openModal}>Learn More</button>
 				</div> */}
@@ -87,6 +89,25 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 
 export default function PricingCard({ data }: PricingCardProps) {
 	let len = data.card.length;
+	const scrollParent = useRef<HTMLDivElement | null>(null);
+
+	useEffect(() => {
+		const scrollInterval = setInterval(() => {
+			if (len > 1)
+				if (scrollParent.current) {
+					let scroll = scrollParent.current.scrollLeft;
+					console.log(scroll);
+
+					if (scroll >= 1977) {
+						scrollParent.current.scrollLeft = 0;
+					} else {
+						scrollParent.current.scrollLeft += 200;
+					}
+				}
+		}, 10000);
+
+		return () => clearInterval(scrollInterval);
+	}, []);
 
 	const services = data.card.map((service) => {
 		return (
@@ -97,13 +118,15 @@ export default function PricingCard({ data }: PricingCardProps) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.heading}>
-				<img src={data.icon} alt="icon" width="32" height="32" />
-
-				<h3>{data.heading}</h3>
+				<h3>
+					<img src={data.icon} alt="icon" width="32" height="32" />
+					{data.heading}
+				</h3>
 			</div>
 
 			<div
 				className={`${styles.content} ${len > 1 ? styles.scroll : ""}`}
+				ref={scrollParent}
 			>
 				{services}
 			</div>
