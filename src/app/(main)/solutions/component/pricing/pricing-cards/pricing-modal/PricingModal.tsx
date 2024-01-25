@@ -51,7 +51,8 @@ const Modal = forwardRef(function PricingModal(
 				<div className={styles.table}>
 					<div className={styles.tableHeading}>
 						<h3>
-							<FontAwesomeIcon icon={faAngleDown} />
+							{/* <FontAwesomeIcon icon={faAngleDown} /> */}
+							Services
 						</h3>
 						<h3>Mennr Silver</h3>
 						<h3>Mennr Gold</h3>

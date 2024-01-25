@@ -7,6 +7,8 @@
 		background-color: var(--accent);
 		padding-inline: 1.8em;
 		padding-block: 1em;
+		position: sticky;
+		top: 0em;
 
 		.select {
 			width: 100%;
@@ -18,6 +20,53 @@
 			option {
 				font-weight: 500;
 				font-size: 1.1rem;
+			}
+		}
+	}
+
+	.tableContent {
+		// background-color: red;
+		display: grid;
+		// gap: 1em;
+
+		.tableContainer {
+			outline: 2px solid red;
+			display: grid;
+			// gap: 1em;
+			padding-block: 1em;
+
+			.tableRow {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				font-size: 0.8rem;
+
+				> * {
+					padding-block: 1.5em;
+					padding-inline: 2.6em;
+
+					border-bottom: 1px solid ab.$line;
+					border-left: 1px solid ab.$line;
+
+					&[data-left="true"] {
+						border-left: 0;
+						text-align: center;
+						padding-block-start: 3em;
+					}
+				}
+
+				&[data-last="true"] {
+					> * {
+						border-bottom: 0;
+					}
+				}
+
+				ul {
+					padding: 0;
+					margin: 0;
+
+					list-style-position: outside;
+					list-style-image: url("../../../../../../../../public/home/solutions/price/check.svg");
+				}
 			}
 		}
 	}

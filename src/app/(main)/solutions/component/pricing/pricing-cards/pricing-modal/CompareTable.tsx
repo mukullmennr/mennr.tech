@@ -21,7 +21,47 @@ interface TableItemsProps {
 function TableItems({ table }: TableItemsProps) {
 	const { services } = tableContent[table];
 
-	return <div className={styles.grid}></div>;
+	const service = services.map((service, index) => {
+		let isLast = index === services.length - 1;
+
+		return (
+			<div
+				data-last={`${isLast ? "true" : ""}`}
+				className={styles.tableRow}
+				key={service.name}
+			>
+				<div data-left="true">{service.name}</div>
+
+				<div>
+					<ul>
+						{service.silver.map((item) => {
+							return <li key={item}>{item}</li>;
+						})}
+					</ul>
+				</div>
+
+				<div>
+					{service.gold.text && (
+						<p
+							style={{
+								fontWeight: "600",
+								marginBlockEnd: ".5em",
+							}}
+						>
+							{service.gold.text}
+						</p>
+					)}
+					<ul>
+						{service.gold.services.map((item) => {
+							return <li key={item}>{item}</li>;
+						})}
+					</ul>
+				</div>
+			</div>
+		);
+	});
+
+	return <div className={styles.tableContainer}>{service}</div>;
 }
 
 export default function CompareTable() {

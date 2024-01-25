@@ -6,7 +6,7 @@
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	border-radius: 0.75rem;
-	padding: 0 1em 2em;
+	padding: 0 0em 2em;
 
 	background-color: ab.$white;
 	overflow: auto;
@@ -24,6 +24,9 @@
 		align-items: center;
 		position: sticky;
 		top: -1em;
+		padding-inline: 1em;
+
+		background-color: #fff;
 
 		background-color: ab.$white;
 		padding-block: 1.5em 1em;
@@ -56,6 +59,8 @@
 		overflow: auto;
 		border-radius: 0.75rem;
 
+		margin-inline: 1em;
+
 		box-shadow: 0px 2.534px 25.337px 6.334px rgba(28, 55, 82, 0.6);
 	}
 
@@ -82,8 +87,6 @@
 		}
 
 		.tableContent {
-			// min-width: 48em;
-			// background-color: red;
 		}
 	}
 }
