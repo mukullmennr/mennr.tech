@@ -16,21 +16,80 @@
 		}
 
 		.cardsSmall {
-			display: none;
-			position: relative;
-			inline-size: 100%;
-			block-size: 30em;
-			background-color: lightblue;
-
 			@include ab.screen-71 {
 				display: none;
+			}
+
+			// outline: 2px solid red;
+			// max-width: 10rem;
+			// overflow: auto;
+			width: 100%;
+
+			.tabsRoot {
+				display: grid;
+				gap: 2em;
+				width: 100%;
+
+				.tabList {
+					display: grid;
+					gap: 0.5em;
+					width: 100%;
+
+					@include ab.screen-43 {
+						grid-template-columns: repeat(3, 1fr);
+					}
+					justify-items: center;
+
+					.tabTrigger {
+						font-size: 0.9rem;
+						inline-size: 20rem;
+						margin-inline: auto;
+
+						display: flex;
+						align-items: center;
+						gap: 0.4em;
+						justify-content: center;
+
+						@include ab.screen-43 {
+							inline-size: clamp(13rem, 14vw, 14rem);
+						}
+
+						@include ab.screen-48 {
+							inline-size: 14rem;
+						}
+
+						@include ab.screen-51 {
+							inline-size: 15rem;
+						}
+
+						@include ab.screen-55 {
+							inline-size: 16.5rem;
+						}
+
+						background-color: transparent;
+						border: 0.1em solid ab.$background1;
+						padding-block: 0.3em;
+
+						transition: background-color 300ms, font-size 300ms,
+							font-weight 300ms;
+
+						&[data-state="active"] {
+							font-weight: 600;
+							background-color: ab.$background10;
+							font-size: 1rem;
+						}
+					}
+				}
+
+				.tabContent {
+					width: 100%;
+				}
 			}
 		}
 
 		.cards {
 			gap: 2em;
 			display: none;
-			display: grid;
 
 			grid-template-columns: repeat(
 				auto-fit,

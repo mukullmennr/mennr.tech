@@ -6,6 +6,8 @@ import styles from "./pricing-card.module.scss";
 import { Card, Service } from "../Pricing";
 import PricingModal from "./pricing-modal/PricingModal";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 interface PricingCardProps {
 	data: Card;
@@ -88,15 +90,18 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 }
 
 export default function PricingCard({ data }: PricingCardProps) {
-	let len = data.card.length;
+	let isMultiple: boolean = data.card.length > 1;
 	const scrollParent = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		const scrollInterval = setInterval(() => {
-			if (len > 1)
+			if (isMultiple)
 				if (scrollParent.current) {
+					let hover = scrollParent.current.matches(":hover");
+
+					if (hover) return;
+
 					let scroll = scrollParent.current.scrollLeft;
-					console.log(scroll);
 
 					if (scroll >= 1977) {
 						scrollParent.current.scrollLeft = 0;
@@ -109,7 +114,28 @@ export default function PricingCard({ data }: PricingCardProps) {
 		return () => clearInterval(scrollInterval);
 	}, []);
 
-	const services = data.card.map((service) => {
+	const handleLeft = () => {
+		if (scrollParent.current) {
+			let scroll = scrollParent.current.scrollLeft;
+
+			if (scroll >= 0) {
+				scrollParent.current.scrollLeft -= 200;
+			}
+		}
+	};
+
+	const handleRight = () => {
+		if (scrollParent.current) {
+			let scroll = scrollParent.current.scrollLeft;
+
+			if (scroll <= 1977) {
+				scrollParent.current.scrollLeft += 200;
+			}
+		}
+	};
+
+	const services = data.card.map((service, index) => {
+		// if (index >= 2) return;
 		return (
 			<ServicesInfo key={data.heading + service.text} data={service} />
 		);
@@ -119,13 +145,27 @@ export default function PricingCard({ data }: PricingCardProps) {
 		<div className={styles.card}>
 			<div className={styles.heading}>
 				<h3>
-					<img src={data.icon} alt="icon" width="32" height="32" />
+					<img src={data.icon} alt="icon" width="18" height="18" />
 					{data.heading}
 				</h3>
 			</div>
 
+			{isMultiple && (
+				<div className={styles.controls}>
+					<button className={styles.left} onClick={handleLeft}>
+						<FontAwesomeIcon icon={faAngleLeft} />
+					</button>
+
+					<button className={styles.right} onClick={handleRight}>
+						<FontAwesomeIcon icon={faAngleRight} />
+					</button>
+				</div>
+			)}
+
 			<div
-				className={`${styles.content} ${len > 1 ? styles.scroll : ""}`}
+				className={`${styles.content} ${
+					isMultiple ? styles.scroll : ""
+				}`}
 				ref={scrollParent}
 			>
 				{services}
