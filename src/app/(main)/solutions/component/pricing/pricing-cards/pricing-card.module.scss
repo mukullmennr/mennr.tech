@@ -224,10 +224,14 @@
 			border: transparent;
 			font-weight: 700;
 
+			text-decoration: underline transparent;
+
 			cursor: pointer;
 
+			transition: text-decoration-color 200ms;
+
 			&:hover {
-				text-decoration: underline;
+				text-decoration-color: currentColor;
 			}
 		}
 	}

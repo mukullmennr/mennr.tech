@@ -1,0 +1,24 @@
+@use "/src/styles/abstracts" as ab;
+
+.table {
+	background-color: transparent;
+
+	.selectContainer {
+		background-color: var(--accent);
+		padding-inline: 1.8em;
+		padding-block: 1em;
+
+		.select {
+			width: 100%;
+			background-color: transparent;
+			border: transparent;
+			font-weight: 600;
+			font-size: 1.1rem;
+
+			option {
+				font-weight: 500;
+				font-size: 1.1rem;
+			}
+		}
+	}
+}

@@ -23,7 +23,7 @@ const Modal = forwardRef(function Modal(
 			<div className={styles.menu}>
 				<img src="/mennr-dark.svg" alt="mennr" />
 
-				<a href="#get-started">
+				<a href="#get-started" title="close">
 					<FontAwesomeIcon icon={faClose} />
 				</a>
 			</div>
