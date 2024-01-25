@@ -201,6 +201,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/star-silver.svg",
 			heading: "Mennr Silver Plan",
+			compare: true,
 			card: [
 				{
 					text: "The Mennr Silver Plan will help establish a strong digital presence for your business on the internet, ensuring you are more visible to your potential customers, are perceived as an industry leader within your industry, and get more paid customers online.",
@@ -245,6 +246,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/star-gold.svg",
 			heading: "Mennr Gold Plan",
+			compare: true,
 			card: [
 				{
 					text: "With the Mennr Gold Plan, you get everything your business needs to hit any marketing goals you may have, under one plan. Establish an authoritative online presence, get better quality leads, utilize the power of content and social media, and much more.",
@@ -289,6 +291,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/chipy-price.svg",
 			heading: "Mennr Individual Services",
+			compare: false,
 			card: [
 				{
 					heading: "Search Engine Optimization",
@@ -567,3 +570,96 @@ export const pricing = {
 		},
 	],
 };
+
+export const table = [
+	{
+		bundleName: "Mennr Digital Presence Bundle",
+		services: [
+			{
+				name: "Digital Branding",
+				gold: ["Same as silver plan"],
+				silver: [
+					"Logo design / redesign",
+					"Brand guidelines setup",
+					"Color palette",
+					"Business card design",
+				],
+			},
+			{
+				name: "Website Design & Development",
+				gold: ["Same as silver plan"],
+				silver: [
+					" Complete design/redesign of custom-made website",
+					"Multiple website pages",
+					"Inclusion of employee-generated images",
+					"Mobile responsiveness and functionality",
+					"Website designs personalized to your brand, no templates",
+				],
+			},
+			{
+				name: "Domain & Website Hosting ",
+				gold: ["Same as silver plan"],
+				silver: [
+					"Custom website domain registration",
+					"24/7 uptime website hosting",
+					"Secure website with SSL and HTTPS",
+				],
+			},
+			{
+				name: "Google Business Profile ",
+				gold: ["Same as silver plan"],
+				silver: [""],
+			},
+			{
+				name: "Listings Management",
+				gold: ["Same as silver plan"],
+				silver: [""],
+			},
+			{
+				name: "Reputation & Reviews Management",
+				gold: ["Same as silver plan"],
+				silver: [""],
+			},
+		],
+	},
+	{
+		bundleName: "Organic Marketing Bundle",
+		services: [
+			{
+				name: "",
+				gold: [""],
+				silver: [""],
+			},
+		],
+	},
+	{
+		bundleName: "Paid Marketing Bundle (Google & Social Media)",
+		services: [
+			{
+				name: "",
+				gold: [""],
+				silver: [""],
+			},
+		],
+	},
+	{
+		bundleName: "The Mennr Advantages Bundle",
+		services: [
+			{
+				name: "",
+				gold: [""],
+				silver: [""],
+			},
+		],
+	},
+	{
+		bundleName: "HubSpot Integration",
+		services: [
+			{
+				name: "",
+				gold: [""],
+				silver: [""],
+			},
+		],
+	},
+];

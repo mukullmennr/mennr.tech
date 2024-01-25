@@ -25,7 +25,7 @@ const Modal = forwardRef(function PricingModal(
 		},
 	}));
 
-	return <dialog ref={modalRef}>{props.data.text}</dialog>;
+	return <dialog ref={modalRef}>hello this is modal</dialog>;
 });
 
 export default Modal;

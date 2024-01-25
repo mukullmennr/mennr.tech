@@ -7,7 +7,11 @@ import { Card, Service } from "../Pricing";
 import PricingModal from "./pricing-modal/PricingModal";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+	faAngleLeft,
+	faAngleRight,
+	faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface PricingCardProps {
 	data: Card;
@@ -23,8 +27,6 @@ export interface ModalMethods {
 }
 
 function ServicesInfo({ data }: ServicesInfoProps) {
-	const modalRef = useRef<ModalMethods | null>(null);
-
 	const services = data.services.map((service) => {
 		return (
 			<li key={service.id}>
@@ -46,14 +48,6 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 			</li>
 		);
 	});
-
-	const openModal = () => {
-		modalRef.current?.openModal();
-	};
-
-	const closeModal = () => {
-		modalRef.current?.closeModal();
-	};
 
 	return (
 		<>
@@ -92,6 +86,7 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 export default function PricingCard({ data }: PricingCardProps) {
 	let isMultiple: boolean = data.card.length > 1;
 	const scrollParent = useRef<HTMLDivElement | null>(null);
+	const modalRef = useRef<ModalMethods | null>(null);
 
 	useEffect(() => {
 		const scrollInterval = setInterval(() => {
@@ -141,35 +136,62 @@ export default function PricingCard({ data }: PricingCardProps) {
 		);
 	});
 
+	const openModal = () => {
+		modalRef.current?.openModal();
+	};
+
+	const closeModal = () => {
+		modalRef.current?.closeModal();
+	};
+
 	return (
-		<div className={styles.card}>
-			<div className={styles.heading}>
-				<h3>
-					<img src={data.icon} alt="icon" width="18" height="18" />
-					{data.heading}
-				</h3>
-			</div>
-
-			{isMultiple && (
-				<div className={styles.controls}>
-					<button className={styles.left} onClick={handleLeft}>
-						<FontAwesomeIcon icon={faAngleLeft} />
-					</button>
-
-					<button className={styles.right} onClick={handleRight}>
-						<FontAwesomeIcon icon={faAngleRight} />
-					</button>
+		<>
+			<>
+				<PricingModal ref={modalRef} />
+			</>
+			<div className={styles.card}>
+				<div className={styles.heading}>
+					<h3>
+						<img
+							src={data.icon}
+							alt="icon"
+							width="18"
+							height="18"
+						/>
+						{data.heading}
+					</h3>
 				</div>
-			)}
 
-			<div
-				className={`${styles.content} ${
-					isMultiple ? styles.scroll : ""
-				}`}
-				ref={scrollParent}
-			>
-				{services}
+				{isMultiple && (
+					<div className={styles.controls}>
+						<button className={styles.left} onClick={handleLeft}>
+							<FontAwesomeIcon icon={faAngleLeft} />
+						</button>
+
+						<button className={styles.right} onClick={handleRight}>
+							<FontAwesomeIcon icon={faAngleRight} />
+						</button>
+					</div>
+				)}
+
+				<div
+					className={`${styles.content} ${
+						isMultiple ? styles.scroll : ""
+					}`}
+					ref={scrollParent}
+				>
+					{services}
+				</div>
+
+				{data.compare && (
+					<div className={styles.compare}>
+						<button onClick={openModal}>
+							Compare Plans{" "}
+							<FontAwesomeIcon icon={faArrowRight} />
+						</button>
+					</div>
+				)}
 			</div>
-		</div>
+		</>
 	);
 }

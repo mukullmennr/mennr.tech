@@ -25,6 +25,7 @@ export interface Card {
 	icon: string;
 	heading: string;
 	card: Service[];
+	compare: boolean;
 }
 
 interface PricingProps {

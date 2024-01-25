@@ -212,4 +212,19 @@
 			}
 		}
 	}
+
+	.compare {
+		padding-block-end: 0.5em;
+		margin-inline: 1.2em;
+		text-align: end;
+
+		button {
+			color: var(--blue);
+			background-color: transparent;
+			border: transparent;
+			font-weight: 700;
+
+			cursor: pointer;
+		}
+	}
 }
