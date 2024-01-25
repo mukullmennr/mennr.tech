@@ -576,8 +576,11 @@ export const table = [
 		bundleName: "Mennr Digital Presence Bundle",
 		services: [
 			{
+				gold: {
+					text: "",
+					services: ["Same as silver plan"],
+				},
 				name: "Digital Branding",
-				gold: ["Same as silver plan"],
 				silver: [
 					"Logo design / redesign",
 					"Brand guidelines setup",
@@ -587,9 +590,12 @@ export const table = [
 			},
 			{
 				name: "Website Design & Development",
-				gold: ["Same as silver plan"],
+				gold: {
+					text: "",
+					services: ["Same as silver plan"],
+				},
 				silver: [
-					" Complete design/redesign of custom-made website",
+					"Complete design/redesign of custom-made website",
 					"Multiple website pages",
 					"Inclusion of employee-generated images",
 					"Mobile responsiveness and functionality",
@@ -598,7 +604,10 @@ export const table = [
 			},
 			{
 				name: "Domain & Website Hosting ",
-				gold: ["Same as silver plan"],
+				gold: {
+					text: "",
+					services: ["Same as silver plan"],
+				},
 				silver: [
 					"Custom website domain registration",
 					"24/7 uptime website hosting",
@@ -607,17 +616,26 @@ export const table = [
 			},
 			{
 				name: "Google Business Profile ",
-				gold: ["Same as silver plan"],
+				gold: {
+					text: "",
+					services: ["Same as silver plan"],
+				},
 				silver: [""],
 			},
 			{
 				name: "Listings Management",
-				gold: ["Same as silver plan"],
+				gold: {
+					text: "",
+					services: ["Same as silver plan"],
+				},
 				silver: [""],
 			},
 			{
 				name: "Reputation & Reviews Management",
-				gold: ["Same as silver plan"],
+				gold: {
+					text: "Silver plan +",
+					services: [""],
+				},
 				silver: [""],
 			},
 		],
