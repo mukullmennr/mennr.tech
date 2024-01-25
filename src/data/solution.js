@@ -201,6 +201,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/star-silver.svg",
 			heading: "Mennr Silver Plan",
+			compare: true,
 			card: [
 				{
 					text: "The Mennr Silver Plan will help establish a strong digital presence for your business on the internet, ensuring you are more visible to your potential customers, are perceived as an industry leader within your industry, and get more paid customers online.",
@@ -245,6 +246,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/star-gold.svg",
 			heading: "Mennr Gold Plan",
+			compare: true,
 			card: [
 				{
 					text: "With the Mennr Gold Plan, you get everything your business needs to hit any marketing goals you may have, under one plan. Establish an authoritative online presence, get better quality leads, utilize the power of content and social media, and much more.",
@@ -289,6 +291,7 @@ export const pricing = {
 		{
 			icon: "/home/solutions/price/chipy-price.svg",
 			heading: "Mennr Individual Services",
+			compare: false,
 			card: [
 				{
 					heading: "Search Engine Optimization",
@@ -567,3 +570,321 @@ export const pricing = {
 		},
 	],
 };
+
+export const table = [
+	{
+		bundleName: "Mennr Digital Presence Bundle",
+		services: [
+			{
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				name: "Digital Branding",
+				silver: [
+					"Logo design / redesign",
+					"Brand guidelines setup",
+					"Color palette",
+					"Business card design",
+				],
+			},
+			{
+				name: "Website Design & Development",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Complete design/redesign of custom-made website",
+					"Multiple website pages",
+					"Inclusion of employee-generated images",
+					"Mobile responsiveness and functionality",
+					"Website designs personalized to your brand, no templates",
+				],
+			},
+			{
+				name: "Domain & Website Hosting ",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Custom website domain registration",
+					"24/7 uptime website hosting",
+					"Secure website with SSL and HTTPS",
+				],
+			},
+			{
+				name: "Google Business Profile ",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Professional google business profile setup",
+					"Setup open hours",
+					" Add business name, address, and phone number",
+					"Upload posts sharing business updates",
+					"Listing of products or services offered",
+					"Setup messaging",
+					"Respond to questions",
+				],
+			},
+			{
+				name: "Listings Management",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Complete and accurate business information is consistently synced across all your digital assets",
+					"Monitoring and updating business listings across the internet",
+					"claim business accounts on listing sites like angilist and yelp",
+					"categorize business with Google indexes",
+				],
+			},
+			{
+				name: "Reputation & Reviews Management",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Collaboration with local newspapers and online journals to get columns written on business",
+						"Collaboration with local news stations to get business exposure via their local business segment",
+						"Collaboration with local radio stations for the promotion",
+					],
+				},
+				silver: [
+					"End-to-end management of reviews left by customers",
+					"Respond to all reviews",
+					"Setup of alerts to get notified when someone leaves a review",
+				],
+			},
+		],
+	},
+	{
+		bundleName: "Organic Marketing Bundle",
+		services: [
+			{
+				name: "SEO",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Monthly review of keywords to consistently update content along with search trends and user behavior",
+						"Optimization of website structure, monthly audits on broken links, duplicate content, and page indexing",
+						"Monthly backlink maintenance, removing harmful links and acquiring relevant links from authoritative websites",
+						"Weekly a/b testing of landing page designs via monitoring of website visitors interactions and journeys throughout the website",
+						"Voice search optimization",
+						"Utilization of structured data and schema markup to gain exposure through SERPS such as 'people also ask",
+					],
+				},
+				silver: [
+					"Implementation of technical, on-site and off-site SEO best practices to start ranking higher in search results over time",
+					"Optimize web page content for SEO with keyword inclusion",
+					"Sitemap setup",
+					"Title tags, meta descriptions, anchor tags, faqs, alt text, heading tags, and internal linking implementation",
+					"Page speed and mobile responsiveness optimization",
+					"Enable web crawling with robots.txt",
+					"Fixed interval optimization ",
+				],
+			},
+			{
+				name: "Social Media",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Unlimited posts per week per social platform",
+						"Management of unlimited social platforms of choice",
+						"Strategic interaction with community via liking followers posts, leaving comments, and responding to people leaving comments on posts",
+					],
+				},
+				silver: [
+					"Professional business profiles on all relevant social media channels.",
+					"Platform-specific content ",
+					"Two posts per week per social platform",
+					"Management of two social platforms of choice",
+					"Content creation and post of employee-generated content",
+				],
+			},
+			{
+				name: "Email & SMS Marketing",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Weekly email newsletter sent out to custom audience lists ",
+						"Weekly text promotion sent to custom audience lists ",
+						"Inbound and outbound email and SMS marketing campaigns",
+						"Smail and SMS AD copy personalized based on the recipient",
+						"Complete user journey tracking and reporting",
+					],
+				},
+				silver: [
+					"End-to-end creation, distribution & management of email and SMS campaigns.",
+					"Monthly email newsletter sent to custom audience lists.",
+					"Monthly text promotion sent to custom audience ",
+					"Promotional / new launches / retargeting campaigns covered ",
+				],
+			},
+			{
+				name: "Content Marketing",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"One blog created per week",
+						" Additional landing pages and content created based on the locations a business serves",
+						"Blogs shared across relevant social platforms",
+					],
+				},
+				silver: [
+					"Professional and engaging content crafted using professional content tools ",
+					"All major formats covered: images, videos, blogs, etc.",
+					"Two blogs created per month",
+					"Content created is 100% human written and has a no plagiarism guarantee",
+				],
+			},
+		],
+	},
+	{
+		bundleName: "Paid Marketing Bundle (Google & Social Media)",
+		services: [
+			{
+				name: "Google Ads",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Unlimited phrase, broad, or exact match keywords*",
+						" Inclusion of long-tail keywords and negative keywords",
+						"All campaign types included: search, performance max, display, video, local, smart, and shopping.",
+						"Unlimited campaigns and ad groups per month*",
+						"A/B testing of ads",
+						"Inclusion of relevant extensions: Site link, callout, and structured snippet AD extensions",
+						"Advanced bidding strategies focusing on maximizing CPA, ROAS, CPC, and conversions",
+						"Daily adjustments made based on campaign performance*",
+					],
+				},
+				silver: [
+					"Limit of 15 phrase or broad match keywords",
+					"Straightforward AD copy driving to CTA",
+					"Campaign type limited to 'search' campaign",
+					"One campaign and five AD groups per month",
+					"Automated bidding strategy focused on maximizing CPC",
+					"Weekly adjustments made based on campaign performance",
+				],
+			},
+			{
+				name: "Meta Ads",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Setup targeting to reach a custom audience of people who previously interacted with business",
+						"Setup of Facebook pixels for retargeting",
+						"Unlimited campaigns* ",
+						" All AD formats and types included",
+						"A/B testing of ads",
+						"Daily adjustments made based on campaign performance",
+					],
+				},
+				silver: [
+					"Audience targeting setup based on age, gender, and location",
+					"Targeting interests and behavior categories relevant to a business's products or services",
+					"Single image or video ads with clear messages and drive to CTA",
+					"Daily ads spend budget configured with automated bidding",
+					"Weekly adjustments made based on ad performance metrics",
+				],
+			},
+			{
+				name: "Amazon ADs",
+				gold: {
+					text: "Silver plan +",
+					services: [
+						"Unlimited usage of keywords, including competitor keywords and product targeting*",
+						"Utilization of sponsored brands and sponsored display ad formats",
+						"Advanced bidding strategies focusing on maximizing impressions and ROI ",
+						"A/B testing of ADS",
+						"Daily adjustments made based on campaign performance",
+					],
+				},
+				silver: [
+					"Limit of 15 phrase or broad match keywords",
+					"Straightforward ad copy showcasing product",
+					"High-quality images of the product catalog ",
+					" Automated bidding strategy",
+					"Campaign structured to focus on core products and categories",
+					"Weekly adjustments made based on impressions, CTR and ACOS.",
+				],
+			},
+			{
+				name: "Others: Linkedin, Twitter, Tiktok, Pinterest, Quora, Reddit & more.",
+
+				gold: {
+					text: "Silver plan +",
+					services: ["Premium features per additional platform"],
+				},
+				silver: ["Limited features per additional platform"],
+			},
+		],
+	},
+	{
+		bundleName: "The Mennr Advantages Bundle",
+		services: [
+			{
+				name: "Dedicated Business Strategist (DBS)",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Access to a dedicated business strategist",
+					"24/7 call and text support",
+					"Access to DBS direct phone line",
+				],
+			},
+			{
+				name: "Mennr Partner Dashboard",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Real-time birds-eye view of all marketing and advertising performance metrics",
+					"Create custom reports",
+					"Respond to all reviews from within the dashboard",
+					"View AD spending in real-time",
+					"Monitor social media, respond to comments, and view upcoming posts scheduled to release",
+				],
+			},
+			{
+				name: "Weekly Performance Reports",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Automated reports sent out every week",
+					"Summary of what work was done that week",
+					"Summary of performance metrics and progression towards meeting our goals",
+					"Option to deep dive into each active marketing channel's performance ",
+				],
+			},
+			{
+				name: "Monthly Report With Account Representative",
+				gold: {
+					services: ["Same as silver plan"],
+				},
+				silver: [
+					"Sit-down meeting with your DBS to discuss that month's progress and the next month's projections",
+					"Weekly review of goals and KPIs, making adjustments as needed",
+					"Breakdown of AD spend, roll-over budget, and SEO growth",
+					"Summary of audience reviews and engagement with your business",
+				],
+			},
+		],
+	},
+	{
+		bundleName: "HubSpot Integration",
+		services: [
+			{
+				name: "Hubspot",
+				gold: {
+					services: [
+						"Free HubSpot CRM and custom Hubspot automation tools for your business and marketing(premium plan)",
+					],
+				},
+				silver: [
+					"HubSpot CRM and custom Hubspot automation tools for your business and marketing operations (basic plan)",
+				],
+			},
+		],
+	},
+];
