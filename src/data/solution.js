@@ -60,10 +60,10 @@ export const cards = {
 				"You will be in the driver's seat, always! We execute solutions only when you are happy and approve of our execution plan.",
 		},
 		{
-			heading: "Dedicated Relationship Manager",
+			heading: "Dedicated Business Strategist",
 			img: "home/solutions/cards/card5.svg",
 			content:
-				"With Mennr, you get direct access to a dedicated relationship manager anytime you want, how many every times you need!",
+				"With Mennr, you get direct access to a dedicated business strategist anytime you want, how many ever times you need!",
 		},
 		{
 			heading: "Flexible Payment Plans",

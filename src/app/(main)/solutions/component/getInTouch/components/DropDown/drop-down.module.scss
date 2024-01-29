@@ -21,8 +21,11 @@
 
 	position: absolute;
 	background-color: var(--bg);
-	translate: 0 0.6rem;
+	// translate: 0 0.6rem;
 	backdrop-filter: blur(0.1em);
+
+	left: 50%;
+	translate: -50% 0.6rem;
 
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 1em 1.5em;
