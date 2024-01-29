@@ -155,8 +155,8 @@ export default function PricingCard({ data }: PricingCardProps) {
 						<img
 							src={data.icon}
 							alt="icon"
-							width="18"
-							height="18"
+							width="40"
+							height="40"
 						/>
 						{data.heading}
 					</h3>
