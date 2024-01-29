@@ -49,6 +49,21 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 		);
 	});
 
+	function gtag_report_conversion(url: Location | undefined) {
+		var callback = function () {
+			if (typeof url != "undefined") {
+				window.location = url;
+			}
+		};
+
+		// @ts-expect-error
+		gtag("event", "conversion", {
+			send_to: "AW-11406722063/F1-QCI2s3owZEI-Ik78q",
+			event_callback: callback,
+		});
+		return false;
+	}
+
 	return (
 		<>
 			{/* <>
@@ -68,7 +83,12 @@ function ServicesInfo({ data }: ServicesInfoProps) {
 				</p>
 
 				<div className={styles.button}>
-					<a href={data.link}>Get Discounted Quote</a>
+					<a
+						onClick={() => gtag_report_conversion(undefined)}
+						href={data.link}
+					>
+						Get Discounted Quote
+					</a>
 				</div>
 
 				<ul className={styles.list}>{services}</ul>
