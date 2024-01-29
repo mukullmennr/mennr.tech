@@ -46,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.5,
         },
         {
+            url: "https://www.mennr.tech/who-we-help/automotive-business/auto-body",
+            lastModified: "2024-01-25",
+            changeFrequency: "monthly",
+            priority: 0.5,
+        },
+        {
             url: "https://www.mennr.tech/who-we-help/automotive-business/tire-shops",
             lastModified: "2024-01-25",
             changeFrequency: "monthly",
