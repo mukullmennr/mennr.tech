@@ -66,7 +66,7 @@ export const cards = {
 			heading: "Certified Teams",
 			img: "home/solutions/cards/card1.svg",
 			content:
-				"All of Mennr's teams are in-house in-house and span across multiple specializations bringing your business the support of a team of professionals.",
+				"All of Mennr's teams are in-house and span across multiple specializations bringing your business the support of a team of professionals.",
 		},
 		{
 			heading: "Hubspot Partners ",
