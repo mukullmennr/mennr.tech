@@ -1,12 +1,14 @@
-FROM node:18-alpine as builder
+FROM node:lts-alpine as builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
+ARG KEY
+ENV NEXT_PUBLIC_HUBSPOT=$KEY
 RUN npm run build
 
-FROM node:18-alpine as runner
+FROM node:lts-alpine as runner
 WORKDIR /app
 COPY --from=builder /app/package.json .
 COPY --from=builder /app/package-lock.json .
