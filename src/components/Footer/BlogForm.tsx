@@ -20,12 +20,16 @@ export default function BlogForm() {
 
 			addMail(email)
 				.then((res: any) => {
-					setRes(0);
+					if (res.success) {
+						setRes(0);
+						return;
+					}
+
+					let code = +res.message;
+					setRes(code);
 				})
 				.catch((err) => {
 					let code = +err.message;
-					console.log(err.message);
-					console.log(code);
 
 					if (typeof code !== "number") {
 						setRes(3);
