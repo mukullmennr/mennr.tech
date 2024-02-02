@@ -1,7 +1,7 @@
 steps:
   # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-west2-docker.pkg.dev/nifty-garden-411010/mennr-tech/mennr-tech-image:tag1', '--build-arg=KEY=${_KEY_}', '.']
+  args: ['build', '-t', 'us-west2-docker.pkg.dev/nifty-garden-411010/mennr-tech/mennr-tech-image:tag1', '--build-arg=HUBSPOT=${_HUBSPOT_}', '.']
 # Push the image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-west2-docker.pkg.dev/nifty-garden-411010/mennr-tech/mennr-tech-image:tag1']

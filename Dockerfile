@@ -4,8 +4,8 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
-ARG KEY
-ENV NEXT_PUBLIC_HUBSPOT=$KEY
+ARG HUBSPOT
+ENV NEXT_PUBLIC_HUBSPOT=$HUBSPOT
 RUN npm run build
 
 FROM node:lts-alpine as runner

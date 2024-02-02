@@ -2,6 +2,7 @@
 
 export const addMail = async (email) => {
 	try {
+		console.log(process.env.NEXT_PUBLIC_HUBSPOT);
 		const url = "https://api.hubapi.com/crm/v3/objects/contacts";
 		const body = JSON.stringify({
 			properties: {
