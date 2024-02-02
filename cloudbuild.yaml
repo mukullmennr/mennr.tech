@@ -8,7 +8,7 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'mennr-tech-image', '--image', 'us-west2-docker.pkg.dev/nifty-garden-411010/mennr-tech/mennr-tech-image-${_BRANCH_}:tag1', '--region', 'us-west2']
+  args: ['run', 'deploy', 'mennr-tech-image-${_BRANCH_}', '--image', 'us-west2-docker.pkg.dev/nifty-garden-411010/mennr-tech/mennr-tech-image-${_BRANCH_}:tag1', '--region', 'us-west2']
 
 options:
   logging: NONE
