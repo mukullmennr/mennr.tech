@@ -20,9 +20,7 @@ export const addMail = async (email) => {
 			body: body,
 		});
 
-		console.log("awaiting server response");
 		res = await res.json();
-		console.log(res);
 
 		if (res.status === "error") {
 			if (res.category === "CONFLICT") {
@@ -39,7 +37,6 @@ export const addMail = async (email) => {
 			message: "Successfully added email",
 		};
 	} catch (error) {
-		console.error(error);
 		throw new Error(error.message);
 	}
 };

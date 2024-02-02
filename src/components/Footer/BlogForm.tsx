@@ -24,6 +24,7 @@ export default function BlogForm() {
 				})
 				.catch((err) => {
 					let code = +err.message;
+					console.log(err.message);
 					console.log(code);
 
 					if (typeof code !== "number") {
