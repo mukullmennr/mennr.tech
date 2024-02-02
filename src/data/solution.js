@@ -188,7 +188,7 @@ export const getInTouch = {
 			},
 		},
 		{
-			title: "Book Free Consulation",
+			title: "Book Free Consultation",
 			link: "consultation",
 			dropDown: {
 				title: "What happens next?",
