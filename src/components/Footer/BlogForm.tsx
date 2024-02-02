@@ -26,6 +26,12 @@ export default function BlogForm() {
 					}
 
 					let code = +res.message;
+
+					if (typeof code !== "number") {
+						setRes(3);
+						return;
+					}
+
 					setRes(code);
 				})
 				.catch((err) => {
