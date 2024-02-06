@@ -5,7 +5,9 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 ARG HUBSPOT
+ARG GTM
 ENV NEXT_PUBLIC_HUBSPOT=$HUBSPOT
+ENV NEXT_PUBLIC_GTM=$GTM
 RUN npm run build
 
 FROM node:lts-alpine as runner
