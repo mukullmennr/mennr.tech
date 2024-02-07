@@ -74,6 +74,7 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 				portalId: "44671756",
 				formId: "2c32afb3-3cd4-4b6c-81c9-aa5ef4b4775e",
 				target: "#callForm",
+				onFormSubmitted: () => {},
 			});
 
 			// @ts-ignore
@@ -82,6 +83,7 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 				portalId: "44671756",
 				formId: "1ca4a305-1423-47ec-b094-db2a2e78773f",
 				target: "#emailForm",
+				onFormSubmitted: () => {},
 			});
 
 			// @ts-ignore
@@ -90,6 +92,7 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 				portalId: "44671756",
 				formId: "c09e3cc6-156e-4499-b64b-a1516c2de444",
 				target: "#consultationForm",
+				onFormSubmitted: () => {},
 			});
 		});
 
