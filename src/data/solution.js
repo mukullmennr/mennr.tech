@@ -104,7 +104,7 @@ export const cards = {
 
 export const main = {
     heading: "Marketing Solutions For Business Growth",
-    text: "Personalized Mennr Marketing Solutions Led By Certifiied Performance Marketers To Help Take Your Business to The Next Level.",
+    text: "Personalized Marketing Solutions Led By Certified Performance Marketers To Help Take Your Business to The Next Level.",
     modal: {
         text: "service asdfasd",
     },
@@ -229,7 +229,8 @@ export const pricing = {
             card: [
                 {
                     text: "The Mennr Silver Plan will help establish a strong digital presence for your business on the internet, ensuring you are more visible to your potential customers, are perceived as an industry leader within your industry, and get more paid customers online.",
-                    price: "$1000 / mo",
+                    price_head: "Starts from:",
+                    price: "$1500 / mo",
                     link: link,
 
                     modal: {
@@ -274,7 +275,8 @@ export const pricing = {
             card: [
                 {
                     text: "With the Mennr Gold Plan, you get everything your business needs to hit any marketing goals you may have, under one plan. Establish an authoritative online presence, get better quality leads, utilize the power of content and social media, and much more.",
-                    price: "$1500 / mo",
+                    price_head: "Starts from:",
+                    price: "$3000 / mo",
                     link: link,
 
                     modal: {
@@ -320,7 +322,7 @@ export const pricing = {
                 {
                     heading: "Search Engine Optimization",
                     text: "Mennr's in-house SEO specialists work to ensure your website and other digital assets are consistently following the SEO best practices to get your business to ranki higher in search results over time.",
-                    price: "$200 / mo",
+
                     link: link,
 
                     modal: {
@@ -359,7 +361,7 @@ export const pricing = {
                 {
                     heading: "Paid Advertisements:",
                     text: "With Mennr Paid Ads, we help your business achieve your paid marketing goals through relevant paid channels. Mennr specializes in all paid channels including Google, Meta, Amazon, & more.",
-                    price: "$200 / mo",
+
                     link: link,
 
                     modal: {
@@ -398,7 +400,7 @@ export const pricing = {
                 {
                     heading: "Website Design & Development",
                     text: "Mennr’s in-house web design & development team create a custom-made, visually beautiful and seamlessly functional websites, every time! Professional websites for all types of businesses.",
-                    price: "$200",
+
                     link: link,
 
                     modal: {
@@ -437,7 +439,7 @@ export const pricing = {
                 {
                     heading: "Listings & Reputation Mgmt.",
                     text: "Mennr ensures that your brand is visible and consistent across all your digital assets.  Mennr specialists manage your online reputation by engaging with your audience interactions and online reviews.",
-                    price: "$100 / mo",
+
                     link: link,
 
                     modal: {
@@ -476,7 +478,7 @@ export const pricing = {
                 {
                     heading: "Social Media Managment",
                     text: "Mennr social media specialists work on creating platform-specific strategies & content with focus on increasing following & engagement for your business, leading to more sales.",
-                    price: "$100 / mo",
+
                     link: link,
 
                     modal: {
@@ -515,7 +517,7 @@ export const pricing = {
                 {
                     heading: "Content Marketing ",
                     text: "Whether content is in the form of  text, image, or video, our in-house team of content specialists ensures that every piece of content is relevant to your business and creates value for your audience. ",
-                    price: "$100 / mo",
+
                     link: link,
 
                     modal: {
@@ -554,7 +556,7 @@ export const pricing = {
                 {
                     heading: "Email & SMS Marketing ",
                     text: "Mennr helps your business utilize the extensive reach of Email and SMS Marketing to get your business more awareness, customers and sales. Use  email and SMS marketing campaigns to target existing or new customers.",
-                    price: "$100 / mo",
+
                     link: link,
 
                     modal: {
