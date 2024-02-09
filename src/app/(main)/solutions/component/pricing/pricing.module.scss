@@ -96,6 +96,8 @@
 				minmax(min(20rem, 100%), 1fr)
 			);
 
+			grid-template-rows: repeat(5, auto);
+
 			@include ab.screen-71 {
 				display: grid;
 			}
