@@ -4,12 +4,11 @@
 	background-color: var(--bg1);
 
 	box-shadow: 0 1rem var(--bg1);
-	z-index: -1;
 
 	padding-block: clamp(2.5rem, 3.2vw, 3.5rem) 1rem;
 	color: var(--white);
 
-	overflow: hidden;
+	// overflow: hidden;
 
 	@include ab.screen-40 {
 		padding-block: clamp(2.5rem, 3.6vw, 3.5rem) clamp(4rem, 8vw, 8rem);

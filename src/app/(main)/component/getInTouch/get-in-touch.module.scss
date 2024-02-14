@@ -11,10 +11,14 @@
 		background-color: var(--background);
 	}
 
-	&.bottom {
+	&.full.bottom {
 		box-shadow: 0 1rem var(--background);
+		padding-block: 1em clamp(3em, 6.5vw, 6em);
+	}
+
+	&.bottom {
 		border-radius: 1rem 1rem 0 0;
-		padding-block: 1em clamp(3em, 5.5vw, 5em);
+		padding-block: 0em clamp(3em, 6.5vw, 6em);
 	}
 
 	.container {
