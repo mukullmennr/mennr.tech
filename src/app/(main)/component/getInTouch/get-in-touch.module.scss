@@ -7,6 +7,16 @@
 
 	scroll-margin-block-start: var(--scroll-margin);
 
+	&.full {
+		background-color: var(--background);
+	}
+
+	&.bottom {
+		box-shadow: 0 1rem var(--background);
+		border-radius: 1rem 1rem 0 0;
+		padding-block: 1em clamp(3em, 5.5vw, 5em);
+	}
+
 	.container {
 		background-color: var(--background);
 		color: var(--white);
@@ -34,7 +44,7 @@
 			padding-inline: 1em;
 			gap: 1.5em;
 
-			@include ab.screen-40 {
+			@include ab.screen-43 {
 				grid-template-columns: repeat(3, 1fr);
 				padding: 0;
 				gap: 0;

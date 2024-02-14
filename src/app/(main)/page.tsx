@@ -5,18 +5,19 @@ import Info from "./component/info/Info";
 import Solutions from "./component/solutions/Solutions";
 import Chipy from "./component/Newcomponents/Chipy";
 import Services from "./component/Newcomponents/Services";
+import GetInTouch from "./component/getInTouch/GetInTouch";
 
 export default function Home() {
 	return (
-		<>
-			<Main />
+		<div>
+			{/* <Main />
 			<WhyChoseUs />
 			<Info />
 			<Services />
 			<Chipy />
-			<Solutions />
+			<Solutions /> */}
 
-			<div className="footer-space"></div>
-		</>
+			<GetInTouch page="home" type="full" place="bottom" />
+		</div>
 	);
 }

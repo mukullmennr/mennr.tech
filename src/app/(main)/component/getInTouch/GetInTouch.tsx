@@ -3,8 +3,9 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./get-in-touch.module.scss";
 import ButtonContainer from "./components/ButtonContainer/ButtonContainer";
-import Modal from "../modal/Modal";
+import Modal, { RefMethods } from "../modal/Modal";
 import { useRouter } from "next/navigation";
+import { getInTouch as data } from "@/data/solution";
 
 interface Steps {
 	heading: string;
@@ -24,18 +25,21 @@ export interface Buttons {
 }
 
 interface GetInTouchProps {
-	data: {
-		heading: string;
-		buttons: Buttons[];
-	};
+	// data: {
+	// 	heading: string;
+	// 	buttons: Buttons[];
+	// };
+	page: string;
+	type: "full" | "normal";
+	place: "normal" | "bottom";
 }
 
-export default function GetInTouch({ data }: GetInTouchProps) {
+export default function GetInTouch({ page, type, place }: GetInTouchProps) {
 	const router = useRouter();
 
-	const callRef = useRef<HTMLDialogElement | null>(null);
-	const emailRef = useRef<HTMLDialogElement | null>(null);
-	const consultationRef = useRef<HTMLDialogElement | null>(null);
+	const callRef = useRef<RefMethods | null>(null);
+	const emailRef = useRef<RefMethods | null>(null);
+	const consultationRef = useRef<RefMethods | null>(null);
 
 	const closeAllModal = () => {
 		callRef.current?.close();
@@ -52,13 +56,16 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 
 		switch (type) {
 			case "#call":
-				callRef.current?.showModal();
+			case "#hp-call":
+				callRef.current?.open();
 				break;
 			case "#email":
-				emailRef.current?.showModal();
+			case "#hp-email":
+				emailRef.current?.open();
 				break;
 			case "#consultation":
-				consultationRef.current?.showModal();
+			case "#hp-consultation":
+				consultationRef.current?.open();
 				break;
 			default:
 				closeAllModal();
@@ -121,7 +128,17 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 	}, []);
 
 	const buttons = data.buttons.map((button) => {
-		return <ButtonContainer key={button.title} data={button} />;
+		let linkPrefix = "";
+
+		if (page === "home") linkPrefix = "hp-";
+
+		return (
+			<ButtonContainer
+				key={button.title}
+				data={button}
+				linkPrefix={linkPrefix}
+			/>
+		);
 	});
 
 	return (
@@ -143,7 +160,12 @@ export default function GetInTouch({ data }: GetInTouchProps) {
 					<div id="consultationForm"></div>
 				</Modal>
 			</>
-			<div id="get-in-touch" className={styles.getintouch}>
+			<div
+				id="get-in-touch"
+				className={`${styles.getintouch} ${
+					type === "full" ? styles.full : ""
+				} ${place === "bottom" ? styles.bottom : ""}`}
+			>
 				<div className="container-wide">
 					<div className={styles.container}>
 						<h2 className={`${styles.heading} solution-heading`}>

@@ -3,50 +3,38 @@
 import React from "react";
 
 import {
-    faq,
-    notSure,
-    cards,
-    main,
-    road,
-    getInTouch,
-    pricing,
+	faq,
+	notSure,
+	cards,
+	main,
+	road,
+	getInTouch,
+	pricing,
 } from "@/data/solution";
 import FAQ from "@/components/FAQ/FAQ";
 import NotSure from "./component/not-sure/NotSure";
 import Cards from "./component/cards/Cards";
 import Main from "./component/main/Main";
 import Road from "./component/road/Road";
-import GetInTouch from "./component/getInTouch/GetInTouch";
+import GetInTouch from "@/app/(main)/component/getInTouch/GetInTouch";
 import Pricing from "./component/pricing/Pricing";
 
 export default function page() {
-    return (
-        <div className="solution-container">
-            <Main data={main} />
+	return (
+		<div className="solution-container">
+			<Main data={main} />
 
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
+			<Road data={road} />
 
-            <Road data={road} />
+			<Cards data={cards} />
 
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
+			<Pricing data={pricing} />
 
-            <Cards data={cards} />
+			<GetInTouch page="solutions" type="normal" place="normal" />
 
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
+			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 
-            <Pricing data={pricing} />
-
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
-
-            <GetInTouch data={getInTouch} />
-
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
-
-            <FAQ ques={faq.data}>{faq.heading}</FAQ>
-
-            {/* <div style={{ marginBlock: "5.4rem" }}></div> */}
-
-            <NotSure data={notSure} />
-        </div>
-    );
+			<NotSure data={notSure} />
+		</div>
+	);
 }

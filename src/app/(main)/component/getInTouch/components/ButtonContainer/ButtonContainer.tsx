@@ -5,12 +5,16 @@ import DropDown from "../DropDown/DropDown";
 
 interface ButtonContainerProps {
 	data: Buttons;
+	linkPrefix: string;
 }
 
-export default function ButtonContainer({ data }: ButtonContainerProps) {
+export default function ButtonContainer({
+	data,
+	linkPrefix,
+}: ButtonContainerProps) {
 	return (
 		<div className={styles.button} id={data.link}>
-			<a className={styles.link} href={`#${data.link}`}>
+			<a className={styles.link} href={`#${linkPrefix}${data.link}`}>
 				{data.title}
 			</a>
 
