@@ -53,7 +53,7 @@ pre {
 }
 
 .container {
-	width: min(90%, 70rem);
+	width: min(90%, 78rem);
 	margin-inline: auto;
 }
 
@@ -84,13 +84,14 @@ img {
 	}
 }
 
-.solution-heading {
-	font-size: clamp(1.3rem, 2.5vw, 2.4rem);
+.sub-heading {
+	font-size: clamp(1.5rem, 2.75vw, 2.5rem);
 	letter-spacing: -0.05rem;
 	line-height: 1.875rem;
 }
 
-.solution-container {
+.solution-container,
+.home-container {
 	display: grid;
 	gap: 5.4rem;
 }

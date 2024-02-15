@@ -34,7 +34,7 @@ export default function Cards({ data }: CardsProps) {
 		<div className={styles.cards}>
 			<div className="container">
 				<div className={styles.container}>
-					<h2 className={`${styles.heading} solution-heading`}>
+					<h2 className={`${styles.heading} sub-heading`}>
 						<span>{data.heading.initial}</span> {data.heading.rest}
 					</h2>
 

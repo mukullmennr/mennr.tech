@@ -168,7 +168,7 @@ export default function GetInTouch({ page, type, place }: GetInTouchProps) {
 			>
 				<div className="container-wide">
 					<div className={styles.container}>
-						<h2 className={`${styles.heading} solution-heading`}>
+						<h2 className={`${styles.heading} sub-heading`}>
 							{data.heading}
 						</h2>
 

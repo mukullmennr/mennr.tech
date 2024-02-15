@@ -16,7 +16,7 @@ import NotSure from "./component/not-sure/NotSure";
 import Cards from "./component/cards/Cards";
 import Main from "./component/main/Main";
 import Road from "./component/road/Road";
-import GetInTouch from "@/app/(main)/component/getInTouch/GetInTouch";
+import GetInTouch from "@/components/getInTouch/GetInTouch";
 import Pricing from "./component/pricing/Pricing";
 
 export default function page() {

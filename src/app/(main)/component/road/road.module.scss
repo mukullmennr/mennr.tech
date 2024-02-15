@@ -1,0 +1,57 @@
+@use "/src/styles/abstracts" as ab;
+
+.road {
+	--color: var(--blue);
+	display: grid;
+	gap: 6rem;
+
+	.container {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.heading {
+		color: var(--color);
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	.text {
+		font-size: 1.25rem;
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.link {
+		text-align: center;
+		a {
+			--color: var(--white);
+			--background: var(--accent);
+			--outline: var(--accent);
+
+			outline: 0.15rem solid var(--outline);
+			background-color: var(--background);
+			color: var(--color);
+			font-weight: 700;
+
+			font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+			text-decoration: none;
+
+			transition: color 300ms, background-color 300ms;
+
+			padding: 0.3em 1.6em;
+			border-radius: 0.375rem;
+			outline-offset: -1px;
+
+			&:hover {
+				--color: var(--accent);
+				--background: var(--white);
+			}
+		}
+	}
+}

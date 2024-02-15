@@ -178,6 +178,7 @@ export default function PricingCard({ data }: PricingCardProps) {
 				if (scrollParent.current) {
 					let hover = scrollParent.current.matches(":hover");
 					if (hover) return;
+
 					let scroll = scrollParent.current.scrollLeft;
 					if (scroll >= 1977) {
 						scrollParent.current.scrollLeft = 0;
