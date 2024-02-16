@@ -102,7 +102,6 @@
 
 			&.content {
 				--white: white;
-				--width: 2px;
 			}
 
 			aspect-ratio: 1 / 1.1;
@@ -226,17 +225,18 @@
 			text-decoration: transparent;
 
 			img {
-				width: clamp(1.8rem, 3.5vw, 3.25rem);
-				width: 6ch;
+				width: calc(var(--w) / 4);
 			}
 
 			p {
-				// color: white;
 				mix-blend-mode: difference;
 				color: #ccc;
 
 				font-size: clamp(0.75rem, 2vw, 1rem);
-				font-size: 2ch;
+
+				@include ab.screen-40 {
+					font-size: 2ch;
+				}
 
 				font-weight: 700;
 			}
@@ -374,8 +374,6 @@
 			}
 
 			img {
-				width: clamp(2.8rem, 4vw, 4.6rem);
-
 				width: calc(var(--w) / 4);
 			}
 
