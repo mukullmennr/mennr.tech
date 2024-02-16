@@ -64,3 +64,56 @@ export const awards = {
 		"/awards/sp.svg",
 	],
 };
+
+export const honeyCombContent = {
+	socialMedia: {
+		img: "/home/honeycomb/social.svg",
+		text: "Social Media Management",
+		link: "/what-we-do/social-media-management",
+	},
+	facebook: {
+		img: "/home/honeycomb/facebook.svg",
+		text: "Facebook Ads",
+		link: "/what-we-do/meta-ads",
+	},
+	google: {
+		img: "/home/honeycomb/google.svg",
+		text: "Google Ads",
+		link: "/what-we-do/google-ads",
+	},
+	web: {
+		img: "/home/honeycomb/web.svg",
+		text: "Website Design & Developemnt",
+		link: "/what-we-do/website-design-and-development",
+	},
+	reputation: {
+		img: "/home/honeycomb/reputation.svg",
+		text: "Reputation Management",
+		link: "/what-we-do/reputation-management",
+	},
+	content: {
+		img: "/home/honeycomb/content.svg",
+		text: "Content",
+		link: "/what-we-do/strategic-planning",
+	},
+	sms: {
+		img: "/home/honeycomb/sms.svg",
+		text: "SMS Marketing",
+		link: "/what-we-do/direct-mail-ads",
+	},
+	seo: {
+		img: "/home/honeycomb/seo.svg",
+		text: "Search Engine Optimization",
+		link: "/what-we-do/seo",
+	},
+	review: {
+		img: "/home/honeycomb/review.svg",
+		text: "Review Management",
+		link: "/what-we-do/review-management",
+	},
+	email: {
+		img: "/home/honeycomb/email.svg",
+		text: "Email Marketing",
+		link: "/what-we-do/direct-mail-ads",
+	},
+};
