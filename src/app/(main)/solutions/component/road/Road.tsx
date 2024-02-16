@@ -13,7 +13,7 @@ export default function Road({ data }: RoadProps) {
 	return (
 		<div className={styles.road}>
 			<div className="container">
-				<h2 className={`${styles.heading} solution-heading`}>
+				<h2 className={`${styles.heading} sub-heading`}>
 					{data.heading}
 				</h2>
 			</div>

@@ -1,0 +1,390 @@
+@use "/src/styles/abstracts" as ab;
+
+.honeycombParent {
+	--color: var(--blue);
+	display: grid;
+	// gap: 5rem;
+
+	.container {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.honeycombContainer {
+		margin-block: 5em -20vh;
+
+		@include ab.screen-48 {
+			margin-block-end: -5vh;
+		}
+
+		@include ab.screen-64 {
+			margin-block-end: -8vh;
+		}
+	}
+
+	.heading {
+		color: var(--dark);
+		text-align: center;
+		text-wrap: balance;
+
+		span {
+			background-color: var(--blue);
+			color: var(--white);
+		}
+	}
+
+	.text {
+		font-size: 1.25rem;
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.link {
+		text-align: center;
+		a {
+			--color: var(--white);
+			--background: var(--accent);
+			--outline: var(--accent);
+
+			outline: 0.15rem solid var(--outline);
+			background-color: var(--background);
+			color: var(--color);
+			font-weight: 700;
+
+			font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+			text-decoration: none;
+
+			transition: color 300ms, background-color 300ms;
+
+			padding: 0.3em 1.6em;
+			border-radius: 0.375rem;
+			outline-offset: -1px;
+
+			&:hover {
+				--color: var(--accent);
+				--background: var(--white);
+			}
+		}
+	}
+}
+
+.honeycomb {
+	max-width: 100dvw;
+	overflow: hidden;
+
+	@include ab.screen-48 {
+		display: none;
+	}
+
+	&Row {
+		--w: min(39.5vw, 21rem);
+		--col: 3;
+		--bg: #1c3752;
+		--white: #faf9f6;
+		--deg: 220deg;
+		--gap: 0px;
+
+		display: grid;
+
+		grid-template-columns: repeat(var(--col), var(--w));
+
+		width: calc(var(--col) * var(--w));
+
+		gap: var(--gap);
+
+		&Item {
+			--width: 2px;
+
+			&.content {
+				--white: white;
+			}
+
+			aspect-ratio: 1 / 1.1;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--bg);
+			text-align: center;
+
+			&.content:hover {
+				&::before {
+					background-position: 0%;
+				}
+			}
+
+			position: relative;
+
+			clip-path: polygon(
+				0% 25%,
+				50% 0,
+				100% 25%,
+				100% 75%,
+				50% 100%,
+				0% 75%
+			);
+			z-index: 1;
+
+			&::before {
+				content: "";
+				inset: calc(var(--width) * 1);
+				width: calc(100% - calc(var(--width) * 2));
+				height: calc(100% - calc(var(--width) * 2));
+
+				position: absolute;
+				z-index: -1;
+
+				background-image: linear-gradient(
+					var(--deg),
+					var(--white) 50%,
+					var(--bg) 50%
+				);
+				background-size: 300%;
+				background-position: 100%;
+
+				transition: background-position 500ms;
+
+				clip-path: polygon(
+					0% 25%,
+					50% 0,
+					100% 25%,
+					100% 75%,
+					50% 100%,
+					0% 75%
+				);
+			}
+		}
+
+		&:nth-child(1) {
+			--col: 5;
+
+			position: relative;
+			left: 50%;
+			translate: -50%;
+		}
+
+		&:nth-child(2) {
+			position: relative;
+			left: 50%;
+
+			translate: calc(-50% - var(--w) / 2) calc(-25% + var(--gap));
+		}
+
+		&:nth-child(3) {
+			--col: 4;
+
+			position: relative;
+			left: 50%;
+
+			translate: calc(-50% + var(--w) * 1.5) calc(-50% + var(--gap));
+		}
+
+		&:nth-child(4) {
+			position: relative;
+			left: 50%;
+
+			translate: calc(-50% + var(--w) * -0.5) calc(-75% + var(--gap));
+		}
+
+		&:nth-child(5) {
+			--col: 4;
+
+			position: relative;
+			left: 50%;
+
+			translate: calc(-50% + var(--w) * 0.5) calc(-100% + var(--gap));
+		}
+
+		&:nth-child(6) {
+			--col: 4;
+
+			position: relative;
+			left: 50%;
+
+			translate: -50% calc(-125% + var(--gap));
+		}
+
+		.honeycombLink {
+			text-align: center;
+
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+
+			align-items: center;
+			justify-content: center;
+			padding-inline: 0.8em;
+			width: 100%;
+			height: 100%;
+
+			text-decoration: transparent;
+
+			img {
+				width: calc(var(--w) / 4);
+			}
+
+			p {
+				mix-blend-mode: difference;
+				color: #ccc;
+
+				font-size: clamp(0.75rem, 2vw, 1rem);
+
+				@include ab.screen-40 {
+					font-size: 2ch;
+				}
+
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.honeycombPC {
+	max-width: 100dvw;
+	overflow: hidden;
+
+	display: none;
+
+	@include ab.screen-48 {
+		display: block;
+	}
+
+	&Row {
+		--w: 23vw;
+		--col: 5;
+		--bg: #1c3752;
+		--white: #faf9f6;
+		--deg: 220deg;
+
+		display: grid;
+
+		grid-template-columns: repeat(var(--col), var(--w));
+
+		width: calc(var(--col) * var(--w));
+
+		&Item {
+			--width: 1px;
+
+			&.content {
+				--white: white;
+
+				--width: 3px;
+
+				cursor: pointer;
+			}
+
+			aspect-ratio: 1 / 1;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--bg);
+			text-align: center;
+
+			&.content:hover {
+				&::before {
+					background-position: 0%;
+				}
+			}
+
+			position: relative;
+
+			clip-path: polygon(
+				0% 25%,
+				50% 0,
+				100% 25%,
+				100% 75%,
+				50% 100%,
+				0% 75%
+			);
+			z-index: 1;
+
+			&::before {
+				content: "";
+				inset: calc(var(--width) * 1);
+				width: calc(100% - calc(var(--width) * 2));
+				height: calc(100% - calc(var(--width) * 2));
+				position: absolute;
+				z-index: -1;
+
+				background-image: linear-gradient(
+					var(--deg),
+					var(--white) 50%,
+					var(--bg) 50%
+				);
+				background-size: 300%;
+				background-position: 100%;
+
+				transition: background-position 500ms;
+
+				clip-path: polygon(
+					0% 25%,
+					50% 0,
+					100% 25%,
+					100% 75%,
+					50% 100%,
+					0% 75%
+				);
+			}
+		}
+
+		&:nth-child(1) {
+			position: relative;
+			left: 50%;
+			translate: -50%;
+		}
+
+		&:nth-child(2) {
+			position: relative;
+			left: 50%;
+
+			translate: calc(-50% - var(--w) / 2) -25%;
+		}
+
+		&:nth-child(3) {
+			position: relative;
+			left: 50%;
+
+			translate: -50% -50%;
+		}
+
+		.honeycombLink {
+			text-align: center;
+
+			display: flex;
+			flex-direction: column;
+			gap: clamp(0.5em, 1vw, 1rem);
+
+			align-items: center;
+			justify-content: center;
+			padding-inline: 0.8em;
+			width: 100%;
+			height: 100%;
+
+			text-decoration: transparent;
+			padding-inline: 3vw;
+
+			@include ab.screen-64 {
+				// padding-inline: 3.6em;
+			}
+
+			img {
+				width: calc(var(--w) / 4);
+			}
+
+			p {
+				mix-blend-mode: difference;
+				color: #ccc;
+
+				font-size: 1.75vw;
+
+				font-weight: 700;
+			}
+		}
+	}
+}

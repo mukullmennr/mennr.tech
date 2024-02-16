@@ -113,27 +113,9 @@ export default function PricingCard({ data }: PricingCardProps) {
 	let isMultiple: boolean = data.card.length > 1;
 	const scrollParent = useRef<HTMLDivElement | null>(null);
 	const modalRef = useRef<ModalMethods | null>(null);
-
-	useEffect(() => {
-		const scrollInterval = setInterval(() => {
-			if (isMultiple)
-				if (scrollParent.current) {
-					let hover = scrollParent.current.matches(":hover");
-
-					if (hover) return;
-
-					let scroll = scrollParent.current.scrollLeft;
-
-					if (scroll >= 1977) {
-						scrollParent.current.scrollLeft = 0;
-					} else {
-						scrollParent.current.scrollLeft += 200;
-					}
-				}
-		}, 10000);
-
-		return () => clearInterval(scrollInterval);
-	}, []);
+	const mouseDownRef = useRef<boolean>(false);
+	const startXRef = useRef<number>(0);
+	const endXRef = useRef<number>(0);
 
 	const handleLeft = () => {
 		if (scrollParent.current) {
@@ -154,6 +136,59 @@ export default function PricingCard({ data }: PricingCardProps) {
 			}
 		}
 	};
+
+	function detectSwipeDirection() {
+		const swipeDistance = endXRef.current - startXRef.current;
+
+		if (swipeDistance > 0) {
+			handleLeft();
+		} else if (swipeDistance < 0) {
+			handleRight();
+		}
+	}
+
+	const handleMouseDown = (
+		e: React.MouseEvent<HTMLDivElement, MouseEvent>
+	) => {
+		if (!isMultiple) return;
+		mouseDownRef.current = true;
+
+		startXRef.current = e.clientX;
+	};
+
+	const handleMouseMove = (
+		e: React.MouseEvent<HTMLDivElement, MouseEvent>
+	) => {
+		if (!isMultiple) return;
+
+		if (!mouseDownRef.current) return;
+	};
+
+	const handleMouseUp = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+		if (!isMultiple) return;
+		mouseDownRef.current = false;
+
+		endXRef.current = e.clientX;
+		detectSwipeDirection();
+	};
+
+	useEffect(() => {
+		const scrollInterval = setInterval(() => {
+			if (isMultiple)
+				if (scrollParent.current) {
+					let hover = scrollParent.current.matches(":hover");
+					if (hover) return;
+
+					let scroll = scrollParent.current.scrollLeft;
+					if (scroll >= 1977) {
+						scrollParent.current.scrollLeft = 0;
+					} else {
+						scrollParent.current.scrollLeft += 200;
+					}
+				}
+		}, 10000);
+		return () => clearInterval(scrollInterval);
+	}, []);
 
 	const services = data.card.map((service) => {
 		// if (index >= 2) return;
@@ -205,6 +240,9 @@ export default function PricingCard({ data }: PricingCardProps) {
 						isMultiple ? styles.scroll : ""
 					}`}
 					ref={scrollParent}
+					onMouseDown={handleMouseDown}
+					onMouseMove={handleMouseMove}
+					onMouseUp={handleMouseUp}
 				>
 					{services}
 				</div>

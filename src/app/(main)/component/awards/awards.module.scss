@@ -1,0 +1,37 @@
+@use "/src/styles/abstracts" as ab;
+
+.awards {
+	display: grid;
+	gap: 2em;
+
+	.heading {
+		text-align: center;
+		background-color: var(--blue);
+		padding-block: 1.2em;
+
+		h2 {
+			color: var(--white);
+		}
+	}
+
+	.awardsParent {
+		overflow: hidden;
+	}
+
+	.awardsRotate {
+		display: flex;
+		gap: 5em;
+
+		animation: rotate 15s linear infinite;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		translate: 0;
+	}
+
+	100% {
+		translate: -2985px;
+	}
+}

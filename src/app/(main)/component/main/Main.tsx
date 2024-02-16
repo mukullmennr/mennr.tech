@@ -1,32 +1,80 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Main() {
+import styles from "./main.module.scss";
+import Services from "../../solutions/component/main/Services";
+
+interface MainProps {
+	data: {
+		heading: string;
+		text: string;
+		links: {
+			text: string;
+			link: string;
+		}[];
+
+		services: string[];
+	};
+}
+
+export default function Main({ data }: MainProps) {
+	const links = data.links.map((link) => {
+		return (
+			<div className={styles.link} key={link.link + link.text}>
+				<Link href={link.link}>{link.text}</Link>
+			</div>
+		);
+	});
+
+	// const links1 = data.links.map((link) => {
+	// 	let key = 1;
+	// 	return (
+	// 		<div className={styles.link}>
+	// 			<Link key={link.link + link.text + key} href={link.link}>
+	// 				{link.text}
+	// 			</Link>
+	// 		</div>
+	// 	);
+	// });
+
 	return (
-		<div className="main">
+		<div className={styles.main}>
 			<div className="container">
-				<div className="main-phrase">
-					<h1 className="main-phrase__head">
-						We&apos;re passionate about helping businesses reach new
-						customers online
-					</h1>
+				<div className={styles.container}>
+					<div className={styles.content}>
+						<h1 className={styles.heading}>{data.heading}</h1>
 
-					<p className="main-phrase__text">
-						Lucky for you, online marketing is our forte.
-					</p>
-				</div>
+						<p className={`${styles.text} ${styles.smallHide}`}>
+							{data.text}
+						</p>
 
-				<div className="main-buttons">
-					<div className="main-buttons__item">
-						<Link href="/who-we-help" prefetch={false}>
-							Businesses we serve
-						</Link>
+						<div
+							className={`${styles.linkContainer} ${styles.smallHide}`}
+						>
+							{links}
+						</div>
 					</div>
 
-					<div className="main-buttons__item">
-						<Link href="/solutions" prefetch={false}>
-							Find your marketing solution
-						</Link>
+					<div className={styles.item}>
+						<Services
+							className={styles.list}
+							services={data.services}
+						/>
+
+						<picture>
+							<source
+								media="(min-width: 48em)"
+								srcSet="home/pc-lg.svg"
+							/>
+
+							<img src="home/pc-sm.svg" alt="chipy" />
+						</picture>
+					</div>
+
+					<div
+						className={`${styles.linkContainer} ${styles.largeHide}`}
+					>
+						{links}
 					</div>
 				</div>
 			</div>

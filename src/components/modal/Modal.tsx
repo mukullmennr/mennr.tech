@@ -1,5 +1,9 @@
-import React, { forwardRef, ForwardedRef } from "react";
-import { useRouter } from "next/navigation";
+import React, {
+	forwardRef,
+	ForwardedRef,
+	useImperativeHandle,
+	useRef,
+} from "react";
 import styles from "./modal.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
@@ -8,24 +12,48 @@ interface ModalProps {
 	children: React.ReactNode;
 }
 
+export interface RefMethods {
+	open: () => void;
+	close: () => void;
+}
+
 const Modal = forwardRef(function Modal(
 	props: ModalProps,
-	ref: ForwardedRef<HTMLDialogElement>
+	ref: ForwardedRef<RefMethods>
 ) {
-	const router = useRouter();
+	const modalRef = useRef<HTMLDialogElement | null>(null);
 
 	const handleClose = () => {
-		router.push("/solutions#get-in-touch");
+		history.back();
 	};
 
+	const handleCloseModal = () => {
+		modalRef.current?.close();
+	};
+
+	useImperativeHandle(
+		ref,
+		() => {
+			return {
+				open() {
+					modalRef.current?.showModal();
+				},
+				close() {
+					modalRef.current?.close();
+				},
+			};
+		},
+		[]
+	);
+
 	return (
-		<dialog className={styles.modal} ref={ref} onClose={handleClose}>
+		<dialog className={styles.modal} ref={modalRef} onClose={handleClose}>
 			<div className={styles.menu}>
 				<img src="/mennr-dark.svg" alt="mennr" />
 
-				<a href="#get-started" title="close">
+				<button onClick={handleCloseModal} title="close">
 					<FontAwesomeIcon icon={faClose} />
-				</a>
+				</button>
 			</div>
 
 			<div className={styles.main}>
