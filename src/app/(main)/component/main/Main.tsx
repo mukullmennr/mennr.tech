@@ -28,6 +28,17 @@ export default function Main({ data }: MainProps) {
 		);
 	});
 
+const links1 = data.links.map((link) => {
+let key= 1;
+		return (
+			<div className={styles.link}>
+				<Link key={link.link + link.text+key} href={link.link}>
+					{link.text}
+				</Link>
+			</div>
+		);
+	});
+
 	return (
 		<div className={styles.main}>
 			<div className="container">
@@ -65,7 +76,7 @@ export default function Main({ data }: MainProps) {
 					<div
 						className={`${styles.linkContainer} ${styles.largeHide}`}
 					>
-						{links}
+						{links1}
 					</div>
 				</div>
 			</div>
