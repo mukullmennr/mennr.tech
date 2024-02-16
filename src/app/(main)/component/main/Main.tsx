@@ -20,24 +20,22 @@ interface MainProps {
 export default function Main({ data }: MainProps) {
 	const links = data.links.map((link) => {
 		return (
-			<div className={styles.link}>
-				<Link key={link.link + link.text} href={link.link}>
-					{link.text}
-				</Link>
+			<div className={styles.link} key={link.link + link.text}>
+				<Link href={link.link}>{link.text}</Link>
 			</div>
 		);
 	});
 
-const links1 = data.links.map((link) => {
-let key= 1;
-		return (
-			<div className={styles.link}>
-				<Link key={link.link + link.text+key} href={link.link}>
-					{link.text}
-				</Link>
-			</div>
-		);
-	});
+	// const links1 = data.links.map((link) => {
+	// 	let key = 1;
+	// 	return (
+	// 		<div className={styles.link}>
+	// 			<Link key={link.link + link.text + key} href={link.link}>
+	// 				{link.text}
+	// 			</Link>
+	// 		</div>
+	// 	);
+	// });
 
 	return (
 		<div className={styles.main}>
@@ -76,7 +74,7 @@ let key= 1;
 					<div
 						className={`${styles.linkContainer} ${styles.largeHide}`}
 					>
-						{links1}
+						{links}
 					</div>
 				</div>
 			</div>
