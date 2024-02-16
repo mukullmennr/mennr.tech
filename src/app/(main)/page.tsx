@@ -1,6 +1,6 @@
 import React from "react";
 
-import { awards, honeyComb, road } from "@/data/home/data";
+import { awards, honeyComb, road, hero } from "@/data/home/data";
 import GetInTouch from "@/components/getInTouch/GetInTouch";
 import Road from "./component/road/Road";
 import HoneyComb from "./component/honeycomb/HoneyComb";
@@ -10,7 +10,7 @@ import Main from "./component/main/Main";
 export default function Home() {
 	return (
 		<div className="home-container">
-			<Main />
+			<Main data={hero} />
 
 			<Road data={road} />
 
