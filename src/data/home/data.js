@@ -30,7 +30,7 @@ export const hero = {
 
 export const road = {
 	heading: "Without Any Fancy Jargon, Here's What We Do In Simple Words:",
-	text: "Mennr helps family owned businesses unlock growth through effective marketing, empowering them to become multi-generational. ",
+	text: "Mennr helps family owned businesses unlock growth through online and offline marketing activities, empowering them to become multi-generational. ",
 	link: {
 		text: "See All Our Solutions",
 		link: solutions,

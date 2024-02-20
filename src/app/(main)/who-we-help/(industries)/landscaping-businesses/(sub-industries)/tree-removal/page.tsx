@@ -22,7 +22,7 @@ export default function page() {
 			<TabSection />
 			<Card />
 			<Steps data={steps} isServices={false} classname="sub-industries" />
-			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+			{/* <FAQ ques={faq.data}>{faq.heading}</FAQ> */}
 			<Breadcrumb data={breadcrumb} classname="bottom" />
 		</>
 	);

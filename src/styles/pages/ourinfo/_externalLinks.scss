@@ -17,6 +17,10 @@
 			justify-content: space-between;
 			position: relative;
 
+			:last-child {
+				border: 0;
+			}
+
 			&.large {
 				display: none;
 
@@ -47,21 +51,6 @@
 			&-text {
 				font-size: clamp(1.125rem, 2vw, 2rem);
 				font-weight: 500;
-				// width: 70%;
-				// width: 100%;
-
-				// color: ab.$text1;
-				// text-decoration: none;
-
-				// transition: color 300ms;
-
-				// text-align: center;
-				// display: inline-block;
-
-				// margin-inline: auto;
-				// &:hover {
-				// 	color: ab.$accent1;
-				// }
 			}
 
 			&-link {
