@@ -21,7 +21,8 @@ export default function page() {
 			</div>
 
 			<ExternalLinks links={whowehelp} linkText="How We Help" />
-			<FAQ ques={faqs}>Who We Help FAQs</FAQ>
+			{/* <FAQ ques={faqs}>Who We Help FAQs</FAQ> */}
+			<div style={{ marginBlockEnd: "8em" }}></div>
 		</>
 	);
 }

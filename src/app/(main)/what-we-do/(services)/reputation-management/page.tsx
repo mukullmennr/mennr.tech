@@ -24,7 +24,7 @@ export default function page() {
 			<Comparison data={comparison} />
 			<Info data={info} />
 			<Steps data={steps} isServices={true} classname="mapads" />
-			<FAQ ques={faq.data}>{faq.heading}</FAQ>
+			{/* <FAQ ques={faq.data}>{faq.heading}</FAQ> */}
 			<Breadcrumb classname="bottom" data={breadcrumb} />
 		</>
 	);

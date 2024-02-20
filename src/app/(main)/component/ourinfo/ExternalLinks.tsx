@@ -21,9 +21,6 @@ function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 	return (
 		<div className="externalLinks-container__item large">
 			<p className="externalLinks-container__item-text">{text}</p>
-			{/* <Link className="externalLinks-container__item-text" href={link}>
-				{text}
-			</Link> */}
 
 			<Link
 				className="externalLinks-container__item-link"
@@ -39,10 +36,6 @@ function ExternalLinksItem({ text, link, linkText }: ExternalLinksItemProps) {
 function ExternalLinksItemMobile({ text, link }: ExternalLinksItemProps) {
 	return (
 		<div className="externalLinks-container__item small">
-			{/* <Link className="externalLinks-container__item-text" href={link}>
-        {text}
-    </Link> */}
-
 			<Link className="" href={link} prefetch={false}>
 				{text}
 			</Link>
@@ -76,8 +69,9 @@ export default function ExternalLinks({ links, linkText }: ExternalLinksProps) {
 	return (
 		<div className="externalLinks">
 			<div className="container externalLinks-container">
-				{item}
-				{itemMobile}
+				<div className="large">{item}</div>
+
+				<div className="small">{itemMobile}</div>
 			</div>
 		</div>
 	);
