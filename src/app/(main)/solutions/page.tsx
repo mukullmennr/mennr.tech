@@ -2,15 +2,7 @@
 
 import React from "react";
 
-import {
-	faq,
-	notSure,
-	cards,
-	main,
-	road,
-	getInTouch,
-	pricing,
-} from "@/data/solution";
+import { faq, notSure, cards, main, road, pricing } from "@/data/solution";
 import FAQ from "@/components/FAQ/FAQ";
 import NotSure from "./component/not-sure/NotSure";
 import Cards from "./component/cards/Cards";
@@ -30,7 +22,7 @@ export default function page() {
 
 			<Pricing data={pricing} />
 
-			<GetInTouch page="solutions" type="normal" place="normal" />
+			<GetInTouch linkPrefix="solutions-" type="normal" place="normal" />
 
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 

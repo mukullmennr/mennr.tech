@@ -25,16 +25,16 @@ export interface Buttons {
 }
 
 interface GetInTouchProps {
-	// data: {
-	// 	heading: string;
-	// 	buttons: Buttons[];
-	// };
-	page: string;
+	linkPrefix: string;
 	type: "full" | "normal";
 	place: "normal" | "bottom";
 }
 
-export default function GetInTouch({ page, type, place }: GetInTouchProps) {
+export default function GetInTouch({
+	linkPrefix,
+	type,
+	place,
+}: GetInTouchProps) {
 	const router = useRouter();
 
 	const callRef = useRef<RefMethods | null>(null);
@@ -49,22 +49,22 @@ export default function GetInTouch({ page, type, place }: GetInTouchProps) {
 
 	const handleHashChange = () => {
 		let type = location.hash;
+		let array = type.split("-");
 
-		if (!type) {
+		if (!type || array.length === 1) {
 			closeAllModal();
 		}
 
+		type = array[1];
+
 		switch (type) {
-			case "#call":
-			case "#hp-call":
+			case "call":
 				callRef.current?.open();
 				break;
-			case "#email":
-			case "#hp-email":
+			case "email":
 				emailRef.current?.open();
 				break;
-			case "#consultation":
-			case "#hp-consultation":
+			case "consultation":
 				consultationRef.current?.open();
 				break;
 			default:
@@ -128,10 +128,6 @@ export default function GetInTouch({ page, type, place }: GetInTouchProps) {
 	}, []);
 
 	const buttons = data.buttons.map((button) => {
-		let linkPrefix = "";
-
-		if (page === "home") linkPrefix = "hp-";
-
 		return (
 			<ButtonContainer
 				key={button.title}
