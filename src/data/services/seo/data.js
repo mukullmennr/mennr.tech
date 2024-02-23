@@ -1,9 +1,109 @@
 const getInTouch = "#get-in-touch";
 
 export const main = {
-	heading:
-		"The Role Search Engine Optimization Plays in Marketing For Small Businesses",
-	text: "Search Engine Optimization (SEO) is an essential tool to make sure your business can be found by customers searching on Google or Bing. With  well over 1 billion people searching Google and Bing for businesses every month, not doing any kind of SEO work is simply leaving  potential customers to your competition that is doing some kind of SEO work. Below, we take a look at the fundamentals of SEO, its impact on your business, and practical steps to improve your SEO.",
+	heading: "Boost Organic Growth With Our Transformative SEO services",
+	text: "Search engine optimization is ever-changing. If you aren't adapting, you are already losing. Mennr helps you stay on top of the competition by incorporating game-changing SEO strategies to get you more traffic to your website and ultimately, more business!",
+	img: "/services/seo/seo.png",
+};
+
+export const content = {
+	heading: "Why you SHOULD Choose SEO Marketing for your business:",
+	content: [
+		{
+			heading: "Increased Website Traffic and Quality Leads",
+			text: "Effective SEO strategies drive organic traffic to your website, attracting highly targeted visitors who are actively searching for products or services like yours. This targeted traffic increases the likelihood of converting visitors into quality leads, ultimately boosting your sales and revenue.",
+			img: {
+				large: "/services/seo/one-768.WebP",
+				small: "/services/seo/one-360.WebP",
+			},
+		},
+		{
+			heading: " Cost-Effectiveness and Higher ROI",
+			text: "Compared to traditional advertising methods, SEO offers a cost-effective way to market your business online. With SEO, you're targeting users who are actively seeking your products or services, reducing wasted advertising spend. Moreover, the long-term benefits of SEO lead to a high return on investment (ROI) over time.",
+			img: {
+				large: "/services/seo/two-768.WebP",
+				small: "/services/seo/two-360.WebP",
+			},
+		},
+		{
+			heading: "Increased Visibility and Brand Awareness",
+			text: "By optimizing your website for search engines, you increase its visibility in search results, making it easier for potential customers to find your business online. Improved visibility not only enhances brand awareness but also establishes your brand as an authority in your industry.",
+			img: {
+				large: "/services/seo/three-768.WebP",
+				small: "/services/seo/three-360.WebP",
+			},
+		},
+		{
+			heading: " Improved User Experience and Engagement",
+			text: "SEO involves optimizing your website's structure, content, and user interface, leading to an enhanced user experience. A well-optimized site loads faster, is mobile-friendly, and provides valuable, relevant content, resulting in higher engagement metrics such as longer session durations and lower bounce rates.",
+			img: {
+				large: "/services/seo/four-768.WebP",
+				small: "/services/seo/four-360.WebP",
+			},
+		},
+		{
+			heading: "Competitive Advantage and Long-Term Sustainability",
+			text: "Investing in SEO gives your business a competitive edge in the digital landscape. By outranking competitors in search results and staying ahead of algorithm updates, you establish long-term sustainability for your online presence. SEO is not just about short-term gains, it's about building a strong foundation for ongoing success.",
+			img: {
+				large: "/services/seo/five-768.WebP",
+				small: "/services/seo/five-360.WebP",
+			},
+		},
+	],
+};
+
+export const cards = {
+	heading: "Process Driven Search Engine Optimization Services",
+	card: [
+		{
+			heading: "Detailed Audit",
+			icon: {
+				fill: "/services/seo/one-fill.svg",
+				stroke: "/services/seo/one-stroke.svg",
+			},
+			text: " Performing a detailed audit and analysis of your current SEO positioning and process.",
+		},
+		{
+			heading: "Keyword Research",
+			icon: {
+				fill: "/services/seo/two-fill.svg",
+				stroke: "/services/seo/two-stroke.svg",
+			},
+			text: " Process-driven keyword research to identify key terms your potential customers are searching",
+		},
+		{
+			heading: "Technical SEO",
+			icon: {
+				fill: "/services/seo/three-fill.svg",
+				stroke: "/services/seo/three-stroke.svg",
+			},
+			text: "Optimization of all technical aspects of tech aspects like site speed, mobile responsiveness, indexing, etc, for optimal user experience.",
+		},
+		{
+			heading: "On-Page SEO",
+			icon: {
+				fill: "/services/seo/four-fill.svg",
+				stroke: "/services/seo/four-stroke.svg",
+			},
+			text: "Optimization of all on-page elements including website content to improve your website's relevance and visibility in search engine results page.",
+		},
+		{
+			heading: "Off-Page SEO",
+			icon: {
+				fill: "/services/seo/five-fill.svg",
+				stroke: "/services/seo/five-stroke.svg",
+			},
+			text: "Strategic link building campaigns to acquire high-quality backlinks from external listings to furhter boost your website's authority, credibility, and SERP rankings",
+		},
+		{
+			heading: "Local SEO",
+			icon: {
+				fill: "/services/seo/six-fill.svg",
+				stroke: "/services/seo/six-stroke.svg",
+			},
+			text: "We optimize your online presence for local search inluding things like google business profile, local listings, geo-targeted keywords, etc, to inprove visibility locally",
+		},
+	],
 };
 
 export const faq = {

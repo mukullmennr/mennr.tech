@@ -26,19 +26,8 @@ export default function Main({ data }: MainProps) {
 		);
 	});
 
-	// const links1 = data.links.map((link) => {
-	// 	let key = 1;
-	// 	return (
-	// 		<div className={styles.link}>
-	// 			<Link key={link.link + link.text + key} href={link.link}>
-	// 				{link.text}
-	// 			</Link>
-	// 		</div>
-	// 	);
-	// });
-
 	return (
-		<div className={styles.main}>
+		<div className={`${styles.main} hero`}>
 			<div className="container">
 				<div className={styles.container}>
 					<div className={styles.content}>
@@ -66,7 +55,6 @@ export default function Main({ data }: MainProps) {
 								media="(min-width: 48em)"
 								srcSet="home/pc-lg.svg"
 							/>
-
 							<img src="home/pc-sm.svg" alt="chipy" />
 						</picture>
 					</div>

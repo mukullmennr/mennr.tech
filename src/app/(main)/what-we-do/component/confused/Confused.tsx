@@ -31,17 +31,17 @@ export default function Confused({ data, children }: ConfusedProps) {
 					<div className={styles.text}>{text}</div>
 
 					<div className={styles.contentVisual}>
-						<picture>
-							{/* <source
+						{/* <picture> */}
+						{/* <source
 								media="(min-width: 48em)"
 								srcSet="/home/solutions/chipy/chipy-confused-640.svg"
 							/> */}
 
-							<img
-								src="/home/solutions/chipy/chipy-confused-360.svg"
-								alt="chipy"
-							/>
-						</picture>
+						<img
+							src="/home/solutions/chipy/chipy-confused-360.svg"
+							alt="chipy"
+						/>
+						{/* </picture> */}
 
 						<div className={styles.link}>
 							<Link href={data.link} aria-label="get in touch">
