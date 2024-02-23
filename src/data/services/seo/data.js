@@ -1,21 +1,130 @@
+const getInTouch = "#get-in-touch";
+
 export const main = {
-	heading:
-		"The Role Search Engine Optimization Plays in Marketing For Small Businesses",
-	text: "Search Engine Optimization (SEO) is an essential tool to make sure your business can be found by customers searching on Google or Bing. With  well over 1 billion people searching Google and Bing for businesses every month, not doing any kind of SEO work is simply leaving  potential customers to your competition that is doing some kind of SEO work. Below, we take a look at the fundamentals of SEO, its impact on your business, and practical steps to improve your SEO.",
+	heading: "Boost Organic Growth With Our Transformative SEO services",
+	text: "Search engine optimization is ever-changing. If you aren't adapting, you are already losing. Mennr helps you stay on top of the competition by incorporating game-changing SEO strategies to get you more traffic to your website and ultimately, more business!",
+	img: "/services/seo/seo.png",
 };
 
-export const guide = [
-	{
-		heading: "What is Search Engine Optimization?",
-		text: "Search Engine Optimization is the work that goes into making your website appear higher on search engines such as Google or Bing. This includes keyword ranking, web page loading speed, mobile web browsing optimization, accurate business contact information, and web content that is helpful to your customers. The goal is to be one of the first businesses recommended by the search engines when someone makes a search relevant to your business. An example of this would be you searching for ‘digital marketing agencies near me’ and our website appear at the top of the results if you’re local to one of our offices. ",
+export const strategy = {
+	heading: "Witness true organic growth with Mennr’s SEO Strategies",
+	content: {
+		heading: "Growth Metrics",
+		icon: "/services/growth.svg",
+		text: [
+			"Although growth through SEO depends on quite a few factors, we understand that every investment needs to demonstrate clear returns. ",
+			"Mennr focuses on metrics that matter – from boosting organic traffic to significant improvements in keyword rankings and conversion rates. ",
+			"By partnering with us, you're not just investing in SEO; you're investing in measurable, sustainable growth that propels your business forward.",
+		],
+		sub: "* The above metrics are an average of a 12-month period of businesses that have used our SEO services. These metrics are not to be assumed as projections for your business",
 	},
-];
+	numbers: [
+		{ title: "Increase in keyword ranking", value: "160%" },
+		{ title: "Increase in organic traffic", value: "110%" },
+		{ title: "Increase in leads generated", value: "45%" },
+		{ title: "Increase in inbound calls", value: "34%" },
+		{ title: "Increase in Marketing ROI", value: "12%" },
+	],
+};
 
-export const comparison = {
-	heading: "Properly executed SEO vs not properly executed SEO",
-	correct:
-		"A plumber decides to start his own business and creates his first website. He makes sure that his businesses contact information is accurate across all platforms, and created content that is relevant to what a customer might be thinking or looking for. Now several months have passed and it’s winter. The plumber now is getting phone calls everyday to come out and fix cracked pipes.",
-	wrong: "A plumber decides to start his own business and creates his first website. He doesn’t have an office apart from his house so he doesn’t list his business address anywhere online. He put together his website in a day and the content has several grammatical mistakes. Several months pass and he still see’s no additional business coming through his website.",
+export const content = {
+	heading: "Why you SHOULD Choose SEO Marketing for your business:",
+	content: [
+		{
+			heading: "Increased Website Traffic and Quality Leads",
+			text: "Effective SEO strategies drive organic traffic to your website, attracting highly targeted visitors who are actively searching for products or services like yours. This targeted traffic increases the likelihood of converting visitors into quality leads, ultimately boosting your sales and revenue.",
+			img: {
+				large: "/services/seo/one-768.WebP",
+				small: "/services/seo/one-360.WebP",
+			},
+		},
+		{
+			heading: " Cost-Effectiveness and Higher ROI",
+			text: "Compared to traditional advertising methods, SEO offers a cost-effective way to market your business online. With SEO, you're targeting users who are actively seeking your products or services, reducing wasted advertising spend. Moreover, the long-term benefits of SEO lead to a high return on investment (ROI) over time.",
+			img: {
+				large: "/services/seo/two-768.WebP",
+				small: "/services/seo/two-360.WebP",
+			},
+		},
+		{
+			heading: "Increased Visibility and Brand Awareness",
+			text: "By optimizing your website for search engines, you increase its visibility in search results, making it easier for potential customers to find your business online. Improved visibility not only enhances brand awareness but also establishes your brand as an authority in your industry.",
+			img: {
+				large: "/services/seo/three-768.WebP",
+				small: "/services/seo/three-360.WebP",
+			},
+		},
+		{
+			heading: " Improved User Experience and Engagement",
+			text: "SEO involves optimizing your website's structure, content, and user interface, leading to an enhanced user experience. A well-optimized site loads faster, is mobile-friendly, and provides valuable, relevant content, resulting in higher engagement metrics such as longer session durations and lower bounce rates.",
+			img: {
+				large: "/services/seo/four-768.WebP",
+				small: "/services/seo/four-360.WebP",
+			},
+		},
+		{
+			heading: "Competitive Advantage and Long-Term Sustainability",
+			text: "Investing in SEO gives your business a competitive edge in the digital landscape. By outranking competitors in search results and staying ahead of algorithm updates, you establish long-term sustainability for your online presence. SEO is not just about short-term gains, it's about building a strong foundation for ongoing success.",
+			img: {
+				large: "/services/seo/five-768.WebP",
+				small: "/services/seo/five-360.WebP",
+			},
+		},
+	],
+};
+
+export const cards = {
+	heading: "Process Driven Search Engine Optimization Services",
+	card: [
+		{
+			heading: "Detailed Audit",
+			icon: {
+				fill: "/services/seo/one-fill.svg",
+				stroke: "/services/seo/one-stroke.svg",
+			},
+			text: " Performing a detailed audit and analysis of your current SEO positioning and process.",
+		},
+		{
+			heading: "Keyword Research",
+			icon: {
+				fill: "/services/seo/two-fill.svg",
+				stroke: "/services/seo/two-stroke.svg",
+			},
+			text: " Process-driven keyword research to identify key terms your potential customers are searching",
+		},
+		{
+			heading: "Technical SEO",
+			icon: {
+				fill: "/services/seo/three-fill.svg",
+				stroke: "/services/seo/three-stroke.svg",
+			},
+			text: "Optimization of all technical aspects of tech aspects like site speed, mobile responsiveness, indexing, etc, for optimal user experience.",
+		},
+		{
+			heading: "On-Page SEO",
+			icon: {
+				fill: "/services/seo/four-fill.svg",
+				stroke: "/services/seo/four-stroke.svg",
+			},
+			text: "Optimization of all on-page elements including website content to improve your website's relevance and visibility in search engine results page.",
+		},
+		{
+			heading: "Off-Page SEO",
+			icon: {
+				fill: "/services/seo/five-fill.svg",
+				stroke: "/services/seo/five-stroke.svg",
+			},
+			text: "Strategic link building campaigns to acquire high-quality backlinks from external listings to furhter boost your website's authority, credibility, and SERP rankings",
+		},
+		{
+			heading: "Local SEO",
+			icon: {
+				fill: "/services/seo/six-fill.svg",
+				stroke: "/services/seo/six-stroke.svg",
+			},
+			text: "We optimize your online presence for local search inluding things like google business profile, local listings, geo-targeted keywords, etc, to inprove visibility locally",
+		},
+	],
 };
 
 export const faq = {
@@ -40,56 +149,14 @@ export const faq = {
 	],
 };
 
-export const steps = {
-	heading:
-		"Now that you have an idea of what goes into creating a website that adds value to your small business, try it for yourself...",
-	steps: [
-		"Determine what the intention behind your website will be",
-		"Choose a platform to build your website on",
-		"Find a domain name and hosting provider",
-		"Find a website template or make a custom design with a UI design tool",
-		"Create meaningful website content relevant to your business",
-		"Setup Google Analytics to track website visitor behavior ",
-		"Make your website live and submit it to Google for indexing along with other SEO tasks",
-		"Regularly update content relevant to promotions and keep up on website maintenance",
+export const confused = {
+	heading: "Still confused? We don't blame you. Consider this though:",
+	text: [
+		"Apart from SEO, which other marketing channel grants you access to billions of actively searching consumers worldwide, free of charge? We can't think of any other either. ",
+		"A significant 49% of marketers acknowledge organic search as the top-performing marketing channel in terms of ROI. However, securing a spot on a SERP is no longer a straightforward task.",
+		"Let Mennr simplify the process for you and make the most of your SEO efforts.",
 	],
-	last: "Or meet with one of our Google Certified marketing specialists and let us take care of everything for you!",
-};
-
-export const info = {
-	heading: "Search Engine Optimization Best Practices for Small Businesses",
-	info: [
-		[
-			{
-				head: "Keyword Research",
-				text: "In order to make your website appear when people search for your business, you need to know what those people might be searching for when they want to find a business like yours. Then, create content for your website and sprinkle in those words or phrases where they fit in naturally.",
-			},
-			{
-				head: "User Experience",
-				text: "When someone goes on your website, what do they do? How long do they stay? Do they get lost navigating your website? Google and Bing look at these things to determine where your website compares against your competitors.",
-			},
-		],
-		[
-			{
-				head: "Helpful Content",
-				text: "Since the 2000’s, search engines have become more complex, now utilizing AI to determine how to rank websites. This means that you can’t just list the words or phrases you want to appear for when people search. You have to create real and unique content that shows search engines you’re an expert in your field.",
-			},
-			{
-				head: "Load Speed & Mobile Optimization",
-				text: "No one likes waiting for a webpage to load, and search engine know that, making it something that can determine whether you or your competition ranks in first. It’s the same with making sure your website looks right on mobile devices. Website designs differ from desktop to mobile (and even tablets).  If your website looks broken when you look at it from your phone then search engines can see that too and will take it into consideration when determine where to rank pages of your website.",
-			},
-		],
-		[
-			{
-				head: "Technical SEO",
-				text: "When properly implementing SEO, you should always create a strategy highlighting keywords, NAP information, type of content,  and webpage layout. SEO strategies vary from industry to industry, but Local SEO is a commonly used catch-all phrase to show that you should use a strategy specific for local business which includes Google My business and keyword ranking for specific phrases known as ‘near me’ searches.",
-			},
-			{
-				head: "Consistent NAP Information",
-				text: "No one likes waiting for a webpage to load, and search engine know that, making it something that can determine whether you or your competition ranks in first. It’s the same with making sure your website looks right on mobile devices. Website designs differ from desktop to mobile (and even tablets).  If your website looks broken when you look at it from your phone then search engines can see that too and will take it into consideration when determine where to rank pages of your website.",
-			},
-		],
-	],
+	link: getInTouch,
 };
 
 export const breadcrumb = {

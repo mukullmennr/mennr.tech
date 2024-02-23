@@ -2,7 +2,7 @@
 
 .scene {
 	perspective: 600px;
-	height: 23rem;
+	min-height: 23rem;
 	width: min(20rem, 100%);
 	min-width: 20rem;
 	// margin-inline: 1em;

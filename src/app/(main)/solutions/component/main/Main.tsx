@@ -13,7 +13,7 @@ interface MainProps {
 
 export default function Main({ data }: MainProps) {
 	return (
-		<div className={styles.main}>
+		<div className={`${styles.main} hero`}>
 			<div className="container">
 				<div className={styles.container}>
 					<div className={styles.text}>

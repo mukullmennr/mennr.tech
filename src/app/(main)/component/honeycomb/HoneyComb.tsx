@@ -26,30 +26,6 @@ export default function HoneyComb({ data }: HoneyCombProps) {
 				</h2>
 			</div>
 
-			{/* <picture>
-				<source
-					media="(min-width: 74em)"
-					srcSet="/home/updated/1190services.svg"
-				/>
-
-				<source
-					media="(min-width: 64em)"
-					srcSet="/home/updated/1024services.svg"
-				/>
-
-				<source
-					media="(min-width: 48em)"
-					srcSet="/home/updated/768services.svg"
-				/>
-
-				<source
-					media="(min-width: 40em)"
-					srcSet="/home/updated/640services.svg"
-				/>
-
-				<img src="/home/updated/360services.svg" alt="our process" />
-			</picture> */}
-
 			<div className={styles.honeycombContainer}>
 				<div className={styles.honeycomb}>
 					<div className={styles.honeycombRow}>

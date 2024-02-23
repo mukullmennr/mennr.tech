@@ -1,0 +1,137 @@
+@use "/src/styles/abstracts" as ab;
+
+.cards {
+	--bg: var(--blue);
+	--color: var(--white);
+	--radius: 0.75rem;
+
+	display: grid;
+	gap: clamp(2.75rem, 5vw, 4.5rem);
+
+	.heading {
+		background-color: var(--bg);
+		padding-block: 1.5em;
+
+		color: var(--color);
+
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	> div:last-child {
+		overflow: hidden;
+	}
+
+	.container {
+		display: grid;
+		gap: 2em;
+		width: 100%;
+
+		overflow: scroll auto;
+
+		grid-template-columns: repeat(6, min(20rem, 100%));
+		padding: 1.5em 1em;
+
+		scroll-snap-type: inline mandatory;
+		scroll-behavior: smooth;
+		overscroll-behavior-inline: contain;
+
+		> * {
+			scroll-snap-align: center;
+			min-inline-size: 100%;
+		}
+
+		@include ab.screen-74 {
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			gap: 3em;
+
+			overflow: hidden;
+		}
+
+		.card {
+			display: grid;
+
+			box-shadow: 0px 4px 30px 5px rgba(72, 82, 153, 0.3);
+			border-radius: var(--radius);
+
+			&:hover {
+				.content {
+					clip-path: inset(0);
+				}
+
+				.visual {
+					clip-path: inset(0 0 100% 0);
+				}
+			}
+
+			> * {
+				grid-row-start: 1;
+				grid-column-start: 1;
+				position: relative;
+			}
+
+			h3 {
+				font-size: clamp(1.5rem, 2.25vw, 2rem);
+			}
+
+			h4 {
+				font-size: clamp(1.125rem, 1.95vw, 1.625rem);
+			}
+
+			p {
+				font-size: clamp(1rem, 1.5vw, 1.25rem);
+				text-wrap: balance;
+			}
+
+			.visual {
+				border-radius: inherit;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				clip-path: inset(0);
+				transition: clip-path 300ms;
+
+				.img {
+					display: flex;
+
+					align-items: center;
+					justify-content: center;
+					margin-block: auto;
+				}
+
+				.subHeading {
+					text-align: center;
+
+					background-color: var(--bg);
+					color: var(--color);
+
+					border-radius: 0 0 var(--radius) var(--radius);
+					padding-block: 0.5em;
+				}
+			}
+
+			.content {
+				background-color: var(--bg);
+				color: var(--color);
+				border-radius: inherit;
+
+				padding: 2em 1em;
+				display: grid;
+				gap: 0.8em;
+
+				align-content: start;
+				text-align: center;
+
+				clip-path: inset(100% 0 0 0);
+				transition: clip-path 300ms;
+
+				> * {
+					margin-inline: auto;
+				}
+			}
+		}
+	}
+}

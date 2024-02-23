@@ -1,0 +1,86 @@
+@use "/src/styles/abstracts" as ab;
+
+.content {
+	--bg: var(--blue);
+	--color: var(--white);
+
+	display: grid;
+	gap: clamp(2.75rem, 5vw, 4.5rem);
+
+	.heading {
+		background-color: var(--bg);
+		padding-block: 1.5em;
+
+		color: var(--color);
+
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	.container {
+		display: grid;
+		gap: clamp(2.75rem, 6vw, 5.5rem);
+
+		.contentItem {
+			display: flex;
+			gap: 1.5em;
+			flex-direction: column;
+			text-align: center;
+
+			@include ab.screen-48 {
+				flex-direction: row;
+				gap: 2em;
+				text-align: left;
+
+				&:nth-child(even) {
+					flex-direction: row-reverse;
+					text-align: right;
+				}
+			}
+		}
+
+		.img {
+			@include ab.screen-48 {
+				width: 28%;
+			}
+
+			img {
+				border: 0.2em solid var(--bg);
+				box-shadow: 0px 3.79px 40px 1px rgba(0, 31, 255, 0.2);
+				border-radius: 0.75rem;
+
+				@include ab.screen-48 {
+					width: 100%;
+					aspect-ratio: 1.125/1;
+
+					object-fit: cover;
+				}
+			}
+		}
+
+		.text {
+			display: grid;
+			gap: 1.75em;
+
+			@include ab.screen-48 {
+				width: 70%;
+
+				align-content: start;
+			}
+
+			h3 {
+				color: var(--blue);
+				text-wrap: balance;
+
+				font-size: clamp(1.25rem, 2.25vw, 2rem);
+			}
+
+			p {
+				color: var(--blue);
+				// text-align: justify;
+
+				font-size: clamp(1.125rem, 1.75vw, 1.5rem);
+			}
+		}
+	}
+}

@@ -18,7 +18,7 @@ export default function Home() {
 
 			<HoneyComb data={honeyComb} />
 
-			<GetInTouch page="home" type="full" place="bottom" />
+			<GetInTouch linkPrefix="hp-" type="full" place="bottom" />
 		</div>
 	);
 }

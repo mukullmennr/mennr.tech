@@ -23,6 +23,10 @@
 		gap: 5em;
 
 		animation: rotate 15s linear infinite;
+
+		&:hover {
+			animation-play-state: paused;
+		}
 	}
 }
 
@@ -32,6 +36,6 @@
 	}
 
 	100% {
-		translate: -2985px;
+		translate: -2990px;
 	}
 }

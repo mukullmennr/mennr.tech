@@ -16,6 +16,7 @@ export default function Main({ data, breadcrumb }: MainProps) {
 	return (
 		<div className="main">
 			<Breadcrumb data={breadcrumb} />
+
 			<div className="container">
 				<div className="main-phrase">
 					<h1 className="main-phrase__head">{data.heading}</h1>

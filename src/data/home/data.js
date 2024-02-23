@@ -54,7 +54,7 @@ export const awards = {
 		"/awards/google.svg",
 		"/awards/amazon.svg",
 		"/awards/meta.svg",
-		"https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/08c8444f497c449c851370b1cf552778.png",
+		"/awards/hubspot.svg",
 		"/awards/localogy.svg",
 		"/awards/microsoft.svg",
 		"/awards/bbb.svg",

@@ -5,6 +5,8 @@
 	display: grid;
 	// gap: 5rem;
 
+	overflow: hidden;
+
 	.container {
 		display: grid;
 		gap: 1rem;
@@ -245,8 +247,10 @@
 }
 
 .honeycombPC {
-	max-width: 100dvw;
+	max-width: 100dvi;
+	// max-width: 100dvi;
 	overflow: hidden;
+	// height: 10rem;
 
 	display: none;
 

@@ -1,31 +1,38 @@
 import React from "react";
-import Main from "@/components/Main/Main";
-import Guide from "@/components/Guide/Guide";
-import Comparison from "@/components/Comparison/Comparison";
 import {
-	faq,
-	steps,
-	comparison,
-	guide,
-	info,
 	main,
 	breadcrumb,
+	confused,
+	content,
+	cards,
+	strategy,
 } from "@/data/services/seo/data";
-import FAQ from "@/components/FAQ/FAQ";
-import Steps from "@/components/Steps/Steps";
-import Info from "@/components/Info/Info";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import GetInTouch from "@/components/getInTouch/GetInTouch";
+import Confused from "../../component/services/confused/Confused";
+import Main from "../../component/services/main/Main";
+import Content from "../../component/services/content/Content";
+import Cards from "../../component/services/cards/Cards";
+import Strategy from "../../component/services/strategy/Strategy";
 
 export default function page() {
 	return (
-		<>
-			<Main data={main} breadcrumb={breadcrumb} />
-			<Guide data={guide} />
-			<Comparison data={comparison} />
-			<Info data={info} />
-			<Steps data={steps} isServices={true} classname="webdev" />
-			{/* <FAQ ques={faq.data}>{faq.heading}</FAQ> */}
-			<Breadcrumb classname="bottom" data={breadcrumb} />
-		</>
+		<div className="services-container">
+			<Main data={main}>
+				<Breadcrumb data={breadcrumb} />
+			</Main>
+
+			<Strategy data={strategy} />
+
+			<Content data={content} />
+
+			<Cards data={cards} />
+
+			<GetInTouch linkPrefix="seo-" type="normal" place="normal" />
+
+			<Confused data={confused}>
+				<Breadcrumb data={breadcrumb} />
+			</Confused>
+		</div>
 	);
 }

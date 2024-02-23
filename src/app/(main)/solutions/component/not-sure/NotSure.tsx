@@ -36,11 +36,11 @@ export default function NotSure({ data }: NotSureProps) {
 						<picture>
 							<source
 								media="(min-width: 48em)"
-								srcSet="home/solutions/chipy/chipy-confused-640.svg"
+								srcSet="/home/solutions/chipy/chipy-confused-640.svg"
 							/>
 
 							<img
-								src="home/solutions/chipy/chipy-confused-360.svg"
+								src="/home/solutions/chipy/chipy-confused-360.svg"
 								alt="chipy"
 							/>
 						</picture>
