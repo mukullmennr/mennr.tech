@@ -6,6 +6,27 @@ export const main = {
 	img: "/services/seo/seo.png",
 };
 
+export const strategy = {
+	heading: "Witness true organic growth with Mennr’s SEO Strategies",
+	content: {
+		heading: "Growth Metrics",
+		icon: "/services/growth.svg",
+		text: [
+			"Although growth through SEO depends on quite a few factors, we understand that every investment needs to demonstrate clear returns. ",
+			"Mennr focuses on metrics that matter – from boosting organic traffic to significant improvements in keyword rankings and conversion rates. ",
+			"By partnering with us, you're not just investing in SEO; you're investing in measurable, sustainable growth that propels your business forward.",
+		],
+		sub: "* The above metrics are an average of a 12-month period of businesses that have used our SEO services. These metrics are not to be assumed as projections for your business",
+	},
+	numbers: [
+		{ title: "Increase in keyword ranking", value: "160%" },
+		{ title: "Increase in organic traffic", value: "110%" },
+		{ title: "Increase in leads generated", value: "45%" },
+		{ title: "Increase in inbound calls", value: "34%" },
+		{ title: "Increase in Marketing ROI", value: "12%" },
+	],
+};
+
 export const content = {
 	heading: "Why you SHOULD Choose SEO Marketing for your business:",
 	content: [

@@ -50,10 +50,6 @@ export default function Cards({ data }: CardsProps) {
 		);
 	});
 
-	const items = data.card.map((rohan) => {
-		return <div className={styles.item}>rohan</div>;
-	});
-
 	return (
 		<div className={styles.cards}>
 			<div className={styles.heading}>
