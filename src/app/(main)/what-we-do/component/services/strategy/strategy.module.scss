@@ -61,6 +61,8 @@
 			@include ab.screen-54 {
 				text-align: left;
 				width: 55%;
+
+				// translate: 0 -5%;
 			}
 
 			h3 {
@@ -72,6 +74,12 @@
 				gap: 1.75em;
 
 				font-size: clamp(1rem, 1.75vw, 1.5rem);
+
+				@include ab.screen-54 {
+					gap: 2.5em;
+
+					text-align: justify;
+				}
 			}
 
 			.sub {
@@ -119,6 +127,8 @@
 					grid-template-columns: 0;
 					max-width: auto;
 					overflow: visible;
+
+					gap: 2.5em;
 				}
 
 				> div {
