@@ -24,8 +24,15 @@ export default function Content({ data }: ContentProps) {
 						<source
 							media="(min-width: 48em)"
 							srcSet={item.img.large}
+							width={338}
+							height={238}
 						/>
-						<img src={item.img.small} alt="chipy" />
+						<img
+							src={item.img.small}
+							alt="chipy"
+							width={347}
+							height={309}
+						/>
 					</picture>
 				</div>
 

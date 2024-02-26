@@ -48,8 +48,10 @@
 				border: 0.2em solid var(--bg);
 				box-shadow: 0px 3.79px 40px 1px rgba(0, 31, 255, 0.2);
 				border-radius: 0.75rem;
+				margin-inline: auto;
 
 				@include ab.screen-48 {
+					margin: 0;
 					width: 100%;
 					aspect-ratio: 1.125/1;
 
