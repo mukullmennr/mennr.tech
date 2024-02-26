@@ -17,7 +17,7 @@ export const strategy = {
 			"Whenever you would like content changed, or a new page added for a special event, it’s as simple as sending a text.",
 			"Leveraging the power of a good first impression is one of the most important factors when it comes to building a lasting online presence.",
 		],
-		sub: "* The above metrics are an average of a 12-month period of businesses that have used our SEO services. These metrics are not to be assumed as projections for your business",
+		sub: "* The above metrics are an average of a 12-month period of businesses that have used our Website Design and Development services. These metrics are not to be assumed as projections for your business",
 	},
 	numbers: [
 		{ title: "Increase in user engagement", value: "85%" },

@@ -17,10 +17,7 @@ export default function page() {
 					height="191"
 				/>
 			</div>
-			<ExternalLinks
-				links={whatwedo}
-				linkText="How It Impacts Marketing"
-			/>
+			<ExternalLinks links={whatwedo} linkText="For Local Businesses" />
 			{/* <FAQ ques={faqs}>What We Do FAQs</FAQ> */}
 			<div style={{ marginBlockEnd: "8em" }}></div>
 		</>

@@ -55,6 +55,8 @@ export default function Strategy({ data }: StrategyProps) {
 					</div>
 
 					<div className={styles.visual}>
+						<img src="/services/line.svg" alt="" />
+
 						<h3 className={styles.small}>
 							{data.content.heading}
 							<img src={data.content.icon} />
