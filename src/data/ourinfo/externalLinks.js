@@ -9,6 +9,10 @@ export const whatwedo = [
 		link: services.seo,
 	},
 	{
+		text: "SMS Marketing",
+		link: services.smsMarketing,
+	},
+	{
 		text: "Map Ads",
 		link: services.mapads,
 	},
