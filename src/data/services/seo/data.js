@@ -170,7 +170,7 @@ export const breadcrumb = {
 		link: "/what-we-do/website-design-and-development",
 	},
 	next: {
-		text: "Map Ads",
-		link: "/what-we-do/map-ads",
+		text: "SMS Marketing",
+		link: "/what-we-do/sms-marketing",
 	},
 };

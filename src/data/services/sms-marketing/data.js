@@ -77,52 +77,52 @@ export const cards = {
 	heading: "Reengagement Based SMS Marketing Services",
 	card: [
 		{
-			heading: "Detailed Audit",
+			heading: "Event-Triggered SMS",
 			icon: {
-				fill: "/services/seo/one-fill.svg",
-				stroke: "/services/seo/one-stroke.svg",
+				fill: "/services/sms/one-fill.svg",
+				stroke: "/services/sms/one-stroke.svg",
 			},
-			text: " Performing a detailed audit and analysis of your current SEO positioning and process.",
+			text: "Align your services with local happenings through timely SMS alerts, making your business an integral part of the community's daily life.",
 		},
 		{
-			heading: "Keyword Research",
+			heading: "Reconnect",
 			icon: {
-				fill: "/services/seo/two-fill.svg",
-				stroke: "/services/seo/two-stroke.svg",
+				fill: "/services/sms/two-fill.svg",
+				stroke: "/services/sms/two-stroke.svg",
 			},
-			text: " Process-driven keyword research to identify key terms your potential customers are searching",
+			text: "Our personalized SMS campaigns are expertly crafted to rekindle the spark with your past clients, ensuring your local service remains their first choice.",
 		},
 		{
-			heading: "Technical SEO",
+			heading: "Local Offers",
 			icon: {
-				fill: "/services/seo/three-fill.svg",
-				stroke: "/services/seo/three-stroke.svg",
+				fill: "/services/sms/three-fill.svg",
+				stroke: "/services/sms/three-stroke.svg",
 			},
-			text: "Optimization of all technical aspects of tech aspects like site speed, mobile responsiveness, indexing, etc, for optimal user experience.",
+			text: "Our personalized SMS campaigns are expertly crafted to rekindle the spark with your past clients, ensuring your local service remains their first choice.",
 		},
 		{
-			heading: "On-Page SEO",
+			heading: "Direct Feedback",
 			icon: {
-				fill: "/services/seo/four-fill.svg",
-				stroke: "/services/seo/four-stroke.svg",
+				fill: "/services/sms/four-fill.svg",
+				stroke: "/services/sms/four-stroke.svg",
 			},
-			text: "Optimization of all on-page elements including website content to improve your website's relevance and visibility in search engine results page.",
+			text: "Utilize SMS to gather direct feedback from your local clientele, using their insights to refine your services and enhance customer satisfaction.",
 		},
 		{
-			heading: "Off-Page SEO",
+			heading: "Loyalty Rewards",
 			icon: {
-				fill: "/services/seo/five-fill.svg",
-				stroke: "/services/seo/five-stroke.svg",
+				fill: "/services/sms/five-fill.svg",
+				stroke: "/services/sms/five-stroke.svg",
 			},
-			text: "Strategic link building campaigns to acquire high-quality backlinks from external listings to furhter boost your website's authority, credibility, and SERP rankings",
+			text: "Encourage repeat business with SMS-based loyalty rewards, making your clients feel valued and incentivized to continue choosing your local services.",
 		},
 		{
-			heading: "Local SEO",
+			heading: "Stay Updated",
 			icon: {
-				fill: "/services/seo/six-fill.svg",
-				stroke: "/services/seo/six-stroke.svg",
+				fill: "/services/sms/six-fill.svg",
+				stroke: "/services/sms/six-stroke.svg",
 			},
-			text: "We optimize your online presence for local search inluding things like google business profile, local listings, geo-targeted keywords, etc, to inprove visibility locally",
+			text: "Share your milestones and community achievements through SMS, strengthening the communal bond and highlighting your contribution to local growth.",
 		},
 	],
 };
@@ -164,10 +164,10 @@ export const breadcrumb = {
 		text: "What We Do",
 		link: "/what-we-do",
 	},
-	our: "Search Engine Optimization",
+	our: "SMS Marketing",
 	prev: {
-		text: "Website Design and Development",
-		link: "/what-we-do/website-design-and-development",
+		text: "Search Engine Optimization",
+		link: "/what-we-do/seo",
 	},
 	next: {
 		text: "Map Ads",
