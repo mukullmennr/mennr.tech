@@ -3,7 +3,7 @@ const getInTouch = "#get-in-touch";
 export const main = {
 	heading: "Boost Organic Growth With Our Transformative SEO services",
 	text: "Search engine optimization is ever-changing. If you aren't adapting, you are already losing. Mennr helps you stay on top of the competition by incorporating game-changing SEO strategies to get you more traffic to your website and ultimately, more business!",
-	img: "/services/seo/seo.png",
+	img: "/services/seo/seo.WebP",
 };
 
 export const strategy = {
