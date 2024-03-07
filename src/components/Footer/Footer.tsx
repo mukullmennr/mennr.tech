@@ -21,14 +21,14 @@ export default function Footer() {
 	return (
 		<footer className="footer">
 			<div className="container">
-				<div className="footer-chipy">
+				{/* <div className="footer-chipy">
 					<Image
 						src="/common/chipy/chipy-sitting.svg"
 						alt="chippy sitting"
 						width="111"
 						height="105"
 					/>
-				</div>
+				</div> */}
 
 				<div className="footer-container" id="footer">
 					<div className="footer-container__item link-grid">

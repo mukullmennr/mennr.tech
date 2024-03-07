@@ -31,7 +31,7 @@ export default function page() {
 			<GetInTouch linkPrefix="seo-" type="normal" place="normal" />
 
 			<Confused data={confused}>
-				<Breadcrumb data={breadcrumb} />
+				<Breadcrumb position="bottom" data={breadcrumb} />
 			</Confused>
 		</div>
 	);

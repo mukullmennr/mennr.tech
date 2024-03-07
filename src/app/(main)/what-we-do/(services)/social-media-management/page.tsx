@@ -25,7 +25,7 @@ export default function page() {
 			<Info data={info} />
 			<Steps data={steps} isServices={true} classname="social" />
 			{/* <FAQ ques={faq.data}>{faq.heading}</FAQ> */}
-			<Breadcrumb classname="bottom" data={breadcrumb} />
+			<Breadcrumb position="bottom" color="dark" data={breadcrumb} />
 		</>
 	);
 }
