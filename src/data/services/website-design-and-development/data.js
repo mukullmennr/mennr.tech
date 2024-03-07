@@ -13,9 +13,9 @@ export const strategy = {
 		heading: "Setting New Standards",
 		icon: "/services/growth.svg",
 		text: [
-			"Our web development team ensures your site is responsive across all devices, providing a seamless experience whether your customers are on a desktop, tablet, or mobile phone.",
-			"Whenever you would like content changed, or a new page added for a special event, it’s as simple as sending a text.",
-			"Leveraging the power of a good first impression is one of the most important factors when it comes to building a lasting online presence.",
+			"Your website is your digital storefront and is almost always your primary form of communication with potential customers.             ",
+			"Mennr's specialized web development team ensures that your website is not only visually stunning but also works seamlessly across all types of devices and web browsers.         ",
+			"Leveraging the power of great design and powerful development practices, Mennr builds your website using modern-day processes and sets your business up for online success.",
 		],
 		sub: "* The above metrics are an average of a 12-month period of businesses that have used our Website Design and Development services. These metrics are not to be assumed as projections for your business",
 	},
@@ -67,23 +67,42 @@ export const content = {
 };
 
 export const faq = {
-	heading: "Home Services Business Marketing FAQ",
+	heading: "Frequently Asked Questions",
 	data: [
 		{
-			question: "Why is Home Services marketing important?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"How long does it take Mennr to design and build a website?        ",
+			answer: "The timeframe for website development varies depending on the complexity of the project, desired features, and client feedback. A simple website can take a few days, while larger projects may require several weeks or even months. Once our team gets an understanding of what you require, we give you clear timelines before moving forward. ",
 		},
 		{
-			question: "What are the strategies for Home Services Marketing?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"Do I need to provide content for my website, or will you also assist with content creation?        ",
+			answer: "We offer content creation services tailored to your brand and target audience. Whether you need copywriting, image selection, or multimedia content, our specialized content, our creation team develops compelling content that aligns with your website and business goals.",
 		},
 		{
-			question: "How will Home Services marketing help your business?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"Will I have access to update and maintain my website after it's launched?        ",
+			answer: "Yes, you will be given access and an overview of how to make minor changes if you only want your webside design and development done by Mennr. If you opt for any of Mennr's Bundles, any changes and updates are complimentary for the number of months you partner with Mennr. ",
 		},
 		{
-			question: "How do you generate  Home Services Customers?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"Do you provide custom website designs, or do you use pre-made templates?        ",
+			answer: "All of our web designs are unique and tailored to your specific needs. We don't use templates.",
+		},
+		{
+			question:
+				"Can you design websites for specific industries or niche markets?        ",
+			answer: "Yes, we have experience designing websites for a wide range of industries and niche markets. We tailor our designs to reflect the unique characteristics and requirements of each client's business, their locality and their industry.",
+		},
+		{
+			question:
+				"Why should I choose Mennr over other agencies / competitors?         ",
+			answer: 'Apart from the multiple benefits already highlighted in the "Why Mennr" section, one primary reason businesses choose to partner with Mennr is our obsessive focus on always keeping our client\'s needs and wants as our number one priority. If you are not achieving the results you paid for, why are we even in the picture? We grow when you grow, so we ensure your growth is always on the rise and consistently deliver on what we have promised. ',
+		},
+		{
+			question:
+				"How many people from the Mennr team will work on my business if I partner with Mennr?         ",
+			answer: "Depending on a partner's requirements, chances are that there will be multiple teams working on your project to ensure we deliver on our promises. Mennr is proud of its strong in-house teams spanning various marketing and web development verticals. All of Mennr's teams are in-house and segmented across multiple specializations. Having teams focused on various specializations helps Mennr ensure that their partners receive quality service in terms of both performance and companionship. ",
 		},
 	],
 };
@@ -105,7 +124,7 @@ export const breadcrumb = {
 };
 
 export const cards = {
-	heading: "Interaction Focused Web Development Services",
+	heading: "Conversion Focused Web Development Services",
 	card: [
 		{
 			heading: "Custom Designs",
@@ -113,7 +132,7 @@ export const cards = {
 				fill: "/services/web/one-fill.svg",
 				stroke: "/services/web/one-stroke.svg",
 			},
-			text: " Performing a detailed audit and analysis of your current web positioning and process.",
+			text: " Our custom designs ensure your site reflects your brand's personality, setting you apart and making a memorable impression on your visitors.",
 		},
 		{
 			heading: "Mobile-Friendly",
@@ -121,7 +140,7 @@ export const cards = {
 				fill: "/services/web/two-fill.svg",
 				stroke: "/services/web/two-stroke.svg",
 			},
-			text: "Our custom designs ensure your site reflects your brand's personality, setting you apart and making a memorable impression on your visitors.",
+			text: "Our adaptive designs ensure your site looks impeccable on any screen, preserving its personality and functionality.",
 		},
 		{
 			heading: "User Experience",
@@ -129,10 +148,10 @@ export const cards = {
 				fill: "/services/web/three-fill.svg",
 				stroke: "/services/web/three-stroke.svg",
 			},
-			text: "Fast load times and smooth interactions are the heartbeats that keep the marketing machine of your website pumping.",
+			text: "Website optimization to improve navigation and overall user experience leading to higher user engagement.",
 		},
 		{
-			heading: "SEO Oriented Content",
+			heading: "SEO Focused",
 			icon: {
 				fill: "/services/web/four-fill.svg",
 				stroke: "/services/web/four-stroke.svg",
@@ -161,9 +180,10 @@ export const cards = {
 export const confused = {
 	heading: "Still confused? We don't blame you. Consider this though:",
 	text: [
-		"Apart from SEO, which other marketing channel grants you access to billions of actively searching consumers worldwide, free of charge? We can't think of any other either. ",
-		"A significant 49% of marketers acknowledge organic search as the top-performing marketing channel in terms of ROI. However, securing a spot on a SERP is no longer a straightforward task.",
-		"Let Mennr simplify the process for you and make the most of your SEO efforts.",
+		"What's worse than having no website? Having a bad website.        ",
+		"Your website is your business's digital storefront. It communicates on your behalf and is the cornerstone of your online presence.         ",
+		"But let's be honest, it's way more than just a virtual storefront. Your website is your brand's digital identity, spokesperson, digital business card, and the primary touchpoint for your potential customers.     ",
+		"With Mennr's specialized web development teams, you can expect a visually stunning website focused on conversions every time! ",
 	],
 	link: getInTouch,
 };

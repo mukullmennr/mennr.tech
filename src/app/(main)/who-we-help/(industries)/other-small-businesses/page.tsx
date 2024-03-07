@@ -19,13 +19,17 @@ import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 export default function page() {
 	return (
 		<>
-			<Main data={main} breadcrumb={breadcrumb} imgClass="other-small-businesses" />
+			<Main
+				data={main}
+				breadcrumb={breadcrumb}
+				imgClass="other-small-businesses"
+			/>
 			<Importance data={importance} />
 			<Certification data={yourCertifications} />
 			<Table data={table} />
 			<GetInTouch data={getInTouch} />
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
-			<Breadcrumb data={breadcrumb} classname="bottom" />
+			<Breadcrumb position="bottom" color="dark" data={breadcrumb} />
 		</>
 	);
 }

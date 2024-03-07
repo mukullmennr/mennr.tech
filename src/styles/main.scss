@@ -62,6 +62,11 @@ pre {
 	margin-inline: auto;
 }
 
+.container-wide-extra {
+	width: min(95%, 95rem);
+	margin-inline: auto;
+}
+
 .containerQuery {
 	container-type: inline-size;
 }
