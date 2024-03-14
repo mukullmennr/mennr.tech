@@ -1,0 +1,86 @@
+@use "/src/styles/abstracts" as ab;
+.sample_page {
+    // display: flex;
+    @include ab.screen-43 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+    padding-block: clamp(1em, 1.8vw, 1.8em);
+    // padding-inline: clamp(2em, 4vw, 4em);
+    width: min(78em, 92%);
+    margin: auto;
+
+    .content {
+        // outline: 2px solid red;
+        grid-area: 1/1/2/3;
+        .head {
+            text-align: center;
+            display: grid;
+            gap: 1.5em;
+            @include ab.screen-43 {
+                text-align: left;
+            }
+            h3 {
+                font-size: clamp(1.5rem, 2vw, 2rem);
+            }
+            p {
+                font-size: clamp(1rem, 1.5vw, 1.5rem);
+            }
+        }
+        .img {
+            display: flex;
+            // outline: 2px solid red;
+            justify-content: center;
+            // align-items: center;
+            padding-block: 1em;
+            img {
+                width: clamp(13.6em, 22.7vw, 22.77em);
+            }
+
+            @include ab.screen-43 {
+                display: none;
+            }
+        }
+        .link {
+            display: flex;
+            // outline: 2px solid red;
+            justify-content: center;
+            @include ab.screen-43 {
+                justify-content: left;
+                padding-top: 1em;
+            }
+            a {
+                width: clamp(12em, 15vw, 15em);
+                text-decoration: none;
+                cursor: pointer;
+                background-color: #e76f51;
+                text-align: center;
+                color: white;
+                padding-block: clamp(0.3rem, 0.7vw, 0.7em);
+                border-radius: 0.3125rem;
+            }
+        }
+    }
+}
+.img2 {
+    display: none;
+    @include ab.screen-43 {
+        // outline: 2px solid red;
+
+        display: block;
+        width: clamp(20em, 22vw, 22em);
+        // display: flex;
+        // outline: 2px solid blue;
+        img {
+            // outline: 2px solid red;
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+.bg_sample {
+    background-color: #1c3752;
+    color: white;
+    margin-bottom: 4em;
+}

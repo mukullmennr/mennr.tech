@@ -97,3 +97,7 @@ export const yourCertifications = [
     "/industries/other-small-business-2.svg",
     "/industries/other-small-business-3.svg",
 ];
+export const sample = {
+    img: "/common/chipy/sub-industries/other-small-businesses/tourism.svg",
+    link: "https://sample.mennr.tech/other-small-businesses",
+};

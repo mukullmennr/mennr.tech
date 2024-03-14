@@ -106,3 +106,7 @@ export const yourCertifications = [
     "/industries/Automotive-Businesses-2.svg",
     "/industries/Automotive-Businesses-3.svg",
 ];
+export const sample = {
+    img: "/common/chipy/sub-industries/automotive-businesses/autobody.svg",
+    link: "https://sample.mennr.tech/automobile",
+};

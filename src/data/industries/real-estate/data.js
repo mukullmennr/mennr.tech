@@ -90,3 +90,7 @@ export const yourCertifications = [
     "/industries/real-estate-2.svg",
     "/industries/real-estate-3.svg",
 ];
+export const sample = {
+    img: "/common/chipy/sub-industries/real-estate/property-managers.svg",
+    link: "https://sample.mennr.tech/real-estate",
+};
