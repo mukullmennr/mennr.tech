@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import style from "./sample_page.module.scss";
-import { StyleRegistry } from "styled-jsx";
 interface sample {
     data: {
         img: string;
@@ -16,12 +15,12 @@ export default function Sample_page({ data }: sample) {
                     <div className={style.head}>
                         <h3>Not confident regarding your website design?</h3>
                         <p>
-                            Feeling lost in the sea of website designs? Let's
-                            simplify. Focus on clarity, ease of use, and
-                            consistency with our brand. By prioritizing these,
-                            we ensure your website effectively communicates with
-                            your audience, reflecting your identity and making
-                            navigation a breeze.
+                            Feeling lost in the sea of website designs?
+                            Let&apos;s simplify. Focus on clarity, ease of use,
+                            and consistency with our brand. By prioritizing
+                            these, we ensure your website effectively
+                            communicates with your audience, reflecting your
+                            identity and making navigation a breeze.
                         </p>
                     </div>
                     <div className={style.img}>
