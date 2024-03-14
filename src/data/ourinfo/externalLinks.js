@@ -17,7 +17,7 @@ export const whatwedo = [
 		link: services.mapads,
 	},
 	{
-		text: "Social Media Management",
+		text: "Social Media Marketing",
 		link: services.socialMediaManagement,
 	},
 	{
@@ -49,8 +49,8 @@ export const whatwedo = [
 		link: services.printAds,
 	},
 	{
-		text: "Strategic Planning",
-		link: services.strategicPlanning,
+		text: "Content Marketing",
+		link: services.contentMarketing,
 	},
 ];
 

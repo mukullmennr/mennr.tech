@@ -6,6 +6,7 @@ import {
 	content,
 	cards,
 	strategy,
+	faq,
 } from "@/data/services/website-design-and-development/data";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import GetInTouch from "@/components/getInTouch/GetInTouch";
@@ -14,6 +15,7 @@ import Main from "../../component/services/main/Main";
 import Content from "../../component/services/content/Content";
 import Cards from "../../component/services/cards/Cards";
 import Strategy from "../../component/services/strategy/Strategy";
+import FAQ from "@/components/FAQ/FAQ";
 
 export default function page() {
 	return (
@@ -28,7 +30,9 @@ export default function page() {
 
 			<Cards data={cards} />
 
-			<GetInTouch linkPrefix="seo-" type="normal" place="normal" />
+			<GetInTouch linkPrefix="web-" type="normal" place="normal" />
+
+			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 
 			<Confused data={confused}>
 				<Breadcrumb data={breadcrumb} />

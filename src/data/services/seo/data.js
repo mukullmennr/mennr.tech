@@ -128,23 +128,39 @@ export const cards = {
 };
 
 export const faq = {
-	heading: "Home Services Business Marketing FAQ",
+	heading: "Frequently Asked Questions",
 	data: [
 		{
-			question: "Why is Home Services marketing important?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"I run a small business focused only on one area. Do I still need to invest in SEO services?",
+			answer: "Absolutely! Investing in SEO services is crucial for your small business, even if you're focused solely on one area. By optimizing your online presence, you'll attract more targeted traffic, increase visibility, and ultimately boost sales. Don't miss out on the opportunity to rank higher in search engine results and stay ahead of the competition. SEO is a must-have investment for any business looking to succeed online.",
 		},
 		{
-			question: "What are the strategies for Home Services Marketing?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question:
+				"Do you offer local SEO services for businesses targeting a specific geographic area?            ",
+			answer: "Yes, we specialize in local SEO strategies to help local businesses improve their visibility in local search results, attract nearby customers, and enhance their online presence within their target geographical area.",
 		},
 		{
-			question: "How will Home Services marketing help your business?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "Can you guarantee top rankings on Google? ",
+			answer: "While we can't guarantee specific rankings due to the ever-changing nature of search algorithms and competition, we work hard to improve your website's visibility and organic traffic through ethical and proven SEO strategies. We succeed only when you do. ",
 		},
 		{
-			question: "How do you generate  Home Services Customers?",
-			answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar sed libero et rhoncus. Etiam varius tincidunt velit, quis dapibus enim dapibus eu. Aliquam erat volutpat. Vivamus dictum, erat in finibus egestas, quam tortor malesuada ipsum, quis porta risus eros non elit. ",
+			question: "How do you measure the success of SEO campaigns?",
+			answer: "We track various metrics such as organic traffic, keyword rankings, conversion rates, and engagement metrics to evaluate the effectiveness of our SEO efforts. We provide regular reports to keep you informed of the progress as we go.",
+		},
+		{
+			question: "How long does it take to see results from SEO efforts?",
+			answer: "SEO results vary depending on various factors such as the competitiveness of your industry, the current state of your website, and the strategies implemented. Generally, you may start seeing improvements within a few months, but significant results often take 6 to 12 months.",
+		},
+		{
+			question:
+				"Why should I choose Mennr over other agencies / competitors?",
+			answer: 'Apart from the multiple benefits already highlighted in the "Why Mennr" section, one primary reason businesses choose to partner with Mennr is our obsessive focus on always keeping our client\'s needs and wants as our number one priority. If you are not achieving the results you paid for, why are we even in the picture? We grow when you grow, so we ensure your growth is always on the rise and consistently deliver on what we have promised. ',
+		},
+		{
+			question:
+				"How many people from the Mennr team will work on my business if I partner with Mennr?",
+			answer: "Depending on a partner's requirements, chances are that there will be multiple teams working on your project to ensure we deliver on our promises. Mennr is proud of its strong in-house teams spanning various marketing and web development verticals. All of Mennr's teams are in-house and segmented across multiple specializations. Having teams focused on various specializations helps Mennr ensure that their partners receive quality service in terms of both performance and companionship.",
 		},
 	],
 };

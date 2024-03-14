@@ -27,7 +27,7 @@ export default function page() {
             <GetInTouch data={getInTouch} />
             <Sample_page data={sample} />
             <FAQ ques={faq.data}>{faq.heading}</FAQ>
-            <Breadcrumb data={breadcrumb} classname="bottom" />
+            <Breadcrumb position="bottom" color="dark" data={breadcrumb} />
         </>
     );
 }

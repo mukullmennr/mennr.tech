@@ -93,6 +93,7 @@
 
 				clip-path: inset(0);
 				transition: clip-path 300ms;
+				min-height: 25rem;
 
 				.img {
 					display: flex;
@@ -110,6 +111,12 @@
 
 					border-radius: 0 0 var(--radius) var(--radius);
 					padding-block: 0.5em;
+
+					h3 {
+						height: 3em;
+						display: grid;
+						place-items: center;
+					}
 				}
 			}
 
