@@ -18,7 +18,7 @@ export const industries = {
 
 export const services = {
 	seo: "/what-we-do/seo",
-	socialMediaManagement: "/what-we-do/social-media-management",
+	socialMediaManagement: "/what-we-do/social-media-marketing",
 	metaAds: "/what-we-do/meta-ads",
 	googleAds: "/what-we-do/google-ads",
 	reviewManagement: "/what-we-do/review-management",
@@ -28,6 +28,6 @@ export const services = {
 	reputationManagement: "/what-we-do/reputation-management",
 	businessListings: "/what-we-do/business-listings",
 	mapads: "/what-we-do/map-ads",
-	strategicPlanning: "/what-we-do/strategic-planning",
+	contentMarketing: "/what-we-do/content-marketing",
 	smsMarketing: "/what-we-do/sms-marketing",
 };

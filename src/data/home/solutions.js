@@ -55,8 +55,8 @@ export const solutions = [
 		link: "/what-we-do/map-ads",
 	},
 	{
-		heading: "Strategic Planning",
+		heading: "Content Marketing",
 		text: "How we keep everyone on the same page",
-		link: "/what-we-do/strategic-planning",
+		link: "/what-we-do/content-marketing",
 	},
 ];

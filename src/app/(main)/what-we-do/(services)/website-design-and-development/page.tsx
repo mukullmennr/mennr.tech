@@ -30,7 +30,7 @@ export default function page() {
 
 			<Cards data={cards} />
 
-			<GetInTouch linkPrefix="seo-" type="normal" place="normal" />
+			<GetInTouch linkPrefix="web-" type="normal" place="normal" />
 
 			<FAQ ques={faq.data}>{faq.heading}</FAQ>
 

@@ -15,7 +15,8 @@ import BlogForm from "./BlogForm";
 import Image from "next/image";
 import MennrLogo from "@/../public/logo.svg";
 
-import { links, industries, services } from "@/data/navLinks";
+import { links, industries } from "@/data/navLinks";
+import { whatwedo, whowehelp } from "@/data/ourinfo/externalLinks";
 
 export default function Footer() {
 	return (
@@ -77,56 +78,15 @@ export default function Footer() {
 						<div className="link-grid__item">
 							<h3 className="list-head">Industries</h3>
 							<ul>
-								<li>
-									<Link
-										href={industries.automotive}
-										prefetch={false}
-									>
-										Automotive
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={
-											industries.skilledTradesBusinesses
-										}
-									>
-										Skilled Trades Businesses
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={industries.personalCare}
-										prefetch={false}
-									>
-										Personal Care
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={industries.realEstate}
-										prefetch={false}
-									>
-										Real Estate
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={industries.landscapingServices}
-										prefetch={false}
-									>
-										Landscaping Services
-									</Link>
-								</li>
-
-								<li>
-									<Link
-										href={industries.otherSmallBusiness}
-										prefetch={false}
-									>
-										Other Small Business
-									</Link>
-								</li>
+								{whowehelp.map((industries) => {
+									return (
+										<li key={industries.link}>
+											<Link href={industries.link}>
+												{industries.text}
+											</Link>
+										</li>
+									);
+								})}
 							</ul>
 						</div>
 
@@ -134,101 +94,15 @@ export default function Footer() {
 							<h3 className="list-head">Services</h3>
 
 							<ul className="services-links">
-								<li>
-									<Link href={services.seo} prefetch={false}>
-										SEO
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.socialMediaManagement}
-										prefetch={false}
-									>
-										Social Media Management
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.metaAds}
-										prefetch={false}
-									>
-										Meta Ads
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.googleAds}
-										prefetch={false}
-									>
-										Google Ads
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.reviewManagement}
-										prefetch={false}
-									>
-										Review Management
-									</Link>
-								</li>
-
-								<li>
-									<Link
-										href={services.websiteDesignDevelopment}
-										prefetch={false}
-									>
-										Website Design & Development
-									</Link>
-								</li>
-
-								<li>
-									<Link
-										href={services.printAds}
-										prefetch={false}
-									>
-										Direct Mail Ads
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.googleMyBusiness}
-										prefetch={false}
-									>
-										Google My Business
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.reputationManagement}
-										prefetch={false}
-									>
-										Reputation Management
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.businessListings}
-										prefetch={false}
-									>
-										Business Listings
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.mapads}
-										prefetch={false}
-									>
-										Map Ads
-									</Link>
-								</li>
-								<li>
-									<Link
-										href={services.strategicPlanning}
-										prefetch={false}
-									>
-										Strategic Planning
-									</Link>
-								</li>
+								{whatwedo.map((service) => {
+									return (
+										<li key={service.link}>
+											<Link href={service.link}>
+												{service.text}
+											</Link>
+										</li>
+									);
+								})}
 							</ul>
 						</div>
 

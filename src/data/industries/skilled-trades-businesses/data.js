@@ -108,3 +108,7 @@ export const yourCertifications = [
     "/industries/skilltraded-2.svg",
     "/industries/skilltraded-3.svg",
 ];
+export const sample = {
+    img: "/common/chipy/sub-industries/skilled-trades-businesses/plumbers.svg",
+    link: "https://sample.mennr.tech/skill-traded-business",
+};
