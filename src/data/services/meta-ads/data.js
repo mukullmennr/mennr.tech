@@ -68,8 +68,8 @@ export const breadcrumb = {
 	},
 	our: "Meta Ads",
 	prev: {
-		text: "Social Media Management",
-		link: "/what-we-do/social-media-management",
+		text: "Social Media Marketing",
+		link: "/what-we-do/social-media-marketing",
 	},
 	next: {
 		text: "Google Ads",

@@ -112,10 +112,10 @@ export const breadcrumb = {
 		text: "What We Do",
 		link: "/what-we-do",
 	},
-	our: "Web Development & Designing ",
+	our: "Web Design & Development ",
 	prev: {
-		text: "Strategic Planning",
-		link: "/what-we-do/strategic-planning",
+		text: "Amazon Marketing",
+		link: "/what-we-do/amazon-marketing",
 	},
 	next: {
 		text: "Search Engine Optimization",

@@ -182,13 +182,13 @@ export const breadcrumb = {
 		text: "What We Do",
 		link: "/what-we-do",
 	},
-	our: "Search Engine Optimization",
+	our: "Email Marketing",
 	prev: {
-		text: "Website Design and Development",
-		link: "/what-we-do/website-design-and-development",
+		text: "Content Marketing",
+		link: "/what-we-do/content-marketing",
 	},
 	next: {
-		text: "SMS Marketing",
-		link: "/what-we-do/sms-marketing",
+		text: "Amazon Marketing",
+		link: "/what-we-do/amazon-marketing",
 	},
 };

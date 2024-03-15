@@ -73,8 +73,8 @@ export const breadcrumb = {
 		link: "/what-we-do/google-ads",
 	},
 	next: {
-		text: "Reputation Management",
-		link: "/what-we-do/reputation-management",
+		text: "Google Business Profile",
+		link: "/what-we-do/google-business-profile",
 	},
 };
 

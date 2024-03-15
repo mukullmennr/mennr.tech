@@ -73,7 +73,7 @@ export const breadcrumb = {
 		link: "/what-we-do/meta-ads",
 	},
 	next: {
-		text: "Reviews Management",
+		text: "Listing & Reviews Management",
 		link: "/what-we-do/listing-and-review-management",
 	},
 };

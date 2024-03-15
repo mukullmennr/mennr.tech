@@ -97,12 +97,12 @@ export const breadcrumb = {
 	},
 	our: "Content Marketing",
 	prev: {
-		text: "Direct Mail Ads",
-		link: "/what-we-do/direct-mail-ads",
+		text: "Google Business Profile",
+		link: "/what-we-do/google-business-profile",
 	},
 	next: {
-		text: "Website Design and Development",
-		link: "/what-we-do/website-design-and-development",
+		text: "Email Marketing",
+		link: "/what-we-do/email-marketing",
 	},
 };
 

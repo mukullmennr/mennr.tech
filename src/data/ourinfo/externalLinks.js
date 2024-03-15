@@ -13,10 +13,6 @@ export const whatwedo = [
 		link: services.smsMarketing,
 	},
 	{
-		text: "Map Ads",
-		link: services.mapads,
-	},
-	{
 		text: "Social Media Marketing",
 		link: services.socialMediaManagement,
 	},
@@ -39,14 +35,6 @@ export const whatwedo = [
 	{
 		text: "Google Business Profile",
 		link: services.googleMyBusiness,
-	},
-	{
-		text: "Business Listings",
-		link: services.businessListings,
-	},
-	{
-		text: "Direct Mail Ads",
-		link: services.printAds,
 	},
 	{
 		text: "Content Marketing",
