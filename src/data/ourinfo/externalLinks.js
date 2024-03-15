@@ -29,8 +29,8 @@ export const whatwedo = [
 		link: services.googleAds,
 	},
 	{
-		text: "Reviews Management",
-		link: services.reviewManagement,
+		text: "Listing & Reviews Management",
+		link: services.listingReviewManagement,
 	},
 	{
 		text: "Reputation Management",

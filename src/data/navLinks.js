@@ -21,7 +21,7 @@ export const services = {
 	socialMediaManagement: "/what-we-do/social-media-marketing",
 	metaAds: "/what-we-do/meta-ads",
 	googleAds: "/what-we-do/google-ads",
-	reviewManagement: "/what-we-do/review-management",
+	listingReviewManagement: "/what-we-do/listing-and-review-management",
 	websiteDesignDevelopment: "/what-we-do/website-design-and-development",
 	printAds: "/what-we-do/direct-mail-ads",
 	googleMyBusiness: "/what-we-do/google-business-profile",

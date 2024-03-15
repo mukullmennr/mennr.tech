@@ -74,7 +74,7 @@ export const breadcrumb = {
 	},
 	next: {
 		text: "Reviews Management",
-		link: "/what-we-do/review-management",
+		link: "/what-we-do/listing-and-review-management",
 	},
 };
 const getInTouch = "#get-in-touch";
