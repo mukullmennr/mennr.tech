@@ -13,10 +13,6 @@ export const whatwedo = [
 		link: services.smsMarketing,
 	},
 	{
-		text: "Map Ads",
-		link: services.mapads,
-	},
-	{
 		text: "Social Media Marketing",
 		link: services.socialMediaManagement,
 	},
@@ -29,8 +25,8 @@ export const whatwedo = [
 		link: services.googleAds,
 	},
 	{
-		text: "Reviews Management",
-		link: services.reviewManagement,
+		text: "Listing & Reviews Management",
+		link: services.listingReviewManagement,
 	},
 	{
 		text: "Reputation Management",
@@ -41,16 +37,16 @@ export const whatwedo = [
 		link: services.googleMyBusiness,
 	},
 	{
-		text: "Business Listings",
-		link: services.businessListings,
-	},
-	{
-		text: "Direct Mail Ads",
-		link: services.printAds,
-	},
-	{
 		text: "Content Marketing",
 		link: services.contentMarketing,
+	},
+	{
+		text: "Email Marketing",
+		link: services.emailMarketing,
+	},
+	{
+		text: "Amazon Marketing",
+		link: services.amazongMarketing,
 	},
 ];
 
