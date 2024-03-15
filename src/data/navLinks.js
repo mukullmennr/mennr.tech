@@ -30,4 +30,6 @@ export const services = {
 	mapads: "/what-we-do/map-ads",
 	contentMarketing: "/what-we-do/content-marketing",
 	smsMarketing: "/what-we-do/sms-marketing",
+	emailMarketing: "/what-we-do/email-marketing",
+	amazongMarketing: "/what-we-do/amazon-marketing",
 };

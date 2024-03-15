@@ -47,7 +47,7 @@
 
 				@include ab.screen-48 {
 					// margin: 0;
-					height: 25rem;
+					max-height: 25rem;
 				}
 			}
 		}

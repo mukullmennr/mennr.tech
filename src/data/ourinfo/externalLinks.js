@@ -52,6 +52,14 @@ export const whatwedo = [
 		text: "Content Marketing",
 		link: services.contentMarketing,
 	},
+	{
+		text: "Email Marketing",
+		link: services.emailMarketing,
+	},
+	{
+		text: "Amazon Marketing",
+		link: services.amazongMarketing,
+	},
 ];
 
 export const whowehelp = [

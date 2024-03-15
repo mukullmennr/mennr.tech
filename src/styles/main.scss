@@ -121,7 +121,7 @@ img {
 .sub-heading {
 	font-size: clamp(1.5rem, 2.75vw, 2.5rem);
 	letter-spacing: -0.05rem;
-	line-height: 1.875rem;
+	line-height: clamp(1.875rem, 4vw, 3.75rem);
 }
 
 .heading {
