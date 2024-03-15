@@ -1,128 +1,128 @@
 const getInTouch = "#get-in-touch";
 
 export const main = {
-	heading: "Boost Organic Growth With Our Transformative SEO services",
-	text: "Search engine optimization is ever-changing. If you aren't adapting, you are already losing. Mennr helps you stay on top of the competition by incorporating game-changing SEO strategies to get you more traffic to your website and ultimately, more business!",
-	img: "/services/seo/seo.WebP",
+	heading: "Standout In The Crowd and Generate More Sales on Amazon",
+	text: "Boost your product visibility and drive sales in the world's largest online marketplace with our specialized Amazon Marketing Solutions. Mennr helps you elevate your brand presence, increase traffic, and grow your business online.",
+	img: "/services/amazon/amazon.WebP",
 };
 
 export const strategy = {
-	heading: "Witness true organic growth with Mennr’s SEO Strategies",
+	heading: "More Sales Means More Growth For Your Business",
 	content: {
 		heading: "Growth Metrics",
 		icon: "/services/growth.svg",
 		text: [
-			"Although growth through SEO depends on quite a few factors, we understand that every investment needs to demonstrate clear returns. ",
-			"Mennr focuses on metrics that matter – from boosting organic traffic to significant improvements in keyword rankings and conversion rates. ",
-			"By partnering with us, you're not just investing in SEO; you're investing in measurable, sustainable growth that propels your business forward.",
+			"Mennr harnesses the power of powerful Amazon Marketing campaigns to maximize your product visibility on the platform. Our comprehensive approach attracts a larger potential customer base to engage with your brand and drive sales for your business on Amazon.             ",
+			"Mennr helps your business leverage Amazon's vast customer base and extend its presence beyond local boundaries. Through optimized product listings and targeted advertising, businesses can enhance visibility and attract potential customers interested in their offerings.             ",
+			"With the ability to scale effortlessly and capitalize on customer reviews to build social proof, Amazon marketing empowers local businesses to achieve remarkable growth and success on the world's largest online marketplace.",
 		],
-		sub: "* The above metrics are an average of a 12-month period of businesses that have used our SEO services. These metrics are not to be assumed as projections for your business",
+		sub: "* The above metrics are an average of 12-months. These metrics are not to be assumed as projections for your business.",
 	},
 	numbers: [
-		{ title: "Increase in keyword ranking", value: "160%" },
-		{ title: "Increase in organic traffic", value: "110%" },
-		{ title: "Increase in leads generated", value: "45%" },
-		{ title: "Increase in inbound calls", value: "34%" },
-		{ title: "Increase in Marketing ROI", value: "12%" },
+		{ title: "Increase in website traffic", value: "40%" },
+		{ title: "Increase in product views", value: "120%" },
+		{ title: "Increase in sales", value: "30%" },
+		{ title: "Increase in customer enquiries", value: "50%" },
+		{ title: "Increase in ROI", value: "15%" },
 	],
 };
 
 export const content = {
-	heading: "Why you SHOULD Choose SEO Marketing for your business:",
+	heading: "Why you NEED Amazon Marketing Services",
 	content: [
 		{
-			heading: "Increased Website Traffic and Quality Leads",
-			text: "Effective SEO strategies drive organic traffic to your website, attracting highly targeted visitors who are actively searching for products or services like yours. This targeted traffic increases the likelihood of converting visitors into quality leads, ultimately boosting your sales and revenue.",
+			heading: "Enhance Product Visibility",
+			text: "Amazon Marketing Services helps your business significantly enhance the visibility of your products and brand on Amazon. With its advanced optimization techniques, your products can appear in prime locations, search results, and category listings, making them more accessible to potential customers. This targeted approach ensures that your products are visible to the right audience, driving traffic to your listings and increasing your chances of sales. By leveraging Amazon Marketing Services, you can effectively promote your brand and products to a wider audience, boosting your online presence and revenue.",
 			img: {
-				large: "/services/seo/one-768.WebP",
-				small: "/services/seo/one-360.WebP",
+				large: "/services/amazon/one-768.WebP",
+				small: "/services/amazon/one-360.WebP",
 			},
 		},
 		{
-			heading: " Cost-Effectiveness and Higher ROI",
-			text: "Compared to traditional advertising methods, SEO offers a cost-effective way to market your business online. With SEO, you're targeting users who are actively seeking your products or services, reducing wasted advertising spend. Moreover, the long-term benefits of SEO lead to a high return on investment (ROI) over time.",
+			heading: " Boost Sales and Rankings",
+			text: "Through strategic Amazon Marketing, you can significantly boost your sales and enhance your product rankings over time. The best way to do this is by continuously optimizing your product listings with relevant keywords, compelling descriptions, and strategic pricing strategies to make it stand out and attract more buyers. This approach significantly improves your product's search visibility, making it more likely to appear at the top of search results when shoppers look for similar products. As a result, you can expect higher levels of traffic, increased sales, and greater revenue potential.",
 			img: {
-				large: "/services/seo/two-768.WebP",
-				small: "/services/seo/two-360.WebP",
+				large: "/services/amazon/two-768.WebP",
+				small: "/services/amazon/two-360.WebP",
 			},
 		},
 		{
-			heading: "Increased Visibility and Brand Awareness",
-			text: "By optimizing your website for search engines, you increase its visibility in search results, making it easier for potential customers to find your business online. Improved visibility not only enhances brand awareness but also establishes your brand as an authority in your industry.",
+			heading: "Build Brand Trust",
+			text: "Having a well-managed Amazon presence is crucial for building trust in your brand. When your product listings are professionally crafted, your images are optimized, and you have many positive customer reviews, potential buyers are more likely to see your brand as credible and trustworthy. This increased trust can increase sales and build brand loyalty among your customers over time.",
 			img: {
-				large: "/services/seo/three-768.WebP",
-				small: "/services/seo/three-360.WebP",
+				large: "/services/amazon/three-768.WebP",
+				small: "/services/amazon/three-360.WebP",
 			},
 		},
 		{
-			heading: " Improved User Experience and Engagement",
-			text: "SEO involves optimizing your website's structure, content, and user interface, leading to an enhanced user experience. A well-optimized site loads faster, is mobile-friendly, and provides valuable, relevant content, resulting in higher engagement metrics such as longer session durations and lower bounce rates.",
+			heading: "Engage with Customers",
+			text: "Amazon Marketing Services provides a plethora of features that enable sellers to interact directly with their customers. From Q&A sessions about product details to customer reviews and seller feedback, it allows sellers to engage with their customers in real time. This fosters trust, helps address any concerns customers may have, and ultimately boosts brand loyalty among customers.",
 			img: {
-				large: "/services/seo/four-768.WebP",
-				small: "/services/seo/four-360.WebP",
+				large: "/services/amazon/four-768.WebP",
+				small: "/services/amazon/four-360.WebP",
 			},
 		},
 		{
-			heading: "Competitive Advantage and Long-Term Sustainability",
-			text: "Investing in SEO gives your business a competitive edge in the digital landscape. By outranking competitors in search results and staying ahead of algorithm updates, you establish long-term sustainability for your online presence. SEO is not just about short-term gains, it's about building a strong foundation for ongoing success.",
+			heading: "Drive Sales On and Off Amazon",
+			text: "Good performance on Amazon can easily also improve performance on your other digital assets such as your website. By leveraging Amazon's vast customer base to create omnichannel marketing campaigns, you can maximize your sales potential on and off Amazon and reach an even wider audience through multiple channels. Once brand credibility is built on Amazon, there are multiple ways to translate this onto your own website or local shops. ",
 			img: {
-				large: "/services/seo/five-768.WebP",
-				small: "/services/seo/five-360.WebP",
+				large: "/services/amazon/five-768.WebP",
+				small: "/services/amazon/five-360.WebP",
 			},
 		},
 	],
 };
 
 export const cards = {
-	heading: "Process Driven Search Engine Optimization Services",
+	heading: "Process-Driven Amazon Marketing Strategies",
 	card: [
 		{
-			heading: "Detailed Audit",
+			heading: "Product Optimization",
 			icon: {
-				fill: "/services/seo/one-fill.svg",
-				stroke: "/services/seo/one-stroke.svg",
+				fill: "/services/amazon/one-fill.svg",
+				stroke: "/services/amazon/one-stroke.svg",
 			},
-			text: " Performing a detailed audit and analysis of your current SEO positioning and process.",
+			text: "Regular optimization of product listings with relevant keywords, compelling descriptions, and high-quality images.",
 		},
 		{
-			heading: "Keyword Research",
+			heading: "Advertising Campaigns:",
 			icon: {
-				fill: "/services/seo/two-fill.svg",
-				stroke: "/services/seo/two-stroke.svg",
+				fill: "/services/amazon/two-fill.svg",
+				stroke: "/services/amazon/two-stroke.svg",
 			},
-			text: " Process-driven keyword research to identify key terms your potential customers are searching",
+			text: "End-to-end creation and management of powerful Amazon AD campaigns built for conversions. ",
 		},
 		{
-			heading: "Technical SEO",
+			heading: "Pricing Strategy",
 			icon: {
-				fill: "/services/seo/three-fill.svg",
-				stroke: "/services/seo/three-stroke.svg",
+				fill: "/services/amazon/three-fill.svg",
+				stroke: "/services/amazon/three-stroke.svg",
 			},
-			text: "Optimization of all technical aspects of tech aspects like site speed, mobile responsiveness, indexing, etc, for optimal user experience.",
+			text: "Strategic development of pricing strategies to ensure competitive pricing while maintaining profitability. ",
 		},
 		{
-			heading: "On-Page SEO",
+			heading: "Reviews Management",
 			icon: {
-				fill: "/services/seo/four-fill.svg",
-				stroke: "/services/seo/four-stroke.svg",
+				fill: "/services/amazon/four-fill.svg",
+				stroke: "/services/amazon/four-stroke.svg",
 			},
-			text: "Optimization of all on-page elements including website content to improve your website's relevance and visibility in search engine results page.",
+			text: "End-to-end management of customer reviews, concerns, and brand reputation. ",
 		},
 		{
-			heading: "Off-Page SEO",
+			heading: "Competitor Analysis",
 			icon: {
-				fill: "/services/seo/five-fill.svg",
-				stroke: "/services/seo/five-stroke.svg",
+				fill: "/services/amazon/five-fill.svg",
+				stroke: "/services/amazon/five-stroke.svg",
 			},
-			text: "Strategic link building campaigns to acquire high-quality backlinks from external listings to furhter boost your website's authority, credibility, and SERP rankings",
+			text: "Comprehensive analysis of competitor strategies and performance to stay ahead. ",
 		},
 		{
-			heading: "Local SEO",
+			heading: "Performance Analysis",
 			icon: {
-				fill: "/services/seo/six-fill.svg",
-				stroke: "/services/seo/six-stroke.svg",
+				fill: "/services/amazon/six-fill.svg",
+				stroke: "/services/amazon/six-stroke.svg",
 			},
-			text: "We optimize your online presence for local search inluding things like google business profile, local listings, geo-targeted keywords, etc, to inprove visibility locally",
+			text: "Regular insights and analytics campaign performance to help you make data-driven decisions",
 		},
 	],
 };
@@ -132,25 +132,28 @@ export const faq = {
 	data: [
 		{
 			question:
-				"I run a small business focused only on one area. Do I still need to invest in SEO services?",
-			answer: "Absolutely! Investing in SEO services is crucial for your small business, even if you're focused solely on one area. By optimizing your online presence, you'll attract more targeted traffic, increase visibility, and ultimately boost sales. Don't miss out on the opportunity to rank higher in search engine results and stay ahead of the competition. SEO is a must-have investment for any business looking to succeed online.",
+				"How do you ensure my product listings stand out on Amazon?",
+			answer: "Mennr optimizes your product titles, descriptions, and images with relevant keywords and compelling content to improve visibility and attract potential buyers.",
 		},
 		{
 			question:
-				"Do you offer local SEO services for businesses targeting a specific geographic area?            ",
-			answer: "Yes, we specialize in local SEO strategies to help local businesses improve their visibility in local search results, attract nearby customers, and enhance their online presence within their target geographical area.",
+				" How much revenue can you generate for my business on a monthly basis through Amazon?",
+			answer: "It depends. Sales and other conversions on Amazon vary on several factors, such as budget, targeting, product quality, and competition. We work closely with you to set realistic goals and optimize campaigns to maximize sales and other conversions so that you get the most return on your investment. ",
 		},
 		{
-			question: "Can you guarantee top rankings on Google? ",
-			answer: "While we can't guarantee specific rankings due to the ever-changing nature of search algorithms and competition, we work hard to improve your website's visibility and organic traffic through ethical and proven SEO strategies. We succeed only when you do. ",
+			question:
+				"How do you handle customer reviews and feedback on Amazon?",
+			answer: "Mennr monitors and responds to customer reviews promptly, addressing concerns and maintaining a positive brand reputation to boost customer confidence and loyalty.",
 		},
 		{
-			question: "How do you measure the success of SEO campaigns?",
-			answer: "We track various metrics such as organic traffic, keyword rankings, conversion rates, and engagement metrics to evaluate the effectiveness of our SEO efforts. We provide regular reports to keep you informed of the progress as we go.",
+			question:
+				"What if the campaigns that you run for us are not peforming well?",
+			answer: "We run continuous tests on every campaign that we run. While we cannot assure that all campaigns will perform well, we ensure continuous monitoring and optimization of all campaigns to select and run the top-performing ones. ",
 		},
 		{
-			question: "How long does it take to see results from SEO efforts?",
-			answer: "SEO results vary depending on various factors such as the competitiveness of your industry, the current state of your website, and the strategies implemented. Generally, you may start seeing improvements within a few months, but significant results often take 6 to 12 months.",
+			question:
+				"How do you track and analyze the performance of my Amazon marketing campaigns?",
+			answer: "We provide regular insights and analytics on your campaign performance, including sales metrics, advertising ROI, and customer engagement, helping you make informed decisions to optimize your Amazon marketing strategy.",
 		},
 		{
 			question:
@@ -166,11 +169,12 @@ export const faq = {
 };
 
 export const confused = {
-	heading: "Still confused? We don't blame you. Consider this though:",
+	heading: "Still unsure? Let's Paint a Picture",
 	text: [
-		"Apart from SEO, which other marketing channel grants you access to billions of actively searching consumers worldwide, free of charge? We can't think of any other either. ",
-		"A significant 49% of marketers acknowledge organic search as the top-performing marketing channel in terms of ROI. However, securing a spot on a SERP is no longer a straightforward task.",
-		"Let Mennr simplify the process for you and make the most of your SEO efforts.",
+		"What if your local business could have unlimited shelf space and be located in every state across America - That would be nice, wouldn't it? This is essentially what Amazon can be to a local business.         ",
+		"With seller-friendly marketing facilities, Amazon opens up the world to even small local businesses. With the strategic use of Amazon marketing tools, you can access millions of potential customers not only across America but also across the world.         ",
+
+		"So why limit yourself to one or two locations? With Mennr's specialized Amazon Marketing solutions, you can now make a much larger impact and gain more customers. Contact us to get started.",
 	],
 	link: getInTouch,
 };
