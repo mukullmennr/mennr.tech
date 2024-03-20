@@ -186,8 +186,8 @@ export const breadcrumb = {
 	},
 	our: "Amazon Marketing",
 	prev: {
-		text: "Email Marketing",
-		link: "/what-we-do/email-marketing",
+		text: "SMS Marketing",
+		link: "/what-we-do/sms-marketing",
 	},
 	next: {
 		text: "Website Design and Development",

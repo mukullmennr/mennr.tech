@@ -69,12 +69,12 @@ export const breadcrumb = {
 	},
 	our: "Listing & Reviews Management",
 	prev: {
-		text: "Google Ads",
-		link: "/what-we-do/google-ads",
+		text: "Meta Ads",
+		link: "/what-we-do/meta-ads",
 	},
 	next: {
-		text: "Google Business Profile",
-		link: "/what-we-do/google-business-profile",
+		text: "Social Media Marketing",
+		link: "/what-we-do/social-media-marketing",
 	},
 };
 

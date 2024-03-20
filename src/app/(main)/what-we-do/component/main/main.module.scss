@@ -1,0 +1,32 @@
+@use "/src/styles/abstracts" as ab;
+
+.main {
+	> div {
+		display: flex;
+		gap: clamp(3em, 6vw, 5em);
+		align-items: flex-start;
+	}
+
+	.content {
+		text-align: center;
+		display: grid;
+		gap: 2em;
+
+		@include ab.screen-48 {
+			text-align: left;
+			width: 75%;
+		}
+
+		p {
+			font-size: clamp(1rem, 2vw, 1.625rem);
+		}
+	}
+
+	.image {
+		display: none;
+
+		@include ab.screen-48 {
+			display: block;
+		}
+	}
+}

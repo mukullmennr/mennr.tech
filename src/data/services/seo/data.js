@@ -186,7 +186,7 @@ export const breadcrumb = {
 		link: "/what-we-do/website-design-and-development",
 	},
 	next: {
-		text: "SMS Marketing",
-		link: "/what-we-do/sms-marketing",
+		text: "Google Business Profile",
+		link: "/what-we-do/google-business-profile",
 	},
 };
