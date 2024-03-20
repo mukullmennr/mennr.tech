@@ -185,11 +185,11 @@ export const breadcrumb = {
 	},
 	our: "SMS Marketing",
 	prev: {
-		text: "Search Engine Optimization",
-		link: "/what-we-do/seo",
+		text: "Content Marketing",
+		link: "/what-we-do/content-marketing",
 	},
 	next: {
-		text: "Social Media Marketing",
-		link: "/what-we-do/social-media-marketing",
+		text: "Amazon Marketing",
+		link: "/what-we-do/amazon-marketing",
 	},
 };

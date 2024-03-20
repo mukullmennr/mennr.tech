@@ -69,12 +69,12 @@ export const breadcrumb = {
 	},
 	our: "Google Business Profile",
 	prev: {
-		text: "Listing & Review Management",
-		link: "/what-we-do/listing-and-review-management",
+		text: "Search Engine Optimization",
+		link: "/what-we-do/seo",
 	},
 	next: {
-		text: "Content Marketing",
-		link: "/what-we-do/content-marketing",
+		text: "Google Ads",
+		link: "/what-we-do/google-ads",
 	},
 };
 const getInTouch = "#get-in-touch";

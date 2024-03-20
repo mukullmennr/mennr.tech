@@ -97,12 +97,12 @@ export const breadcrumb = {
 	},
 	our: "Content Marketing",
 	prev: {
-		text: "Google Business Profile",
-		link: "/what-we-do/google-business-profile",
-	},
-	next: {
 		text: "Email Marketing",
 		link: "/what-we-do/email-marketing",
+	},
+	next: {
+		text: "SMS Marketing",
+		link: "/what-we-do/sms-marketing",
 	},
 };
 

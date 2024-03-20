@@ -98,7 +98,7 @@ export default function Footer() {
 									return (
 										<li key={service.link}>
 											<Link href={service.link}>
-												{service.text}
+												{service.heading}
 											</Link>
 										</li>
 									);

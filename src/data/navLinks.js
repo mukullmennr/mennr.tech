@@ -18,13 +18,12 @@ export const industries = {
 
 export const services = {
 	seo: "/what-we-do/seo",
-	socialMediaManagement: "/what-we-do/social-media-marketing",
+	socialMediaMarketing: "/what-we-do/social-media-marketing",
 	metaAds: "/what-we-do/meta-ads",
 	googleAds: "/what-we-do/google-ads",
 	listingReviewManagement: "/what-we-do/listing-and-review-management",
 	websiteDesignDevelopment: "/what-we-do/website-design-and-development",
 	googleMyBusiness: "/what-we-do/google-business-profile",
-	reputationManagement: "/what-we-do/reputation-management",
 	contentMarketing: "/what-we-do/content-marketing",
 	smsMarketing: "/what-we-do/sms-marketing",
 	emailMarketing: "/what-we-do/email-marketing",

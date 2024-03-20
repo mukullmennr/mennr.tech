@@ -64,12 +64,12 @@ export const breadcrumb = {
 	},
 	our: "Social Media Marketing",
 	prev: {
-		text: "SMS Marketing",
-		link: "/what-we-do/sms-marketing",
+		text: "Listing & Review Management",
+		link: "/what-we-do/listing-and-review-management",
 	},
 	next: {
-		text: "Meta Ads",
-		link: "/what-we-do/meta-ads",
+		text: "Email Marketing",
+		link: "/what-we-do/email-marketing",
 	},
 };
 

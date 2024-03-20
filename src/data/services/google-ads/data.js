@@ -69,12 +69,12 @@ export const breadcrumb = {
 	},
 	our: "Google Ads",
 	prev: {
-		text: "Meta Ads",
-		link: "/what-we-do/meta-ads",
+		text: "Google Business Profile",
+		link: "/what-we-do/google-business-profile",
 	},
 	next: {
-		text: "Listing & Reviews Management",
-		link: "/what-we-do/listing-and-review-management",
+		text: "Meta Ads",
+		link: "/what-we-do/meta-ads",
 	},
 };
 const getInTouch = "#get-in-touch";

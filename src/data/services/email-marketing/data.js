@@ -184,11 +184,11 @@ export const breadcrumb = {
 	},
 	our: "Email Marketing",
 	prev: {
-		text: "Content Marketing",
-		link: "/what-we-do/content-marketing",
+		text: "Social Media Marketing",
+		link: "/what-we-do/social-media-marketing",
 	},
 	next: {
-		text: "Amazon Marketing",
-		link: "/what-we-do/amazon-marketing",
+		text: "Content Marketing",
+		link: "/what-we-do/content-marketing",
 	},
 };
